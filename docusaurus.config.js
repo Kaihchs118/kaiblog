@@ -101,7 +101,7 @@ const config = {
         { to: '/about', label: '關於', position: 'left' },
         { to: '/docs', label: '文件', position: 'left' },
         { to: '/blog', label: '文章', position: 'left' },
-        { to: '/resources', label: '資源', position: 'left' },
+       // { to: '/resources', label: '資源', position: 'left' },
         { to: '/random', label: '隨機', position: 'left' },
         {
           href: 'https://github.com/Kaihchs118',
@@ -121,7 +121,7 @@ const config = {
             { label: '關於', to: '/about' },
             { label: '文件', to: '/docs' },
             { label: '文章', to: '/blog' },
-            { label: '資源', to: '/resources' },
+          //  { label: '資源', to: '/resources' },
           ],
         },
         {
