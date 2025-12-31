@@ -1,25 +1,10 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+KAI:
+  name: KAI
+  title: 熱愛電腦相關，最近在學架設網站，科技音樂
+  url: https://github.com/Kaihchs118
+  image_url: https://yt3.googleusercontent.com/sMETCGLKKHFSQWoK2-JWtdyeKCWjP1XPMr_vvxTTDue7WTNlVhKFn9Gz3cHNpeVCFyWw9rR7ksE=s160-c-k-c0x00ffffff-no-rj
   page: true
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    Website: https://kaihchs118.github.io/kai_wiki/
+    github: https://github.com/Kaihchs118
+    Youtube: https://www.youtube.com/@kaistudio-621

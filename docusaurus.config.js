@@ -1,149 +1,176 @@
 // @ts-check
-// 開啟 TypeScript 型別檢查（就算是 JS 檔也能提示錯誤）
+// 啟用 TypeScript 型別檢查（即使是 JS 檔）
+// 好處：編輯器會提示錯誤、補全設定選項
 
-import { themes as prismThemes } from 'prism-react-renderer';
-// 引入程式碼高亮主題（用在 prism）
+import {themes as prismThemes} from 'prism-react-renderer';
+
+// ⚠️ 這支檔案是在 Node.js 執行
+// 不可以使用瀏覽器 API（例如 window、document）
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  /* ========================
+   * 站台基本資訊
+   * ======================== */
 
-  /* ================= 基本網站資訊 ================= */
+  title: 'My Site',              // 網站標題（顯示在瀏覽器分頁）
+  tagline: 'Dinosaurs are cool',  // 副標（首頁標語）
+  favicon: 'img/favicon.ico',    // 網站 favicon
 
-  title: 'KAI BLOG',                // 網站標題（左上角 + 瀏覽器標題）
-  tagline: '紀錄學習、剪輯與科技音樂',   // 副標（SEO 用）
-  favicon: 'img/channels4_profile.jpg',       // 網站小圖示
+  /* ========================
+   * 未來版本設定
+   * ======================== */
 
   future: {
-    v4: true,                       // 提前相容未來 Docusaurus v4
+    v4: true, // 提前啟用 Docusaurus v4 相容模式
   },
 
-  /* ================= GitHub Pages 設定 ================= */
+  /* ========================
+   * 部署網址設定（GitHub Pages）
+   * ======================== */
 
-  url: 'https://kaihchs118.github.io', // 你的 GitHub Pages 網域（不能有子路徑）
-  baseUrl: '/kaiblog/',                // Repo 名稱，一定要前後 /
-  //本機跑實用baseUrl: '/', 發佈網站用baseUrl: '/kaiblog/', 
+  url: 'https://kaihchs118.github.io', // GitHub Pages 的使用者頁面
+  baseUrl: '/kaiblog/',                // Repo 名稱（一定要有斜線）
 
-  organizationName: 'Kaihchs118',      // GitHub 使用者名稱
-  projectName: 'kaiblog',              // Repo 名稱（⚠️不要有空白）
+  organizationName: 'kaihchs118', // GitHub 使用者或組織名稱
+  projectName: 'kaiblog',         // GitHub repository 名稱
 
-  /* ================= 錯誤處理 ================= */
+  /* ========================
+   * 連結錯誤處理
+   * ======================== */
 
-  onBrokenLinks: 'throw',              // 連結壞掉就直接報錯
-  onBrokenMarkdownLinks: 'warn',       // Markdown 壞連結只警告
+  onBrokenLinks: 'throw', // 有壞連結就直接 build 失敗（嚴格模式）
 
-  /* ================= 語言設定 ================= */
+  /* ========================
+   * 語系設定（目前只用英文）
+   * 之後要中文可再加 zh-Hant
+   * ======================== */
 
   i18n: {
-    defaultLocale: 'zh-Hant',          // 預設語言：繁體中文
-    locales: ['zh-Hant'],              // 可用語言列表
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
-  /* ================= 外掛（搜尋功能在這） ================= */
-
-  plugins: [
-    [
-      require.resolve('@cmfcmf/docusaurus-search-local'),
-      {
-        indexDocs: true,               // 搜尋 Docs
-        indexBlog: true,               // 搜尋 Blog
-        indexPages: true,              // 搜尋 pages（包含 /random）
-        language: ['en'],        // 支援中英文
-      },
-    ],
-  ],
-
-  /* ================= 額外主題 ================= */
-
-  themes: [
-    require.resolve('@docusaurus/theme-live-codeblock'),
-    // 讓你可以用互動式程式碼區塊（之後教你玩）
-  ],
-
-  /* ================= 預設功能（classic） ================= */
+  /* ========================
+   * 預設功能模組（Classic）
+   * ======================== */
 
   presets: [
     [
       'classic',
-      {
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        /* ---------- 文件系統（/docs） ---------- */
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // 指定側邊欄設定檔
+          sidebarPath: './sidebars.js', // 側邊欄設定檔
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+
+        /* ---------- 部落格系統（/blog） ---------- */
         blog: {
-          showReadingTime: true,       // 顯示閱讀時間
+          showReadingTime: true, // 顯示閱讀時間
+          feedOptions: {
+            type: ['rss', 'atom'], // RSS / Atom 訂閱
+            xslt: true,
+          },
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
         },
+
+        /* ---------- 主題設定 ---------- */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-          // 自訂 CSS
+          customCss: './src/css/custom.css', // 自訂 CSS
         },
-      },
+      }),
     ],
   ],
 
-  /* ================= 外觀設定 ================= */
+  /* ========================
+   * 主題與 UI 設定
+   * ======================== */
 
-  themeConfig: {
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      image: 'img/docusaurus-social-card.jpg', // 社群分享圖
 
-    image: 'img/docusaurus-social-card.jpg', // 社群分享圖
-
-    colorMode: {
-      respectPrefersColorScheme: false, // 跟隨系統深色 / 淺色
-    },
-
-    /* ---------- 上方導覽列 ---------- */
-    navbar: {
-      title: 'KAI BLOG',
-      logo: {
-        alt: 'KAI BLOG Logo',
-        src: 'img/channels4_profile.jpg',
+      /* ---------- 明暗模式 ---------- */
+      colorMode: {
+        respectPrefersColorScheme: true, // 跟隨系統亮/暗色
       },
-      items: [
-        { to: '/about', label: '關於', position: 'left' },
-        { to: '/docs', label: '文件', position: 'left' },
-        { to: '/blog', label: '文章', position: 'left' },
-       // { to: '/resources', label: '資源', position: 'left' },
-        { to: '/random', label: '隨機', position: 'left' },
-        {
-          href: 'https://github.com/Kaihchs118',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
 
-    /* ---------- 頁尾 ---------- */
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: '內容',
-          items: [
-            { label: '關於', to: '/about' },
-            { label: '文件', to: '/docs' },
-            { label: '文章', to: '/blog' },
-          //  { label: '資源', to: '/resources' },
-          ],
+      /* ---------- 導覽列（上方） ---------- */
+      navbar: {
+        title: 'My Site',
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
         },
-        {
-          title: '更多',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/Kaihchs118',
-            },
-          ],
-        },
-      ],
-      copyright:
-        `Copyright © ${new Date().getFullYear()} KAI BLOG`,
-    },
+        items: [
+          // 📘 文件（/docs）
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Docs',
+          },
 
-    /* ---------- 程式碼高亮 ---------- */
-    prism: {
-      theme: prismThemes.github,       // 淺色主題
-      darkTheme: prismThemes.dracula,  // 深色主題
-    },
-  },
+          // 📰 部落格（/blog）
+          {to: '/blog', label: 'Blog', position: 'left'},
+
+          // 👤 關於頁面（/about）
+          // 👉 這是「Pages」功能，對應 src/pages/about.md
+          {to: '/about', label: 'About', position: 'left'},
+
+          // GitHub 連結
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+
+      /* ---------- 頁尾 ---------- */
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {label: 'Tutorial', to: '/docs/intro'},
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus'},
+              {label: 'Discord', href: 'https://discordapp.com/invite/docusaurus'},
+              {label: 'X', href: 'https://x.com/docusaurus'},
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {label: 'Blog', to: '/blog'},
+              {label: 'GitHub', href: 'https://github.com/facebook/docusaurus'},
+            ],
+          },
+        ],
+        copyright:
+          `Copyright © ${new Date().getFullYear()} My Project.`,
+      },
+
+      /* ---------- 程式碼高亮 ---------- */
+      prism: {
+        theme: prismThemes.github,      // 亮色主題
+        darkTheme: prismThemes.dracula, // 暗色主題
+      },
+    }),
 };
 
 export default config;
