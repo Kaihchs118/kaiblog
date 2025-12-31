@@ -30,7 +30,7 @@ tags: [達芬奇模板]
 先解壓縮
 ```Fusion.zip```
 在裡面有 Template 資料夾
-該資料夾裡面有 ResolvePackV1.drfz
+該資料夾裡面有 ResolvePackV1.drfx
 
 ### 步驟二：  
 - 方式一：直接雙擊 ResolvePackV1.drfz，這將會開啟 Resolve 。  
