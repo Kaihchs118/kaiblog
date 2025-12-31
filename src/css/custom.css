@@ -1,30 +1,142 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* ================================
+   全站共用樣式設定（custom.css）
+   這個檔案的 CSS 會影響整個網站
+   Docusaurus Classic 預設使用 Infima
+   ================================ */
 
-/* You can override the default Infima variables here. */
+
+/* ================================
+   亮色模式（預設主題）
+   :root 代表整個網站的最上層
+   ================================ */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* ============================
+     網站主色（藍色系）
+     你指定的品牌藍：#429EEE
+     影響範圍：
+     - 連結
+     - 按鈕
+     - 標題 hover
+     - 側邊欄選中項目
+     ============================ */
+  --ifm-color-primary: #429EEE;
+
+  /* ============================
+     主色「較深」版本
+     常用在：
+     - hover 狀態
+     - active 狀態
+     ============================ */
+  --ifm-color-primary-dark: #2f84d6;
+  --ifm-color-primary-darker: #297ac6;
+  --ifm-color-primary-darkest: #1f5e9a;
+
+  /* ============================
+     主色「較亮」版本
+     常用在：
+     - 背景色
+     - 標籤
+     - 提示區塊
+     ============================ */
+  --ifm-color-primary-light: #5aabf2;
+  --ifm-color-primary-lighter: #6bb4f4;
+  --ifm-color-primary-lightest: #8cc7f8;
+
+  /* ============================
+     程式碼區塊字體大小
+     預設是 100%，稍微縮小比較好讀
+     ============================ */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* ============================
+     程式碼區塊中
+     被特別標示那一行的背景顏色
+     （亮色模式）
+     ============================ */
+  --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+/* ================================
+   深色模式設定
+   Docusaurus 會在 html 標籤上
+   自動加上 data-theme="dark"
+   ================================ */
+html[data-theme='dark'] {
+  /* ============================
+     深色模式主色
+     顏色會比亮色模式再亮一點
+     才不會在深底下看不清楚
+     ============================ */
+  --ifm-color-primary: #6bb4f4;
+
+  /* ============================
+     深色模式下的主色深階
+     ============================ */
+  --ifm-color-primary-dark: #5aabf2;
+  --ifm-color-primary-darker: #429EEE;
+  --ifm-color-primary-darkest: #2f84d6;
+
+  /* ============================
+     深色模式下的主色亮階
+     ============================ */
+  --ifm-color-primary-light: #8cc7f8;
+  --ifm-color-primary-lighter: #a6d4fb;
+  --ifm-color-primary-lightest: #cbe6fd;
+
+  /* ============================
+     深色模式中
+     程式碼高亮行的背景顏色
+     ============================ */
+  --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
+}
+
+
+/* ================================
+   首頁主標題樣式
+   用在 MDX 裡的 className="hero-title"
+   ================================ */
+.hero-title {
+  color: #429EEE;      /* 固定使用品牌藍 */
+  font-weight: 800;    /* 字體加粗，像真正網站 */
+  letter-spacing: 0.5px;
+}
+/* ================================
+   下載按鈕區塊（Download Buttons）
+   ================================ */
+
+.download-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.download-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.download-btn.primary {
+  background: #429eee;
+  color: white;
+}
+
+.download-btn.primary:hover {
+  background: #2b82d9;
+  transform: translateY(-2px);
+}
+
+.download-btn.secondary {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.download-btn.secondary:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
 }

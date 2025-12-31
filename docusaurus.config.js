@@ -112,21 +112,21 @@ const config = {
         },
         items: [
           // 📘 文件（/docs）
-          {
+        {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '文件',
+            label: '筆記',
           },
 
           // 📰 部落格（/blog）
-          {to: '/blog', label: '文章', position: 'left'},
+          {to: '/blog', label: '貼文', position: 'left'},
 
-          // 📰 部落格（/blog）
+          // 🎲 隨機（/random）
           {to: '/random', label: '隨機', position: 'left'},
 
-          // 📰 部落格（/blog）
-          {to: '/now', label: '現況', position: 'left'},
+          // 🥶 近況（/now）
+          {to: '/now', label: '近況', position: 'left'},
           // 👤 關於頁面（/about）
           // 👉 這是「Pages」功能，對應 src/pages/about.md
           {to: '/about', label: '關於', position: 'left'},
@@ -140,36 +140,53 @@ const config = {
         ],
       },
 
-      /* ---------- 頁尾 ---------- */
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {label: 'Tutorial', to: '/docs/intro'},
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {label: 'Youtube', href: 'https://www.youtube.com/@kaistudio-621'},
-              {label: 'Discord', href: 'https://discordapp.com/invite/docusaurus'},
-              {label: 'X', href: 'https://x.com/docusaurus'},
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {label: '文章', to: '/blog'},
-              {label: 'GitHub', href: 'https://github.com/Kaihchs118/'},
-            ],
-          },
-        ],
-        copyright:
-          `Copyright © ${new Date().getFullYear()} My Project.`,
-      },
+      /* =============================
+ * 頁尾（Footer）設定
+ * 目前僅顯示版權資訊
+ * 其他區塊先註解保留，未來再啟用
+ * ============================= */
+footer: {
+  // 頁尾樣式：dark = 深色底
+  style: 'dark',
 
+  // 頁尾連結區（目前不使用，保持空陣列）
+  links: [
+    /*
+    =============================
+    以下為未來可用的頁尾區塊範例
+    目前全部停用（註解）
+    =============================
+
+    {
+      title: 'Docs',
+      items: [
+        { label: '教學', to: '/docs/intro' },
+      ],
+    },
+
+    {
+      title: 'Community',
+      items: [
+        { label: 'YouTube', href: 'https://www.youtube.com/@kaistudio-621' },
+        { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
+        { label: 'X（Twitter）', href: 'https://x.com/docusaurus' },
+      ],
+    },
+
+    {
+      title: 'More',
+      items: [
+        { label: '文章', to: '/blog' },
+        { label: 'GitHub', href: 'https://github.com/Kaihchs118/' },
+      ],
+    },
+    */
+  ],
+
+  // 頁尾最底下的版權文字（會自動顯示當前年份）
+  copyright:
+    `Copyright © ${new Date().getFullYear()} KAI BLOG.`,
+},
       /* ---------- 程式碼高亮 ---------- */
       prism: {
         theme: prismThemes.github,      // 亮色主題

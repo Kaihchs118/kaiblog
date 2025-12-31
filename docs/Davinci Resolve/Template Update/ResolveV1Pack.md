@@ -1,6 +1,7 @@
 ---
-slug: resolvev1pack-update
+slug: resolvepackV1-update
 title: 達芬奇模板V1
+sidebar_label: 模板更新
 authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-12-31
@@ -9,15 +10,28 @@ date: 2025-12-31
 我終於製作完成 ```ResolveV1Pack```
 替達芬奇製作出許多模板，均為免費模板
 
-# 下載
-下載方式：
-  方法一 Google Drive：
-[點我下載](https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view?usp=sharing)
 
-### 🌟🌟(建議)方法二 Mediafire：
+## 📥 下載方式
 
-[點我下載](https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file)
+<div className="download-buttons">
 
+<a
+  className="download-btn primary"
+  href="https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file"
+  target="_blank"
+>
+  ⭐ MediaFire 下載（建議）
+</a>
+
+<a
+  className="download-btn secondary"
+  href="https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view"
+  target="_blank"
+>
+  ☁️ Google Drive 下載
+</a>
+
+</div>
 
   方法三 ：
 還沒想到！🤣🤣🤣
