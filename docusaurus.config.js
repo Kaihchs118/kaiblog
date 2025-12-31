@@ -122,6 +122,11 @@ const config = {
           // 📰 部落格（/blog）
           {to: '/blog', label: '文章', position: 'left'},
 
+          // 📰 部落格（/blog）
+          {to: '/random', label: '隨機', position: 'left'},
+
+          // 📰 部落格（/blog）
+          {to: '/now', label: '現況', position: 'left'},
           // 👤 關於頁面（/about）
           // 👉 這是「Pages」功能，對應 src/pages/about.md
           {to: '/about', label: '關於', position: 'left'},
