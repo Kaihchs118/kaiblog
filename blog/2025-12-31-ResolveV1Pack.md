@@ -13,8 +13,10 @@ tags: [達芬奇模板]
   方法一 Google Drive：
 [點我下載](https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view?usp=sharing)
 
-  方法二 Mediafire：
+### 🌟🌟(建議)方法二 Mediafire：
+
 [點我下載](https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file)
+
 
   方法三 ：
 還沒想到！🤣🤣🤣
@@ -27,12 +29,13 @@ tags: [達芬奇模板]
 步驟二：  
 - 方式一：直接雙擊 EditPack.drfx，系統會自動安裝。  
 - 方式二：將 EditPack.drfx 拖曳到以下資料夾：  
-  ``` MarkDown
+
   Mac 路徑：
 
   ``` MarkDown
   /Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates  
   ```
+
   Windows 路徑：
 
   ``` MarkDown
