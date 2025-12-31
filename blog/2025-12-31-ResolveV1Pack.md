@@ -36,15 +36,27 @@ tags: [達芬奇模板]
 - 方式一：直接雙擊 ResolvePackV1.drfz，這將會開啟 Resolve 。  
 接著，選擇安裝，重啟達芬奇
 
+---
 
-:::note小技巧
+:::note 小技巧
 可以將Fusion資料夾“裡面”所有資料夾複製到
+**下面路徑**
+這樣省去了安裝的麻煩🤣🤣🤣
+:::
+
 Mac 路徑：
-  /Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/
+
+  ``` MarkDown
+  /Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates  
+  ```
+
   Windows 路徑：
-MarkDown
-  C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\
-這樣省去了安裝的麻煩🤣🤣🤣:::
+
+  ``` MarkDown
+  C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates  
+  ```
+
+---
 
 - 方式二：將 EditPack.drfx 拖曳到以下資料夾：  
 
