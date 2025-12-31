@@ -48,7 +48,6 @@ const config = {
         indexBlog: true,               // 搜尋 Blog
         indexPages: true,              // 搜尋 pages（包含 /random）
         language: ['zh', 'en'],        // 支援中英文
-        highlightSearchTermsOnTargetPage: true, // 點進去會高亮關鍵字
       },
     ],
   ],
