@@ -1,8 +1,9 @@
 ---
 slug: resolvev1pack-update
-title: 達芬奇模板更新了！
+title: 達芬奇模板V1
 authors: [KAI]
 tags: [達芬奇模板]
+date: 2025-12-31
 ---
 # 新年快樂！
 我終於製作完成 ```ResolveV1Pack```

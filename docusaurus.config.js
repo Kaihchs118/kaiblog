@@ -116,7 +116,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Docs',
+            label: '文件',
           },
 
           // 📰 部落格（/blog）
