@@ -48,13 +48,27 @@ tags: [達芬奇模板]
 
 3. 安裝 ExpansionPack (如果需要)
 步驟一：將 ExpansionPack 資料夾複製到下列資料夾：  
-  Mac 路徑：/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates/Edits/Generations  
-  Windows 路徑：C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates\Edits\Generations  
+  Mac 路徑：
+``` Markdown
+/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates/Edits/Generations  
+```
+  Windows 路徑：
+``` Markdown
+C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates\Edits\Generations  
+```
 
 4. 覆蓋 Fusion 資料夾（如果需要裡面的工具）
 步驟一：將下載好的 Fusion 資料夾整個覆蓋到：  
-  Mac 路徑：/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/  
-  Windows 路徑：C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\  
+
+  Mac 路徑：
+``` Markdown
+/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/  
+```
+  Windows 路徑：
+``` Markdown
+C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\  
+```
+
 若系統詢問是否取代，請選擇「取代」。
 
 5. 安裝工具（Tool/自選）
@@ -63,5 +77,6 @@ tags: [達芬奇模板]
 EditorLab 需自行註冊帳號。（可開啟資料夾內的HTML檔進入網站註冊）
 
 備註：  
-- 若不清楚如何開啟 Console，請於 DaVinci Resolve 上方選單「Workspace」>「Console」開啟。  
+- 若不清楚如何開啟 Console，請於 DaVinci Resolve 上方選單
+```「Workspace」>「Console」```開啟。  
 - 皆可自行選擇是否安裝
