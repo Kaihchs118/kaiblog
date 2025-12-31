@@ -47,7 +47,7 @@ const config = {
         indexDocs: true,               // 搜尋 Docs
         indexBlog: true,               // 搜尋 Blog
         indexPages: true,              // 搜尋 pages（包含 /random）
-        language: ['zh', 'en'],        // 支援中英文
+        language: ['en'],        // 支援中英文
       },
     ],
   ],
