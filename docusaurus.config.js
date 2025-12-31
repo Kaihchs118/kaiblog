@@ -10,8 +10,8 @@ const config = {
   /* ================= 基本網站資訊 ================= */
 
   title: 'KAI BLOG',                // 網站標題（左上角 + 瀏覽器標題）
-  tagline: '紀錄學習、剪輯與技術',   // 副標（SEO 用）
-  favicon: 'img/favicon.ico',       // 網站小圖示
+  tagline: '紀錄學習、剪輯與科技音樂',   // 副標（SEO 用）
+  favicon: 'img/channels4_profile.jpg',       // 網站小圖示
 
   future: {
     v4: true,                       // 提前相容未來 Docusaurus v4
@@ -20,7 +20,8 @@ const config = {
   /* ================= GitHub Pages 設定 ================= */
 
   url: 'https://kaihchs118.github.io', // 你的 GitHub Pages 網域（不能有子路徑）
-  baseUrl: '/',                // Repo 名稱，一定要前後 /
+  baseUrl: '/kaiblog/',                // Repo 名稱，一定要前後 /
+  //本機跑實用baseUrl: '/', 發佈網站用baseUrl: '/kaiblog/', 
 
   organizationName: 'Kaihchs118',      // GitHub 使用者名稱
   projectName: 'kaiblog',              // Repo 名稱（⚠️不要有空白）
@@ -101,6 +102,7 @@ const config = {
         { to: '/about', label: '關於', position: 'left' },
         { to: '/docs', label: '文件', position: 'left' },
         { to: '/blog', label: '文章', position: 'left' },
+        { to: '/resources', label: '資源', position: 'left' },
         { to: '/random', label: '隨機', position: 'left' },
         {
           href: 'https://github.com/Kaihchs118',
@@ -117,8 +119,10 @@ const config = {
         {
           title: '內容',
           items: [
+            { label: '關於', to: '/about' },
             { label: '文件', to: '/docs' },
             { label: '文章', to: '/blog' },
+            { label: '資源', to: '/resources' },
           ],
         },
         {
