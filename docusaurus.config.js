@@ -13,9 +13,9 @@ const config = {
    * 站台基本資訊
    * ======================== */
 
-  title: 'My Site',              // 網站標題（顯示在瀏覽器分頁）
-  tagline: 'Dinosaurs are cool',  // 副標（首頁標語）
-  favicon: 'img/favicon.ico',    // 網站 favicon
+  title: 'KAI BLOG',              // 網站標題（顯示在瀏覽器分頁）
+  tagline: 'KAI 部落格',  // 副標（首頁標語）
+  favicon: 'img/channels4_profile.jpg',    // 網站 favicon
 
   /* ========================
    * 未來版本設定
@@ -105,10 +105,10 @@ const config = {
 
       /* ---------- 導覽列（上方） ---------- */
       navbar: {
-        title: 'My Site',
+        title: 'KAI BLOG',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/channels4_profile.jpg',
         },
         items: [
           // 📘 文件（/docs）
@@ -120,15 +120,15 @@ const config = {
           },
 
           // 📰 部落格（/blog）
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '文章', position: 'left'},
 
           // 👤 關於頁面（/about）
           // 👉 這是「Pages」功能，對應 src/pages/about.md
-          {to: '/about', label: 'About', position: 'left'},
+          {to: '/about', label: '關於', position: 'left'},
 
           // GitHub 連結
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Kaihchs118/',
             label: 'GitHub',
             position: 'right',
           },
@@ -148,7 +148,7 @@ const config = {
           {
             title: 'Community',
             items: [
-              {label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus'},
+              {label: 'Youtube', href: 'https://www.youtube.com/@kaistudio-621'},
               {label: 'Discord', href: 'https://discordapp.com/invite/docusaurus'},
               {label: 'X', href: 'https://x.com/docusaurus'},
             ],
@@ -156,8 +156,8 @@ const config = {
           {
             title: 'More',
             items: [
-              {label: 'Blog', to: '/blog'},
-              {label: 'GitHub', href: 'https://github.com/facebook/docusaurus'},
+              {label: '文章', to: '/blog'},
+              {label: 'GitHub', href: 'https://github.com/Kaihchs118/'},
             ],
           },
         ],
