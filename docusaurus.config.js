@@ -47,9 +47,16 @@ const config = {
    * ======================== */
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+  defaultLocale: 'zh-Hant',
+  locales: ['zh-Hant'],
+  localeConfigs: {
+    'zh-Hant': {
+      label: '繁體中文',
+      htmlLang: 'zh-Hant',
+    },
   },
+},
+
 
   /* ========================
    * 預設功能模組（Classic）
@@ -141,10 +148,7 @@ const config = {
 
           // 📔 筆記（/docs）
           {to: '/docs', label: '筆記', position: 'left'},
-/* ----------
-          // 📔 愛用（/use）
-          {to: '/use', label: '愛用', position: 'left'},       
----------- */
+
    
           // 📔 愛用（/use）
           {to: '/blog/archive', label: '列表', position: 'left'},               
@@ -155,9 +159,15 @@ const config = {
           },          
           // 🥶 近況（/now）
           {to: '/now', label: '近況', position: 'left'},
+
+          /* ----------
+          // 📔 愛用（/use）
+          {to: '/use', label: '愛用', position: 'left'},       
+
           // 👤 關於頁面（/about）
           // 👉 這是「Pages」功能，對應 src/pages/about.md
           {to: '/about', label: '關於', position: 'left'},
+---------- */
 
           // GitHub 連結
           {

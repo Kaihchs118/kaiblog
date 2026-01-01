@@ -1,6 +1,6 @@
 ---
 slug: happy-new-year
-title: 新年快樂！在科技與音樂的節拍下飛向 2026 🚀
+title: 2026，新年快樂!
 authors: [KAI]
 tags: [新年快樂, 五月天,]
 ---
@@ -24,28 +24,18 @@ frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
-:::warn
-> 若影片載入不出現，可以點這裡觀看原片 → https://www.youtube.com/watch?v=e5NNaehFyOw 
+<div className="tip-callout">
+:::warning
+若影片載入不出現，可以點這裡觀看原片 → https://www.youtube.com/watch?v=e5NNaehFyOw 
 :::
----
-
-## 🤖 2026：數位與現實的邊界成為起點  
-
-2026 年，科技不止存在於實驗室或專案 roadmap，它真正進入我們生活的每一個環節：
-
-- **人工智慧** 不再只是熱門詞，而是我們協作、創作、甚至思考的夥伴  
-- **雲端運算與大資料** 加速各行各業的數位化轉型  
-- **使用者體驗設計** 讓技術呈現不再冰冷，而是更有溫度與人性思考  
-
-在新的一年裡，科技不再只是工具，而是 **日常中的助力** ─ 幫你節省時間、提升創意，甚至陪你度過接下來的每一個日日夜夜。
-
+</div>
 ---
 
 ## 📸 最後送給大家這張跨年時刻的影像  
 
-![跨年科技煙火與倒數的人潮](https://images.unsplash.com/photo-1517638851339-f3e8c4e8fbc1?auto=format&fit=crop&w=1200&q=80)
+![可愛的吉祥物陪著你！](./docusaurus-plushie-banner.jpeg)
 
-> 圖片說明：在煙火與螢幕光芒裡，科技與人群共同倒數迎接 2026 ✨（示意圖）
+> 圖片說明：在Docusaurus有可愛的吉祥物陪著你！ ✨（示意圖）
 
 ---
 

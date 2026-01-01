@@ -57,13 +57,8 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 ## YouTube 最新影片 🎉
 
 :::youtube
-<iframe
-  src="https://www.youtube.com/embed/WapZvYyQCJM"
-  title="YouTube video player"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+<iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **📌 本影片內容說明：**  
-這部影片玩了``` Roblox ```誰是殺手2，超好玩！！！
+這部影片改寫徹爾尼，最近想跳脫到開源的編曲軟體試試看：```Ardour```
 :::

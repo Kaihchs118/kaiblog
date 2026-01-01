@@ -2,6 +2,7 @@
 title: 關於我
 authors: [KAI]
 slug: about
+draft: true
 ---
 
 嗨，我是 **KAI** 👋  

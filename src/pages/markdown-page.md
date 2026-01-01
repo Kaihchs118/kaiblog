@@ -18,3 +18,10 @@ Wiwi 的程式碼 code.wiwi.blog
 📥️ 也請歡迎訂閱貼文區的 RSS Feed。你應該用 RSS（那是什麼？），真的！
 📧 這個網站沒有留言功能（為什麼？），但很歡迎你寫信到 wiwi.blog@fastmail.com 留言給我！
 （2022 年以及更之前的貼文，是從我的舊 FB 和 IG 帳號，以及更早之前的部落格搬來的。）
+
+## Callout
+:::note
+:::tip
+:::info
+:::warning
+:::danger

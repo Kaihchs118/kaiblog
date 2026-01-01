@@ -129,6 +129,23 @@ html[data-theme='dark'] .fusion-callout .theme-admonition-info {
 }
 
 /* ================================
+   提示 Callout
+   ================================ */
+.tip-callout .theme-admonition-warning {
+  --ifm-alert-background-color: #fdecec;   /* 淡紅背景 */
+  --ifm-alert-border-color: #e5484d;       /* 主紅色 */
+  --ifm-alert-foreground-color: #7a1c1c;   /* 深紅文字 */
+}
+
+
+html[data-theme='dark'] .tip-callout .theme-admonition-warning {
+  --ifm-alert-background-color: #3a0f12;   /* 深酒紅 */
+  --ifm-alert-border-color: #ff6b6b;       /* 亮紅邊框 */
+  --ifm-alert-foreground-color: #ffd6d6;   /* 淡粉白文字 */
+}
+
+
+/* ================================
    路徑顯示（Code 卡片）
    ================================ */
 .path-box {
