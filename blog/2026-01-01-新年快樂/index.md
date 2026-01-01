@@ -13,7 +13,7 @@ tags: [新年快樂, 五月天,]
 
 ## 🎵 五月天 *FLY TO 2026*：跨年夜的科技節拍  
 
-跨年夜最讓人迫不及待的，就是那段 *倒數與音樂同時爆發的魔力*。五月天以 *FLY TO 2026* 的主題陪大家一起迎接新年，原本午夜就會開始的活動，因為相信音樂資訊延後了一些時間，直到 **01:00 才真正展開** —— 像極了科技系統上線前的突發狀況，但一旦開始就閃耀無比。1
+跨年夜最讓人迫不及待的，就是那段 *倒數與音樂同時爆發的魔力*。五月天以 *FLY TO 2026* 的主題陪大家一起迎接新年，原本午夜就會開始的活動，因為相信音樂資訊延後了一些時間，直到 **01:00 才真正展開** —— 像極了科技系統上線前的突發狀況，但一旦開始就閃耀無比。
 
 現在，就讓我們一起重溫這段難忘的跨年瞬間👇
 
@@ -24,8 +24,9 @@ frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
-> 若影片載入不出現，可以點這裡觀看原片 → https://www.youtube.com/watch?v=e5NNaehFyOw 2
-
+:::warn
+> 若影片載入不出現，可以點這裡觀看原片 → https://www.youtube.com/watch?v=e5NNaehFyOw 
+:::
 ---
 
 ## 🤖 2026：數位與現實的邊界成為起點  
