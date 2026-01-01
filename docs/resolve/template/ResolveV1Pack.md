@@ -35,6 +35,7 @@ date: 2025-12-31
 
 </div>
 
+---
 
 # ResolveV1Pack 安裝說明
 
@@ -48,34 +49,13 @@ date: 2025-12-31
 該資料夾裡面有 ResolvePackV1.drfx
 
 ### 步驟二：安裝！
-- 方式一：直接雙擊 ResolvePackV1.drfz，這將會開啟 Resolve 。  
+- 方式一：直接雙擊 ResolvePackV1.drfx，這將會開啟 Resolve 。  
 接著，選擇安裝，重啟達芬奇
 
 ---
 
 <div className="fusion-callout">
 
-:::info 小技巧
-可以將 Fusion 資料夾裡面「所有資料夾複製到下面路徑」
-這樣省去了安裝的麻煩 🤣🤣🤣
-:::
-<div className="fusion-path">
-
-**Mac 路徑：**
-
-
-``` MarkDown
-/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates
-```
-
-**Windows 路徑：**
-
-  ``` MarkDown
-  C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates  
-  ```
-</div>
-
-</div>
 
 ---
 
@@ -93,6 +73,30 @@ date: 2025-12-31
   C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates  
   ```
 
+
+:::info 小技巧
+可以將 Fusion 資料夾裡面「所有資料夾複製到下面路徑」
+這樣省去了安裝的麻煩 🤣🤣🤣
+:::
+<div className="fusion-path">
+
+**Mac 路徑：**
+
+
+``` MarkDown
+/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/
+```
+
+**Windows 路徑：**
+
+  ``` MarkDown
+  C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\
+  ```
+</div>
+
+</div>
+
+---
 ## 2. 安裝字體（Font）  
 步驟一：解壓縮 Font 壓縮檔。  
 步驟二：選取所有字體檔案（.ttf 或 .otf），雙擊後點擊「安裝字體」。  
