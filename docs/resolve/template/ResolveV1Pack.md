@@ -11,24 +11,26 @@ date: 2025-12-31
 替達芬奇製作出許多模板，均為免費模板
 
 
-## 📥 下載方式
-
 <div className="download-buttons">
 
 <a
   className="download-btn primary"
   href="https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file"
   target="_blank"
+  rel="noopener noreferrer"
 >
-  ⭐ MediaFire 下載（建議）
+  <span className="icon">⭐</span>
+  <span>MediaFire 下載（建議）</span>
 </a>
 
 <a
   className="download-btn secondary"
   href="https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view"
   target="_blank"
+  rel="noopener noreferrer"
 >
-  ☁️ Google Drive 下載
+  <span className="icon">☁️</span>
+  <span>Google Drive 下載</span>
 </a>
 
 </div>

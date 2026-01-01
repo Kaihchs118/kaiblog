@@ -89,6 +89,21 @@ const config = {
     ],
   ],
 
+/* ========================
+   * 插件區！搜尋功能
+   * ======================== */
+
+  plugins: [
+  [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    {
+      hashed: true,
+      language: ["zh"],
+      highlightSearchTermsOnTargetPage: true,
+      explicitSearchResultPath: true,
+    },
+  ],
+],
   /* ========================
    * 主題與 UI 設定
    * ======================== */
@@ -111,6 +126,7 @@ const config = {
           src: 'img/channels4_profile.jpg',
         },
         items: [
+          /* ----------
           // 📘 文件（/docs）
         {
             type: 'docSidebar',
@@ -118,9 +134,13 @@ const config = {
             position: 'left',
             label: '筆記',
           },
+---------- */
 
           // 📰 部落格（/blog）
           {to: '/blog', label: '貼文', position: 'left'},
+
+          // 📔 筆記（/docs）
+          {to: '/docs', label: '筆記', position: 'left'},
 
           // 🎲 隨機（/random）
           {to: '/random', label: '隨機', position: 'left'},

@@ -15,10 +15,17 @@ authors: [KAI]
 ## 📋 文件
 這裡暫時還在規劃
 
+## 達芬奇免費模板😍😍😍
+新年快樂！！！
+我終於製作完成 ResolveV1Pack 替達芬奇製作出許多模板，均為免費模板
+
+[立刻前往！](/docs/resolve/template/resolvepackV1-update)
+
 ## 🎊 BlogBlog.Club 部落部落俱樂部
 [前往 BlogBlog.Club →](https://blogblog.club/)  
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
 沒意外的話我每個月都會參加「BlogBlog 同樂會」
 
+## YouTube 最新影片🎉
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WapZvYyQCJM?si=ZNAyAK1RMB3VCP6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/WapZvYyQCJM?si=ZNAyAK1RMB3VCP6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
