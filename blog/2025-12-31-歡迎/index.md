@@ -24,29 +24,52 @@ tags: [first-posts]
 
 ## 啟發
 本網站是受到 ```WIWI 官大為``` 啟發...
-大家可以去看看
+
+大家可以去看看他的網站！
+
 本網站使用 ```Docusaurus``` 撰寫
-另外也有：https://kaihchs118.github.io/kai_wiki/ 
-我會著重在這個網站
+
+另外之前也有使用 HUGO 架設網站：https://kaihchs118.github.io/kai_wiki/ 
+
+## 我會著重在KAI BLOG
 1. 記錄生活
-2. 定期投稿？？🤣
-3. 網站好看！
+2. 定期投稿 🤣
+3. 做筆記！！！
 
 ## 2025 / 11 正式啟用 KAI WIKI
 在 10月我嘗試用 HUGO 架設 KAI STUDIO
-當我認為一切都順利時... 結果後欄掛掉了
+
+當我認為一切都順利時... 
+
+結果後台掛掉了
+
 因此我轉向到```HUGO```的主題 BlowFish 
+
 在 2025 / 11 月架設 KAI WIKI
-網站連結：[KAI WIKI](https://kaihchs118.github.io/kai_wiki/ )
+
+:::info 網站連結
+[點我前往：KAI WIKI](https://kaihchs118.github.io/kai_wiki/ )
+:::
+
 目前持續更新直到 2025 / 12 / 30 
-WIWI 發佈了新網站，讓我更想繼續製作新的🤣
+
+WIWI 發佈了新網站，讓我更想繼續製作新的網站，超好笑🤣
 
 ## 2025 / 12 本站建立完成！
 本網站使用 ```Docusaurus``` 撰寫
-然後架設時非常不順利！他花了 2 小時研究
-試了至少3版才成功，等我整理我的心路歷程哈哈哈哈！
+
+然後架設時非常不順利！
+
+我花了 2 小時研究
+
+試了至少3版才成功，
+
+等我整理我的心路歷程跟教學吧！
 
 ## 未來
 我打算有空來參與這個活動
-活動連結：[BlogBlog 同樂會](https://blogblog.club/party)
+:::info 活動連結
+[點我前往：BlogBlog 同樂會](https://blogblog.club/party)
+:::
+
 就...等我發文吧！

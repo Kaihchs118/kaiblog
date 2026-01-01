@@ -14,7 +14,7 @@ const config = {
    * ======================== */
 
   title: 'KAI BLOG',              // 網站標題（顯示在瀏覽器分頁）
-  tagline: 'KAI 部落格',  // 副標（首頁標語）
+  //tagline: 'KAI 部落格',   副標（首頁標語）
   favicon: 'img/channels4_profile.jpg',    // 網站 favicon
 
   /* ========================
