@@ -4,10 +4,12 @@ authors: [KAI]
 slug: /
 ---
 
-# <span className="hero-title">歡迎來到 KAI BLOG !</span>
+# <span className="blue-title">歡迎來到 KAI BLOG !</span>
 
-嗨，我是 **KAI** 👋  
-歡迎你來到 KAI BLOG！這裡是我發廢文和分享經驗的地方。這個網站分為以下幾個區域：
+嗨，我是 **KAI**   
+歡迎你來到 <span className="blue-stroke-text">KAI BLOG !</span> 
+
+這裡是我發廢文和分享經驗的地方。這個網站分為以下幾個區域：
 
 ## 🌟 貼文
 你可以把這裡想像成我的社群媒體頁面，從 2026 年起，主要會把一些文章發在這裡。  
@@ -27,7 +29,9 @@ slug: /
 
 ## 達芬奇免費模板😍😍😍
 新年快樂！！！
-我終於製作完成 ResolveV1Pack 替達芬奇製作出許多模板，均為免費模板
+我終於製作完成 ResolveV1Pack 
+
+替達芬奇製作出許多模板，均為免費模板
 
 <div className="hero-actions">
 

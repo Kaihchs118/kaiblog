@@ -15,8 +15,8 @@ draft: true
 ### 💾 作業系統
 
 - Linux
-  - [Linux Mint](https://linuxmint.com/) - 現在我大部分的電腦都是跑 Linux Mint 了
-  - [Omarchy](https://omarchy.org/) - 因為很潮呀
+  - [Fedora KDE](https://fedoraproject.org/kde/) - 現在我大部分的電腦都是跑 Fedora KDE 了
+  - [Omarchy](https://omarchy.org/) - WIWI 説很潮
 - macOS - 音樂製作、剪片用的系統（我沒更新到[液態玻璃](https://wiwi.blog/blog/liquid-glass)版）
 
 ### 🌏 瀏覽器

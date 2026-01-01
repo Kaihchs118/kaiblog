@@ -1,8 +1,8 @@
 ---
-slug: welcome
-title: Welcome
+slug: first-posts
+title: 第一篇文章！
 authors: [KAI]
-tags: [facebook, hello, docusaurus]
+tags: [first-posts]
 ---
 
 歡迎來到 KAI BLOG 
@@ -22,3 +22,31 @@ tags: [facebook, hello, docusaurus]
 ---
 > 或者可以在下面的留言板輸入想要問的問題喔（**暫時不開放**）
 
+## 啟發
+本網站是受到 ```WIWI 官大為``` 啟發...
+大家可以去看看
+本網站使用 ```Docusaurus``` 撰寫
+另外也有：https://kaihchs118.github.io/kai_wiki/ 
+我會著重在這個網站
+1. 記錄生活
+2. 定期投稿？？🤣
+3. 網站好看！
+
+## 2025 / 11 正式啟用 KAI WIKI
+在 10月我嘗試用 HUGO 架設 KAI STUDIO
+當我認為一切都順利時... 結果後欄掛掉了
+因此我轉向到```HUGO```的主題 BlowFish 
+在 2025 / 11 月架設 KAI WIKI
+網站連結：[KAI WIKI](https://kaihchs118.github.io/kai_wiki/ )
+目前持續更新直到 2025 / 12 / 30 
+WIWI 發佈了新網站，讓我更想繼續製作新的🤣
+
+## 2025 / 12 本站建立完成！
+本網站使用 ```Docusaurus``` 撰寫
+然後架設時非常不順利！他花了 2 小時研究
+試了至少3版才成功，等我整理我的心路歷程哈哈哈哈！
+
+## 未來
+我打算有空來參與這個活動
+活動連結：[BlogBlog 同樂會](https://blogblog.club/party)
+就...等我發文吧！

@@ -41,6 +41,20 @@ html[data-theme='dark'] {
   letter-spacing: 0.5px;
 }
 
+
+.blue-title {
+  color: var(--ifm-color-primary);
+  letter-spacing: 0.5px;
+  font-weight: 1000;
+}
+
+.blue-stroke-text {
+  color: var(--ifm-color-primary);
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin-left: 0.20rem;
+}
+
 /* ================================
    下載按鈕（共用）
    ================================ */
@@ -107,10 +121,11 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   Hero 行動區（解決擠在一起）
+   Hero 行動區（解決擠在一起）top :距離上一行多遠
    ================================ */
 .hero-actions {
-  margin-top: 2rem;
+  margin-top: 3rem; 
+  margin-bottom: 3rem;
 }
 
 /* ================================
