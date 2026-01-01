@@ -141,10 +141,11 @@ const config = {
 
           // 📔 筆記（/docs）
           {to: '/docs', label: '筆記', position: 'left'},
-
+/* ----------
           // 🎲 隨機（/random）
           {to: '/random', label: '隨機', position: 'left'},
 
+---------- */
           // 🥶 近況（/now）
           {to: '/now', label: '近況', position: 'left'},
           // 👤 關於頁面（/about）
