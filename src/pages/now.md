@@ -1,6 +1,7 @@
 ---
 title: "近況"
 authors: [KAI]
+slug: /now
 ---
 # 近況
 > 好像大多網站都會記錄作者的最新狀態

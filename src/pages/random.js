@@ -1,22 +1,20 @@
 import { useEffect } from 'react';
-import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import { useHistory } from '@docusaurus/router';
+import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 
 export default function RandomPage() {
   const history = useHistory();
   const { withBaseUrl } = useBaseUrlUtils();
 
   useEffect(() => {
-    // ✅ 只放「確定存在」的頁面
-    /* ---------- 
     const pages = [
-      '/blog',
       '/docs',
-      '/',
+      '/blog',
     ];
-    ---------- */
 
-    const randomPath = pages[Math.floor(Math.random() * pages.length)];
+    const randomPath =
+      pages[Math.floor(Math.random() * pages.length)];
+
     history.replace(withBaseUrl(randomPath));
   }, [history, withBaseUrl]);
 

@@ -1,6 +1,7 @@
 ---
 title: 歡迎來到 KAI BLOG !
 authors: [KAI]
+slug: /
 ---
 
 # <span className="hero-title">歡迎來到 KAI BLOG !</span>
@@ -10,11 +11,18 @@ authors: [KAI]
 
 ## 🌟 貼文
 你可以把這裡想像成我的社群媒體頁面，從 2026 年起，主要會把一些文章發在這裡。  
-👉 **[前往貼文列表 →](/blog)**
 
-## 📋 文件
-這裡暫時還在規劃
+:::info
+更多詳細資訊請： **[前往貼文列表 →](/blog)**
+:::
 
+## 📋 筆記
+這裡會是記錄筆記的地方，
+有時候我想要公開就會不定期有新內容喔！
+
+:::info
+更多詳細資訊請： **[前往筆記首頁！ →](/docs)**
+:::
 
 
 ## 達芬奇免費模板😍😍😍
@@ -25,10 +33,10 @@ authors: [KAI]
 
 <a
   className="download-btn primary"
-  href="/docs/resolve/template/resolvepackV1-update"
+  href="/kaiblog/docs/resolve/template/resolvepackV1-update"
 >
   <span className="icon">🚀</span>
-  <span>立刻前往！</span>
+  <span>立刻取得！</span>
 </a>
 
 </div>
@@ -37,10 +45,15 @@ authors: [KAI]
 #
 ---
 ## 🎊 BlogBlog.Club 部落部落俱樂部
-[前往 BlogBlog.Club →](https://blogblog.club/)  
+ 
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
 沒意外的話我每個月都會參加「BlogBlog 同樂會」
 
+:::info
+更多詳細資訊請： [前往 BlogBlog.Club →](https://blogblog.club/)
+:::
+
+---
 ## YouTube 最新影片 🎉
 
 :::youtube

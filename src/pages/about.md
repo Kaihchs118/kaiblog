@@ -1,6 +1,7 @@
 ---
 title: 關於我
 authors: [KAI]
+slug: about
 ---
 
 嗨，我是 **KAI** 👋  
