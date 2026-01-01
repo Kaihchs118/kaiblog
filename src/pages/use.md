@@ -1,7 +1,6 @@
 ---
 title: 現在愛用什麼
 slug: /use
-draft: true
 ---
 
 # KAI 現在愛用什麼 `/use`
