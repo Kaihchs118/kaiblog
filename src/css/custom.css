@@ -237,3 +237,13 @@ a.download-btn.primary {
     border-radius: 10px;
   }
 }
+
+a.link {
+  text-decoration: none;
+  font-weight: 800;
+  border-bottom: 3px solid #69B1D1;
+}
+
+a.link:hover {
+  /* 可選：如果你之後想 hover 有變化再加 */
+}

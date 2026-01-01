@@ -6,7 +6,7 @@ authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-12-31
 ---
-# 新年快樂！
+# 達芬奇模板V1
 我終於製作完成 ```ResolveV1Pack```
 替達芬奇製作出許多模板，均為免費模板
 
@@ -22,6 +22,11 @@ date: 2025-12-31
   <span className="icon">⭐</span>
   <span>MediaFire 下載（建議）</span>
 </a>
+
+<span>
+
+
+</span>
 
 <a
   className="download-btn secondary"
@@ -54,10 +59,7 @@ date: 2025-12-31
 
 ---
 
-<div className="fusion-callout">
 
-
----
 
 - 方式二：將 EditPack.drfx 拖曳到以下資料夾：  
 
@@ -94,7 +96,7 @@ date: 2025-12-31
   ```
 </div>
 
-</div>
+
 
 ---
 ## 2. 安裝字體（Font）  

@@ -1,5 +1,5 @@
 ---
-title: 歡迎來到 KAI BLOG !
+title: KAI BLOG
 authors: [KAI]
 slug: /
 ---
@@ -15,7 +15,13 @@ slug: /
 你可以把這裡想像成我的社群媒體頁面，從 2026 年起，主要會把一些文章發在這裡。  
 
 :::info
-更多詳細資訊請： **[前往貼文列表 →](/blog)**
+<a
+  class="link"
+  href="/blog"
+  target="_blank"
+>
+  <span>前往貼文列表 →</span>
+</a>
 :::
 
 ## 📋 筆記
@@ -23,7 +29,13 @@ slug: /
 有時候我想要公開就會不定期有新內容喔！
 
 :::info
-更多詳細資訊請： **[前往筆記首頁！ →](/docs)**
+<a
+  class="link"
+  href="/docs"
+  target="_blank"
+>
+  <span>前往筆記首頁！ →</span>
+</a>
 :::
 
 
@@ -33,36 +45,40 @@ slug: /
 
 替達芬奇製作出許多模板，均為免費模板
 
-<div className="hero-actions">
-
+:::info
 <a
-  className="download-btn primary"
+  class="link"
   href="/kaiblog/docs/resolve/template/resolvepackV1-update"
+  target="_blank"
 >
-  <span className="icon">🚀</span>
-  <span>立刻取得！</span>
+  <span>前往下載！ →</span>
 </a>
+:::
 
-</div>
-
-#    
-#
 ---
 ## 🎊 BlogBlog.Club 部落部落俱樂部
  
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
 沒意外的話我每個月都會參加「BlogBlog 同樂會」
 
+
 :::info
-更多詳細資訊請： [前往 BlogBlog.Club →](https://blogblog.club/)
+<a
+  class="link"
+  href="https://blogblog.club/"
+  target="_blank"
+>
+  <span>前往BlogBlog.Club → </span>
+</a>
 :::
+
 
 ---
 ## YouTube 最新影片 🎉
 
 :::youtube
 <iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
 
 **📌 本影片內容說明：**  
 這部影片改寫徹爾尼，最近想跳脫到開源的編曲軟體試試看：```Ardour```
-:::
