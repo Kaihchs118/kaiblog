@@ -141,11 +141,13 @@ const config = {
 
           // 📔 筆記（/docs）
           {to: '/docs', label: '筆記', position: 'left'},
-
+/* ----------
           // 📔 愛用（/use）
-          {to: '/use', label: '愛用', position: 'left'},          
+          {to: '/use', label: '愛用', position: 'left'},       
+---------- */
+   
           // 📔 愛用（/use）
-          {to: '/archive', label: '列表', position: 'left'},               
+          {to: '/blog/archive', label: '列表', position: 'left'},               
           {
             label: '隨機',
             to: '/random',
