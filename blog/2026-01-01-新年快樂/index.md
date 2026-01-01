@@ -1,31 +1,60 @@
 ---
 slug: happy-new-year
-title: 新年快樂！
+title: 新年快樂！在科技與音樂的節拍下飛向 2026 🚀
 authors: [KAI]
-tags: [facebook, hello, docusaurus]
+tags: [新年快樂, 五月天,]
 ---
 
-# 新年快樂！！
+# 新年快樂！一起飛向 2026 ✨  
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+2025 年的最後一刻，你我或許都在螢幕前按下最後一個儲存、完成最後一封信，或是靜靜聽著直播跨年的倒數。就在這樣數位與期待交織的瞬間，我們一起邁入了 **2026 年** —— 一個充滿科技創新與無限可能的新起點。
 
-Here are a few tips you might find useful.
+---
 
-<!-- truncate -->
+## 🎵 五月天 *FLY TO 2026*：跨年夜的科技節拍  
 
-Simply add Markdown files (or folders) to the `blog` directory.
+跨年夜最讓人迫不及待的，就是那段 *倒數與音樂同時爆發的魔力*。五月天以 *FLY TO 2026* 的主題陪大家一起迎接新年，原本午夜就會開始的活動，因為相信音樂資訊延後了一些時間，直到 **01:00 才真正展開** —— 像極了科技系統上線前的突發狀況，但一旦開始就閃耀無比。1
 
-Regular blog authors can be added to `authors.yml`.
+現在，就讓我們一起重溫這段難忘的跨年瞬間👇
 
-The blog post date can be extracted from filenames, such as:
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/e5NNaehFyOw"
+title="MAYDAY & Ü｜任性為五｜FLY TO 2026｜新年快樂"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
 
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
+> 若影片載入不出現，可以點這裡觀看原片 → https://www.youtube.com/watch?v=e5NNaehFyOw 2
 
-A blog post folder can be convenient to co-locate blog post images:
+---
 
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+## 🤖 2026：數位與現實的邊界成為起點  
 
-The blog supports tags as well!
+2026 年，科技不止存在於實驗室或專案 roadmap，它真正進入我們生活的每一個環節：
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+- **人工智慧** 不再只是熱門詞，而是我們協作、創作、甚至思考的夥伴  
+- **雲端運算與大資料** 加速各行各業的數位化轉型  
+- **使用者體驗設計** 讓技術呈現不再冰冷，而是更有溫度與人性思考  
+
+在新的一年裡，科技不再只是工具，而是 **日常中的助力** ─ 幫你節省時間、提升創意，甚至陪你度過接下來的每一個日日夜夜。
+
+---
+
+## 📸 最後送給大家這張跨年時刻的影像  
+
+![跨年科技煙火與倒數的人潮](https://images.unsplash.com/photo-1517638851339-f3e8c4e8fbc1?auto=format&fit=crop&w=1200&q=80)
+
+> 圖片說明：在煙火與螢幕光芒裡，科技與人群共同倒數迎接 2026 ✨（示意圖）
+
+---
+
+## 🔚 結語：新的一年，一起創造更美的故事  
+
+2026 是故事剛剛開始的地方。  
+在這一年裡，我們要：
+
+✨ 用技術建立更有意義的生活  
+✨ 用創意創造不同的可能  
+✨ 用音樂和夥伴一起倒數、一起向前  
+
+**新年快樂！願我們都在 2026 找到屬於自己的節拍與光芒。**
