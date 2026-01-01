@@ -115,7 +115,7 @@ const config = {
 
       /* ---------- 明暗模式 ---------- */
       colorMode: {
-        respectPrefersColorScheme: true, // 跟隨系統亮/暗色
+        respectPrefersColorScheme: false, // 跟隨系統亮/暗色
       },
 
       /* ---------- 導覽列（上方） ---------- */

@@ -47,29 +47,35 @@ date: 2025-12-31
 在裡面有 Template 資料夾
 該資料夾裡面有 ResolvePackV1.drfx
 
-### 步驟二：  
+### 步驟二：安裝！
 - 方式一：直接雙擊 ResolvePackV1.drfz，這將會開啟 Resolve 。  
 接著，選擇安裝，重啟達芬奇
 
 ---
 
-:::note 小技巧
-可以將Fusion資料夾“裡面”所有資料夾複製到
-**下面路徑**
-這樣省去了安裝的麻煩🤣🤣🤣
+<div className="fusion-callout">
+
+:::info 小技巧
+可以將 Fusion 資料夾裡面「所有資料夾複製到下面路徑」
+這樣省去了安裝的麻煩 🤣🤣🤣
 :::
+<div className="fusion-path">
 
-Mac 路徑：
+**Mac 路徑：**
 
-  ``` MarkDown
-  /Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates  
-  ```
 
-  Windows 路徑：
+``` MarkDown
+/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates
+```
+
+**Windows 路徑：**
 
   ``` MarkDown
   C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates  
   ```
+</div>
+
+</div>
 
 ---
 

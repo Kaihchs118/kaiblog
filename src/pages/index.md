@@ -15,12 +15,27 @@ authors: [KAI]
 ## 📋 文件
 這裡暫時還在規劃
 
+
+
 ## 達芬奇免費模板😍😍😍
 新年快樂！！！
 我終於製作完成 ResolveV1Pack 替達芬奇製作出許多模板，均為免費模板
 
-[立刻前往！](/docs/resolve/template/resolvepackV1-update)
+<div className="hero-actions">
 
+<a
+  className="download-btn primary"
+  href="/docs/resolve/template/resolvepackV1-update"
+>
+  <span className="icon">🚀</span>
+  <span>立刻前往！</span>
+</a>
+
+</div>
+
+#    
+#
+---
 ## 🎊 BlogBlog.Club 部落部落俱樂部
 [前往 BlogBlog.Club →](https://blogblog.club/)  
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  

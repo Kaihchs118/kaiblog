@@ -1,158 +1,94 @@
-/* ================================
-   全站共用樣式設定（custom.css）
-   這個檔案的 CSS 會影響整個網站
-   Docusaurus Classic 預設使用 Infima
-   ================================ */
 
 
 /* ================================
-   亮色模式（預設主題）
-   :root 代表整個網站的最上層
+   基礎主題設定（Infima Variables）
    ================================ */
 :root {
-  /* ============================
-     網站主色（藍色系）
-     你指定的品牌藍：#429EEE
-     影響範圍：
-     - 連結
-     - 按鈕
-     - 標題 hover
-     - 側邊欄選中項目
-     ============================ */
-  --ifm-color-primary: #429EEE;
+  --ifm-color-primary: #429eee;
 
-  /* ============================
-     主色「較深」版本
-     常用在：
-     - hover 狀態
-     - active 狀態
-     ============================ */
   --ifm-color-primary-dark: #2f84d6;
   --ifm-color-primary-darker: #297ac6;
   --ifm-color-primary-darkest: #1f5e9a;
 
-  /* ============================
-     主色「較亮」版本
-     常用在：
-     - 背景色
-     - 標籤
-     - 提示區塊
-     ============================ */
   --ifm-color-primary-light: #5aabf2;
   --ifm-color-primary-lighter: #6bb4f4;
   --ifm-color-primary-lightest: #8cc7f8;
 
-  /* ============================
-     程式碼區塊字體大小
-     預設是 100%，稍微縮小比較好讀
-     ============================ */
   --ifm-code-font-size: 95%;
-
-  /* ============================
-     程式碼區塊中
-     被特別標示那一行的背景顏色
-     （亮色模式）
-     ============================ */
   --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 }
 
-
-/* ================================
-   深色模式設定
-   Docusaurus 會在 html 標籤上
-   自動加上 data-theme="dark"
-   ================================ */
 html[data-theme='dark'] {
-  /* ============================
-     深色模式主色
-     顏色會比亮色模式再亮一點
-     才不會在深底下看不清楚
-     ============================ */
   --ifm-color-primary: #6bb4f4;
 
-  /* ============================
-     深色模式下的主色深階
-     ============================ */
   --ifm-color-primary-dark: #5aabf2;
-  --ifm-color-primary-darker: #429EEE;
+  --ifm-color-primary-darker: #429eee;
   --ifm-color-primary-darkest: #2f84d6;
 
-  /* ============================
-     深色模式下的主色亮階
-     ============================ */
   --ifm-color-primary-light: #8cc7f8;
   --ifm-color-primary-lighter: #a6d4fb;
   --ifm-color-primary-lightest: #cbe6fd;
 
-  /* ============================
-     深色模式中
-     程式碼高亮行的背景顏色
-     ============================ */
   --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
-
 /* ================================
-   首頁主標題樣式
-   用在 MDX 裡的 className="hero-title"
+   首頁標題
    ================================ */
 .hero-title {
-  color: #429EEE;      /* 固定使用品牌藍 */
-  font-weight: 800;    /* 字體加粗，像真正網站 */
+  color: var(--ifm-color-primary);
+  font-weight: 800;
   letter-spacing: 0.5px;
 }
 
 /* ================================
-   下載按鈕區塊（Download Buttons）
+   下載按鈕（共用）
    ================================ */
 
 .download-buttons {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin: 16px 0;
+  margin: 1.5rem 0;
 }
 
-/* 強制穩定按鈕高度 */
+/* 基礎按鈕 */
 .download-btn {
-  display: inline-flex !important;
-  align-items: center !important;
+  display: inline-flex;
+  align-items: center;
   gap: 6px;
 
-  padding: 6px 14px;
-  height: 36px;                 /* ⭐ 直接鎖高度 */
-  line-height: 1 !important;    /* ⭐ 硬壓 line-height */
+  height: 36px;
+  padding: 0 14px;
 
   font-size: 14px;
   font-weight: 600;
+  line-height: 1;
 
   border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
 
-  transform: translateY(0);     /* ⭐ 重設基準 */
-  transition:
-    transform 0.2s ease,
-    background-color 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease,
+              background-color 0.2s ease,
+              box-shadow 0.2s ease;
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* 主下載 */
+/* 主按鈕 */
 .download-btn.primary {
-  background: #429eee;
-  color: #ffffff;
+  background: var(--ifm-color-primary);
+  color: #fff;
 }
 
-/* ⭐ hover 才動 */
 .download-btn.primary:hover {
-  background: #2b82d9;
-  transform: translateY(-4px);  /* 動畫很明顯 */
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-/* 次下載 */
+/* 次按鈕 */
 .download-btn.secondary {
   background: #f1f5f9;
   color: #0f172a;
@@ -164,9 +100,70 @@ html[data-theme='dark'] {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
 }
 
-/* 下載 ICON */
+/* icon */
 .download-btn .icon {
-  font-size: 1em;
-  line-height: 1;
   display: inline-flex;
+  font-size: 1em;
 }
+
+/* ================================
+   Hero 行動區（解決擠在一起）
+   ================================ */
+.hero-actions {
+  margin-top: 2rem;
+}
+
+/* ================================
+   Fusion 小技巧 Callout
+   ================================ */
+.fusion-callout .theme-admonition-info {
+  --ifm-alert-background-color: #ecfdf3;
+  --ifm-alert-border-color: #22c55e;
+  --ifm-alert-foreground-color: #166534;
+}
+
+html[data-theme='dark'] .fusion-callout .theme-admonition-info {
+  --ifm-alert-background-color: #052e1a;
+  --ifm-alert-border-color: #22c55e;
+  --ifm-alert-foreground-color: #bbf7d0;
+}
+
+/* ================================
+   路徑顯示（Code 卡片）
+   ================================ */
+.path-box {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #334155;
+
+  margin: 0.5rem 0 1rem;
+  word-break: break-all;
+}
+
+html[data-theme='dark'] .path-box {
+  background: #020617;
+  border-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* 強制 override 按鈕 */
+a.download-btn.primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+
+  padding: 14px 28px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+
+  background-color: #429eee !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  transition: background-color .15s ease, transform .1s ease;
+}
+
