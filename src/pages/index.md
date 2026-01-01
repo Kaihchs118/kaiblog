@@ -41,6 +41,16 @@ authors: [KAI]
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
 沒意外的話我每個月都會參加「BlogBlog 同樂會」
 
-## YouTube 最新影片🎉
+## YouTube 最新影片 🎉
 
-<iframe src="https://www.youtube.com/embed/WapZvYyQCJM?si=ZNAyAK1RMB3VCP6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::youtube
+<iframe
+  src="https://www.youtube.com/embed/WapZvYyQCJM"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+**📌 本影片內容說明：**  
+這部影片玩了``` Roblox ```誰是殺手2，超好玩！！！
+:::
