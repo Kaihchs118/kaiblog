@@ -163,11 +163,12 @@ const config = {
           /* ----------
           // 📔 愛用（/use）
           {to: '/use', label: '愛用', position: 'left'},       
+---------- */
 
           // 👤 關於頁面（/about）
           // 👉 這是「Pages」功能，對應 src/pages/about.md
           {to: '/about', label: '關於', position: 'left'},
----------- */
+
 
           // GitHub 連結
           {

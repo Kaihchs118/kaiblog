@@ -244,6 +244,45 @@ a.link {
   border-bottom: 3px solid #69B1D1;
 }
 
-a.link:hover {
-  /* 可選：如果你之後想 hover 有變化再加 */
+/* === Archive Hero 瘦身 === */
+.hero--primary {
+  padding: 2.5rem 0 2rem;
+}
+
+.hero--primary .hero__subtitle {
+  display: none;
+}
+
+/* =========================
+   Blog Archive 主內容改造
+   ========================= */
+
+
+
+/* 年份標題（2026 / 2025） */
+main > h3,
+main > strong {
+  display: block;
+  font-size: 2.1rem;
+  margin: 3rem 0 1rem;
+  padding-left: 1rem;
+  border-left: 6px solid var(--ifm-color-primary);
+}
+
+
+/* 清掉 list */
+main ul {
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+main ul li {
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+
+
+/* 幹掉所有陰影（Infima 超愛用） */
+* {
+  box-shadow: none !important;
 }

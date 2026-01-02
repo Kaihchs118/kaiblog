@@ -1,8 +1,7 @@
 ---
-slug: first-posts
-title: 第一篇文章！
+slug: about
+title: 關於我
 authors: [KAI]
-tags: [first-posts]
 ---
 
 歡迎來到 KAI BLOG 
