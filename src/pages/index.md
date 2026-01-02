@@ -17,7 +17,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/blog"
+  href="/kaiblog/blog"
   target="_blank"
 >
   <span>前往貼文列表 →</span>
@@ -31,7 +31,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/docs"
+  href="/kaiblog/docs"
   target="_blank"
 >
   <span>前往筆記首頁！ →</span>
