@@ -18,7 +18,7 @@ authors: [KAI]
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ohtn2OsonpA?si=NtbW7ZG1-xOvMN0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-:::warning
+:::warning 提醒！
 若影片載入不出現，可以點這裡觀看原片 →
 https://youtu.be/Ohtn2OsonpA
 :::
@@ -49,7 +49,7 @@ Leo 買了這台約一萬七的馬桶座，他認為這不只是衛生問題，�
 
 ​解決痛點： 他提到大家一定都有**「被衛生紙擦到破皮」**或是擦很久都擦不乾淨的尷尬經驗。
 
-:::tips 
+:::tip 關鍵！
 他強調「用水洗才是真正的乾淨」，而且這對女性清潔也很有幫助。
 ​
 打破偏見： 以前覺得``` 噴嘴 ```髒，但他觀察到這台會頻繁噴出 電解水 進行 自潔。
