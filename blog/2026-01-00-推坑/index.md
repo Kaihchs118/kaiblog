@@ -2,6 +2,7 @@
 slug: /affinity
 title: 超好用！修圖不用再砸大錢！
 authors: [KAI]
+draft: true
 ---
 
 ## 十年前...

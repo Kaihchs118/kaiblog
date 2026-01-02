@@ -38,6 +38,18 @@ slug: /
 </a>
 :::
 
+## 最新文章✨
+
+0102 今天正式發布的最新文章，是因為看了一部影片，想要分享給大家！
+:::danger 最新資訊
+<a
+  class="link"
+  href="/kaiblog/blog/house-yt01"
+  target="_blank"
+>
+  <span>前往最新貼文！ →</span>
+</a>
+:::
 
 ## 達芬奇免費模板😍😍😍
 新年快樂！！！
