@@ -279,10 +279,22 @@ main ul {
 main ul li {
   list-style: none;
   margin-bottom: 0.8rem;
-}
+} 
 
 
 /* 幹掉所有陰影（Infima 超愛用） */
 * {
   box-shadow: none !important;
+}
+
+
+
+.photo {
+.photo {
+.photo img {
+  width: 256px;
+  max-width: 100%;
+  height: auto;
+}
+}
 }
