@@ -1,5 +1,5 @@
 ---
-Slug: /house-yt01
+slug: house-yt01
 Title: 告別家事焦慮：小坪數家電升級指南
 authors: [KAI]
 ---
