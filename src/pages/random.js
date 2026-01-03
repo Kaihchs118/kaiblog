@@ -11,6 +11,9 @@ export default function RandomPage() {
       '/docs',
       '/kaiblog/blog/house-yt01',
       '/kaiblog/blog/about',
+      '/kaiblog/docs/resolve/template/resolvepackV1-update',
+      '/kaiblog/docs/Docusaurus/tabs.md',
+      '/kaiblog/blog/happy-new-year'
     ];
 
     const randomPath =
