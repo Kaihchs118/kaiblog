@@ -66,6 +66,12 @@ html[data-theme='dark'] {
   margin: 1.5rem 0;
 }
 
+.download-buttons-red {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
 /* 基礎按鈕 */
 .download-btn {
   display: inline-flex;
@@ -90,9 +96,37 @@ html[data-theme='dark'] {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.download-btn-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  height: 36px;
+  padding: 0 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: transform 0.2s ease,
+              background-color 0.2s ease,
+              box-shadow 0.2s ease;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 /* 主按鈕 */
 .download-btn.primary {
   background: var(--ifm-color-primary);
+  color: #fff;
+}
+
+/* 主按鈕 Red*/
+.download-btn-red.primary {
+  background: #ff6b6b;
   color: #fff;
 }
 
@@ -107,6 +141,7 @@ html[data-theme='dark'] {
   background: #f1f5f9;
   color: #0f172a;
 }
+
 
 .download-btn.secondary:hover {
   background: #e2e8f0;
@@ -458,3 +493,4 @@ html[data-theme='dark'] .youtube-s p {
   padding-left: 0%;
 }
 }
+

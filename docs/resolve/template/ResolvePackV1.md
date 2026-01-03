@@ -1,7 +1,8 @@
 ---
 slug: resolvepackV1-update
 title: 達芬奇模板V1
-sidebar_label: 模板更新
+sidebar_position: 1
+sidebar_label: 達芬奇模板V1更新
 authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-12-31
