@@ -9,7 +9,8 @@ export default function RandomPage() {
   useEffect(() => {
     const pages = [
       '/docs',
-      '/blog',
+      '/kaiblog/blog/house-yt01',
+      '/kaiblog/blog/about',
     ];
 
     const randomPath =
