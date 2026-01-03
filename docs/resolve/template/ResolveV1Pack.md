@@ -97,11 +97,14 @@ date: 2025-12-31
   ```
 </div>
 
-:::tip 小技巧
-到這邊如果還是看不懂的話，建議可以先去看新手入門😅😅
+- 到這邊如果還是看不懂的話，建議可以先去看新手入門😅😅
+<div class="youtube">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1fPQ_2bw7Zo?si=WPSLYrNKAEi1MNlw" title="
+[Vicco] 达芬奇模板安装完全指南 | 安装常见问题解答 | 萌新入坑必备 |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-影片連結：https://youtu.be/1fPQ_2bw7Zo
-:::
+<p>[Vicco] 达芬奇模板安装完全指南 | 安装常见问题解答 | 萌新入坑必备 |</p>
+</div>
+
 
 ---
 ## 2. 安裝字體（Font）  

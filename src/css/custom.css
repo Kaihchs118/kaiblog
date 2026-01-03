@@ -229,6 +229,7 @@ a.download-btn.primary {
   padding-left: 25%;
 }
 
+
 /* 手機調整 */
 @media (max-width: 768px) {
   .youtube {
@@ -362,4 +363,98 @@ main ul li {
 html[data-theme='dark'] .gray {
   color: #949597;
   font-weight: 1000;
+}
+
+
+/* ============================
+   YouTube ::: 容器樣式
+   ============================ */
+
+.youtube-s {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.2rem 1.2rem 1.2rem;
+  background: #def5ff;
+  border-radius: 14px;
+}
+
+/* iframe RWD 比例 */
+.youtube-s iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 0rem;
+}
+
+
+/* 說明文字 */
+.youtube-s p {
+  margin: .4rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #949597;
+  padding-left: 40%;
+}
+
+/* 手機調整 */
+@media (max-width: 768px) {
+  .youtube-s {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .youtube-s p {
+  margin: .4rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #949597;
+  padding-left: 0%;
+}
+}
+
+/* ============================
+   YouTube 暗色 ::: 容器樣式
+   ============================ */
+
+html[data-theme='dark'] .youtube-s {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.2rem 1.2rem 1.2rem;
+  background: #2a3b43;
+  border-radius: 14px;
+}
+
+/* iframe RWD 比例 */
+html[data-theme='dark'] .youtube-s iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 0rem;
+}
+
+/* 說明文字 */
+html[data-theme='dark'] .youtube-s p {
+  margin: .4rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #bac2c9;
+  padding-left: 25%;
+}
+
+/* 手機調整 */
+@media (max-width: 768px) {
+  html[data-theme='dark'] .youtube-s {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  html[data-theme='dark'] .youtube-s p {
+  margin: .4rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #bac2c9;
+  padding-left: 0%;
+}
 }
