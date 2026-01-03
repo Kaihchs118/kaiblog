@@ -22,7 +22,7 @@ date: 2025-01-03
   rel="noopener noreferrer"
 >
   <span className="icon">🔥</span>
-  <span>MediaFire 下載（建議）</span>
+  <span>MediaFire 下載 V2（建議）</span>
 </a>
 
 <span>
@@ -32,12 +32,12 @@ date: 2025-01-03
 
 <a
   className="download-btn secondary"
-  href="https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view"
+  href="https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
 >
   <span className="icon">☁️</span>
-  <span>Google Drive 下載 V1</span>
+  <span>Google Drive 下載 V2</span>
 </a>
 
 </div>
