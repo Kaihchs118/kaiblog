@@ -57,14 +57,14 @@ slug: /
 
 ## 達芬奇免費模板😍😍😍
 新年快樂！！！
-我終於製作完成 ResolveV1Pack 
+我終於更新了 ResolveV2Pack 
 
 替達芬奇製作出許多模板，均為免費模板
 
 :::info
 <a
   class="link"
-  href="/kaiblog/docs/resolve/template/resolvepackV1-update"
+  href="/kaiblog/docs/resolve/template/resolvepackV2-update"
   target="_blank"
 >
   <span>前往下載！ →</span>
