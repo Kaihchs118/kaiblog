@@ -7,6 +7,7 @@ authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-01-03
 ---
+
 # 達芬奇模板V2
 我終於製作完成 ```ResolveV2Pack```
 替達芬奇製作出許多模板，均為免費模板
@@ -16,7 +17,7 @@ date: 2025-01-03
 
 <a
   className="download-btn-red primary"
-  href="https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV2.zip/file"
+  href="https://www.mediafire.com/file/svsbwk2eoxoggqo/ResolveV2.zip/file"
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -36,13 +37,23 @@ date: 2025-01-03
   rel="noopener noreferrer"
 >
   <span className="icon">☁️</span>
-  <span>Google Drive 下載</span>
+  <span>Google Drive 下載 V1</span>
 </a>
 
 </div>
 
 ---
-# ResolveV2Pack
+# ResolveV2Pack 更新紀錄 🚀
+
+• 修復縮圖大小
+
+• 新增超多綜藝字卡
+
+• 製作縮圖
+
+• 更新 Vicco Mr.ALEX 模板
+
+
 # ResolveV2Pack 安裝說明
 
 # 1.安裝模板
