@@ -102,6 +102,7 @@ date: 2025-12-31
   ``` MarkDown
   C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\
   ```
+</div>
 
 ---
 ## 2. 安裝字體（Font）  
