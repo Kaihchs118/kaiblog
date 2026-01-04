@@ -109,6 +109,8 @@ date: 2025-01-03
   ```
 </div>
 
+## 🔥 影片教學
+
 - 到這邊如果還是看不懂的話，建議可以先去看新手入門😅😅
 <div class="youtube">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1fPQ_2bw7Zo?si=WPSLYrNKAEi1MNlw" title="
