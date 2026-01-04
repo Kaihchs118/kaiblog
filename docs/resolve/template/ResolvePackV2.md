@@ -43,7 +43,7 @@ date: 2025-01-03
 </div>
 
 ---
-# ResolveV2Pack 更新紀錄 🚀
+## ResolveV2Pack 更新紀錄 🚀
 
 • 修復縮圖大小
 
@@ -54,9 +54,9 @@ date: 2025-01-03
 • 更新 Vicco Mr.ALEX 模板
 
 
-# ResolveV2Pack 安裝說明
+## ResolveV2Pack 安裝說明
 
-# 1.安裝模板
+## 1.安裝模板
 
 ### 步驟一：找到 EditPack.drfx  
 

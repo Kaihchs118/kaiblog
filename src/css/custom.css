@@ -63,14 +63,14 @@ html[data-theme='dark'] {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin: 1.5rem 0;
+  margin: 1.5vw 0;
 }
 
 .download-buttons-red {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin: 1.5rem 0;
+  margin: 1.5vw 0;
 }
 /* 基礎按鈕 */
 .download-btn {
@@ -155,13 +155,7 @@ html[data-theme='dark'] {
   font-size: 1em;
 }
 
-/* ================================
-   Hero 行動區（解決擠在一起）top :距離上一行多遠
-   ================================ */
-.hero-actions {
-  margin-top: 3rem; 
-  margin-bottom: 3rem;
-}
+
 
 /* ================================
    Fusion 小技巧 Callout
@@ -494,6 +488,7 @@ html[data-theme='dark'] .youtube-s p {
 }
 }
 
+<<<<<<< Updated upstream
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -503,4 +498,32 @@ html[data-theme='dark'] .youtube-s p {
 .table-wrapper table {
   min-width: 600px; /* 重點 */
   border-collapse: collapse;
+=======
+.path-box-tab {
+  background: #f8fafc;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #334155;
+
+  margin: 0.8vw 0.1vw;
+  word-break: break-all;
+}
+
+html[data-theme='dark'] .path-box-tab {
+  background: #020617;
+  border-color: #1e293b;
+  color: #e5e7eb;
+}
+
+.path-box-tab ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.path-box-tab li {
+  margin: 0.3rem 0;
+>>>>>>> Stashed changes
 }

@@ -5,24 +5,41 @@ slug: /use
 
 # KAI 現在愛用什麼 `/use`
 
-最後更新：2025-12-31
+最後更新：2025-01-03
 
 ## 🖥️ 電腦軟體
 
-我的軟體使用原則是，在可行的情況下，優先使用自由軟體和開放格式；對於還無法主要使用自由軟體的工作項目，也盡力準備自由軟體的替代方案。
+我的軟體使用原則是，在可行的情況下，優先使用自由軟體或開源軟體；對於還無法主要使用自由軟體的工作項目，也盡力準備自由軟體的替代方案。(感謝 wiwi 提供 🤣🤣)
 
 ### 💾 作業系統
 
 - Linux
-  - [Fedora KDE](https://fedoraproject.org/kde/) - 現在我大部分的電腦都是跑 Fedora KDE 了
-  - [Omarchy](https://omarchy.org/) - WIWI 説很潮
-- macOS - 音樂製作、剪片用的系統（我沒更新到[液態玻璃](https://wiwi.blog/blog/liquid-glass)版）
+
+<div className="path-box-tab">
+  <ul>
+    <li>
+      <a href="https://fedoraproject.org/kde/">Fedora KDE</a>
+      － 要用 Linux 的話都是跑 Fedora KDE（比較現代感 🤣）
+    </li>
+    <li>
+      <a href="https://omarchy.org/">Omarchy</a>
+      － WIWI 說很潮，我沒用過，但還是留下來 😂
+    </li>
+  </ul>
+</div>
+
+- macOS - 音樂製作、剪片用的系統（我更新到 ```macOS 26``` 就後悔了，Cubase 跑到當機...）
+- Windows - 跑虛擬機來...試試不同軟體哈哈哈，當然未來出教學影片也要考量到，建議用 Windows 10
+
 
 ### 🌏 瀏覽器
 
-- [Brave](https://brave.com/) - 內建擋廣告、擋追蹤程式的瀏覽器
+- [](https://brave.com/) - 的瀏覽器
 - [LibreWolf](https://librewolf.net/) - 我目前的次要瀏覽器
 - [Chromium](https://www.chromium.org/Home/) - 其實很少用
+
+:::warning 建議
+建議不要使用像是 ```Chrome```、 ```Edge```、 ```Safari``` 這種 大公司 瀏覽器 ！
 
 ### 🚀 瀏覽器外掛
 
