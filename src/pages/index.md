@@ -18,7 +18,7 @@ slug: /
 <a
   class="link"
   href="/kaiblog/blog"
-  target="_blank"
+  
 >
   <span>前往貼文列表 →</span>
 </a>
@@ -36,7 +36,7 @@ slug: /
 <a
   class="link"
   href="/kaiblog/docs"
-  target="_blank"
+  
 >
   <span>前往筆記首頁！ →</span>
 </a>
@@ -49,7 +49,7 @@ slug: /
 <a
   class="link"
   href="/kaiblog/blog/house-yt01"
-  target="_blank"
+  
 >
   <span>前往最新貼文！ →</span>
 </a>
@@ -65,7 +65,7 @@ slug: /
 <a
   class="link"
   href="/kaiblog/docs/resolve/template/resolvepackV2-update"
-  target="_blank"
+  
 >
   <span>前往下載！ →</span>
 </a>
@@ -82,7 +82,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 <a
   class="link"
   href="https://blogblog.club/"
-  target="_blank"
+  
 >
   <span>前往BlogBlog.Club → </span>
 </a>
@@ -94,7 +94,8 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 <div class="youtube-s">
 
-<iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="Kai | 徹爾尼改寫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="Kai | 徹爾尼改寫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
 
 <p>Kai | 徹爾尼改寫</p>
 </div>
