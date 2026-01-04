@@ -64,7 +64,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/kaiblog/docs/resolve/template/resolvepackV2-update"
+  href="/kaiblog/docs/resolve/resolvepackV2-update"
   
 >
   <span>前往下載！ →</span>
