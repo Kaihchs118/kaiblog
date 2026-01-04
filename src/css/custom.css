@@ -494,3 +494,13 @@ html[data-theme='dark'] .youtube-s p {
 }
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper table {
+  min-width: 600px; /* 重點 */
+  border-collapse: collapse;
+}
