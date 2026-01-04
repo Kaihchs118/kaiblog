@@ -12,7 +12,8 @@ export default function RandomPage() {
       '/kaiblog/blog/house-yt01',
       '/kaiblog/blog/about',
       '/kaiblog/docs/resolve/template/resolvepackV1-update',
-      '/kaiblog/docs/Docusaurus/tabs.md',
+      '/kaiblog/docs/resolve/template/resolvepackV2-update',
+      '/kaiblog/docs/Docusaurus/tabs',
       '/kaiblog/blog/happy-new-year'
     ];
 

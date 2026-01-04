@@ -4,6 +4,15 @@ title: 告別家事焦慮：小坪數家電升級指南
 authors: [KAI]
 ---
 
+
+:::tip 超級榮幸
+[這是我的 2026 年 1 月份 BlogBlog 同樂會投稿](https://blogblog.club/blog/first-blogblog-party)
+
+主題是：推坑
+:::
+
+
+
 ## 🏠 告別家事焦慮：小坪數家電升級指南（影評筆記）
 
 這幾天我一直在思考如何優化自己的居住空間，突然看到 [三稜鏡 Prizm](https://youtube.com/channel/UCgMdGtg4EP3Ti7p2tz8ch3A) 的這部 [新影片](https://youtu.be/Ohtn2OsonpA) 後非常有感觸。他花二十萬買的教訓，剛好解開了我對許多「家電」的迷思。
