@@ -1,11 +1,11 @@
 ---
-title: KAI 愛用什麼
+title: 現在愛用什麼
 slug: /use
 ---
 
-# KAI 愛用什麼 `/use`
+# WIWI 愛用什麼 `/use`
 
-最後更新：2025-01-04
+最後更新：2025-01-03
 
 ## 🖥️ 電腦軟體
 
@@ -15,10 +15,18 @@ slug: /use
 
 - Linux
 
-
-    - [Fedora KDE](https://fedoraproject.org/kde)－ 要用 Linux 的話都是跑 Fedora KDE（比較現代感 🤣）
-    - [Omarchy](https://omarchy.org/)－ WIWI 說很潮，我沒用過，但還是留下來 😂
-
+<div className="path-box-tab">
+  <ul>
+    <li>
+      <a href="https://fedoraproject.org/kde/">Fedora KDE</a>
+      － 要用 Linux 的話都是跑 Fedora KDE（比較現代感 🤣）
+    </li>
+    <li>
+      <a href="https://omarchy.org/">Omarchy</a>
+      － WIWI 說很潮，我沒用過，但還是留下來 😂
+    </li>
+  </ul>
+</div>
 
 - macOS - 音樂製作、剪片用的系統（我更新到 ```macOS 26``` 就後悔了，Cubase 跑到當機...）
 - Windows - 跑虛擬機來...試試不同軟體哈哈哈，當然未來出教學影片也要考量到，建議用 Windows 10
@@ -26,19 +34,16 @@ slug: /use
 
 ### 🌏 瀏覽器
 
-- [Comet](https://brave.com/) - AI的瀏覽器
-- [LibreWolf](https://librewolf.net/) - 我目前的次要開源瀏覽器
+- [](https://brave.com/) - 的瀏覽器
+- [LibreWolf](https://librewolf.net/) - 我目前的次要瀏覽器
 - [Chromium](https://www.chromium.org/Home/) - 其實很少用
 
 :::warning 建議
 建議不要使用像是 ```Chrome```、 ```Edge```、 ```Safari``` 這種 大公司 瀏覽器 ！
 
-他們會偷偷在背景抓你的資料！
-:::
-
 ### 🚀 瀏覽器外掛
 
-- [沉浸式翻譯](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh) - 翻譯文章、影片在瀏覽器裡很好用
+- [Vimium](https://wiwi.blog/blog/vimium) - Vim 按鍵在瀏覽器裡更好用
 - [cpdown](https://wiwi.blog/blog/cpdown) - 把當前頁面輸出成「大型語言模型友善」的 Markdown 檔案
 - [live-stream-downloader](https://github.com/chandler-stimson/live-stream-downloader) - 下載串流影片的工具
 
@@ -255,4 +260,24 @@ slug: /use
 - Roland SP-404 MkII - 很好用的音效介面／取樣機／效果器
 - Hologram Chroma Console - 綜合效果器
 - Hologram Microcosm - 回音系效果器，聲音很酷但不是太實用
+
+---
+
+## 站內連結
+
+- [貼文 /blog](https://wiwi.blog/blog)
+- [隨機貼文 /random](https://wiwi.blog/random)
+- [筆記 /docs](https://wiwi.blog/docs/home/)
+- [近況 /now](https://wiwi.blog/now)
+- [愛用 /use](https://wiwi.blog/use)
+- [日期列表 /blog/archive](https://wiwi.blog/blog/archive)
+- [部落卷 /blogroll](https://wiwi.blog/blogroll)
+- [程式碼](https://code.wiwi.blog/wiwi)
+
+## Wiwi 的其他網站
+
+- [好和弦 NiceChord.com](https://nicechord.com/)
+- [Wiwi.Video](https://wiwi.video/)
+- [YouTube 頻道](https://www.youtube.com/channel/UCVXstWyJeO6No3jYELxYrjg)
+- [BlogBlog.Club 部落部落俱樂部](https://blogblog.club/)
 

@@ -150,7 +150,7 @@ const config = {
           {to: '/docs', label: '筆記', position: 'left'},
 
    
-          // 📔 愛用（/use）
+          // 📔 隨機（/random）
           {to: '/blog/archive', label: '列表', position: 'left'},               
           {
             label: '隨機',
@@ -160,10 +160,10 @@ const config = {
           // 🥶 近況（/now）
           {to: '/now', label: '近況', position: 'left'},
 
-          /* ----------
+
           // 📔 愛用（/use）
           {to: '/use', label: '愛用', position: 'left'},       
----------- */
+
 
           // 👤 關於頁面（/about）
           // 👉 這是「Pages」功能，對應 src/pages/about.md
