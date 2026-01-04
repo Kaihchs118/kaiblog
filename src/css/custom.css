@@ -488,7 +488,7 @@ html[data-theme='dark'] .youtube-s p {
 }
 }
 
-<<<<<<< Updated upstream
+
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -498,7 +498,8 @@ html[data-theme='dark'] .youtube-s p {
 .table-wrapper table {
   min-width: 600px; /* 重點 */
   border-collapse: collapse;
-=======
+}
+
 .path-box-tab {
   background: #f8fafc;
   border: 2px solid #e5e7eb;
@@ -525,5 +526,4 @@ html[data-theme='dark'] .path-box-tab {
 
 .path-box-tab li {
   margin: 0.3rem 0;
->>>>>>> Stashed changes
 }
