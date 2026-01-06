@@ -11,10 +11,11 @@ export default function RandomPage() {
       '/docs',
       '/blog/house-yt01',
       '/blog/about',
-      '/docs/resolve/template/resolvepackV1-update',
-      '/docs/resolve/template/resolvepackV2-update',
+      '/docs/resolve/resolvepackV1-update',
+      '/docs/resolve/resolvepackV2-update',
       '/docs/Docusaurus/tabs',
-      '/blog/happy-new-year'
+      '/blog/happy-new-year',
+      '/blog/HBD',
     ];
 
     const randomPath =
