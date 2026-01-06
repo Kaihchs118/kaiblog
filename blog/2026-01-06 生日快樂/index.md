@@ -12,6 +12,7 @@ authors: [KAI]
 :::tip 來聽新歌！
 [ 愛人啊 ✦ Finding Lovers ] 言承旭 Jerry ╳ 五月天阿信 Ashin｜Official Stage Video
 https://youtu.be/jcd6xxeZf4I?si=Ecwcj5HoH2vqNnvD
+:::
 - 1/2 長笛學妹 (從國中開始認識)
 - 1/3 我爸爸，我堂弟，鋼琴同學(從國小開始同學，現在在南藝大)，我大傳社社長
 - 1/4 另外一位大提琴學妹 (從國小開始認識)
