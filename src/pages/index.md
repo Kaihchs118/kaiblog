@@ -17,7 +17,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/kaiblog/blog"
+  href="/blog"
   
 >
   <span>前往貼文列表 →</span>
@@ -35,7 +35,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/kaiblog/docs"
+  href="/docs"
   
 >
   <span>前往筆記首頁！ →</span>
@@ -48,7 +48,7 @@ slug: /
 :::danger 最新資訊
 <a
   class="link"
-  href="/kaiblog/blog/house-yt01"
+  href="/blog/house-yt01"
   
 >
   <span>前往最新貼文！ →</span>
@@ -64,7 +64,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/kaiblog/docs/resolve/resolvepackV2-update"
+  href="/docs/resolve/resolvepackV2-update"
   
 >
   <span>前往下載！ →</span>
@@ -92,7 +92,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 ---
 ## YouTube 最新影片 🎉
 
-<div class="youtube-b">
+<div class="youtube-s">
 
 <iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="Kai | 徹爾尼改寫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
