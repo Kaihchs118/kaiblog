@@ -29,8 +29,8 @@ const config = {
    * 部署網址設定（GitHub Pages）
    * ======================== */
 
-  url: 'https://kaihchs118.github.io', // GitHub Pages 的使用者頁面
-  baseUrl: '/kaiblog/',                // Repo 名稱（一定要有斜線）
+  url: 'https://kaiblog.is-a.dev', // GitHub Pages 的使用者頁面
+  baseUrl: '/',                // Repo 名稱（一定要有斜線）
 
   organizationName: 'kaihchs118', // GitHub 使用者或組織名稱
   projectName: 'kaiblog',         // GitHub repository 名稱
