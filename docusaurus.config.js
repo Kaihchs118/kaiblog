@@ -169,6 +169,8 @@ const config = {
           // 👉 這是「Pages」功能，對應 src/pages/about.md
           {to: '/about', label: '關於', position: 'left'},
 
+          // 🥶 近況（/now）
+          {to: '/blog/HBD', label: '最新文章', position: 'right'},
 
           // GitHub 連結
           {
