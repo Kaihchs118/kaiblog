@@ -149,6 +149,9 @@ const config = {
           // 📔 筆記（/docs）
           {to: '/docs', label: '筆記', position: 'left'},
 
+          // 📔 筆記（/docs）
+          {to: '/blog/house-yt01', label: '最新文章', position: 'right'},
+
    
           // 📔 隨機（/random）
           {to: '/blog/archive', label: '列表', position: 'left'},               
@@ -173,7 +176,7 @@ const config = {
           // GitHub 連結
           {
             href: 'https://github.com/Kaihchs118/',
-            label: 'GitHub',
+            label: 'GitHub',  
             position: 'right',
           },
         ],
