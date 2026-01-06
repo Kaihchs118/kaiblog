@@ -9,12 +9,12 @@ export default function RandomPage() {
   useEffect(() => {
     const pages = [
       '/docs',
-      '/kaiblog/blog/house-yt01',
-      '/kaiblog/blog/about',
-      '/kaiblog/docs/resolve/template/resolvepackV1-update',
-      '/kaiblog/docs/resolve/template/resolvepackV2-update',
-      '/kaiblog/docs/Docusaurus/tabs',
-      '/kaiblog/blog/happy-new-year'
+      '/blog/house-yt01',
+      '/blog/about',
+      '/docs/resolve/template/resolvepackV1-update',
+      '/docs/resolve/template/resolvepackV2-update',
+      '/docs/Docusaurus/tabs',
+      '/blog/happy-new-year'
     ];
 
     const randomPath =
