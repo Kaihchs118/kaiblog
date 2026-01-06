@@ -148,7 +148,7 @@ OBS is getting some BIG UI improvements
 
 ### 💻 網站製作
 
-- [Hugo](https://gohugo.io/) - 把 Markdown 直接變成網站；[NiceChord.com](https://nicechord.com/) 就是用這個架的。
+- [Hugo](https://gohugo.io/) - 把 Markdown 直接變成網站；[KAI WIKI](https://kaihchs118.github.io/kai_wiki/) 就是用這個架的。
 - [Docusaurus](https://docusaurus.io/) - 專門用來架「文件」網站的軟體，這裡就是用它架的。
 
 
