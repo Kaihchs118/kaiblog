@@ -92,7 +92,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 ---
 ## YouTube 最新影片 🎉
 
-<div class="youtube-s">
+<div class="youtube-b">
 
 <iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="Kai | 徹爾尼改寫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
