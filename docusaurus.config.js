@@ -170,7 +170,7 @@ const config = {
           {to: '/about', label: '關於', position: 'left'},
 
           // 🥶 近況（/now）
-          {to: '/blog/HBD', label: '最新文章', position: 'right'},
+          {to: '/blog/web-change', label: '最新文章', position: 'right'},
 
           // GitHub 連結
           {
