@@ -13,9 +13,10 @@ export default function RandomPage() {
       '/blog/about',
       '/docs/resolve/resolvepackV1-update',
       '/docs/resolve/resolvepackV2-update',
-      '/docs/Docusaurus/tabs',
+      '/docs/tabs',
       '/blog/happy-new-year',
       '/blog/HBD',
+      '/blog/web-change',
     ];
 
     const randomPath =
