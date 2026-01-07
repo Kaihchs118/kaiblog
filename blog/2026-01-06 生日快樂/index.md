@@ -37,7 +37,7 @@ https://youtu.be/jcd6xxeZf4I?si=Ecwcj5HoH2vqNnvD
 
 給自己定目標：
 
-**未來只要有人生日，編一首生日快樂歌給他！**
+**未來只要有人生日，我(有空)編一首生日快樂歌給那個人！**
 
 用 Mail 告訴我你生日：kaigithub0621@gmail.com
 
