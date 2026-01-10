@@ -1,5 +1,5 @@
 ---
-slug: resolvepackV1-update
+slug: index
 title: Finale 教學
 sidebar_position: 1
 sidebar_label: 首頁

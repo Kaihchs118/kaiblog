@@ -14,6 +14,3 @@ slug: /
 :::
 
 ### Docusaurus 教學區
-:::tip 項目
-    [選項卡教學](/docs/tabs)
-:::
