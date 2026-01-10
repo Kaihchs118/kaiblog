@@ -118,7 +118,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg', // 社群分享圖
+      image: 'img/docusaurusd.jpg', // 社群分享圖
 
       /* ---------- 明暗模式 ---------- */
       colorMode: {
