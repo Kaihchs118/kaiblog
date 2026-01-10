@@ -13,4 +13,5 @@ slug: /
 
 :::
 
-### Docusaurus 教學區
+### Finale 教學區
+- [首頁](/docs/Finale/index)
