@@ -14,9 +14,9 @@ date: 2026-01-11
 ## 怎麼建立新專案？
 
 首先開啟 Finale 之後，可透過上面的 Setup-Wizard 建立新專案
-<div className="photo-window">
+
 ![alt text](./create/create-page.jpeg)
-</div>
+
 
 
 ## 第一頁為選擇模板
