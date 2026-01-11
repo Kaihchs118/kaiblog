@@ -1,32 +1,25 @@
 /* ================================
-   基礎主題設定
+   基本主題色
 ================================ */
 :root {
   --ifm-color-primary: #429eee;
   --ifm-color-primary-dark: #2f84d6;
-  --ifm-color-primary-light: #5aabf2;
-  --ifm-color-primary-lighter: #6bb4f4;
-  --ifm-color-primary-lightest: #8cc7f8;
-
-  --docusaurus-highlighted-code-line-bg: rgba(66,158,238,.12);
+  --ifm-color-primary-light: #6bb4f4;
 }
 
 html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
-  --docusaurus-highlighted-code-line-bg: rgba(107,180,244,.28);
 }
 
 /* ================================
-   標題（Hero / 文章）
+   標題（首頁＋文章）
 ================================ */
 .hero-title,
 .blue-title {
   color: var(--ifm-color-primary);
   font-weight: 800;
-  letter-spacing: .5px;
 }
 
-/* 文章標題 */
 .markdown h1,
 .markdown h2,
 .markdown h3 {
@@ -35,21 +28,18 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   文章連結（粗體 + 底線）
+   文章連結（粗體）
 ================================ */
 .markdown a {
   font-weight: 700;
   color: var(--ifm-color-primary);
-  text-decoration: none;
-  border-bottom: 2px solid rgba(66,158,238,.4);
-}
-
-.markdown a:hover {
-  border-bottom-color: var(--ifm-color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 /* ================================
-   下載按鈕（無陰影）
+   下載按鈕（關鍵：一定要鎖 markdown）
 ================================ */
 .download-buttons {
   display: flex;
@@ -58,43 +48,53 @@ html[data-theme='dark'] {
   margin: 1.5rem 0;
 }
 
-.download-btn {
-  display: inline-flex;
+.markdown a.download-btn {
+  display: inline-flex !important;
   align-items: center;
-  gap: 6px;
-  height: 36px;
-  padding: 0 14px;
+  justify-content: center;
+
+  height: 38px;
+  padding: 0 18px;
+
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
+
   border-radius: 10px;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: background-color .15s ease, transform .1s ease;
+  text-decoration: none !important;
+
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: transparent;
 }
 
-.download-btn.primary {
+.markdown a.download-btn.primary {
   background: var(--ifm-color-primary);
-  color: #fff;
+  color: #fff !important;
 }
 
-.download-btn.primary:hover {
+.markdown a.download-btn.primary:hover {
   background: var(--ifm-color-primary-dark);
-  transform: translateY(-2px);
 }
 
 /* ================================
-   Callout
+   YouTube 區塊（有邊框、沒陰影）
 ================================ */
-.fusion-callout .theme-admonition-info {
-  --ifm-alert-background-color: #ecfdf3;
-  --ifm-alert-border-color: #22c55e;
-  --ifm-alert-foreground-color: #166534;
+.youtube,
+.youtube-s {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--ifm-color-primary);
 }
 
-.tip-callout .theme-admonition-warning {
-  --ifm-alert-background-color: #fdecec;
-  --ifm-alert-border-color: #e5484d;
-  --ifm-alert-foreground-color: #7a1c1c;
+.youtube iframe,
+.youtube-s iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  border: 2px solid rgba(0,0,0,.15);
+  background: #000;
 }
 
 /* ================================
@@ -102,72 +102,27 @@ html[data-theme='dark'] {
 ================================ */
 .path-box,
 .path-box-tab {
-  background: #f8fafc;
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
   padding: .75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
   font-family: ui-monospace, monospace;
-  color: #334155;
-  margin: .6rem 0;
-  word-break: break-all;
 }
 
 html[data-theme='dark'] .path-box,
 html[data-theme='dark'] .path-box-tab {
-  background: #020617;
-  border-color: #1e293b;
-  color: #e5e7eb;
+  border-color: #334155;
 }
 
 /* ================================
-   YouTube（有邊框、無陰影）
+   清單（保留語意，Wiwi OK）
 ================================ */
-.youtube,
-.youtube-s {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 1.2rem;
-  border-radius: 14px;
-  border: 2px solid rgba(66,158,238,.35);
-  background: #def5ff;
-}
-
-html[data-theme='dark'] .youtube,
-html[data-theme='dark'] .youtube-s {
-  background: #2a3b43;
-  border-color: rgba(107,180,244,.45);
-}
-
-.youtube iframe,
-.youtube-s iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 2px solid rgba(0,0,0,.15);
-  border-radius: 10px;
-  background: #000;
-}
+/* 不動 ul / li 的 list-style */
 
 /* ================================
-   Archive / List（保留語意）
-================================ */
-.archive-list ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.archive-list li {
-  margin-bottom: .8rem;
-}
-
-/* ❗不要移除原生 list-style，Wiwi 會炸 */
-
-/* ================================
-   其他
+   其他小樣式
 ================================ */
 a.link {
   font-weight: 800;
-  border-bottom: 3px solid #69B1D1;
-  text-decoration: none;
 }
 
 .gray {
