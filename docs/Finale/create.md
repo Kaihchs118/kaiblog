@@ -58,9 +58,9 @@ date: 2026-01-11
 
 然後建議讓 `樂譜速度` 顯示！
 - 這樣隨時可以修改速度
-<div className="photo-window">
+
 ![alt text](create/tempo.jpeg)
-</div>
+
 > 按 `Finish` (或著`Enter`) 完成建立樂譜！
 
 ## 快速新增五線譜
