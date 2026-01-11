@@ -1,6 +1,6 @@
 /* ================================
-   基礎主題設定（Infima Variables）
-================================ */
+   1. 基礎變數與全域設定
+   ================================ */
 :root {
   --ifm-color-primary: #429eee;
   --ifm-color-primary-dark: #2f84d6;
@@ -9,7 +9,6 @@
   --ifm-color-primary-light: #5aabf2;
   --ifm-color-primary-lighter: #6bb4f4;
   --ifm-color-primary-lightest: #8cc7f8;
-
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 }
@@ -22,203 +21,107 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: #8cc7f8;
   --ifm-color-primary-lighter: #a6d4fb;
   --ifm-color-primary-lightest: #cbe6fd;
-
   --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
+* { box-shadow: none !important; }
+
 /* ================================
-   首頁標題（只影響首頁）
-================================ */
-.hero__title {
+   2. 文字與標題樣式
+   ================================ */
+.hero-title, .blue-title, .blue-stroke-text {
   color: var(--ifm-color-primary);
-  font-weight: 800;
   letter-spacing: 0.5px;
 }
+.hero-title { font-weight: 800; }
+.blue-title { font-weight: 1000; }
+.blue-stroke-text { font-weight: 700; margin-left: 0.2rem; }
+
+.gray { font-weight: 1000; color: #726f6f; }
+html[data-theme='dark'] .gray { color: #949597; }
+
+a.link { text-decoration: none; font-weight: 800; border-bottom: 3px solid #69B1D1; }
 
 /* ================================
-   連結樣式（有底線、可偵測）
-================================ */
-a.link {
-  text-decoration: none;
-  font-weight: 800;
-  border-bottom: 3px solid #69B1D1;
+   3. 按鈕系統 (合併重複樣式)
+   ================================ */
+.download-buttons, .download-buttons-red { display: flex; gap: 12px; flex-wrap: wrap; margin: 1.5vw 0; }
+
+.download-btn, .download-btn-red {
+  display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px;
+  font-size: 14px; font-weight: 600; line-height: 1; border-radius: 10px;
+  text-decoration: none; white-space: nowrap; transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* ================================
-   下載按鈕（完整）
-================================ */
-.download-buttons,
-.download-buttons-red {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
-}
+.download-btn.primary { background: var(--ifm-color-primary); color: #fff; }
+.download-btn-red.primary { background: #ff6b6b; color: #fff; }
+.download-btn.secondary { background: #f1f5f9; color: #0f172a; }
 
-a.download-btn,
-a.download-btn-red {
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+.download-btn.primary:hover { background: var(--ifm-color-primary-dark); transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
+.download-btn.secondary:hover { background: #e2e8f0; transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14); }
 
-  height: 36px;
-  padding: 0 16px;
-
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-
-  border-radius: 10px;
-  text-decoration: none !important;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-/* 主按鈕 */
+/* 強制覆蓋按鈕樣式 */
 a.download-btn.primary {
-  background: var(--ifm-color-primary);
-  color: #fff;
-}
-
-a.download-btn.primary:hover {
-  background: var(--ifm-color-primary-dark);
-}
-
-/* Red 主按鈕 */
-a.download-btn-red.primary {
-  background: #ff6b6b;
-  color: #fff;
+  display: inline-flex !important; align-items: center !important; gap: 0.6rem !important;
+  padding: 14px 28px !important; font-size: 18px !important; font-weight: 600 !important;
+  background-color: #429eee !important; border-radius: 10px !important;
 }
 
 /* ================================
-   Fusion / Tip Callout
-================================ */
-.fusion-callout .theme-admonition-info {
-  --ifm-alert-background-color: #ecfdf3;
-  --ifm-alert-border-color: #22c55e;
-  --ifm-alert-foreground-color: #166534;
-}
+   4. 元件樣式 (Callouts & Boxes)
+   ================================ */
+/* Fusion Callout */
+.fusion-callout .theme-admonition-info { --ifm-alert-background-color: #ecfdf3; --ifm-alert-border-color: #22c55e; --ifm-alert-foreground-color: #166534; }
+html[data-theme='dark'] .fusion-callout .theme-admonition-info { --ifm-alert-background-color: #052e1a; --ifm-alert-foreground-color: #bbf7d0; }
 
-html[data-theme='dark'] .fusion-callout .theme-admonition-info {
-  --ifm-alert-background-color: #052e1a;
-  --ifm-alert-border-color: #22c55e;
-  --ifm-alert-foreground-color: #bbf7d0;
-}
+/* Tip Callout */
+.tip-callout .theme-admonition-warning { --ifm-alert-background-color: #fdecec; --ifm-alert-border-color: #e5484d; --ifm-alert-foreground-color: #7a1c1c; }
+html[data-theme='dark'] .tip-callout .theme-admonition-warning { --ifm-alert-background-color: #3a0f12; --ifm-alert-border-color: #ff6b6b; --ifm-alert-foreground-color: #ffd6d6; }
 
-.tip-callout .theme-admonition-warning {
-  --ifm-alert-background-color: #fdecec;
-  --ifm-alert-border-color: #e5484d;
-  --ifm-alert-foreground-color: #7a1c1c;
+/* Path Boxes */
+.path-box, .path-box-tab {
+  background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.75rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #334155; margin: 0.5rem 0 1rem; word-break: break-all;
 }
+.path-box-tab { border-width: 2px; margin: 0.8vw 0.1vw; }
+.path-box-tab ul { margin: 0; padding-left: 1.2rem; }
+.path-box-tab li { margin: 0.3rem 0; }
 
-html[data-theme='dark'] .tip-callout .theme-admonition-warning {
-  --ifm-alert-background-color: #3a0f12;
-  --ifm-alert-border-color: #ff6b6b;
-  --ifm-alert-foreground-color: #ffd6d6;
-}
+html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
 /* ================================
-   YouTube（youtube / youtube-s 統一）
-================================ */
-.youtube,
-.youtube-s {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 1.2rem;
-  background: #def5ff;
-  border-radius: 14px;
+   5. 多媒體與表格 (YouTube & Table)
+   ================================ */
+.youtube, .youtube-s { max-width: 960px; margin: 2rem auto; padding: 1.2rem; background: #def5ff; border-radius: 14px; }
+.youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; }
+.youtube p, .youtube-s p { margin: .4rem 0 0; font-size: 0.95rem; line-height: 1.6; color: #949597; }
+.youtube p { padding-left: 25%; }
+.youtube-s p { padding-left: 40%; }
+
+html[data-theme='dark'] :is(.youtube, .youtube-s) { background: #2a3b43; }
+html[data-theme='dark'] :is(.youtube p, .youtube-s p) { color: #bac2c9; }
+
+@media (max-width: 768px) {
+  :is(.youtube, .youtube-s) { margin: 1.5rem 0; padding: 1rem; border-radius: 10px; }
+  :is(.youtube p, .youtube-s p) { padding-left: 0% !important; }
 }
 
-.youtube iframe,
-.youtube-s iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  border-radius: 10px;
-}
+.table-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-wrapper table { min-width: 600px; border-collapse: collapse; }
 
-.youtube p,
-.youtube-s p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #949597;
-}
-
-/* Dark */
-html[data-theme='dark'] .youtube,
-html[data-theme='dark'] .youtube-s {
-  background: #2a3b43;
-}
-
-html[data-theme='dark'] .youtube p,
-html[data-theme='dark'] .youtube-s p {
-  color: #bac2c9;
-}
+.photo img { width: 256px; max-width: 100%; height: auto; border-radius: 10px; }
 
 /* ================================
-   路徑卡片
-================================ */
-.path-box,
-.path-box-tab {
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
+   6. Blog Archive 改造
+   ================================ */
+.hero--primary { padding: 2.5rem 0 2rem; }
+.hero--primary .hero__subtitle { display: none; }
 
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  word-break: break-all;
+main > :is(h3, strong) {
+  display: block; font-size: 2.1rem; margin: 3rem 0 1rem;
+  padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
 }
 
-html[data-theme='dark'] .path-box,
-html[data-theme='dark'] .path-box-tab {
-  background: #020617;
-  border-color: #1e293b;
-  color: #e5e7eb;
-}
-
-/* ================================
-   圖片
-================================ */
-.photo img {
-  width: 256px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* ================================
-   灰字
-================================ */
-.gray {
-  font-weight: 700;
-  color: #726f6f;
-}
-
-html[data-theme='dark'] .gray {
-  color: #949597;
-}
-
-/* ================================
-   表格 RWD
-================================ */
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.table-wrapper table {
-  min-width: 600px;
-  border-collapse: collapse;
-}
-
-/* ================================
-   無陰影（安全）
-================================ */
-.card,
-.alert,
-.theme-admonition,
-.button {
-  box-shadow: none !important;
-}
+main ul { padding: 0; margin: 0 0 2rem; list-style: none; }
+main ul li { margin-bottom: 0.8rem; }
