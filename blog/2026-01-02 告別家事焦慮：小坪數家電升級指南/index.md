@@ -2,6 +2,7 @@
 slug: house-yt01
 title: 告別家事焦慮：小坪數家電升級指南
 authors: [KAI]
+tags: [blogblog.club]
 ---
 
 

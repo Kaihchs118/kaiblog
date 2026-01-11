@@ -28,7 +28,7 @@ html[data-theme='dark'] {
 
 /* 導覽列 Logo 圓角設定 */
 .navbar__logo img {
-  border-radius: 50%; /* 圓形 */
+  border-radius: 25%; /* 圓形 */
   object-fit: cover;
 }
 
@@ -128,3 +128,9 @@ main > :is(h3, strong) {
 /* 僅針對內容區的 ul 進行縮進，排除導航列 (.breadcrumbs) */
 main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
 main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
+
+/* 調整圖片顯示 */
+.photo-small img {width: 2.5cm;  height:auto; border-radius: 10px;}
+.photo-border img { border-radius: 10px;}
+.photo-window  {width: 10cm;  height:auto; border-radius: 10px;}
+.red-stroke-text { font-weight: 700; margin-left: 0.2rem; color: red; }
