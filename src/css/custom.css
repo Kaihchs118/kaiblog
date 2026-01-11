@@ -1,92 +1,186 @@
 /* ================================
-   基本保護：不要亂動全站標題
+   基礎主題設定（Infima Variables）
 ================================ */
-h1, h2, h3, h4, h5, h6 {
-  color: inherit;
+:root {
+  --ifm-color-primary: #429eee;
+  --ifm-color-primary-dark: #2f84d6;
+  --ifm-color-primary-darker: #297ac6;
+  --ifm-color-primary-darkest: #1f5e9a;
+  --ifm-color-primary-light: #5aabf2;
+  --ifm-color-primary-lighter: #6bb4f4;
+  --ifm-color-primary-lightest: #8cc7f8;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #6bb4f4;
+  --ifm-color-primary-dark: #5aabf2;
+  --ifm-color-primary-darker: #429eee;
+  --ifm-color-primary-darkest: #2f84d6;
+  --ifm-color-primary-light: #8cc7f8;
+  --ifm-color-primary-lighter: #a6d4fb;
+  --ifm-color-primary-lightest: #cbe6fd;
+
+  --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
 /* ================================
-   只有首頁「歡迎來到 Kai Blog」
-   （Docusaurus Hero Title）
+   首頁標題（只影響「歡迎來到 Kai Blog」）
 ================================ */
 .hero__title {
-  color: #2563eb; /* 藍色 */
+  color: var(--ifm-color-primary);
   font-weight: 800;
-}
-
-/* Hero 副標不要藍 */
-.hero__subtitle {
-  color: var(--ifm-font-color-base);
+  letter-spacing: 0.5px;
 }
 
 /* ================================
-   連結：預設不要底線
-   （文章內容仍由 markdown 控制）
+   連結樣式（可偵測、有底線）
 ================================ */
-a {
+a.link {
   text-decoration: none;
-}
-
-/* hover 再顯示底線即可 */
-a:hover {
-  text-decoration: underline;
+  font-weight: 800;
+  border-bottom: 3px solid #69B1D1;
 }
 
 /* ================================
-   「真正的按鈕」樣式（救回來）
+   下載按鈕（確保一定是按鈕）
 ================================ */
-.button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
+.download-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+a.download-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  height: 36px;
+  padding: 0 16px;
+
+  font-size: 14px;
+  font-weight: 600;
   border-radius: 10px;
 
-  background-color: #2563eb;
-  color: #ffffff !important;
-
-  font-weight: 700;
-  font-size: 0.95rem;
-
-  border: none;
   text-decoration: none !important;
-
-  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-/* 次要按鈕 */
-.button--secondary {
-  background-color: #e5e7eb;
-  color: #111827 !important;
+a.download-btn.primary {
+  background: var(--ifm-color-primary);
+  color: #fff;
 }
 
-/* Hover */
-.button:hover {
-  background-color: #1d4ed8;
-  text-decoration: none !important;
+a.download-btn.primary:hover {
+  background: var(--ifm-color-primary-dark);
 }
 
 /* ================================
-   YouTube / iframe 外框（無陰影）
+   YouTube 容器（youtube / youtube-s 統一）
 ================================ */
 .youtube,
-.video-container,
-iframe {
+.youtube-s {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.2rem;
+  background: #def5ff;
   border-radius: 14px;
-  background: var(--ifm-background-surface-color);
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: none;
 }
 
-/* iframe 本體 */
-iframe {
+.youtube iframe,
+.youtube-s iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+}
+
+.youtube p,
+.youtube-s p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #949597;
+}
+
+/* Dark mode */
+html[data-theme='dark'] .youtube,
+html[data-theme='dark'] .youtube-s {
+  background: #2a3b43;
+}
+
+html[data-theme='dark'] .youtube p,
+html[data-theme='dark'] .youtube-s p {
+  color: #bac2c9;
 }
 
 /* ================================
-   卡片 / 區塊：保留邊框、不用陰影
+   路徑卡片
 ================================ */
-.card {
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  box-shadow: none;
+.path-box,
+.path-box-tab {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  word-break: break-all;
+}
+
+html[data-theme='dark'] .path-box,
+html[data-theme='dark'] .path-box-tab {
+  background: #020617;
+  border-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* ================================
+   圖片
+================================ */
+.photo img {
+  width: 256px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ================================
+   灰字
+================================ */
+.gray {
+  font-weight: 700;
+  color: #726f6f;
+}
+
+html[data-theme='dark'] .gray {
+  color: #949597;
+}
+
+/* ================================
+   表格 RWD
+================================ */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrapper table {
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+/* ================================
+   無陰影（安全版）
+================================ */
+.card,
+.alert,
+.theme-admonition,
+.button {
+  box-shadow: none !important;
 }
