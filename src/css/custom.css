@@ -27,7 +27,7 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   首頁標題（只影響「歡迎來到 Kai Blog」）
+   首頁標題（只影響首頁）
 ================================ */
 .hero__title {
   color: var(--ifm-color-primary);
@@ -36,7 +36,7 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   連結樣式（可偵測、有底線）
+   連結樣式（有底線、可偵測）
 ================================ */
 a.link {
   text-decoration: none;
@@ -45,16 +45,18 @@ a.link {
 }
 
 /* ================================
-   下載按鈕（確保一定是按鈕）
+   下載按鈕（完整）
 ================================ */
-.download-buttons {
+.download-buttons,
+.download-buttons-red {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin: 1.5rem 0;
 }
 
-a.download-btn {
+a.download-btn,
+a.download-btn-red {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
@@ -65,13 +67,15 @@ a.download-btn {
 
   font-size: 14px;
   font-weight: 600;
-  border-radius: 10px;
+  line-height: 1;
 
+  border-radius: 10px;
   text-decoration: none !important;
   white-space: nowrap;
   cursor: pointer;
 }
 
+/* 主按鈕 */
 a.download-btn.primary {
   background: var(--ifm-color-primary);
   color: #fff;
@@ -81,8 +85,41 @@ a.download-btn.primary:hover {
   background: var(--ifm-color-primary-dark);
 }
 
+/* Red 主按鈕 */
+a.download-btn-red.primary {
+  background: #ff6b6b;
+  color: #fff;
+}
+
 /* ================================
-   YouTube 容器（youtube / youtube-s 統一）
+   Fusion / Tip Callout
+================================ */
+.fusion-callout .theme-admonition-info {
+  --ifm-alert-background-color: #ecfdf3;
+  --ifm-alert-border-color: #22c55e;
+  --ifm-alert-foreground-color: #166534;
+}
+
+html[data-theme='dark'] .fusion-callout .theme-admonition-info {
+  --ifm-alert-background-color: #052e1a;
+  --ifm-alert-border-color: #22c55e;
+  --ifm-alert-foreground-color: #bbf7d0;
+}
+
+.tip-callout .theme-admonition-warning {
+  --ifm-alert-background-color: #fdecec;
+  --ifm-alert-border-color: #e5484d;
+  --ifm-alert-foreground-color: #7a1c1c;
+}
+
+html[data-theme='dark'] .tip-callout .theme-admonition-warning {
+  --ifm-alert-background-color: #3a0f12;
+  --ifm-alert-border-color: #ff6b6b;
+  --ifm-alert-foreground-color: #ffd6d6;
+}
+
+/* ================================
+   YouTube（youtube / youtube-s 統一）
 ================================ */
 .youtube,
 .youtube-s {
@@ -109,7 +146,7 @@ a.download-btn.primary:hover {
   color: #949597;
 }
 
-/* Dark mode */
+/* Dark */
 html[data-theme='dark'] .youtube,
 html[data-theme='dark'] .youtube-s {
   background: #2a3b43;
@@ -129,6 +166,7 @@ html[data-theme='dark'] .youtube-s p {
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 0.75rem 1rem;
+
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   word-break: break-all;
 }
@@ -176,7 +214,7 @@ html[data-theme='dark'] .gray {
 }
 
 /* ================================
-   無陰影（安全版）
+   無陰影（安全）
 ================================ */
 .card,
 .alert,
