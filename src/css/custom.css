@@ -71,15 +71,12 @@ a.download-btn.primary {
 /* ================================
    4. 元件樣式 (Callouts & Boxes)
    ================================ */
-/* Fusion Callout */
 .fusion-callout .theme-admonition-info { --ifm-alert-background-color: #ecfdf3; --ifm-alert-border-color: #22c55e; --ifm-alert-foreground-color: #166534; }
 html[data-theme='dark'] .fusion-callout .theme-admonition-info { --ifm-alert-background-color: #052e1a; --ifm-alert-foreground-color: #bbf7d0; }
 
-/* Tip Callout */
 .tip-callout .theme-admonition-warning { --ifm-alert-background-color: #fdecec; --ifm-alert-border-color: #e5484d; --ifm-alert-foreground-color: #7a1c1c; }
 html[data-theme='dark'] .tip-callout .theme-admonition-warning { --ifm-alert-background-color: #3a0f12; --ifm-alert-border-color: #ff6b6b; --ifm-alert-foreground-color: #ffd6d6; }
 
-/* Path Boxes */
 .path-box, .path-box-tab {
   background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.75rem 1rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #334155; margin: 0.5rem 0 1rem; word-break: break-all;
@@ -91,7 +88,7 @@ html[data-theme='dark'] .tip-callout .theme-admonition-warning { --ifm-alert-bac
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
 /* ================================
-   5. 多媒體與表格 (YouTube & Table)
+   5. 多媒體與表格
    ================================ */
 .youtube, .youtube-s { max-width: 960px; margin: 2rem auto; padding: 1.2rem; background: #def5ff; border-radius: 14px; }
 .youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; }
@@ -109,11 +106,10 @@ html[data-theme='dark'] :is(.youtube p, .youtube-s p) { color: #bac2c9; }
 
 .table-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .table-wrapper table { min-width: 600px; border-collapse: collapse; }
-
 .photo img { width: 256px; max-width: 100%; height: auto; border-radius: 10px; }
 
 /* ================================
-   6. Blog Archive 改造
+   6. Blog Archive 與 清單
    ================================ */
 .hero--primary { padding: 2.5rem 0 2rem; }
 .hero--primary .hero__subtitle { display: none; }
@@ -123,5 +119,6 @@ main > :is(h3, strong) {
   padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
 }
 
-main ul { padding: 0; margin: 0 0 2rem; list-style: none; }
+/* 已修正：不再移除點點，保留預設 list-style */
+main ul { margin: 0 0 2rem; padding-left: 2rem; }
 main ul li { margin-bottom: 0.8rem; }
