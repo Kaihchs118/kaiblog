@@ -1,8 +1,9 @@
 ---
 slug: index
-title: Finale 教學
+title: Finale 教學首頁
 sidebar_position: 1
-sidebar_label: 首頁
+sidebar_label: 🏠 首頁
+pagination_prev: null
 authors: [KAI]
 tags: [Finale]
 date: 2026-01-10
