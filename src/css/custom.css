@@ -28,7 +28,7 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   文章連結（粗體）
+   文章連結（粗體、正常底線）
 ================================ */
 .markdown a {
   font-weight: 700;
@@ -39,7 +39,7 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   下載按鈕（關鍵：一定要鎖 markdown）
+   下載按鈕（V1 / V2 都會正常）
 ================================ */
 .download-buttons {
   display: flex;
@@ -77,24 +77,58 @@ html[data-theme='dark'] {
 }
 
 /* ================================
-   YouTube 區塊（有邊框、沒陰影）
+   YouTube 區塊（youtube / youtube-s 統一）
+   不改 HTML，外觀一模一樣
 ================================ */
 .youtube,
 .youtube-s {
   max-width: 960px;
   margin: 2rem auto;
-  padding: 1rem;
-  border-radius: 12px;
+  padding: 1.2rem;
+  border-radius: 14px;
   border: 2px solid var(--ifm-color-primary);
+  background: #def5ff;
 }
 
+html[data-theme='dark'] .youtube,
+html[data-theme='dark'] .youtube-s {
+  background: #2a3b43;
+  border-color: var(--ifm-color-primary);
+}
+
+/* iframe 統一 */
 .youtube iframe,
 .youtube-s iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 2px solid rgba(0,0,0,.15);
   background: #000;
+  margin-bottom: .6rem;
+}
+
+/* 說明文字統一（不再靠旁邊） */
+.youtube p,
+.youtube-s p {
+  margin: .4rem 0 0;
+  padding-left: 0 !important;
+  font-size: .95rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+html[data-theme='dark'] .youtube p,
+html[data-theme='dark'] .youtube-s p {
+  color: #bac2c9;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .youtube,
+  .youtube-s {
+    padding: 1rem;
+    border-radius: 12px;
+  }
 }
 
 /* ================================
