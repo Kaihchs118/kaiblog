@@ -2,6 +2,11 @@
 slug: create
 title: 建立新專案
 pagination_next: null
+sidebar_position: 2
+sidebar_label: 建立新專案
+authors: [KAI]
+tags: [Finale]
+date: 2026-01-11
 ---
 
 :::warning 注意！
