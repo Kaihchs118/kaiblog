@@ -1,6 +1,7 @@
 ---
 title: 選項卡
 slug: /tabs
+pagination_prev: null
 ---
 
 # 選項卡 `/tabs`
@@ -24,7 +25,7 @@ import TabItem from '@theme/TabItem';
 也可以為 Tab 提供值與 defaultValue 道具：
 :::
 </div>
-
+docs/format-as-rhetoric
 <Tabs
   defaultValue="apple"
   values={[

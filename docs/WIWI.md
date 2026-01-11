@@ -4,22 +4,8 @@ slug: format-as-rhetoric
 date: 2026-01-11T04:30
 ---
 
-export const Marquee = ({ children }) => (
-  <div style={{ position: 'relative', height: '2.5em', overflow: 'hidden' }}>
-    <div className="marquee">{children}</div>
-    <style>{`
-      .marquee {
-        position: absolute;
-        white-space: nowrap;
-        animation: scroll 10s linear infinite;
-      }
-      @keyframes scroll {
-        from { left: 100%; }
-        to { left: -100%; }
-      }
-    `}</style>
-  </div>
-);
+
+
 
 剛從[社群媒體](/blog/why-i-dont-use-social-media)那個「所有文字都得是預設格式」的排版地獄爬出來嗎？
 
@@ -198,9 +184,9 @@ function 該買衛生紙嗎() {
 
 範例：
 
-<Marquee>
+
 🧻 本週特價！衛生紙買十送十！限時搶購中！ 🧻
-</Marquee>
+(使用Marquee)
 
 ---
 
@@ -210,6 +196,6 @@ function 該買衛生紙嗎() {
 
 看看家裡貨架的衛生紙，竟然只剩下五串半，我現在要出門補貨了。
 
-![](paper.jpg)
+
 
 [^1]: 雖然下面這裡寫的是廢話。

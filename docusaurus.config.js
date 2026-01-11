@@ -80,7 +80,7 @@ const config = {
           {to: '/now', label: '近況', position: 'left'},
           {to: '/use', label: '愛用', position: 'left'},
           {to: '/about', label: '關於', position: 'left'},
-          {to: '/blog/web-change', label: '最新文章', position: 'right'},
+          {to: '/blog/731pc', label: '最新文章', position: 'right'},
           {href: 'https://github.com/Kaihchs118/', label: 'GitHub', position: 'right'},
         ],
       },
