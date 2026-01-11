@@ -3,6 +3,7 @@ slug: resolvepackV2-update
 title: 達芬奇模板V2
 sidebar_position: 2
 sidebar_label: 達芬奇模板V2更新
+pagination_next: null
 authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-01-03
