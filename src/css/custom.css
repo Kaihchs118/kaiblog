@@ -43,7 +43,7 @@ html[data-theme='dark'] .gray { color: #949597; }
 a.link { text-decoration: none; font-weight: 800; border-bottom: 3px solid #69B1D1; }
 
 /* ================================
-   3. 按鈕系統 (合併重複樣式)
+   3. 按鈕系統
    ================================ */
 .download-buttons, .download-buttons-red { display: flex; gap: 12px; flex-wrap: wrap; margin: 1.5vw 0; }
 
@@ -61,7 +61,7 @@ a.link { text-decoration: none; font-weight: 800; border-bottom: 3px solid #69B1
 .download-btn.primary:hover { background: var(--ifm-color-primary-dark); transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
 .download-btn.secondary:hover { background: #e2e8f0; transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14); }
 
-/* 強制覆蓋按鈕樣式 */
+/* 強制覆蓋樣式 */
 a.download-btn.primary {
   display: inline-flex !important; align-items: center !important; gap: 0.6rem !important;
   padding: 14px 28px !important; font-size: 18px !important; font-weight: 600 !important;
@@ -109,7 +109,7 @@ html[data-theme='dark'] :is(.youtube p, .youtube-s p) { color: #bac2c9; }
 .photo img { width: 256px; max-width: 100%; height: auto; border-radius: 10px; }
 
 /* ================================
-   6. Blog Archive 與 清單
+   6. Blog Archive 與 清單修正
    ================================ */
 .hero--primary { padding: 2.5rem 0 2rem; }
 .hero--primary .hero__subtitle { display: none; }
@@ -119,6 +119,6 @@ main > :is(h3, strong) {
   padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
 }
 
-/* 已修正：不再移除點點，保留預設 list-style */
-main ul { margin: 0 0 2rem; padding-left: 2rem; }
-main ul li { margin-bottom: 0.8rem; }
+/* 修改處：使用 :not(.breadcrumbs) 排除導航列，避免它往右縮進 */
+main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
+main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
