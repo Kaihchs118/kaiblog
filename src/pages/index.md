@@ -47,6 +47,21 @@ slug: /
 - 📥️ 貼文區有 RSS Feed。直接使用新網址即可：kaiblog.is-a.dev
 - 🔍️ 右上角有全站全文搜尋功能（Ctrl+K），很好用喔！輸入隨意的關鍵字試試看！
 - 📧 有任何建議、投稿，都歡迎寫信到 kaigithub0621@gmail.com 信箱！
+
+## Finale 教學
+
+會在這一年當中慢慢推出`Finale 打譜教學`
+
+:::info 最新資訊
+<a
+  class="link"
+  href="/docs/finale/index"
+
+>
+  <span>趕快看看 →</span>
+</a>
+:::
+
 ## 達芬奇免費模板😍😍😍
 新年快樂！！！
 我終於更新了 ResolveV2Pack 
