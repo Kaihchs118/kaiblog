@@ -19,7 +19,7 @@ tags: [Finale]
 
 ---
 
-
+### 名詞解釋
 <details> 
 <summary>名詞解釋</summary>
 
@@ -60,6 +60,7 @@ Left Barline（左側小節線）
 👉 常用在特殊段落、現代音樂
 
 ---
+### 我不會修改以下內容
 
 Display（顯示設定）
 - Width：小節寬度
