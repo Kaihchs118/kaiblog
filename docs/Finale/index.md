@@ -18,11 +18,12 @@ date: 2026-01-10
 :::
 這邊會不定期更新教學，先簡單列出來好了
 - [下載與安裝](./download.md)
-- [建立項目](./create.md)
+- [建立新專案](./create.md)
 - [快速音符輸入](./note-input.md)
 - [選擇工具](./select.md)
 - [譜表屬性工具](./staff.md)
 - [小節屬性工具](./Measure.md)
+- [調號/拍號屬性工具](./key.md)
 - [破解序號](./cracktt.md)
 
 :::info 未來更新
