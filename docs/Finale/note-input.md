@@ -71,7 +71,7 @@ tags: [Finale]
 ### 選擇音高
 接著點選要輸入的小節，
 - 使用上下方向鍵<kbd>Up</kbd> + <kbd>Down</kbd> **選擇音高**
-- 使用左右方向鍵<kbd>Right</kbd> + <kbd>Left</kbd> **切換小節**
+- 使用左右方向鍵<kbd>Left</kbd> + <kbd>Right</kbd> **切換小節**
 
 - - -
 ### 選擇節奏
@@ -80,7 +80,7 @@ tags: [Finale]
 - 四分音符是 `5`
 依此類推～
 
-//備註：按 `.` 是附點
+> 備註：按 `.` 是附點
 
 - - -
 ### 臨時記號
@@ -115,4 +115,54 @@ tags: [Finale]
 - 切換到下一個樂器 (<kbd>Enter</kbd>)
 - 切換到上一個樂器 (<kbd>Shift</kbd> + <kbd>Enter</kbd>)
 
-有發現什麼歡迎跟我說！
+### 輸入三連音！！
+
+
+- 先輸入八分音符三個！
+<details>
+<summary>我輸入了四組，會出現錯誤！！</summary>
+
+![alt text](note-input/4.jpeg)
+
+</details>
+
+:::danger 不要理他，按OK
+- Leave the measure alone - 保留多打的音
+- Delete the extra notes - 刪除多打的音
+- Move the extra notes to the next measure - 將多打的音移動到下一小節
+- Keep moving the extra notes until all measures contain the correct number of beats - 將多打的音移動到下一小節，直到移動完畢！
+:::
+> 在這邊選擇 `Leave the measure alone` 然後就會...
+<details>
+<summary>非常之醜！</summary>
+
+![alt text](note-input/5.jpeg)
+
+</details>
+
+---
+
+#### 選擇三連音工具
+
+<details>
+<summary>使用三連音工具！</summary>
+
+![alt text](note-input/3.jpeg)
+
+</details>
+
+在 **第一個** 八分音符上面按兩下！
+
+<details>
+<summary>會跳出一個框框</summary>
+
+![alt text](note-input/6.jpeg)
+
+</details>
+
+:::tip 解釋
+- 3 Eighth(s) in the space of 2 Eighth(s) - 前者是 `幾` 連音，後者我不知道 😅
+:::
+
+- 直接按 `Enter`
+

@@ -8,21 +8,27 @@ authors: [KAI]
 tags: [Finale]
 ---
 
+:::danger 在小節選中的狀態，選中該工具可使用 `Enter` 來開啟設定視窗
+:::
 
 <details>
 <summary>該工具可以調整 `樂譜 (譜表) 屬性`</summary>
 
-![](other/page.jpeg)
+![](staff/page.jpeg)
 </details>
 
 - - -
 
 
 <details>
-<summary>📘 名詞解釋</summary>
+<summary>名詞解釋</summary>
 
-![alt text](other/StaffAttributes_SET.png)
+
+![](staff/StaffAttributes_SET.png)
 </details>
+
+
+
 
 - Staff Attributes：譜表屬性
 用來控制「單一譜表 要顯示哪些元素、如何顯示」
@@ -87,10 +93,18 @@ Items to Display（顯示項目）
 
 ---
 
+### 移動！
+
+<details>
+<summary>可以透過紫色點移動每一行！</summary>
+
+![](staff/control.jpeg)
+</details>
+
 :::tip 教學小技巧
 - 做「聽寫譜」： 保留 Rests + Measure Numbers
 - 做「簡化教學譜」： 關掉 Staff Lines
 - 合唱總譜一定要開 Allow Hiding When Empty
 :::
 
----
+

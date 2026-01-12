@@ -2,29 +2,30 @@
 title: 小節屬性工具
 slug: measure-tool
 date: 2026-01-15T04:30
-pagination_next: null
 sidebar_position: 6
 sidebar_label: 小節屬性工具
 authors: [KAI]
 tags: [Finale]
 ---
 
+:::danger 在小節選中的狀態，選中該工具可使用 `Enter` 來開啟設定視窗
+:::
 
+<details> 
+<summary>該工具可以調整 `小節屬性`</summary>
 
-<details>
-<summary>該工具可以調整 `樂譜 (譜表) 屬性`</summary>
-
-![](./other/messuare.png)
+![alt text](measure/messuare.png)
 </details>
 
 ---
 
 
-<details>
-<summary>📘 名詞解釋</summary>
+<details> 
+<summary>名詞解釋</summary>
 
-![](./other/MeasureAttributes_SET.png)
+![alt text](measure/MeasureAttributes_SET.png)
 </details>
+
 
 - Measure Attributes：小節屬性
 用來控制「指定小節 的外觀、行為與顯示方式」
@@ -105,5 +106,5 @@ Behavior（行為）
 <details>
 <summary> • 可使用該點：移動小節</summary>
 
-![](./other/control.png)
+![alt text](measure/control.png)
 </details>
