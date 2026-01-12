@@ -17,7 +17,7 @@ slug: /
 :::info
 <a
   class="link"
-  href="/blog"
+  href="/blog/archive"
   
 >
   <span>前往貼文列表 →</span>
