@@ -14,16 +14,17 @@ date: 2026-01-10
 哈囉歡迎來到 Finale 教學
 
 :::danger 互動式教學！
-為了讓大家更方便閱讀，因此將圖片方入下拉式選單
+為了讓大家更方便閱讀，因此將圖片放入下拉式選單
 :::
 這邊會不定期更新教學，先簡單列出來好了
-- [下載與安裝](download)
-- [建立項目](create)
-- [快速音符輸入](note-input)
-- [選擇工具](select)
-- [譜表屬性工具](staff)
-- [小節屬性工具](Measure)
-- [破解序號](cracktt.md)
+- [下載與安裝](./download.md)
+- [建立項目](./create.md)
+- [快速音符輸入](./note-input.md)
+- [選擇工具](./select.md)
+- [譜表屬性工具](./staff.md)
+- [小節屬性工具](./Measure.md)
+- [破解序號](./cracktt.md)
+
 
 
 :::tip 其他
