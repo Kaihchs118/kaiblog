@@ -17,7 +17,12 @@ tags: [Finale]
 
 - - -
 
-> 📘 名詞解釋
+
+<details>
+<summary>📘 名詞解釋</summary>
+
+![alt text](other/StaffAttributes_SET.png)
+</details>
 
 - Staff Attributes：譜表屬性
 用來控制「單一譜表 要顯示哪些元素、如何顯示」

@@ -17,6 +17,9 @@ export default function RandomPage() {
       '/blog/happy-new-year',
       '/blog/HBD',
       '/blog/web-change',
+      '/blog/test-lable',
+      '/docs/finale/staff-tool',
+      '/docs/finale/index',
     ];
 
     const randomPath =

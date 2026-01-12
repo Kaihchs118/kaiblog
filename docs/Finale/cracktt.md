@@ -5,6 +5,9 @@ authors: [KAI]
 tags: [Finale]
 date: 2026-01-16T04:30
 ---
+## 初次開啟
+按`Authorize Now...`
+<details>![alt text](crack/0.jpeg)</details>
 
 ## 要斷網！！！！！
 :::danger 不能連網路！
@@ -13,11 +16,22 @@ date: 2026-01-16T04:30
 1. 輸入電腦序號！
 :::tip 像我一樣亂輸入
 :::
-<details>![alt text](crack/1.jpeg)</details>
+<details>
+<summary>Macos 版本</summary>
+
+![alt text](crack/1-1.jpeg)
+</details>
 
 2. 選擇 `Continue`
 
-<details>![alt text](crack/2.jpeg)</details>
+
+<details>
+<summary>Windows 版本</summary>
+
+![alt text](crack/1.jpeg)
+</details>
+
+---
 
 3. 輸入驗證碼！
 

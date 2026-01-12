@@ -11,7 +11,7 @@ tags: [Finale]
 ### Select Tools 快捷鍵
 
 <details>
-<summary>要從 `Speedy Tool` 切換到選擇模式可以按 `0`</summary>
+<summary>要從 `Speedy Tool` 切換到選擇模式可以按 `Esc`</summary>
 
 ![](other/select.jpeg)
 </details>
