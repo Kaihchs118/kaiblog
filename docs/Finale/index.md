@@ -23,7 +23,7 @@ date: 2026-01-10
 - [選擇工具](./select)
 - [譜表屬性工具](./staff)
 - [小節屬性工具](./Measure)
-- [破解序號](./cracckttt)
+- [破解序號](cracktt.md)
 
 
 :::tip 其他
