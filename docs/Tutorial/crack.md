@@ -1,16 +1,15 @@
 ---
-slug: super-crack
+slug: super-crack-finale
 title: 破解序號！
 authors: [KAI]
 tags: [Finale]
-sidebar_label: ...
 date: 2026-01-16T04:30
 ---
 ## 初次開啟
 <details>
 <summary> 按`Authorize Now...`</summary>
 
-![alt text](crack/0.jpeg)
+
 </details>
 
 ## 要斷網！！！！！
@@ -32,12 +31,12 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 <TabItem value="apple" label="Windows 版本" default>
 
-![alt text](crack/1.jpeg)
+
 
   </TabItem>
   <TabItem value="orange" label="Macos 版本">
 
-![alt text](crack/1-1.jpeg)
+
 
   </TabItem>
 </Tabs>
@@ -45,14 +44,14 @@ import TabItem from '@theme/TabItem';
 
 2. 這邊是斷網提示！ 選擇 `Continue`
 
-![alt text](crack/2.jpeg)
+
 
 ---
 
 
 3. 輸入驗證碼！
 
-<details>![alt text](crack/3.jpeg)</details>
+<details></details>
 
 
 即可啟用！
