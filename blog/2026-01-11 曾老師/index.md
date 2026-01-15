@@ -90,9 +90,9 @@ Linux 就不會有(很少)有病毒，而且系統記憶體才佔用 1GB
 
 看看這個介面...十年後就淘汰了吧。
 
-<div class="photo-border">
+
 ![gimp2](gimp2.png)
-</div>
+
 
 是的～上面虛擬機還要錢！💰
 
