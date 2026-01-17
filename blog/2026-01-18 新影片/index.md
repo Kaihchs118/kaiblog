@@ -102,9 +102,10 @@ date: 2026-01-18T04:30
 如果你喜歡我的影片，請務必點擊下方連結：
 [👉 前往 YouTube 頻道訂閱](https://www.youtube.com/@kaistudio-621)
 
-**另外強烈建議使用`RSS 訂閱`喔！
+**另外強烈建議使用`RSS 訂閱`喔！**
+[趕快使用](https://www.youtube.com/feeds/videos.xml?channel_id=UCO46ZMleJZsNyZnpKYVYWLw)
 
 :::warning[警告]
-觀看我的實況可能會因為我太菜而感到焦慮，請小心食用！
+觀看我的實況可能會因為我太菜而感到焦慮
 :::
 
