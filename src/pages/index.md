@@ -101,13 +101,20 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 <div class="youtube-s">
 
-<iframe src="https://www.youtube.com/embed/H4drYRNntSQ?si=dT6Q7VQLndvWFx_b" title="Kai | 徹爾尼改寫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+<iframe src="hhttps://youtu.be/Pw0dToX74yg?si=OM4LhTWjMpYVKRRg" title="Kai | 徹爾尼改寫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 
-<p>Kai | 徹爾尼改寫</p>
+<p>我在競爭者玩到哭了，小孩不要玩！Kai | Roblox
+
+> {KAI STUDIO
+23位訂閱者}
+
+
+</p>
 </div>
 
 
 
-**📌 本影片內容說明：**  
-這部影片改寫徹爾尼，最近想跳脫到開源的編曲軟體試試看：```Ardour```
+**📌 新影片內容說明：**  
+我盡可能地提升我的槍法了... 
+重點是我這個菜鳥玩到哭...
