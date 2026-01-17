@@ -106,8 +106,8 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 <p>我在競爭者玩到哭了，小孩不要玩！Kai | Roblox
 
-> {KAI STUDIO
-23位訂閱者}
+> KAI STUDIO
+23位訂閱者
 
 
 </p>
