@@ -102,8 +102,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 - 目前：23位訂閱者
 <div class="youtube-s">
 
-<iframe src="https://youtu.be/Pw0dToX74yg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pw0dToX74yg?si=eXNcvV1SqubpIL-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p> 我在競爭者玩到哭了，小孩不要玩！Kai | Roblox </p>
 </div>
