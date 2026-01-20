@@ -531,6 +531,6 @@ date: 2026-01-19T04:30
 * **提供：** 可用 provide care **for** them 或 provide them **with** care.  
 * **旅遊業者：** 可譯為 tour/tourism operators, travel agencies, travel companies, tourism businesses 。
 
+### 結語
 
-## 國文
-國文有線上上課！
+先這樣。我先上課囉！

@@ -102,7 +102,7 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
 .youtube p { padding-left: 25%; }
 .youtube-s p { padding-left: 40%; }
 
-html[data-theme='dark'] :is(.youtube, .youtube-s) { background: #2a3b43; }
+html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
 html[data-theme='dark'] :is(.youtube p, .youtube-s p) { color: #bac2c9; }
 
 @media (max-width: 768px) {
@@ -125,12 +125,45 @@ main > :is(h3, strong) {
   padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
 }
 
+/* 極度不推薦，這對 SEO 很差，且可能導致殘影 */
+.hero--primary h1 {
+  visibility: hidden; /* 隱藏原本的 Archive */
+  position: relative;
+}
+
+.hero--primary h1::after {
+  content: "部落格列表"; /* 插入新文字 */
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 /* 僅針對內容區的 ul 進行縮進，排除導航列 (.breadcrumbs) */
 main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
 main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 
 /* 調整圖片顯示 */
 .photo-small img {width: 2.5cm;  height:auto; border-radius: 10px;}
-.photo-border img { max-width: 860px; margin: 2rem auto; padding: 1.2rem; background: #def5ff; border-radius: 14px; }
+/* 基礎樣式 */
+.photo-border img {
+  max-width: 720px;
+  margin: 0.2rem auto;
+  padding: 0.5rem;
+  display: block; /* 確保 margin auto 置中有效 */
+  border-radius: 14px;
+  background: #def5ff; /* 淺色模式預設值 */
+  transition: background 0.3s ease; /* 顏色切換更平滑 */
+}
+
+/* 深色模式修正 */
+[data-theme='dark'] .photo-border img {
+  background: #6ca5da; /* 深藍色背景 (Navy Blue) */
+  border: 1px solid #dbe3ed; /* 可選：加一點邊框讓深色圖片更明顯 */
+}
+
+.photo-border p { margin: .4rem 0 0; font-size: 0.95rem; line-height: 1.6; color: #949597; }
+
 .photo-window  {width: 20cm;  height:auto; border-radius: 10px;}
 .red-stroke-text { font-weight: 700; margin-left: 0.2rem; color: red; }

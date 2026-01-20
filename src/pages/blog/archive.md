@@ -1,6 +1,5 @@
 ---
 slug: archive
-title: 所有文章
-draft: true
+title: 部落格列表
 ---
 

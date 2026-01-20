@@ -98,7 +98,7 @@ const config = {
             items: [
               { label: '關於我', to: '/about' },
               { label: '近況', to: '/now' },
-              { label: '愛用設備', to: '/use' },
+              { label: '愛用', to: '/use' },
             ],
           },
           {

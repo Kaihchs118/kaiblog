@@ -26,7 +26,7 @@ slug: /use
 
 ### 🌏 瀏覽器
 
-- [Comet](https://brave.com/) - AI的瀏覽器
+- [Brave](https://brave.com/) - AI的瀏覽器
 - [LibreWolf](https://librewolf.net/) - 我目前的次要開源瀏覽器
 - [Chromium](https://www.chromium.org/Home/) - 其實很少用
 
@@ -196,85 +196,24 @@ iPhone 17 (不想被 Apple 生態圈綁架！)
 
 - Yamaha DGX-670 - 我唯一的電子琴！
 
+### 硬碟
+- TOSIBA 2TB 硬碟
 
-## 其他（沒在用，感謝WIWI提供）
-### 📻 音源機
+### 未來
+- 5TB 硬碟讓我備份 `macOS` 資料 (乾脆買 [NAS](https://youtu.be/4SElIyQSvFw?si=NjSlY-YQvB2Qi-hH) 算了)
 
-- Roland Integra-7 - 我的最愛，幾乎任何 Project 我都用它，如果可以的話我希望能買三台備用
-- Yamaha Motif Rack XS - 吉他音色很好用
-- Yamaha Motif Rack ES - 比 XS 舊版，但使用者介面比 XS 好用是怎麼回事
-- Roland MC-101 - 其實是滿有趣的機器，但輸出總是有雜訊讓我很難好好使用它
-- Edirol StudioCanvas SD-80 - 爵士鼓音色很有特色
+- 一個低調的 `耳罩式耳機`
 
-### 🎚️ 效果器
+- MIDI KeyBoard 攜帶式 (還在找，或許 [Launchkey MK4 MINI](https://youtu.be/iOdSYS_-cuA?list=RDiOdSYS_-cuA)感覺不錯，因為有鼓墊 😂 )
 
-- Roland SP-404 MkII - 很好用的音效介面／取樣機／效果器
-- Hologram Chroma Console - 綜合效果器
-- Hologram Microcosm - 回音系效果器，聲音很酷但不是太實用
+*好像跟 `Cubase` 很合 [!](https://youtu.be/BnSnJmBYozs?si=joYrHfx7KzJyTsRU)
 
-#### 軟體樂器
+- 買電子琴轉接線 - USB MIDI 轉接線 (USB Type-B to Type-C/A)
 
-- [PianoTeq](https://www.modartt.com/) - 最好用（但也許不是最好聽）的鋼琴音色，沒有之一
-- [Keyscape](https://www.spectrasonics.net/products/keyscape/overview.php) - 聲音很好聽（但不太好彈，而且不支援半踏板）的鋼琴音色
+- 一隻麥克風  [這部影片好像有推薦（？](https://wiwi.video/w/2rRWgdBDQCSfudTdWAyGUy)
 
-#### 軟體效果器
+### 未未未未未來！
+- 一台桌機
+- 一台 GoPro
 
-- [iZotope Ozone](https://www.izotope.com/en/products/ozone.html) - 好方便的幾乎全自動的母帶後製軟體
-- [iZotope Neutron](https://www.izotope.com/en/products/neutron.html) - 各種混音工具的集合，其中的 Sculptor 我好常用
-- [Soothe2](https://oeksound.com/plugins/soothe2/) - 可以神奇地拿掉刺耳頻率的好工具
-- [Airwindows](https://www.airwindows.com/) - [真．宅男](https://wiwi.blog/blog/fake-vs-real-tech-nerd)製作的聲音處理外掛程式
-- [Linux Studio Plugins](https://lsp-plug.in/) - 只在 Linux 上有的、超好用外掛程式組合。
-
-#### 聲音分析工具
-
-- [Sonic Visualiser](https://www.sonicvisualiser.org/) - 專業的聲音分析工具，抓歌時的好幫手！
-
-### 🤖 AI
-
-- [ollama](https://ollama.com/) - 在電腦上執行大型語言模型  
-  - 最常用的離線模型：Gemma 3、Aya Expanse、GLM 4、Granite 4
-- [open-webui](https://github.com/open-webui/open-webui) - 長得很像 ChatGPT 的大型語言模型介面
-- [whisper](https://github.com/openai/whisper) - 語音辨識、自動上字幕軟體
-
-### 📲 作業系統
-
-- [GrapheneOS](https://wiwi.blog/blog/degoogled-phone) - 注重隱私和安全的手機系統
-
-## ☁️ 雲端服務
-
-### 🏡 自架服務
-
-- [NextCloud](https://nextcloud.com/) - 全功能的私人雲端服務（日曆、筆記、文件、通訊……）
-- [PeerTube](https://joinpeertube.org/zh_Hant) - 私人的影片分享平台，[Wiwi.Video](https://wiwi.video/) 就是用這個架的
-- [Jitsi Meet](https://meet.jit.si/) - 私人的視訊會議工具，我都是用這個做遠端教學的
-- [Linkwarden](https://github.com/linkwarden/linkwarden) - 架在家裡內部網路的書籤管理器
-- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) - PDF 萬用工具箱，想對 PDF 做的絕大部分的事都能輕鬆完成
-- [Pinchflat](https://github.com/kieraneglin/pinchflat) - 自動排程下載 YouTube 影片
-
-### 💰 訂閱制服務
-
-- [Claude.ai](https://claude.ai/) - 個人覺得比 ChatGPT 更好用的語言模型
-- [OpenRouter](https://openrouter.ai/) - 一個帳號使用各家的語言模型
-- [Splice](https://splice.com/) - 品質很好的商業音樂取樣庫（[退訂了](https://wiwi.blog/blog/splice-escape)）
-- [Linode](https://www.linode.com/) - 月租的 Linux 主機
-- [Spotify](https://open.spotify.com/) - 平常不喜歡用，但是偶而教學或研究時會用到，所以還是訂了
-- [Envato Elements](https://elements.envato.com/) - YouTuber 必備的影片、圖片素材庫，現在也提供很好用、多樣化的圖片生成模型
-- [Flaticon](https://www.flaticon.com/) - 可商用的美工圖案庫
-- [Fastmail](https://www.fastmail.com/) - 我的主要 E-mail 服務商。我不想把所有東西都交給 Google，把 E-mail 分散出來有助於管理風險。
-- [Proton Mail](https://proton.me/mail) - 我的次要 E-mail 服務商
-- [TailScale](https://tailscale.com/) - 私人 VPN；可以讓自己所有的裝置互相連線。（我用的是免費版）
-- [LibSyn](https://libsyn.com/) - 我的 Podcast 服務商
-
-### 📟 終端機相關、工具（感謝WIWI提供🤣🤣）
-
-這些我都沒用過🤣🤣，之後試試看！
-
-- [Ghostty](https://ghostty.org/) - 漂亮的終端機模擬器（新寵）
-- [Alacritty](https://github.com/alacritty/alacritty) - 好用的終端機模擬器（舊愛）
-- [Oh My Zsh](https://ohmyz.sh/) - 讓你的終端機變漂亮
-- [ranger](https://ranger.fm/) - 終端機裡的檔案管理器，還算容易用
-- [Homebrew](https://brew.sh/) - macOS 上的軟體管理器，安裝軟體超方便
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - 影片下載工具
-- [FFmpeg](https://ffmpeg.org/) - 最強的影片、聲音轉檔軟體
-- [OpenCC](https://github.com/BYVoid/OpenCC) - 繁簡中文轉換工具
-- [Pandoc](https://pandoc.org/) - 萬用文件格式轉換器
+...再說
