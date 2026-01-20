@@ -5,7 +5,7 @@ slug: /use
 
 # KAI 愛用什麼 `/use`
 
-最後更新：2025-01-04
+最後更新：2025-01-20
 
 ## 🖥️ 電腦軟體
 
@@ -39,88 +39,178 @@ slug: /use
 ### 🚀 瀏覽器外掛
 
 - [沉浸式翻譯](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh) - 翻譯文章、影片在瀏覽器裡很好用
-- [cpdown](https://wiwi.blog/blog/cpdown) - 把當前頁面輸出成「大型語言模型友善」的 Markdown 檔案
-- [live-stream-downloader](https://github.com/chandler-stimson/live-stream-downloader) - 下載串流影片的工具
+- [Bitwarden 密碼管理器](https://chromewebstore.google.com/detail/bitwarden-%E5%AF%86%E7%A2%BC%E7%AE%A1%E7%90%86%E5%99%A8/nngceckbapebfimnlniiiahkandclblb) - 算是安全而且開源的密碼管理器！有加密同步，我喜歡插件版，可以自動填入
 
-### 🗓️ 個人資訊管理
+:::danger 超推薦入手影片
+又忘記密碼！？免費又強大的「萬用鑰匙」，讓你告別忘密碼的煩惱，一勞永逸｜⊿
 
-- Apple Calendar - macOS 內建的日曆軟體（跟 NextCloud 同步）
+https://youtu.be/8di0J9-pCZQ?si=RX6O0d7ZJ90wN76f
+:::
 
-### 📟 終端機相關、工具
 
-- [Ghostty](https://ghostty.org/) - 漂亮的終端機模擬器（新寵）
-- [Alacritty](https://github.com/alacritty/alacritty) - 好用的終端機模擬器（舊愛）
-- [Oh My Zsh](https://ohmyz.sh/) - 讓你的終端機變漂亮
-- [ranger](https://ranger.fm/) - 終端機裡的檔案管理器，還算容易用
-- [Homebrew](https://brew.sh/) - macOS 上的軟體管理器，安裝軟體超方便
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - 影片下載工具
-- [FFmpeg](https://ffmpeg.org/) - 最強的影片、聲音轉檔軟體
-- [OpenCC](https://github.com/BYVoid/OpenCC) - 繁簡中文轉換工具
-- [Pandoc](https://pandoc.org/) - 萬用文件格式轉換器
+- [NDM Plugin](https://neatdownloadmanager.com/index.php/en/) - 下載工具，將你家網路寬帶跑到最滿，超輕量
+
+
 
 ### 📻 媒體播放器
 
 - [mpv](https://mpv.io/) - 世界最好用的播放軟體
 - [VLC Player](https://www.videolan.org/vlc/) - 世界第二好用的播放軟體
-- [IINA](https://iina.io/) - 以 `mpv` 為底，針對 macOS 特別設計的版本
-- [FreeTube](https://freetubeapp.io/) - YouTube 從來沒有這麼好用過
+- [IINA](https://iina.io/) - MacOS 我常用的媒體播放器，可搭配 yt-dlp 使用
+- [Pipe-viewer](https://github.com/trizen/pipe-viewer) - YouTube 搜尋超好用
+
+:::danger 你一定要裝！
+Pipe-viewer！有史以來最佳的 YouTube 體驗就在這裡～
+- https://wiwi.video/w/g1yFDDDq5quw2Vzkxt5r8A
+:::
 
 ### 📊 簡報
 
-- [Keynote](https://www.apple.com/tw/keynote/) - 好和弦頻道的簡報、動畫、圖卡全靠它；我很想找尋自由軟體的替代方案，但沒有人比它好用。
+- [Microsoft PowerPoint](https://powerpoint.cloud.microsoft/zh-hant/) - 我做簡報都還是用這個，不喜歡 Canva 單純只是希望簡報越簡單越好！
+
+:::warning 不一定要付錢給微軟
+噓🤫！看這教學或著等我出文章！
+- https://massgrave.dev/
+:::
+
 - [slides](https://github.com/maaslalani/slides) - 終端機下的簡報軟體，只要 Markdown 檔案就可以簡報
 
 ### 📝 筆記軟體 / 文字編輯器
 
-- [Micro](https://micro-editor.github.io/) - 終端機下的、容易使用的文字編輯器
-- [Obsidian](https://obsidian.md/) - 作筆記時常用的 Markdown 編輯器
-- [Typora](https://typora.io/) - 次要的 Markdown 編輯器，現在很少用了
+- [Anytype](https://anytype.io/) - 超好用開源筆記軟體，端到端加密超好用！支援 MarkDown
+
+:::warning 告訴你為什麼 不要用 Notion !
+告別用了四年的Notion，更簡單、更穩定、不失控！Anytype是何方神聖？【附模板】｜⊿
+- https://youtu.be/PZvinNlwhqw
+:::
+
 - [VSCodium](https://vscodium.com/) - 編輯程式碼時我傾向用這個
 
 ### 🗂️ 辦公室軟體
 
-- [LibreOffice](https://zh-tw.libreoffice.org/)
+- [LibreOffice](https://zh-tw.libreoffice.org/) - 自由但是教學不多
 - [Gnumeric](https://zh.wikipedia.org/zh-tw/Gnumeric) - 自由、小巧的試算表軟體
 
 ### 🗂️ 檔案同步
 
 - [Syncthing](https://syncthing.net/) - 好用、快速、自由的檔案同步軟體
 
-### 💬 通訊軟體
-
-- LINE - [我超級討厭它](https://wiwi.blog/blog/line-escape-plan)，但在台灣大家都被強迫用它
-- [Synology Chat](https://www.synology.com/zh-tw/dsm/feature/chat) - 我跟老婆主要的通訊方式
-- [NextCloud Talk](https://nextcloud.com/talk/) - 我跟老婆備用的通訊方式
-- [Signal](https://signal.org/zh_HK/download/) - 推薦作為 LINE 的備胎
-- [SimpleX Chat](https://simplex.chat/) - 推薦作為 Signal 的備胎
-- Telegram - 只是用來聯絡一些學生而已
-- WhatsApp - 當然只是用來聯絡一些學生而已
-
 ### 🔑 密碼管理器
 
-- [KeePassXC](https://keepassxc.org/) - 離線使用，利用 Syncthing 來同步密碼庫到各個裝置
+- [Bitwarden](https://bitwarden.com/) - 端到端加密同步，詳細可以看上面瀏覽器插件的部分
 
-### 🎨 圖片製作
+
+### 🎨 圖片製作（逃離 Adobe！）
 
 - [Krita](https://krita.org/zh-tw/) - 最好用的繪圖軟體，我在教學、直播都常用！
-- [Flameshot](https://flameshot.org/) - 最好用的螢幕抓圖軟體
-- [GIMP](https://www.gimp.org/) - 3.0 版用起來終於沒有那麼痛苦了
-- [Inkscape](https://inkscape.org/) - 自由的向量繪圖軟體
+- [GIMP](https://www.gimp.org/) - 3.0 版用起來終於沒有那麼痛苦了，但我電腦老師堅持要用 2.6 版本
+- [Affinity by Canva](https://www.affinity.studio/) - 不是開源的 (是免費) ，但是超好用，可以替代 Adobe
+
+
+:::tip 曾老師網站
+可以去看為什麼老師堅持要用 2.6 版本，害我 MacOS 不能裝！
+- http://research.hchs.hc.edu.tw/~pc731/
+:::
 
 ### 🎹 音樂製作
 
 #### 數位音樂工作站（DAW）
 
-- [Reason](https://www.reasonstudios.com/) - 我最熟悉的編曲軟體。很想要跳槽到自由軟體的選項，但用得太習慣了，目前就還是繼續用吧！最新的第 13 版品質也在下降中，是不是該準備跳槽了？
-- [Logic Pro](https://www.apple.com/tw/logic-pro/) - 我其實不常用；但因為我有很多學生在用，所以我也必須熟悉它一下。
-- [Ardour](https://ardour.org/) - 我在 Linux 電腦上的主要編曲、錄音軟體
-- [Bitwig](https://www.bitwig.com/) - 有 Linux 版本，算是我的編曲軟體「備胎」
-- [Reaper](https://www.reaper.fm/) - 編輯很長的 Podcast 檔案時很好用，但用來編曲的話不太習慣
-- [Renoise](https://renoise.com/) - 很好玩的 Tracker
+- [Cubase](https://www.steinberg.net/cubase/) - 我最熟悉的編曲軟體。很想要跳槽到自由軟體的選項，但用得太習慣了，目前就還是繼續用吧！最新的第 15 版感覺比較像是 14.5 ，建議不要升級！
+> 超豐富教學資源：https://cubaseindex.com/
+- [Logic Pro](https://www.apple.com/tw/logic-pro/) - 我其實不常用；而且用過 Cubase 之後就被快捷鍵綁架了，所以後來比較少用 🤣。
+- [Ardour](https://ardour.org/) - 開源但我不習慣的編曲、錄音軟體
+- [Milky Tracker](https://milkytracker.org/) - 很好玩的音樂製作軟體
+
+:::warning 超強大的編曲軟體超好用！
+好玩的編曲軟體，超激推！！
+
+https://wiwi.video/w/avA6776BwPcfFXHrEKfgJm
+:::
 
 #### 製譜軟體
 
-- [MuseScore](https://musescore.org/) - 自由的製譜軟體；我不喜歡 4.x 版，3.6.2 最完美！不要跟 [MuseScore.com 樂譜服務](https://wiwi.blog/blog/musescore-com-scam)混淆。
+- [MuseScore](https://musescore.org/) - 自由的製譜軟體！：最新版本終於可以用快速輸入模式：M 模式！
+
+不要跟 [MuseScore.com 樂譜服務](https://wiwi.blog/blog/musescore-com-scam)混淆。
+
+
+
+### 🎞️ 影片製作
+
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) - 有免費版而且限制少！但是要注意需要高配備電腦！
+- [OBS](https://obsproject.com/) - 開源螢幕錄影軟體！
+
+:::info 聽說OBS有巨大更新！
+OBS is getting some BIG UI improvements
+- https://youtu.be/HxriBOQmFAU
+:::
+
+### 💻 網站製作
+
+- [Hugo](https://gohugo.io/) - 把 Markdown 直接變成網站；[NiceChord.com](https://nicechord.com/) 就是用這個架的。
+- [Docusaurus](https://docusaurus.io/) - 專門用來架「文件」網站的軟體，這裡就是用它架的。
+
+
+
+
+
+## 📱 手機
+
+我目前用 OPPO A3 PRO（有人說有資安問題 😅）
+
+但是！我想換：256 GB 的 Google Pixel 10。
+:::info 其他選擇
+iPhone 17 (不想被 Apple 生態圈綁架！)
+
+> 蘋果全家桶：有了一堆Apple裝置到底可以幹嘛？
+- https://youtu.be/Zt9lpwN-srk?si=_u2XkMwlvTEexyNx
+:::
+
+
+
+### 📦 App Store
+
+- F-Droid - 自由軟體 App Store
+- Aurora Store - 不用登入 Google 也能 Play Store
+
+### ⚙️ Apps（不分類）
+
+- Ente Auth - 兩階段驗證[一次性密碼](https://wiwi.blog/blog/totp)產生器
+- Blip - 跨平台傳檔案，不同網路也可以傳！
+- QDict - 離線字典
+- Organic Maps - 離線地圖
+- OsmAnd - 另一個離線地圖
+- Termux - 手機上也能終端機、SSH
+- mpv - 播放程式
+- VLC Player - 另一個播放程式
+- FamiStudio - 偶爾想在手機上做音樂可以用
+
+## 🎶 音樂相關
+
+### 🎹 鋼琴
+
+- YAMAHA 直立式鋼琴 而且好像是二手的！
+
+### 🎛️ 電子鍵盤樂器
+
+- Yamaha DGX-670 - 我唯一的電子琴！
+
+
+## 其他（沒在用，感謝WIWI提供）
+### 📻 音源機
+
+- Roland Integra-7 - 我的最愛，幾乎任何 Project 我都用它，如果可以的話我希望能買三台備用
+- Yamaha Motif Rack XS - 吉他音色很好用
+- Yamaha Motif Rack ES - 比 XS 舊版，但使用者介面比 XS 好用是怎麼回事
+- Roland MC-101 - 其實是滿有趣的機器，但輸出總是有雜訊讓我很難好好使用它
+- Edirol StudioCanvas SD-80 - 爵士鼓音色很有特色
+
+### 🎚️ 效果器
+
+- Roland SP-404 MkII - 很好用的音效介面／取樣機／效果器
+- Hologram Chroma Console - 綜合效果器
+- Hologram Microcosm - 回音系效果器，聲音很酷但不是太實用
 
 #### 軟體樂器
 
@@ -139,22 +229,16 @@ slug: /use
 
 - [Sonic Visualiser](https://www.sonicvisualiser.org/) - 專業的聲音分析工具，抓歌時的好幫手！
 
-### 🎞️ 影片製作
-
-- [Final Cut Pro](https://www.apple.com/tw/final-cut-pro/) - 還無法完全離開 macOS 的最大原因
-- [OBS](https://obsproject.com/) - 好用的螢幕錄製和直播軟體
-
-### 💻 網站製作
-
-- [Hugo](https://gohugo.io/) - 把 Markdown 直接變成網站；[NiceChord.com](https://nicechord.com/) 就是用這個架的。
-- [Docusaurus](https://docusaurus.io/) - 專門用來架「文件」網站的軟體，這裡就是用它架的。
-
 ### 🤖 AI
 
 - [ollama](https://ollama.com/) - 在電腦上執行大型語言模型  
   - 最常用的離線模型：Gemma 3、Aya Expanse、GLM 4、Granite 4
 - [open-webui](https://github.com/open-webui/open-webui) - 長得很像 ChatGPT 的大型語言模型介面
 - [whisper](https://github.com/openai/whisper) - 語音辨識、自動上字幕軟體
+
+### 📲 作業系統
+
+- [GrapheneOS](https://wiwi.blog/blog/degoogled-phone) - 注重隱私和安全的手機系統
 
 ## ☁️ 雲端服務
 
@@ -181,78 +265,16 @@ slug: /use
 - [TailScale](https://tailscale.com/) - 私人 VPN；可以讓自己所有的裝置互相連線。（我用的是免費版）
 - [LibSyn](https://libsyn.com/) - 我的 Podcast 服務商
 
-## 📱 手機
+### 📟 終端機相關、工具（感謝WIWI提供🤣🤣）
 
-我目前用 128 GB 的 Google Pixel 7。
+這些我都沒用過🤣🤣，之後試試看！
 
-### 📲 作業系統
-
-- [GrapheneOS](https://wiwi.blog/blog/degoogled-phone) - 注重隱私和安全的手機系統
-
-### 📦 App Store
-
-- F-Droid - 自由軟體 App Store
-- Aurora Store - 不用登入 Google 也能 Play Store
-
-### ⚙️ Apps（不分類）
-
-- Waistline - 記錄每天吃的食物和營養素
-- AntennaPod - 乾淨、好用的 Podcast 播放器
-- Aegis - 兩階段驗證[一次性密碼](https://wiwi.blog/blog/totp)產生器
-- Cromite - 內建檔廣告的瀏覽器
-- Mull - 另一個瀏覽器
-- Kiwix - 離線也能查 Wikipedia 和其他
-- Lemuroid - 在手機上玩 Game Boy Advance 和更多
-- LocalSend - 跨平台傳檔案，支援所有常見的作業系統
-- QDict - 離線字典
-- Organic Maps - 離線地圖
-- OsmAnd - 另一個離線地圖
-- Shattered Pixel Dungeon - 好玩的地下城探險遊戲
-- Termux - 手機上也能終端機、SSH
-- Tailscale - 私人 VPN
-- mpv - 播放程式
-- VLC Player - 另一個播放程式
-- Synology Chat - 私人的通訊軟體
-- Synology Drive - 連上自己的 NAS 同步檔案
-- Synology Photos - 連上自己的 NAS 同步照片
-- DS File - 連上自己的 NAS 抓檔案
-- Simple Calendar Pro - 日曆
-- Jitsi Meet - 遠端會議
-- NextCloud Talk - 備用的私人通訊軟體
-- Syncthing - 同步檔案和筆記
-- KOReader - 電子書、PDF 閱讀器
-- Binary Eye - QR Code 掃描、產生器
-- DAVx5 - 跟 NextCloud 同步行事曆
-- Open Camera - 自由的相機軟體
-- FamiStudio - 偶爾想在手機上做音樂可以用
-
-## 🎶 音樂相關
-
-### 🎹 真鋼琴
-
-- Kawai RX-3 平台鋼琴 - 2004 年出廠，音樂系琴房最常見的型號！看[這篇貼文](https://wiwi.blog/blog/my-pianos)了解我還用過哪些鋼琴。
-
-### 🎛️ 電子鍵盤樂器
-
-- Yamaha CP88 - 我的主要工作用數位鋼琴
-- Nord Electro 6D - 真的很好彈、鋼琴音色很好聽，沒有其他優點了 XD
-- Yamaha Reface DX - 我最愛的小型鍵盤（[演奏影片](https://wiwi.video/w/atXbypYWkwNanDEiVzz4Tk)）
-- Korg MicroArranger - 很老了，但用起來很有趣的自動伴奏琴（[影片](https://wiwi.video/w/jADD2oNwe2aCpwBMvjAmZ1)）
-- Roland RD-2000 - 都是檸檬卷在用，但我也滿喜歡這台琴
-- Korg Modwave MkII - Wavetable 合成器，基本上就是硬體版的 Serum
-- Arturia MicroFreak - 躺在琴房角落的地板休息中
-
-### 📻 音源機
-
-- Roland Integra-7 - 我的最愛，幾乎任何 Project 我都用它，如果可以的話我希望能買三台備用
-- Yamaha Motif Rack XS - 吉他音色很好用
-- Yamaha Motif Rack ES - 比 XS 舊版，但使用者介面比 XS 好用是怎麼回事
-- Roland MC-101 - 其實是滿有趣的機器，但輸出總是有雜訊讓我很難好好使用它
-- Edirol StudioCanvas SD-80 - 爵士鼓音色很有特色
-
-### 🎚️ 效果器
-
-- Roland SP-404 MkII - 很好用的音效介面／取樣機／效果器
-- Hologram Chroma Console - 綜合效果器
-- Hologram Microcosm - 回音系效果器，聲音很酷但不是太實用
-
+- [Ghostty](https://ghostty.org/) - 漂亮的終端機模擬器（新寵）
+- [Alacritty](https://github.com/alacritty/alacritty) - 好用的終端機模擬器（舊愛）
+- [Oh My Zsh](https://ohmyz.sh/) - 讓你的終端機變漂亮
+- [ranger](https://ranger.fm/) - 終端機裡的檔案管理器，還算容易用
+- [Homebrew](https://brew.sh/) - macOS 上的軟體管理器，安裝軟體超方便
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - 影片下載工具
+- [FFmpeg](https://ffmpeg.org/) - 最強的影片、聲音轉檔軟體
+- [OpenCC](https://github.com/BYVoid/OpenCC) - 繁簡中文轉換工具
+- [Pandoc](https://pandoc.org/) - 萬用文件格式轉換器
