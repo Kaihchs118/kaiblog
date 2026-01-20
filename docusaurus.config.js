@@ -25,12 +25,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // 編輯此頁已刪除
         },
         blog: {
           showReadingTime: true,
           feedOptions: { type: ['rss', 'atom'], xslt: true },
-          // 編輯此頁已刪除
           onInlineTags: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
@@ -58,7 +56,6 @@ const config = {
     ({
       image: 'img/docusaurusd.jpg',
       
-      // 新增：公告欄（可選，如不需要可整段刪除）
       announcementBar: {
         id: 'support_us',
         content: '🎉 歡迎來到我的部落格！<a href="/about">了解更多關於我</a>',
@@ -73,20 +70,39 @@ const config = {
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
-          {to: '/blog', label: '貼文', position: 'left'},
-          {to: '/docs', label: '筆記', position: 'left'},
-          {to: '/blog/archive', label: '列表', position: 'left'},
-          {to: '/random', label: '隨機', position: 'left'},
-          {to: '/now', label: '近況', position: 'left'},
-          {to: '/use', label: '愛用', position: 'left'},
-          {to: '/about', label: '關於', position: 'left'},
+          // 頁首僅保留 GitHub 連結
           {href: 'https://github.com/Kaihchs118/', label: 'GitHub', position: 'right'},
         ],
       },
 
       footer: {
         style: 'dark',
-        links: [], // 保持簡潔
+        links: [
+          {
+            title: '內容導覽',
+            items: [
+              { label: '貼文', to: '/blog' },
+              { label: '筆記', to: '/docs' },
+              { label: '列表', to: '/blog/archive' },
+              { label: '隨機', to: '/random' },
+            ],
+          },
+          {
+            title: '關於我',
+            items: [
+              { label: '關於', to: '/about' },
+              { label: '近況', to: '/now' },
+              { label: '愛用', to: '/use' },
+            ],
+          },
+          {
+            title: '社群與外部連結',
+            items: [
+              { label: 'GitHub', href: 'https://github.com/Kaihchs118/' },
+              { label: 'YouTube (KAI STUDIO)', href: 'https://youtube.com/@kaistudio-621' },
+            ],
+          },
+        ],
         copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG.`,
       },
 
@@ -95,11 +111,10 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
 
-      // 新增：側邊欄互動優化
       docs: {
         sidebar: {
-          hideable: true, // 側邊欄可以手動收起
-          autoCollapseCategories: true, // 自動收起不相關的分類
+          hideable: true,
+          autoCollapseCategories: true,
         },
       },
     }),
