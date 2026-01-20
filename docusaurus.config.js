@@ -70,7 +70,13 @@ const config = {
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
-          // 頁首僅保留 GitHub 連結
+          {to: '/blog', label: '最新文章', position: 'left'}, // 新增「最新文章」
+          {to: '/docs', label: '筆記', position: 'left'},
+          {to: '/blog/archive', label: '列表', position: 'left'},
+          {to: '/random', label: '隨機', position: 'left'},
+          {to: '/now', label: '近況', position: 'left'},
+          {to: '/use', label: '愛用', position: 'left'},
+          {to: '/about', label: '關於', position: 'left'},
           {href: 'https://github.com/Kaihchs118/', label: 'GitHub', position: 'right'},
         ],
       },
@@ -79,31 +85,31 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '內容導覽',
+            title: '快速導覽',
             items: [
-              { label: '貼文', to: '/blog' },
+              { label: '最新文章', to: '/blog' },
               { label: '筆記', to: '/docs' },
               { label: '列表', to: '/blog/archive' },
-              { label: '隨機', to: '/random' },
+              { label: '隨機連結', to: '/random' },
             ],
           },
           {
-            title: '關於我',
+            title: '個人資訊',
             items: [
-              { label: '關於', to: '/about' },
+              { label: '關於我', to: '/about' },
               { label: '近況', to: '/now' },
-              { label: '愛用', to: '/use' },
+              { label: '愛用設備', to: '/use' },
             ],
           },
           {
-            title: '社群與外部連結',
+            title: '社群媒體',
             items: [
               { label: 'GitHub', href: 'https://github.com/Kaihchs118/' },
               { label: 'YouTube (KAI STUDIO)', href: 'https://youtube.com/@kaistudio-621' },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG.`,
+        copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG. Built with Docusaurus.`,
       },
 
       prism: {
