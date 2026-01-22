@@ -24,8 +24,9 @@ slug: /
 </a>
 :::
 
+× 你可以用 RSS 訂閱我：
 ```Text
-× 你可以用 RSS 訂閱我：https://kaiblog.is-a.dev
+https://kaiblog.is-a.dev
 ```
 
 ## 📋 筆記
