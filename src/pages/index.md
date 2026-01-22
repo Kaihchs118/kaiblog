@@ -24,10 +24,7 @@ slug: /
 </a>
 :::
 
-× 你可以用 RSS 訂閱我：
-```Text
-https://kaiblog.is-a.dev
-```
+
 
 ## 📋 筆記
 這裡會是記錄筆記的地方，
@@ -45,7 +42,13 @@ https://kaiblog.is-a.dev
 
 ## 其他小技巧！
 
-- 📥️ BLOG 有 RSS Feed。直接使用新網址即可：kaiblog.is-a.dev
+- 📥️ BLOG 有 RSS Feed ！
+
+× 你可以用 RSS 訂閱我：
+```Text
+https://kaiblog.is-a.dev
+```
+
 - 🔍️ 右上角有全站全文搜尋功能（Ctrl+K），很好用喔！輸入隨意的關鍵字試試看！
 - 📧 有任何建議、投稿，都歡迎寫信到 kaigithub0621@gmail.com 信箱！
 
