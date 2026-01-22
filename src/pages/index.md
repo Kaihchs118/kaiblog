@@ -24,7 +24,9 @@ slug: /
 </a>
 :::
 
+```Text
 × 你可以用 RSS 訂閱我：https://kaiblog.is-a.dev
+```
 
 ## 📋 筆記
 這裡會是記錄筆記的地方，
