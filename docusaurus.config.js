@@ -39,12 +39,13 @@ const config = {
     ],
   ],
 
-  plugins: [
+plugins: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: ["zh"],
+        // 在這裡同時加入 "en" 和 "zh"
+        language: ["en", "zh"], 
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
       },
@@ -70,13 +71,14 @@ const config = {
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
-          {to: '/blog', label: '最新文章', position: 'left'}, // 新增「最新文章」
+          {to: '/blog', label: '最新貼文', position: 'left'}, // 新增「最新文章」
           {to: '/docs', label: '筆記', position: 'left'},
           {to: '/blog/archive', label: '列表', position: 'left'},
           {to: '/random', label: '隨機', position: 'left'},
           {to: '/now', label: '近況', position: 'left'},
           {to: '/use', label: '愛用', position: 'left'},
           {to: '/about', label: '關於', position: 'left'},
+          {to: '/search',label: '全站搜尋',position: 'right',},
           {href: 'https://github.com/Kaihchs118/', label: 'GitHub', position: 'right'},
         ],
       },
@@ -87,7 +89,7 @@ const config = {
           {
             title: '快速導覽',
             items: [
-              { label: '最新文章', to: '/blog' },
+              { label: '最新貼文', to: '/blog' },
               { label: '筆記', to: '/docs' },
               { label: '列表', to: '/blog/archive' },
               { label: '隨機連結', to: '/random' },
