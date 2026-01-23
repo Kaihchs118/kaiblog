@@ -48,17 +48,6 @@ plugins: [
         language: ["en", "zh"], 
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        // 重要：這會影響 Enter 鍵的行為，部分版本需確保此項開啟
-        highlightSearchTermsOnTargetPage: true,
-        translations: {
-        search_placeholder: "搜尋文件",
-        see_all_results: "查看所有結果",
-        no_results: "找不到相關結果",
-        search_results_for: "「{{ keyword }}」的搜尋結果",
-        search_the_documentation: "搜尋全站文件",
-        count_documents_found: "找到 {{ count }} 篇相關文件",
-        no_documents_were_found: "未找到任何文件",
-      },
       },
     ],
   ],
