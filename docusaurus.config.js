@@ -48,6 +48,8 @@ plugins: [
         language: ["en", "zh"], 
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        // 重要：這會影響 Enter 鍵的行為，部分版本需確保此項開啟
+        highlightSearchTermsOnTargetPage: true,
       },
     ],
   ],
