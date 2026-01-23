@@ -1,3 +1,3 @@
 # Website 
 
-https://kaihchs118.github.io/kaiblog
+https://kaiblog.is-a.dev
