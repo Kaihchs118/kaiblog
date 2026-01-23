@@ -1,5 +1,5 @@
 /* ================================
-   1. 基礎變數與全域設定
+   1. 基礎變數與全域設定 (Theme Variables)
    ================================ */
 :root {
   --ifm-color-primary: #429eee;
@@ -26,14 +26,14 @@ html[data-theme='dark'] {
 
 * { box-shadow: none !important; }
 
-/* 導覽列 Logo 圓角設定 */
+/* 導覽列 Logo */
 .navbar__logo img {
-  border-radius: 25%; /* 圓形 */
+  border-radius: 25%;
   object-fit: cover;
 }
 
 /* ================================
-   2. 文字與標題樣式
+   2. 文字樣式 (Typography)
    ================================ */
 .hero-title, .blue-title, .blue-stroke-text {
   color: var(--ifm-color-primary);
@@ -42,21 +42,55 @@ html[data-theme='dark'] {
 .hero-title { font-weight: 800; }
 .blue-title { font-weight: 1000; }
 .blue-stroke-text { font-weight: 700; margin-left: 0.2rem; }
+.red-stroke-text { font-weight: 700; margin-left: 0.2rem; color: red; }
 
 .gray { font-weight: 1000; color: #726f6f; }
 html[data-theme='dark'] .gray { color: #949597; }
 
-a.link { text-decoration: none; font-weight: 800; border-bottom: 3px solid #69B1D1; }
+a.link { 
+  text-decoration: none; 
+  font-weight: 800; 
+  border-bottom: 3px solid #69B1D1; 
+}
+
+/* 內容區列表縮進 (排除麵包屑) */
+main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
+main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
+
+/* 自定義大標題樣式 */
+main > :is(h3, strong) {
+  display: block; 
+  font-size: 2.1rem; 
+  margin: 3rem 0 1rem;
+  padding-left: 1rem; 
+  border-left: 6px solid var(--ifm-color-primary);
+  text-align: left; /* 確保左對齊 */
+}
 
 /* ================================
-   3. 按鈕系統
+   3. 按鈕系統 (Buttons)
    ================================ */
-.download-buttons, .download-buttons-red { display: flex; gap: 12px; flex-wrap: wrap; margin: 1.5vw 0; }
+.download-buttons, .download-buttons-red { 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+  margin: 1.5vw 0; 
+  justify-content: flex-start; /* 改為靠左排列 */
+}
 
 .download-btn, .download-btn-red {
-  display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px;
-  font-size: 14px; font-weight: 600; line-height: 1; border-radius: 10px;
-  text-decoration: none; white-space: nowrap; transition: all 0.2s ease;
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px; 
+  height: 36px; 
+  padding: 0 14px;
+  font-size: 14px; 
+  font-weight: 600; 
+  line-height: 1; 
+  border-radius: 10px;
+  text-decoration: none; 
+  white-space: nowrap; 
+  transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -64,105 +98,111 @@ a.link { text-decoration: none; font-weight: 800; border-bottom: 3px solid #69B1
 .download-btn-red.primary { background: #ff6b6b; color: #fff; }
 .download-btn.secondary { background: #f1f5f9; color: #0f172a; }
 
-.download-btn.primary:hover { background: var(--ifm-color-primary-dark); transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
-.download-btn.secondary:hover { background: #e2e8f0; transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14); }
+.download-btn.primary:hover { 
+  background: var(--ifm-color-primary-dark); 
+  transform: translateY(-4px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); 
+}
 
 /* 強制覆蓋大型按鈕樣式 */
 a.download-btn.primary {
-  display: inline-flex !important; align-items: center !important; gap: 0.6rem !important;
-  padding: 14px 28px !important; font-size: 18px !important; font-weight: 600 !important;
-  background-color: #429eee !important; border-radius: 10px !important;
+  padding: 14px 28px !important; 
+  font-size: 18px !important;
 }
 
 /* ================================
-   4. 元件樣式 (Callouts & Boxes)
+   4. 元件區塊 (Callouts & Boxes)
    ================================ */
-.fusion-callout .theme-admonition-info { --ifm-alert-background-color: #ecfdf3; --ifm-alert-border-color: #22c55e; --ifm-alert-foreground-color: #166534; }
-html[data-theme='dark'] .fusion-callout .theme-admonition-info { --ifm-alert-background-color: #052e1a; --ifm-alert-foreground-color: #bbf7d0; }
+/* 提示框顏色修正 */
+.fusion-callout .theme-admonition-info { 
+  --ifm-alert-background-color: #ecfdf3; 
+  --ifm-alert-border-color: #22c55e; 
+  --ifm-alert-foreground-color: #166534; 
+}
 
-.tip-callout .theme-admonition-warning { --ifm-alert-background-color: #fdecec; --ifm-alert-border-color: #e5484d; --ifm-alert-foreground-color: #7a1c1c; }
-html[data-theme='dark'] .tip-callout .theme-admonition-warning { --ifm-alert-background-color: #3a0f12; --ifm-alert-border-color: #ff6b6b; --ifm-alert-foreground-color: #ffd6d6; }
+.tip-callout .theme-admonition-warning { 
+  --ifm-alert-background-color: #fdecec; 
+  --ifm-alert-border-color: #e5484d; 
+  --ifm-alert-foreground-color: #7a1c1c; 
+}
 
+/* 路徑展示區塊 */
 .path-box, .path-box-tab {
-  background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.75rem 1rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #334155; margin: 0.5rem 0 1rem; word-break: break-all;
+  background: #f8fafc; 
+  border: 1px solid #e5e7eb; 
+  border-radius: 8px; 
+  padding: 0.75rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; 
+  color: #334155; 
+  margin: 0.5rem 0 1rem; 
+  word-break: break-all;
 }
-.path-box-tab { border-width: 2px; margin: 0.8vw 0.1vw; }
-.path-box-tab ul { margin: 0; padding-left: 1.2rem; }
-.path-box-tab li { margin: 0.3rem 0; }
 
-html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
+html[data-theme='dark'] :is(.path-box, .path-box-tab) { 
+  background: #020617; 
+  border-color: #1e293b; 
+  color: #e5e7eb; 
+}
 
 /* ================================
-   5. 多媒體與表格
+   5. 多媒體與表格 (Media & Tables)
    ================================ */
-.youtube, .youtube-s { max-width: 960px; margin: 2rem auto; padding: 1.2rem; background: #def5ff; border-radius: 14px; }
+/* 影片區塊 - 移除置中與左側內縮 */
+.youtube, .youtube-s { 
+  max-width: 960px; 
+  margin: 2rem 0; /* 移除 auto 使其靠左 */
+  padding: 1.2rem; 
+  background: #def5ff; 
+  border-radius: 14px; 
+}
+
 .youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; }
-.youtube p, .youtube-s p { margin: .4rem 0 0; font-size: 0.95rem; line-height: 1.6; color: #949597; }
-.youtube p { padding-left: 25%; }
-.youtube-s p { padding-left: 40%; }
+
+.youtube p, .youtube-s p { 
+  margin: .4rem 0 0; 
+  font-size: 0.95rem; 
+  line-height: 1.6; 
+  color: #949597; 
+  padding-left: 0; /* 移除原本的 25% 和 40% 置中偏移 */
+}
 
 html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
-html[data-theme='dark'] :is(.youtube p, .youtube-s p) { color: #bac2c9; }
 
-@media (max-width: 768px) {
-  :is(.youtube, .youtube-s) { margin: 1.5rem 0; padding: 1rem; border-radius: 10px; }
-  :is(.youtube p, .youtube-s p) { padding-left: 0% !important; }
+/* 圖片樣式 - 移除 margin: auto */
+.photo img { width: 256px; max-width: 100%; height: auto; border-radius: 10px; }
+.photo-small img { width: 2.5cm; height: auto; border-radius: 10px; }
+.photo-window { width: 20cm; max-width: 100%; height: auto; border-radius: 10px; }
+
+.photo-border img {
+  margin: 0.2rem 0; /* 移除 auto 置中 */
+  padding: 0.5rem;
+  display: block; 
+  border-radius: 14px;
+  background: #def5ff;
 }
 
-.table-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+[data-theme='dark'] .photo-border img { background: #6ca5da; border: 1px solid #dbe3ed; }
+.photo-border p { margin: .4rem 0 0; font-size: 0.95rem; color: #949597; }
+
+/* 表格優化 */
+.table-wrapper { width: 100%; overflow-x: auto; }
 .table-wrapper table { min-width: 600px; border-collapse: collapse; }
-.photo img { width: 256px; max-width: 100%; height: auto; border-radius: 10px; }
 
 /* ================================
-   6. Blog Archive 與 清單修正 (解決麵包屑偏移)
+   6. Blog Archive 修正
    ================================ */
 .hero--primary { padding: 2.5rem 0 2rem; }
 .hero--primary .hero__subtitle { display: none; }
 
-main > :is(h3, strong) {
-  display: block; font-size: 2.1rem; margin: 3rem 0 1rem;
-  padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
-}
-
-/* 極度不推薦，這對 SEO 很差，且可能導致殘影 */
 .hero--primary h1 {
-  visibility: hidden; /* 隱藏原本的 Archive */
+  visibility: hidden;
   position: relative;
 }
 
 .hero--primary h1::after {
-  content: "部落格列表"; /* 插入新文字 */
+  content: "部落格列表";
   visibility: visible;
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
 }
-
-/* 僅針對內容區的 ul 進行縮進，排除導航列 (.breadcrumbs) */
-main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
-main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
-
-/* 調整圖片顯示 */
-.photo-small img {width: 2.5cm;  height:auto; border-radius: 10px;}
-/* 基礎樣式 */
-.photo-border img {
-  margin: 0.2rem auto;
-  padding: 0.5rem;
-  display: block; /* 確保 margin auto 置中有效 */
-  border-radius: 14px;
-  background: #def5ff; /* 淺色模式預設值 */
-  transition: background 0.3s ease; /* 顏色切換更平滑 */
-}
-
-/* 深色模式修正 */
-[data-theme='dark'] .photo-border img {
-  background: #6ca5da; /* 深藍色背景 (Navy Blue) */
-  border: 1px solid #dbe3ed; /* 可選：加一點邊框讓深色圖片更明顯 */
-}
-
-.photo-border p { margin: .4rem 0 0; font-size: 0.95rem; line-height: 1.6; color: #949597; }
-
-.photo-window  {width: 20cm;  height:auto; border-radius: 10px;}
-.red-stroke-text { font-weight: 700; margin-left: 0.2rem; color: red; }
