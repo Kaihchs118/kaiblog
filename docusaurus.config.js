@@ -80,7 +80,7 @@ plugins: [
           {to: '/now', label: '近況', position: 'left'},
           {to: '/use', label: '愛用', position: 'left'},
           {to: '/about', label: '關於', position: 'left'},
-          {to: '/search',label: '全站搜尋',position: 'right',},
+          {to: '/search',label: '🔍 全站搜尋',position: 'right',},
           {href: 'https://github.com/Kaihchs118/', label: 'GitHub', position: 'right'},
         ],
       },
