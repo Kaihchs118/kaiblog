@@ -73,15 +73,53 @@ plugins: [
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
-          {to: '/blog', label: '最新貼文', position: 'left'}, // 新增「最新文章」
-          {to: '/docs', label: '筆記', position: 'left'},
-          {to: '/blog/archive', label: '列表', position: 'left'},
-          {to: '/random', label: '隨機', position: 'left'},
-          {to: '/now', label: '近況', position: 'left'},
-          {to: '/use', label: '愛用', position: 'left'},
-          {to: '/about', label: '關於', position: 'left'},
-          {to: '/search',label: '🔍 全站搜尋',position: 'right',},
-          {href: 'https://github.com/Kaihchs118/', label: 'GitHub', position: 'right'},
+          {
+            to: '/blog', 
+            label: '📝 最新貼文', // 或是使用 <i class="fa-solid fa-pen-nib"></i> 📝
+            position: 'left'
+          },
+          {
+            to: '/docs', 
+            label: '📚 筆記', 
+            position: 'left'
+          },
+          {
+            to: '/blog/archive', 
+            label: '🗄️ 列表', 
+            position: 'left'
+          },
+          {
+            to: '/random', 
+            label: '🎲 隨機', 
+            position: 'left'
+          },
+          {
+            to: '/now', 
+            label: '🕒 近況', 
+            position: 'left'
+          },
+          {
+            to: '/use', 
+            label: '🛠️ 愛用', 
+            position: 'left'
+          },
+          {
+            to: '/about', 
+            label: '👤 關於', 
+            position: 'left'
+          },
+          {
+            to: '/search',
+            label: '🔍 全站搜尋',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/Kaihchs118/', 
+            // 如果你有引入 Font Awesome，可以用：
+            // html: '<i class="fa-brands fa-github" style="font-size: 1.2rem"></i>',
+            label: 'GitHub', 
+            position: 'right'
+          },
         ],
       },
 
