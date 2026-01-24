@@ -11,10 +11,14 @@
             "id": "d84e89983cac9505",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blog/2026/2026-01-24 寒假企劃/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "index"
             }
           }
         ]
@@ -163,5 +167,8 @@
     }
   },
   "active": "d84e89983cac9505",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "blog/2026/2026-01-24 寒假企劃/index.md",
+    "blog/2026/2026-01-24 寒假企劃"
+  ]
 }
