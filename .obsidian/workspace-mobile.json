@@ -150,9 +150,19 @@
           "icon": "lucide-list",
           "title": "大綱"
         }
+      },
+      {
+        "id": "9e3e451eb94174af",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "git-pull-request",
+          "title": "Source Control"
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 3
   },
   "left-ribbon": {
     "hiddenItems": {
