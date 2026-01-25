@@ -3,7 +3,6 @@ slug:  mac-app
 title: 我的 Mac 軟體清單
 authors: [KAI]
 date: 2026-01-26T12:00
-draft: true
 ---
 
 以下列出我所有 Mac 上面的軟體
