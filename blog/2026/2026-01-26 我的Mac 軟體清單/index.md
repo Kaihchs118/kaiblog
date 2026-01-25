@@ -7,7 +7,7 @@ date: 2026-01-26T12:00
 
 以下列出我所有 Mac 上面的軟體
 
-1. Affinity Studio ㄧ 製作縮圖常用，免費，[可以看這篇文章](blog/affinity)
+1. Affinity Studio ㄧ 製作縮圖常用，免費，[可以看這篇文章](/blog/affinity)
 2. Anytype ㄧ 超好用開源筆記軟體，可以看看[這部影片](https://youtube.com/playlist?list=PL8hRa_yxy1s357hLJfzMnzfMjSqTf3GNM)的說明，載入速度超快，這是為什麼我離開 Notion 的原因
 3. Arena ㄧ 製作舞美 (VJ) 專用，目前還在初學階段
 4. Aria Player ㄧ Finale 的音樂播放器
@@ -23,7 +23,7 @@ date: 2026-01-26T12:00
 14. Discord ㄧ 在某些時候聊天會用，視訊不卡頓，我覺得很不錯
 15. Dorico ㄧ 想跳槽，但完全不會用！快捷鍵需熟練
 16. Finale 27 ㄧ 習慣了，但是…停止提供更新了！
-17. GIMP ㄧ [曾老師堅持使用的修圖軟體](blog/731pc)，**而且還堅持用 2.6**
+17. GIMP ㄧ [曾老師堅持使用的修圖軟體](/blog/731pc)，**而且還堅持用 2.6**
 18. Github Destop ㄧ 在發布新文章時很好用，本網站就是使用 Github 架站的
 19. Groove Agent SE ㄧ Cubase 內建的鼓機，還蠻好用的
 20. HALion Sonic ㄧ Cubase 內建的虛擬音源，不真實，但耗電量低就是了
