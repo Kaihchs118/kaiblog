@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Tutorial/intro.md",
+                "file": "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "intro"
+              "title": "index"
             }
           }
         ]
@@ -143,7 +143,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/Tutorial/intro.md",
+            "file": "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -169,10 +169,11 @@
   },
   "active": "d84e89983cac9505",
   "lastOpenFiles": [
+    "().md",
+    "docs/Tutorial/intro.md",
     "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
     "blog/2026/2026-01-11 曾老師/index.md",
     "blog/731pc.md",
-    "().md",
     "blog/2026/2026-01-20 圖片編輯/index.md",
     "blog/2026/2026-01-25 101爬塔/index.md",
     "blog/2026/2026-01-26 我的Mac 軟體清單",
