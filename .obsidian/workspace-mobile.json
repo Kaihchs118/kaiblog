@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/2026/2026-01-25 101爬塔/index.md",
+                "file": "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
                 "mode": "source",
                 "source": true
               },
@@ -157,7 +157,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
@@ -169,8 +168,8 @@
   },
   "active": "d84e89983cac9505",
   "lastOpenFiles": [
-    "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
     "blog/2026/2026-01-25 101爬塔/index.md",
+    "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
     "blog/2026/2026-01-20 圖片編輯/index.md",
     "blog/2026/2026-01-11 曾老師/index.md",
     "docs/Tutorial/intro.md",
