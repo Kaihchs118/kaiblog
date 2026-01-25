@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/2026/2026-01-25 101爬塔/index.md",
+                "file": "docs/Tutorial/intro.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "intro"
             }
           }
         ]
@@ -143,7 +143,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "blog/2026/2026-01-25 101爬塔/index.md",
+            "file": "docs/Tutorial/intro.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -151,19 +151,9 @@
           "icon": "lucide-list",
           "title": "大綱"
         }
-      },
-      {
-        "id": "9e3e451eb94174af",
-        "type": "leaf",
-        "state": {
-          "type": "git-view",
-          "state": {},
-          "icon": "git-pull-request",
-          "title": "Source Control"
-        }
       }
     ],
-    "currentTab": 3
+    "currentTab": 2
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,8 +169,14 @@
   },
   "active": "d84e89983cac9505",
   "lastOpenFiles": [
-    "blog/2026/2026-01-23 合唱歌曲/index.md",
+    "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
+    "blog/2026/2026-01-11 曾老師/index.md",
+    "blog/731pc.md",
+    "().md",
+    "blog/2026/2026-01-20 圖片編輯/index.md",
     "blog/2026/2026-01-25 101爬塔/index.md",
+    "blog/2026/2026-01-26 我的Mac 軟體清單",
+    "blog/2026/2026-01-23 合唱歌曲/index.md",
     "blog/2026/2026-01-24 寒假企劃/index.md",
     "/docs/MacroLab.html",
     "docs/MacroLab.html",
