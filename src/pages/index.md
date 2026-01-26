@@ -102,18 +102,21 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 ---
 ## YouTube 最新影片 🎉
-> KAI STUDIO (最後更新：2026-01-18)
+> KAI STUDIO (最後更新：2026-01-26)
 - 目前：23位訂閱者
 <div class="youtube-s">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pw0dToX74yg?si=eXNcvV1SqubpIL-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G67NGl7Refc?si=XsdL8DpmnQjsW-7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<p> 我在競爭者玩到哭了，小孩不要玩！Kai | Roblox </p>
+<p>Kai | 編曲製作 五月天 後來的我們 COVER</p>
 </div>
 
 
 
 
 **📌 新影片內容說明：**  
-我盡可能地提升我的槍法了... 
-重點是我這個菜鳥玩到哭...
+:::tip 使用工具
+- Cubase 15 Pro 編曲
+- UV5 去人聲 
+- Kontakt 音源
+:::

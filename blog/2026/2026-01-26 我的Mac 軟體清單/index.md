@@ -51,7 +51,8 @@ date: 2026-01-26T12:00
 42. RustDesk ㄧ 開源遠端桌面，好用！
 43. Steinberg Download Manger ㄧ Cubase 下載最遠的地方
 44. Steinberg Library Manger ㄧ Cubase 管理資源庫的地方
-45. Vital ㄧ 好用合成器
-46. VSCodium ㄧ 超好用文字編輯器，開源而且不會被微軟綁架
-47. WhisperTRANS ㄧ 我與 AI 開發的語音轉文字工具，但要自己部署
-48. YTDownloader ㄧ YouTube 影片下載神器，超級好用！！！！
+45. UVR 5 一 去人聲超好用！免費開源，用本地模型
+46. Vital ㄧ 好用合成器
+47. VSCodium ㄧ 超好用文字編輯器，開源而且不會被微軟綁架
+48. WhisperTRANS ㄧ 我與 AI 開發的語音轉文字工具，但要自己部署
+49. YTDownloader ㄧ 我與 AI 開發的YouTube 影片下載神器，超級好用！！！！
