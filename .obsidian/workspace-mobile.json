@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/2026/2026-01-27 累/index.md",
+                "file": "blog/2026/2026-01-19 線上上課/index.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "index"
@@ -168,8 +168,8 @@
   },
   "active": "d84e89983cac9505",
   "lastOpenFiles": [
-    "src/pages/index.md",
     "blog/2026/2026-01-27 累/index.md",
+    "src/pages/index.md",
     "blog/2026/2026-01-26 我的Mac 軟體清單/index.md",
     "blog/2026/2026-01-27 累",
     "blog/2026/2026-01-25 101爬塔/index.md",
