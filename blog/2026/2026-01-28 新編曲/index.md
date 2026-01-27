@@ -13,6 +13,9 @@ date: 2026-01-28T08:00
 
 > KAI STUDIO (最後更新：2026-01-26)
 - 目前：23位訂閱者
+
+<div class="youtube-s">
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7ksBRivMQUg?si=DQ-uisIhiJ4FQz2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>Kai | MAYDAY五月天 [ 星空 Starry Sky ] Cover</p>
