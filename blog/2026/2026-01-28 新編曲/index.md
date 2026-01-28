@@ -1,5 +1,5 @@
 ---
-slug: daily-life-0128
+slug: new-arrange
 Title: 新編曲：星空
 authors: [KAI]
 date: 2026-01-28T08:00
