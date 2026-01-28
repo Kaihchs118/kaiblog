@@ -37,9 +37,10 @@ IG 其實很多，然後我都看過哈哈哈哈哈🤣
 :::
 
 ### 下載大師版鋼琴譜
-<div className="download-buttons">
-<a className="download-btn primary" target="_blank" href="https://drive.google.com/file/d/1OG9I36UN8wwpyRExEo7EowANOf3c0LRA/view?usp=sharing">點我下載</a>
+:::tip 趕快來拿！
+<div className="網址列當中尋找718718，將她刪除">
+<a className="" target="_blank" href="https://drive.google.com/file/d/1OG9I36UN8wwpyRExEo7E718718owANOf3c0LRA/view?usp=sharing">點我下載</a>
 
 </div>
-
+:::
 今天很感謝Rick Chang 張育瑞大師今天有空能來到竹中，希望還會有下一次

@@ -67,48 +67,6 @@ main > :is(h3, strong) {
   text-align: left; /* 確保左對齊 */
 }
 
-/* ================================
-   3. 按鈕系統 (Buttons)
-   ================================ */
-.download-buttons, .download-buttons-red { 
-  display: flex; 
-  gap: 12px; 
-  flex-wrap: wrap; 
-  margin: 1.5vw 0; 
-  justify-content: flex-start; /* 改為靠左排列 */
-}
-
-.download-btn, .download-btn-red {
-  display: inline-flex; 
-  align-items: center; 
-  gap: 6px; 
-  height: 36px; 
-  padding: 0 14px;
-  font-size: 14px; 
-  font-weight: 600; 
-  line-height: 1; 
-  border-radius: 10px;
-  text-decoration: none; 
-  white-space: nowrap; 
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.download-btn.primary { background: var(--ifm-color-primary); color: #fff; }
-.download-btn-red.primary { background: #ff6b6b; color: #fff; }
-.download-btn.secondary { background: #f1f5f9; color: #0f172a; }
-
-.download-btn.primary:hover { 
-  background: var(--ifm-color-primary-dark); 
-  transform: translateY(-4px); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); 
-}
-
-/* 強制覆蓋大型按鈕樣式 */
-a.download-btn.primary {
-  padding: 14px 28px !important; 
-  font-size: 18px !important;
-}
 
 /* ================================
    4. 元件區塊 (Callouts & Boxes)

@@ -18,36 +18,15 @@ date: 2025-12-31
 我終於製作完成 ```ResolveV1Pack```
 替達芬奇製作出許多模板，均為免費模板
 
+:::warning 請勿下載
 
-<div className="download-buttons">
+- MediaFire 下載（建議）:
+https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file
 
-<a
-  className="download-btn primary"
-  href="https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <span className="icon">⭐</span>
-  <span>MediaFire 下載（建議）</span>
-</a>
+- Google Drive 下載:
+https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view
 
-<span>
-
-
-</span>
-
-<a
-  className="download-btn secondary"
-  href="https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <span className="icon">☁️</span>
-  <span>Google Drive 下載</span>
-</a>
-
-</div>
-
+:::
 ---
 
 # ResolveV1Pack 安裝說明

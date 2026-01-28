@@ -1,20 +1,24 @@
 ---
-slug: resolvepackV2-update
-title: 達芬奇模板V2
-sidebar_position: 2
-sidebar_label: 達芬奇模板V2更新
+slug: resolvepackV3-update
+title: 達芬奇模板V3
+sidebar_position: 4
+sidebar_label: 達芬奇模板V3更新
 pagination_next: null
 authors: [KAI]
 tags: [達芬奇模板]
-date: 2025-01-03
+date: 2025-01-28
+draft: true
 ---
-- 發布時間：01-03
-# 達芬奇模板V2
-我終於製作完成 ```ResolveV2Pack```
+- 發布時間：01-28
+# 達芬奇模板V3
+我終於製作完成 `ResolveV3Pack`
 替達芬奇製作出許多模板，均為免費模板
 :::danger 趕快下載
 
-- [🔥 MediaFire 下載 V2 (建議)](https://www.mediafire.com/file/svsbwk2eoxoggqo/ResolveV2.zip/file)
+
+- [🔥 Gumroad 下載 V3 還沒好！](https://kairos51.gumroad.com/l/ResolveV3FREEPack)
+
+- [🕜 MediaFire 下載 V3](https://www.mediafire.com/file/svsbwk3eoxoggqo/ResolveV3.zip/file)
 
   
 - [☁️ Google Drive 下載](https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing)
@@ -22,7 +26,7 @@ date: 2025-01-03
 :::
 
 
-## ResolveV2Pack 更新紀錄 🚀
+## ResolveV3Pack 更新紀錄 🚀
 
 - 修復縮圖大小
 - 新增超多綜藝字卡
@@ -30,7 +34,7 @@ date: 2025-01-03
 - 更新 Vicco Mr.ALEX 模板
 
 
-## ResolveV2Pack 安裝說明
+## ResolveV3Pack 安裝說明
 
 ## 1.安裝模板
 
@@ -39,10 +43,10 @@ date: 2025-01-03
 先解壓縮
 ```Fusion.zip```
 在裡面有 Template 資料夾
-該資料夾裡面有 ResolvePackV2.drfx
+該資料夾裡面有 ResolvePackV3.drfx
 
 ### 步驟二：安裝！
-- 方式一：直接雙擊 ResolvePackV2.drfx，這將會開啟 Resolve 。  
+- 方式一：直接雙擊 ResolvePackV3.drfx，這將會開啟 Resolve 。  
 接著，選擇安裝，重啟達芬奇
 
 ---
@@ -89,7 +93,7 @@ date: 2025-01-03
 
 - 到這邊如果還是看不懂的話，建議可以先去看新手入門😅😅
 <div class="youtube">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1fPQ_2bw7Zo?si=WPSLYrNKAEi1MNlw" title="
+<iframe width="560" height="450" src="https://www.youtube.com/embed/1fPQ_2bw7Zo?si=WPSLYrNKAEi1MNlw" title="
 [Vicco] 达芬奇模板安装完全指南 | 安装常见问题解答 | 萌新入坑必备 |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>[Vicco] 达芬奇模板安装完全指南 | 安装常见问题解答 | 萌新入坑必备 |</p>
@@ -97,7 +101,7 @@ date: 2025-01-03
 
 
 ---
-## 2. 安裝字體（Font）  
+## 3. 安裝字體（Font）  
 步驟一：解壓縮 Font 壓縮檔。  
 步驟二：選取所有字體檔案（.ttf 或 .otf），雙擊後點擊「安裝字體」。  
 
