@@ -15,14 +15,12 @@ draft: true
 替達芬奇製作出許多模板，均為免費模板
 :::danger 趕快下載
 
-
-- [🔥 Gumroad 下載 V3 還沒好！](https://kairos51.gumroad.com/l/ResolveV3FREEPack)
-
-- [🕜 MediaFire 下載 V3](https://www.mediafire.com/file/svsbwk3eoxoggqo/ResolveV3.zip/file)
+- [🔥 MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
 
   
 - [☁️ Google Drive 下載](https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing)
 
+- [ Gumroad 下載 V3 還沒好！](https://kairos51.gumroad.com/l/ResolveV3FREEPack)
 :::
 
 
