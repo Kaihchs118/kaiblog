@@ -14,7 +14,7 @@ date: 2025-01-28
 替達芬奇製作出許多模板，均為免費模板
 :::danger 趕快下載
 
-- [🔥 BMC 下載 V3 超推薦！！](https://buymeacoffee.com/kaiblog/e/504369)
+- [🔥 ITCH 下載 V3 超推薦！！](https://kaiblog.itch.io/resolvev3pack)
 - [✨ MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
 - [☁️ Google Drive 下載](https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing)
 
