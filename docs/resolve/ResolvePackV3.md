@@ -14,21 +14,22 @@ date: 2025-01-28
 替達芬奇製作出許多模板，均為免費模板
 :::danger 趕快下載
 
-- [🔥 MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
-
-  
+- [🔥 BMC 下載 V3 超推薦！！](https://buymeacoffee.com/kaiblog/e/504369)
+- [✨ MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
 - [☁️ Google Drive 下載](https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing)
 
-- [ Gumroad 下載 V3 還沒好！](https://kairos51.gumroad.com/l/ResolveV3FREEPack)
 :::
 
 
 ## ResolveV3Pack 更新紀錄 🚀
 
-- 修復縮圖大小
-- 新增超多綜藝字卡
-- 製作縮圖
-- 更新 Vicco Mr.ALEX 模板
+- 修復縮圖大小，減少檔案尺寸
+- 更新 Vicco 播放器模板 Mr.ALEX 模板
+- 短影音超好用模板
+- 閃光 /發光模板
+- 雜訊轉場 / 各式豪華轉場
+
+And so much more !
 
 
 ## ResolveV3Pack 安裝說明
