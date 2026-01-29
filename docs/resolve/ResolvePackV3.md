@@ -16,10 +16,9 @@ date: 2025-01-28
 
 - [🔥 ITCH 下載 V3 超推薦！！](https://kaiblog.itch.io/resolvev3pack)
 - [✨ MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
-- [☁️ Google Drive 下載](https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing)
-
 :::
 
+**相信我，他們都比 Google Drive 好！**
 
 ## ResolveV3Pack 更新紀錄 🚀
 
