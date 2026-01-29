@@ -6,7 +6,9 @@ slug: /
 
 # <span className="blue-title">歡迎來到 KAI BLOG !</span>
 
-嗨，我是 **KAI** 歡迎你來到 <span className="blue-stroke-text">KAI BLOG !</span> 
+嗨，我是 **KAI** 
+
+歡迎你來到 <span className="blue-stroke-text">KAI BLOG !</span> 
 
 這裡是我發廢文和分享經驗的地方。這個網站分為以下幾個區域：
 
@@ -46,7 +48,7 @@ slug: /
 替達芬奇製作出許多模板，均為免費模板！
 
 :::info 下載專區
-- [前往下載 ResolveV2Pack →](/docs/resolve/resolvepackV3-update)
+- [前往下載 ResolveV3Pack →](/docs/resolve/resolvepackV3-update)
 :::
 
 ---
