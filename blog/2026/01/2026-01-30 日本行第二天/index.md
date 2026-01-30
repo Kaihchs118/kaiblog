@@ -162,20 +162,21 @@ date: 2026-01-30T08:00
 
 Hi ! Where are you from ? 
 
-他說:
-I am from France !
+他說：
+
+> I am from France !
 
 我心想：喔哇！外國人耶
 
 然後他就說：
 
-我會說中文
+> 我會說中文
 
 喔哇！我嚇到
 
 他說：
 
-I am study Chinese right now !
+> I am study Chinese right now !
 
 喔對然後我就跟他說法文我只知道蹦啾而已
 
@@ -238,7 +239,7 @@ I am study Chinese right now !
   </div>
   
 
-讓我想起來：我爸說他之前有一次在沖繩，然後他不知道怎麼開蓋子，結果店員叫他把兩側的蓋子捏起來，欸就開了 (不過在那之後我從來都沒遇過哈哈哈哈)
+讓我想起來：我爸說他之前有一次在沖繩，然後他不知道怎麼開蓋子，結果店員叫他**把兩側的蓋子捏起來**，欸就開了 (不過在那之後我從來都沒遇過哈哈哈哈)
 
 
 接著是 豆腐？
@@ -262,6 +263,7 @@ I am study Chinese right now !
  
  </div>
   
+
 最後的現在回到房間，好累還要做這個網站…
 
 感謝大家看到這！
