@@ -6,7 +6,6 @@ sidebar_label: 超好用輸入法：Google 注音輸入法
 authors: [KAI]
 tags: [手機相關]
 date: 2026-01-31T08:00
-draft: true
 ---
 
 ## Google 注音輸入法 APK 下載
@@ -24,9 +23,14 @@ Google 注音輸入法 APK 下載
 
 ## 下載
 
-以下提供三種下載方式！
+以下提供兩種下載方式！
+:::danger 趕快下載
 
+- [🔥 ITCH 高速下載 超推薦！！](https://kaiblog.itch.io/google-input)
+- [✨ MediaFire 下載](https://www.mediafire.com/file/vao2d2j8r2tbgxd/Google+Zhuyin+Input_v2.4.5.164561151-armeabi-v7a.apk/file)
+:::
 
+**相信我，他們都比 Google Drive 好！**
 
 ## Google 注音輸入法介紹
 
