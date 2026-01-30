@@ -144,7 +144,7 @@ https://wiwi.video/videos/watch/92131ef7-1587-4630-a108-f00a40faf8cb
 
 ### 飯店
 
-東京首度飯店 --- 萌木
+[東京首度飯店 萌木](https://maps.app.goo.gl/JTwExQf4gfZtxjRXA)
 這間飯店整體來說還可以，幾個小缺點
 
 1.  房間很小
