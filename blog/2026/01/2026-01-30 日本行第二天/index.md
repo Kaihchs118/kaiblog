@@ -12,6 +12,7 @@ date: 2026-01-30T08:00
  <div className="photo-border">
  
  ![超簡單早餐](IMG20260130073404.jpg) 
+ 
 </div>
 搭 09：26 的新幹線，然後讓我想到：
 昨天去領車票的時候，一位中年大叔問說有沒有 `reservation` ，因為真的很即時，完全忘記是甚麼意思🤣
@@ -68,6 +69,7 @@ date: 2026-01-30T08:00
  <div className="photo-border">
 
   ![一風堂](IMG_20260130_171724.jpg) 
+  
 </div>
 這是今天的小布施拉麵
 <div className="photo-border">
@@ -97,11 +99,16 @@ date: 2026-01-30T08:00
 
 所以…
 
+<div className="photo-border">
+
 ![冰](1769772217514.jpg)
+
+</div>
 
 然後差點趕不上火車
 ## 湯田中
 接著我們搭著巴士去飯店了！
+
 
 [一乃湯 果亭](https://maps.app.goo.gl/VmpybsnGLNpxsZbn9)
 
@@ -131,7 +138,7 @@ date: 2026-01-30T08:00
 
  <div className="photo-border">
 
-![I樓梯](1769772240318.jpg) </div>
+![I樓梯](1769772240318.jpg)
 
 </div>
 
@@ -142,7 +149,7 @@ date: 2026-01-30T08:00
 **我手機不棒**🤣，但是大家一定要親自來看看
  <div className="photo-border">
 
-![I樓梯](IMG20260130162921.jpg) </div>
+![I樓梯](IMG20260130162921.jpg)
 
 </div>
 
@@ -188,7 +195,7 @@ I am study Chinese right now !
 
  <div className="photo-border">
  
-  ![1769772387382](1769772387382.jpg) </div>
+  ![1769772387382](1769772387382.jpg)
 
 </div>
 
@@ -203,6 +210,7 @@ I am study Chinese right now !
 長這樣:
 
  <div className="photo-border"> 
+ 
  ![1769772388111](1769772388111.jpg) 
  
  </div>
@@ -214,6 +222,7 @@ I am study Chinese right now !
  <div className="photo-border"> 
  
  ![1769772388893](1769772388893.jpg)
+ 
   </div>
 
 飯的話很香，有特制醬汁就是了，炸物的部分是炸魚，重點是 **旁邊的蘿蔔泥加醬油** 超好吃！
@@ -223,6 +232,7 @@ I am study Chinese right now !
  <div className="photo-border"> 
  
  ![1769772389417](1769772389417.jpg)
+ 
   </div>
   
 
@@ -235,16 +245,20 @@ I am study Chinese right now !
 
 欸又有瓦薩比，超好吃！！！
  <div className="photo-border"> 
+ 
  ![1769772391064](1769772391064.jpg)
-  </div>
+ 
+ </div>
 
 然後是 蛋？
 
 當然不是，是馬鈴薯，周圍有雞肉，竹筍跟蛋液 (這道應該要配飯，因為很鹹)
 
  <div className="photo-border"> 
+ 
  ![1769772391064](1769772391565.jpg)
-  </div>
+ 
+ </div>
   
 最後的現在回到房間，好累還要做這個網站…
 
