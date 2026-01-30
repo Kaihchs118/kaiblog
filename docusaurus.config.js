@@ -23,6 +23,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        // --- Google Analytics 設定開始 ---
+        gtag: {
+          trackingID: 'G-7916V6HGTV',
+          anonymizeIP: true,
+        },
+        // --- Google Analytics 設定結束 ---
         docs: {
           sidebarPath: './sidebars.js',
         },
@@ -39,12 +45,11 @@ const config = {
     ],
   ],
 
-plugins: [
+  plugins: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        // 在這裡同時加入 "en" 和 "zh"
         language: ["en", "zh"], 
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
@@ -56,7 +61,7 @@ plugins: [
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurusd.jpg',
-      
+
       announcementBar: {
         id: 'support_us',
         content: '🎉 歡迎來到我的部落格！<a href="/about">了解更多關於我</a>',
@@ -71,50 +76,16 @@ plugins: [
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
-          {
-            to: '/blog', 
-            label: '📝 最新貼文', // 或是使用 <i class="fa-solid fa-pen-nib"></i> 📝
-            position: 'left'
-          },
-          {
-            to: '/docs', 
-            label: '📚 筆記', 
-            position: 'left'
-          },
-          {
-            to: '/blog/archive', 
-            label: '🗄️ 列表', 
-            position: 'left'
-          },
-          {
-            to: '/random', 
-            label: '🎲 隨機', 
-            position: 'left'
-          },
-          {
-            to: '/now', 
-            label: '🕒 近況', 
-            position: 'left'
-          },
-          {
-            to: '/use', 
-            label: '🛠️ 愛用', 
-            position: 'left'
-          },
-          {
-            to: '/about', 
-            label: '👤 關於', 
-            position: 'left'
-          },
-          {
-            to: '/search',
-            label: '🔍 全站搜尋',
-            position: 'right',
-          },
+          { to: '/blog', label: '📝 最新貼文', position: 'left' },
+          { to: '/docs', label: '📚 筆記', position: 'left' },
+          { to: '/blog/archive', label: '🗄️ 列表', position: 'left' },
+          { to: '/random', label: '🎲 隨機', position: 'left' },
+          { to: '/now', label: '🕒 近況', position: 'left' },
+          { to: '/use', label: '🛠️ 愛用', position: 'left' },
+          { to: '/about', label: '👤 關於', position: 'left' },
+          { to: '/search', label: '🔍 全站搜尋', position: 'right' },
           {
             href: 'https://github.com/Kaihchs118/', 
-            // 如果你有引入 Font Awesome，可以用：
-            // html: '<i class="fa-brands fa-github" style="font-size: 1.2rem"></i>',
             label: 'GitHub', 
             position: 'right'
           },
