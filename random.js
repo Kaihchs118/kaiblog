@@ -16,7 +16,7 @@ export default function RandomPage() {
       '/2026-tokyo-day2',
       '/2026-tokyo-day1',
       '/online-day',
-      '/computwr-score',
+      '/computer-score',
       '/731pc',
       '/house-yt01',
       '/taipei-101-climb',
@@ -30,8 +30,6 @@ export default function RandomPage() {
       '/yt-video-01',
       '/mac-app',
       '/go-abroad',
-      '/itch.io',
-      '/itch.io',
       '/index',
       '/'
     ];
@@ -42,5 +40,8 @@ export default function RandomPage() {
     history.replace(withBaseUrl(randomPath));
   }, [history, withBaseUrl]);
 
-  return <div>🎲 正在跳轉到隨機頁面...</div>;
+  return <div>
+  <h1>🎲 正在跳轉到隨機頁面...</h1>
+  <p>註：如果出現找不到頁面請自行加油！</p>
+  </div>;
 }

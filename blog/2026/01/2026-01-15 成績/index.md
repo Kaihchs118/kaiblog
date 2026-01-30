@@ -1,5 +1,5 @@
 ---
-slug: computwr-score
+slug: computer-score
 title: 電腦課成績 !
 authors: [KAI]
 date: 2026-01-15T04:30
