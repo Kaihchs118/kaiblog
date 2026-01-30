@@ -2,7 +2,7 @@
 slug: go-abroad
 Title: 出國了！
 authors: [KAI]
-date: 2026-01-29T08:00
+date: 2026-01-28T08:00
 ---
 
 ## 規劃已久的旅行
