@@ -16,3 +16,6 @@ slug: /
 
 - [首頁](/docs/Finale/index)
 
+### 手機專區
+
+- [Google 輸入法大推](/docs/phone/google-input)
