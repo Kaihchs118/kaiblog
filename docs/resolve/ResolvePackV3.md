@@ -14,8 +14,8 @@ date: 2025-01-28
 替達芬奇製作出許多模板，均為免費模板
 :::danger 趕快下載
 
-- [🔥 ITCH 下載 V3 超推薦！！](https://kaiblog.itch.io/resolvev3pack)
-- [✨ MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
+1. [🔥 ITCH 下載 V3 超推薦！！](https://kaiblog.itch.io/resolvev3pack)
+2. [✨ MediaFire 下載 V3](https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file)
 :::
 
 **相信我，他們都比 Google Drive 好！**
