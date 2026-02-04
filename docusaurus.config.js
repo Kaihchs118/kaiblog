@@ -154,6 +154,7 @@ const config = {
           autoCollapseCategories: true,
         },
       },
+      
     }),
 };
 
