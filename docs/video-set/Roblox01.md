@@ -1,27 +1,28 @@
 ---
 slug: video01/roblox01
 title: Roblox 遊戲大成本大製作 第一集
+hide_title: true
+description: 史上最強 Roblox 影片
 sidebar_position: 1
 sidebar_label: Roblox 遊戲 第一集
 pagination_previous: null
 authors: [KAI]
-tags: [影片企劃 , Roblox ]
+tags: [影片企劃,Roblox]
 date: 2026-02-05T08:00
 ---
-
-## Roblox 遊戲大成本大製作 第一集 
-
-## 遊戲：競爭者 2.0
-## A Roll KAI
+# Roblox 遊戲大成本大製作 第一集
+#### <span className="blue-title">遊戲：競爭者 2.0</span>
+---
+### A Roll KAI
 要怎麼樣的畫面？
 OBS 雙軌錄製（音訊兩軌分開）
 確認好設定！！！
-## B roll KEVIN 
+### B roll KEVIN 
 要怎麼樣的畫面？
 不要PPT畫面/優化效能
-## C roll 音效設計
+### C roll 音效設計
 Youtube 常用音效🔺🔺🔺
-## D roll 字卡設計
+### D roll 字卡設計
 Youtube 綜藝字卡
 
 ## 影軌 
