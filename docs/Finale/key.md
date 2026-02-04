@@ -2,7 +2,6 @@
 title: 調號/拍號屬性工具
 slug: key-tool
 date: 2026-01-16T04:30
-pagination_next: null
 sidebar_position: 7
 sidebar_label: 調號/拍號屬性工具
 authors: [KAI]
