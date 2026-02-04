@@ -18,17 +18,36 @@ const config = {
     locales: ['zh-Hant'],
   },
 
+  // --- Microsoft Clarity 腳本開始 ---
+  scripts: [
+    {
+      src: 'https://www.clarity.ms/tag/vbv2g82ods',
+      async: true,
+    },
+    {
+      innerHTML: `
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vbv2g82ods");
+      `,
+    },
+  ],
+  // --- Microsoft Clarity 腳本結束 ---
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // --- Google Analytics 設定開始 ---
+        // --- Google Analytics (GTAG) 保持不變 ---
         gtag: {
           trackingID: 'G-7916V6HGTV',
           anonymizeIP: true,
         },
-        // --- Google Analytics 設定結束 ---
+        // ------------------------------------
+        
         docs: {
           sidebarPath: './sidebars.js',
         },
