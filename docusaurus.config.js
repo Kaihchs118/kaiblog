@@ -18,24 +18,6 @@ const config = {
     locales: ['zh-Hant'],
   },
 
-  // --- Microsoft Clarity 腳本開始 ---
-  scripts: [
-    {
-      src: 'https://www.clarity.ms/tag/vbv2g82ods',
-      async: true,
-    },
-    {
-      innerHTML: `
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "vbv2g82ods");
-      `,
-    },
-  ],
-  // --- Microsoft Clarity 腳本結束 ---
-
   presets: [
     [
       'classic',
@@ -46,7 +28,6 @@ const config = {
           trackingID: 'G-7916V6HGTV',
           anonymizeIP: true,
         },
-        // ------------------------------------
         
         docs: {
           sidebarPath: './sidebars.js',
@@ -74,6 +55,26 @@ const config = {
         explicitSearchResultPath: true,
       },
     ],
+    // --- 新增：Microsoft Clarity 插件設定 ---
+    () => ({
+      name: 'microsoft-clarity',
+      injectHtmlTags() {
+        return {
+          headTags: [
+            {
+              tagName: 'script',
+              innerHTML: `
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "vbv2g82ods");
+              `,
+            },
+          ],
+        };
+      },
+    }),
   ],
 
   themeConfig:
