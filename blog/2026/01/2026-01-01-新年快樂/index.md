@@ -2,7 +2,7 @@
 slug: happy-new-year
 title: 2026，新年快樂!
 authors: [KAI]
-tags: [新年快樂, 五月天,]
+tags: [新年快樂, 五月天]
 ---
 
 # 新年快樂！一起飛向 2026 ✨  
@@ -30,11 +30,11 @@ allowfullscreen></iframe>
 <p>MAYDAY & Ü｜任性為五｜FLY TO 2026｜新年快樂</p>
 </div>
 
-<div className="tip-callout">
-:::warning
+
+:::warning 注意！
 若影片載入不出現，可以點這裡觀看原片 → https://www.youtube.com/watch?v=e5NNaehFyOw 
 :::
-</div>
+
 ---
 
 ## 📸 最後送給大家這張跨年時刻的影像  

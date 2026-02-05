@@ -1,10 +1,9 @@
 ---
 slug: about
 title: 關於我
-authors: [KAI]
 ---
 
-歡迎來到 KAI BLOG 
+## 歡迎來到 KAI BLOG 
 
 這個網站是我的個人創作與學習紀錄平台。  
 在這裡，你可以找到：
