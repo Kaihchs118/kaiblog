@@ -1,5 +1,5 @@
 /* =================================================
-   1. Theme Variables（全域主題設定）
+   1. Theme Variables（全域）
 ================================================= */
 :root {
   --ifm-color-primary: #429eee;
@@ -13,13 +13,8 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 
-  /* Navbar */
   --navbar-float-offset: 10px;
   --navbar-glass-radius: 18px;
-
-  /* Mobile Action Bar */
-  --mobile-action-bar-height: 64px;
-  --mobile-action-bar-offset: 12px;
 }
 
 html[data-theme='dark'] {
@@ -27,20 +22,16 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
-/* =================================================
-   2. Global Reset（只影響文章內容）
-================================================= */
-:where(.theme-doc-markdown *) {
-  box-shadow: none;
-}
+* { box-shadow: none !important; }
 
 /* =================================================
-   3. Navbar（Liquid Glass）
+   2. Navbar
 ================================================= */
 .navbar {
   background: transparent;
   border: none;
   z-index: 999;
+  transition: background .5s, backdrop-filter .5s;
 }
 
 .navbar__logo img {
@@ -55,7 +46,6 @@ html[data-theme='dark'] {
   right: var(--navbar-float-offset);
   width: auto;
   border-radius: var(--navbar-glass-radius);
-  box-sizing: border-box;
 }
 
 .navbar--fixed-top::before {
@@ -63,86 +53,160 @@ html[data-theme='dark'] {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255,255,255,.45);
   backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
-  pointer-events: none;
-  z-index: -1;
-}
-
-.navbar--fixed-top::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.45),
-    rgba(255, 255, 255, 0) 55%
-  );
-  opacity: 0.6;
-  pointer-events: none;
+  border: 1px solid rgba(0,0,0,.05);
+  box-shadow: 0 10px 40px rgba(0,0,0,.12);
   z-index: -1;
 }
 
 [data-theme='dark'] .navbar--fixed-top::before {
-  background: rgba(20, 20, 20, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.main-wrapper {
-  padding-top: calc(var(--ifm-navbar-height) + var(--navbar-float-offset));
+  background: rgba(20,20,20,.5);
+  border-color: rgba(255,255,255,.1);
 }
 
 /* =================================================
-   4. Mobile Action Bar（只控制外框）
+   3. Typography
 ================================================= */
-.mobile-action-bar {
-  display: none;
+.hero-title,
+.blue-title,
+.blue-stroke-text {
+  color: var(--ifm-color-primary);
+  letter-spacing: .5px;
 }
 
+.hero-title { font-weight: 800; }
+.blue-title { font-weight: 1000; }
+.blue-stroke-text,
+.red-stroke-text {
+  font-weight: 700;
+  margin-left: .2rem;
+}
+.red-stroke-text { color: red; }
+
+.gray {
+  font-weight: 1000;
+  color: #726f6f;
+}
+[data-theme='dark'] .gray { color: #949597; }
+
+a.link {
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 3px solid #69B1D1;
+}
+
+/* =================================================
+   4. Content Layout
+================================================= */
+main ul:not(.breadcrumbs) {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+main ul:not(.breadcrumbs) li { margin-bottom: .8rem; }
+
+main > :is(h3, strong) {
+  display: block;
+  font-size: 2.1rem;
+  margin: 3rem 0 1rem;
+  padding-left: 1rem;
+  border-left: 6px solid var(--ifm-color-primary);
+}
+
+/* =================================================
+   5. Callout / Path Box
+================================================= */
+.path-box,
+.path-box-tab {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  font-family: ui-monospace, monospace;
+  color: #334155;
+  word-break: break-all;
+}
+
+[data-theme='dark'] :is(.path-box, .path-box-tab) {
+  background: #020617;
+  border-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* =================================================
+   6. Media
+================================================= */
+.youtube,
+.youtube-s {
+  max-width: 960px;
+  margin: 2rem 0;
+  padding: 1.2rem;
+  background: #def5ff;
+  border-radius: 14px;
+}
+
+.youtube iframe,
+.youtube-s iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+
+.photo img { width: 256px; border-radius: 10px; }
+.photo-small img { width: 2.5cm; }
+.photo-window { width: 20cm; }
+
+.photo-border img {
+  padding: .5rem;
+  border-radius: 14px;
+  background: #def5ff;
+}
+
+[data-theme='dark'] .photo-border img {
+  background: #6ca5da;
+}
+
+/* =================================================
+   7. Blog Archive
+================================================= */
+.hero--primary { 
+  padding: 2rem  1rem;
+  
+ }
+.hero--primary .hero__subtitle { display: none; }
+
+.hero--primary h1 {
+  visibility: hidden;
+  position: relative;
+}
+.hero--primary h1::after {
+  content: "部落格列表";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+}
+
+/* =================================================
+   8. Mobile Action Bar
+================================================= */
 @media (max-width: 996px) {
+  :root {
+    --mobile-action-bar-height: 64px;
+    --mobile-action-bar-offset: 12px;
+  }
+
   .mobile-action-bar {
-    display: grid;
     position: fixed;
+    bottom: calc(env(safe-area-inset-bottom,0px) + var(--mobile-action-bar-offset));
     left: 50%;
-    bottom: calc(env(safe-area-inset-bottom, 0px) + var(--mobile-action-bar-offset));
     transform: translateX(-50%);
-    width: min(92vw, 430px);
+    width: min(92vw,430px);
     height: var(--mobile-action-bar-height);
-    padding: 10px 12px;
     border-radius: 22px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    z-index: 950;
-  }
-
-  .mobile-action-bar::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(18px) saturate(160%);
-    -webkit-backdrop-filter: blur(18px) saturate(160%);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  [data-theme='dark'] .mobile-action-bar::before {
-    background: rgba(20, 20, 20, 0.72);
-    border-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
   }
 
   .main-wrapper {
-    padding-bottom: calc(
-      var(--mobile-action-bar-height)
-      + var(--mobile-action-bar-offset)
-      + env(safe-area-inset-bottom, 0px)
-    );
+    padding-bottom: calc(var(--mobile-action-bar-height) + 24px);
   }
 }
