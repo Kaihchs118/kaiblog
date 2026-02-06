@@ -149,7 +149,7 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
 /* ================================
    6. Blog Archive 修正
    ================================ */
-.hero--primary { padding: 2.5rem 0 2rem; }
+.hero--primary { padding: 1.2rem 0 2rem; }
 .hero--primary .hero__subtitle { display: none; }
 
 .hero--primary h1 {
@@ -271,6 +271,7 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   :root {
     --mobile-action-bar-height: 64px;
     --mobile-action-bar-offset: 12px;
+    margin: 0.8rem 0.8rem;
   }
 
   .mobile-action-bar__handle {
