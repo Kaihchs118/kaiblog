@@ -166,89 +166,26 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
 }
 
 /* ===============================
-   Docusaurus Liquid Glass Navbar
-   STABLE PRODUCTION VERSION
+   FIX: Mobile Navbar Height Too Small
    =============================== */
 
-/* Navbar 基礎（不破壞 Docusaurus 結構） */
-.navbar {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  position: sticky; /* 關鍵：不要強行 fixed */
-  top: 0;
-  z-index: 999;
-  transition:
-    background 320ms ease,
-    backdrop-filter 320ms ease,
-    border-radius 320ms ease,
-    box-shadow 320ms ease;
-}
-
-/* Docusaurus 滾動後 class */
-.navbar--fixed-top {
-  margin: 10px auto 0;
-  width: calc(100% - 20px);
-  border-radius: 20px;
-
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(18px) saturate(160%);
-  -webkit-backdrop-filter: blur(18px) saturate(160%);
-
-  border: 1px solid rgba(255, 255, 255, 0.22);
-
-  box-shadow:
-    0 12px 36px rgba(0, 0, 0, 0.14),
-    inset 0 0 10px rgba(255, 255, 255, 0.04);
-}
-
-/* 深色模式 */
-html[data-theme='dark'] .navbar--fixed-top {
-  background: rgba(18, 18, 20, 0.55);
-  border-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px) saturate(180%);
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
-}
-
-/* ===== 液態光澤（安全版，無動畫）===== */
-.navbar--fixed-top::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  z-index: -1;
-
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0.18),
-    rgba(255,255,255,0.06),
-    rgba(255,255,255,0)
-  );
-
-  opacity: 0.6;
-  filter: blur(8px);
-}
-
-/* ===== Mobile 特化（非常重要）===== */
 @media (max-width: 768px) {
-  .navbar--fixed-top {
-    margin-top: 6px;
-    width: calc(100% - 12px);
-    border-radius: 14px;
-
-    backdrop-filter: blur(14px) saturate(150%);
-    -webkit-backdrop-filter: blur(14px) saturate(150%);
+  /* Navbar 本體高度保護 */
+  .navbar {
+    min-height: 56px; /* Docusaurus 預設 mobile 高度 */
   }
-}
 
-/* ===== 點擊安全層 ===== */
-.navbar,
-.navbar * {
-  pointer-events: auto;
-}
+  /* 內層對齊修正 */
+  .navbar__inner {
+    min-height: 56px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+  }
 
-/* ===== 防止內容被遮擋（回到 Docusaurus 正規做法）===== */
-.main-wrapper {
-  padding-top: var(--ifm-navbar-height);
+  /* 固定後的玻璃 Navbar */
+  .navbar--fixed-top {
+    height: auto;
+    min-height: 56px;
+  }
 }
