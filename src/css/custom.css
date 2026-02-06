@@ -165,17 +165,79 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   top: 0;
 }
 
-/* ===============================
-   FIX: Mobile Navbar Height Too Small
-   =============================== */
+/* =====================================
+   Docusaurus Navbar – Stable Full Fix
+   Desktop + Mobile Safe Version
+   ===================================== */
+
+/* ---------- 基本 Navbar 設定 ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--ifm-navbar-height);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode */
+html[data-theme='dark'] .navbar {
+  background: rgba(20, 20, 20, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Navbar 內層 ---------- */
+.navbar__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* ---------- Fixed Navbar 修正 ---------- */
+.navbar--fixed-top {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* ---------- Logo ---------- */
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar__logo {
+  height: 28px;
+}
+
+/* ---------- Navbar Items ---------- */
+.navbar__items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__items--right {
+  gap: 8px;
+}
+
+/* =====================================
+   🔥 Mobile 專用修正（重點）
+   ===================================== */
 
 @media (max-width: 768px) {
   /* Navbar 本體高度保護 */
   .navbar {
-    min-height: 56px; /* Docusaurus 預設 mobile 高度 */
+    min-height: 56px; /* 官方 mobile navbar 高度 */
   }
 
-  /* 內層對齊修正 */
+  /* 內層不被壓扁 */
   .navbar__inner {
     min-height: 56px;
     padding: 0 12px;
@@ -183,9 +245,22 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
     align-items: center;
   }
 
-  /* 固定後的玻璃 Navbar */
+  /* Fixed 狀態不 collapse */
   .navbar--fixed-top {
     height: auto;
     min-height: 56px;
   }
+
+  /* Logo 大小微調 */
+  .navbar__logo {
+    height: 24px;
+  }
+}
+
+/* =====================================
+   防止奇怪 override（保險）
+   ===================================== */
+
+.navbar * {
+  box-sizing: border-box;
 }
