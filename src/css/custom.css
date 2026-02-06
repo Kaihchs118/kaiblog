@@ -17,14 +17,61 @@
   --navbar-float-offset: 10px;
   --navbar-glass-radius: 18px;
 
-  /* Mobile Action Bar */
-  --mobile-action-bar-height: 64px;
-  --mobile-action-bar-offset: 12px;
+/* =================================================
+   Mobile Action Bar（只控制外框，不控制按鈕）
+================================================= */
+
+.mobile-action-bar {
+  display: none;
 }
 
-html[data-theme='dark'] {
-  --ifm-color-primary: #6bb4f4;
-  --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
+@media (max-width: 996px) {
+  .mobile-action-bar {
+    display: grid;
+    position: fixed;
+    left: 50%;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + var(--mobile-action-bar-offset));
+    transform: translateX(-50%);
+    width: min(92vw, 430px);
+    height: var(--mobile-action-bar-height);
+    padding: 10px 12px;
+    border-radius: 22px;
+
+    /* ✅ 只負責排版，不干涉按鈕 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    z-index: 950;
+  }
+
+  /* 玻璃背景（只在容器） */
+  .mobile-action-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  [data-theme='dark'] .mobile-action-bar::before {
+    background: rgba(20, 20, 20, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* 防止被底部遮住 */
+  .main-wrapper {
+    padding-bottom: calc(
+      var(--mobile-action-bar-height)
+      + var(--mobile-action-bar-offset)
+      + env(safe-area-inset-bottom, 0px)
+    );
+  }
 }
 
 /* =================================================
