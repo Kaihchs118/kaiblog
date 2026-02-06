@@ -109,7 +109,7 @@ hhhh
 騙你幹嘛？就是這麼簡單!
 
 <div class="photo-border">
-
+![alt text](<截圖 2026-02-06 10.13.09.png>)
 </div>
 
 4. 會自動出現表情符號
