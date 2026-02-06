@@ -189,17 +189,6 @@ html[data-theme='dark'] .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ---------- Navbar 內層 ---------- */
-.navbar__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem; /* 使用相對單位 */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
 /* ---------- Logo & Brand ---------- */
 .navbar__brand {
   margin-right: 1rem;
