@@ -1,7 +1,6 @@
 ---
 slug: crossover-piano
 title: 跨界鋼琴 X 張育瑞大師
-authors: [KAI]
 date: 2026-01-12T04:30
 ---
 

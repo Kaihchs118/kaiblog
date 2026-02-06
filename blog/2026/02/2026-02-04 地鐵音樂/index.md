@@ -1,7 +1,6 @@
 ---
 slug: tokyo.metro
 Title: 日本火車離站音樂
-authors: [KAI]
 date: 2026-02-04T08:00
 
 ---

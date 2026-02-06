@@ -1,7 +1,6 @@
 ---
 slug: sing-danger
 title: 合唱危機！😦
-authors: [KAI]
 date: 2026-01-23T08:30
 ---
 

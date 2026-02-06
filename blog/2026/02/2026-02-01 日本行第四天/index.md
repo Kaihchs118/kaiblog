@@ -1,7 +1,6 @@
 ---
 slug: 2026-tokyo-day4
 Title: 日本自由行 第四天
-authors: [KAI]
 date: 2026-02-01T08:00
 ---
 

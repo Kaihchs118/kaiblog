@@ -1,7 +1,6 @@
 ---
 slug: web-change
 title: 我終於搬家了！
-authors: KAI
 ---
 
 ## 我終於換網址：

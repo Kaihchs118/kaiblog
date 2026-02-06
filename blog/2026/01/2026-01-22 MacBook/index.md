@@ -1,7 +1,6 @@
 ---
 slug: macbook
 title: 蘋果電腦
-authors: [KAI]
 date: 2026-01-22T08:30
 ---
 

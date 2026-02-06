@@ -1,7 +1,6 @@
 ---
 slug: 2026-tokyo-day2
 Title: 日本自由行 第二天
-authors: [KAI]
 date: 2026-01-30T08:00
 ---
 

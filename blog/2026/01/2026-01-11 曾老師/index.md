@@ -1,7 +1,6 @@
 ---
 slug: 731pc
 title: 曾老師小故事！
-authors: [KAI]
 ---
 
 ## 曾老師是誰？

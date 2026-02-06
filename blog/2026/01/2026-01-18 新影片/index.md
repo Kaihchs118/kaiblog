@@ -1,7 +1,6 @@
 ---
 slug: yt-video-01
 title: 新影片來了！
-authors: [KAI]
 date: 2026-01-18T04:30
 ---
 # 歡迎來到 KAI STUDIO 🎮🎹

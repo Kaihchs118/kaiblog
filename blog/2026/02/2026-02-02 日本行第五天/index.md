@@ -1,7 +1,6 @@
 ---
 slug: 2026-tokyo-day5
 Title: 日本自由行 第五天
-authors: [KAI]
 date: 2026-02-02T08:00
 ---
 

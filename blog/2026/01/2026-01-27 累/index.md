@@ -1,7 +1,6 @@
 ---
 slug: daily-life-0127
 Title: 忙碌的一天！
-authors: [KAI]
 date: 2026-01-27T12:00
 ---
 

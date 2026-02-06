@@ -1,7 +1,6 @@
 ---
 slug: online-day
 title: 線上上課？
-authors: [KAI]
 date: 2026-01-19T04:30
 ---
 

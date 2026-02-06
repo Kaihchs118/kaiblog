@@ -1,7 +1,6 @@
 ---
 slug: 2026-tokyo-day1
 Title: 日本自由行 第一天
-authors: [KAI]
 date: 2026-01-29T08:00
 ---
 

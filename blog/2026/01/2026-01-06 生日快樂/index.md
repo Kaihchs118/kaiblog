@@ -1,7 +1,6 @@
 ---
 slug: HBD
 title: 生日快樂！
-authors: [KAI]
 ---
 
 ## 生日快樂！

@@ -1,7 +1,6 @@
 ---
 slug: test-lable
 title: 測試 列表 / 列舉
-authors: KAI
 ---
 
 :::warning 注意！！！！

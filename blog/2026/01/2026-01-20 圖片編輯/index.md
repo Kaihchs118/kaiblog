@@ -1,7 +1,6 @@
 ---
 slug: /affinity
 title: 超好用！修圖不用再砸大錢！
-authors: [KAI]
 date: 2026-01-20T04:30
 ---
 

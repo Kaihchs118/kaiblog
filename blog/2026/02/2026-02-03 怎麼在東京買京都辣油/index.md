@@ -1,7 +1,6 @@
 ---
 slug: buy-oil
 Title: 怎麼在東京買京都辣油
-authors: [KAI]
 date: 2026-02-03T08:00
 ---
 

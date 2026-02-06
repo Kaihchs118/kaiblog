@@ -1,7 +1,6 @@
 ---
 slug: taipei-101-climb
 title: 震撼直播：挑戰 101 爬塔！
-authors: [KAI]
 date: 2026-01-25T12:00
 ---
 

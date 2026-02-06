@@ -1,7 +1,6 @@
 ---
 slug: happy-new-year
 title: 2026，新年快樂!
-authors: [KAI]
 tags: [新年快樂, 五月天]
 ---
 

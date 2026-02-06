@@ -1,7 +1,6 @@
 ---
 slug: 2026-tokyo-day3
 Title: 日本自由行 第三天
-authors: [KAI]
 date: 2026-01-31T22:00
 ---
 
