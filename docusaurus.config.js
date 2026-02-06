@@ -82,14 +82,6 @@ const config = {
     ({
       image: 'img/docusaurusd.jpg',
 
-      announcementBar: {
-        id: 'support_us',
-        content: '🎉 歡迎來到我的部落格！<a href="/about">了解更多關於我</a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: true,
-      },
-
       colorMode: { respectPrefersColorScheme: false },
       // docusaurus.config.js
 
