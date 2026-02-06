@@ -91,6 +91,8 @@ const config = {
       },
 
       colorMode: { respectPrefersColorScheme: false },
+      // docusaurus.config.js
+
 
       navbar: {
         title: 'KAI BLOG',
