@@ -165,37 +165,96 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   top: 0;
 }
 
-/* =====================================
-   Docusaurus Navbar – 修正版
-   解決手機版內容擠壓與捲動問題
-   ===================================== */
+/* ================================
+   7. Navbar - Liquid Glass (Responsive)
+   ================================ */
+:root {
+  --navbar-float-offset: 10px;
+  --navbar-glass-radius: 18px;
+}
 
-/* ---------- 基本 Navbar 設定 ---------- */
+/* 1. 初始透明狀態 */
 .navbar {
+  transition: background 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              backdrop-filter 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  background: transparent;
+  border: none;
+  z-index: 999;
+}
+
+/* 2. 滾動後的液體質感 */
+.navbar--fixed-top {
+  /* 保留左右呼吸空隙，避免在小螢幕被過度約束 */
+  top: calc(env(safe-area-inset-top, 0px) + var(--navbar-float-offset)) !important;
+  left: var(--navbar-float-offset) !important;
+  right: var(--navbar-float-offset) !important;
+  width: auto !important;
+  box-sizing: border-box;
+
   position: sticky;
-  top: 0;
-  z-index: 100;
-  /* 移除固定 height，改用 min-height 確保穩定性 */
-  min-height: var(--ifm-navbar-height); 
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--navbar-glass-radius);
+  background: transparent !important;
+  border: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  z-index: 999;
 }
 
-/* Dark mode */
-html[data-theme='dark'] .navbar {
-  background: rgba(20, 20, 20, 0.72);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.navbar--fixed-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
+  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  z-index: -1;
 }
 
-/* ---------- Logo & Brand ---------- */
-.navbar__brand {
-  margin-right: 1rem;
-  transition: opacity 0.2s;
+/* 3. 深色模式：深海液體感 */
+[data-theme='dark'] .navbar--fixed-top::before {
+  background: rgba(20, 20, 20, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
+  -webkit-backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
 }
 
-.navbar__brand:hover {
-  opacity: 0.8;
+/* 4. 淺色模式：強化可視度 */
+[data-theme='light'] .navbar--fixed-top::before {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(20px) saturate(160%) contrast(95%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(95%);
 }
 
+/* 5. 手機版：恢復正常比例，避免縮放感 */
+@media (max-width: 996px) {
+  :root {
+    --navbar-float-offset: 0px;
+    --navbar-glass-radius: 0px;
+  }
+
+  .navbar--fixed-top {
+    top: env(safe-area-inset-top, 0px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+
+  .main-wrapper {
+    padding-top: var(--ifm-navbar-height);
+  }
+}
+
+/* 修正：防止 Navbar 蓋住內容頂部 */
+.main-wrapper {
+  padding-top: calc(var(--ifm-navbar-height) + var(--navbar-float-offset));
+}
