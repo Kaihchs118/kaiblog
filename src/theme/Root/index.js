@@ -100,7 +100,7 @@ function MobileActionBar() {
     <>
       <button
         type="button"
-        className="mobile-action-bar__handle"
+        className={`mobile-action-bar__handle${menuOpen || barOpen ? ' is-hidden' : ''}`}
         onClick={() => {
           setHidden(false);
           setBarOpen(true);
