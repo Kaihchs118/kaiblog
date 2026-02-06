@@ -166,8 +166,8 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
 }
 
 /* =====================================
-   Docusaurus Navbar – Stable Full Fix
-   Desktop + Mobile Safe Version
+   Docusaurus Navbar – 修正版
+   解決手機版內容擠壓與捲動問題
    ===================================== */
 
 /* ---------- 基本 Navbar 設定 ---------- */
@@ -175,7 +175,8 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   position: sticky;
   top: 0;
   z-index: 100;
-  height: var(--ifm-navbar-height);
+  /* 移除固定 height，改用 min-height 確保穩定性 */
+  min-height: var(--ifm-navbar-height); 
   background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -192,75 +193,64 @@ html[data-theme='dark'] .navbar {
 .navbar__inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-
+  padding: 0 1rem; /* 使用相對單位 */
   display: flex;
   align-items: center;
-  height: 100%;
-}
-
-/* ---------- Fixed Navbar 修正 ---------- */
-.navbar--fixed-top {
+  justify-content: space-between;
   width: 100%;
-  left: 0;
-  right: 0;
 }
 
-/* ---------- Logo ---------- */
+/* ---------- Logo & Brand ---------- */
 .navbar__brand {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  margin-right: 1rem;
+  transition: opacity 0.2s;
 }
 
-.navbar__logo {
-  height: 28px;
-}
-
-/* ---------- Navbar Items ---------- */
-.navbar__items {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__items--right {
-  gap: 8px;
+.navbar__brand:hover {
+  opacity: 0.8;
 }
 
 /* =====================================
-   🔥 Mobile 專用修正（重點）
+   🔥 Mobile 專用修正
    ===================================== */
 
-@media (max-width: 768px) {
-  /* Navbar 本體高度保護 */
+@media (max-width: 996px) { /* Docusaurus 預設手機版切換點通常是 996px */
   .navbar {
-    min-height: 56px; /* 官方 mobile navbar 高度 */
+    /* 確保手機版高度不會被固定死，讓內部元件決定高度 */
+    height: auto; 
+    padding: 0;
   }
 
-  /* 內層不被壓扁 */
   .navbar__inner {
-    min-height: 56px;
-    padding: 0 12px;
+    padding: 0.5rem 12px;
+    /* 避免手機版內容被強制擠在一行而產生捲軸 */
+    flex-wrap: wrap; 
+  }
+
+  /* 針對你圖中出現的「KAI BLOG」文字與隨機按鈕 */
+  .navbar__items {
     display: flex;
     align-items: center;
+    flex-grow: 1;
   }
 
-  /* Fixed 狀態不 collapse */
-  .navbar--fixed-top {
-    height: auto;
-    min-height: 56px;
-  }
-
-  /* Logo 大小微調 */
+  /* 修正手機版 Logo 大小，避免撐破 Navbar */
   .navbar__logo {
     height: 24px;
+    width: auto;
   }
 }
 
 /* =====================================
-   防止奇怪 override（保險）
+   防止佈局崩壞的保險
    ===================================== */
+.navbar__items--right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-.navbar * {
-  box-sizing: border-box;
+/* 確保側邊選單按鈕（漢堡選單）有足夠空間 */
+.navbar__toggle {
+  margin-right: 0.5rem;
 }
