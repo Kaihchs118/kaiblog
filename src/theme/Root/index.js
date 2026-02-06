@@ -100,16 +100,19 @@ function MobileActionBar() {
     <>
       <button
         type="button"
-        className={`mobile-action-bar__handle${menuOpen ? ' is-hidden' : ''}`}
+        className="mobile-action-bar__handle"
         onClick={() => {
           setHidden(false);
           setBarOpen(true);
         }}
-        aria-label="開啟快捷按鈕"
+        aria-label="開啟快捷選單"
       >
-        <span className="mobile-action-bar__handle-dot" />
-        <span className="mobile-action-bar__handle-dot" />
-        <span className="mobile-action-bar__handle-dot" />
+        <span className="mobile-action-bar__handle-text">開啟快捷選單</span>
+        <span className="mobile-action-bar__handle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M6 14l6-6 6 6" />
+          </svg>
+        </span>
       </button>
 
       <div className={`mobile-action-bar${isHidden ? ' is-hidden' : ''}`}>

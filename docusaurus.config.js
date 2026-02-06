@@ -142,7 +142,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG.`,
       },
 
       prism: {
