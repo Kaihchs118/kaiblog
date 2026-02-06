@@ -98,11 +98,7 @@ const config = {
           { to: '/use', label: '🛠️ 愛用', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
           { to: '/search', label: '🔍 全站搜尋', position: 'right' },
-          {
-            href: 'https://github.com/Kaihchs118/', 
-            label: 'GitHub', 
-            position: 'right'
-          },
+
         ],
       },
 
@@ -129,7 +125,6 @@ const config = {
           {
             title: '社群媒體',
             items: [
-              { label: 'GitHub', href: 'https://github.com/Kaihchs118/' },
               { label: 'YouTube (KAI STUDIO)', href: 'https://youtube.com/@kaistudio-621' },
             ],
           },
