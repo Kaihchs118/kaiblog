@@ -165,88 +165,56 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   top: 0;
 }
 
-/* 1. 基礎透明設定 - 移除所有可能干擾的預設背景 */
-.navbar, .navbar__inner, .navbar-sidebar {
-  background: transparent !important;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+/* 1. 初始透明狀態 */
+.navbar {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  background: transparent;
+  border: none;
 }
 
-/* 2. 滾動後的液態泡泡主體 */
+/* 2. 滾動後的液體質感 */
 .navbar--fixed-top {
-  top: 10px !important;
-  left: 10px !important;
+  /* 寬度與定位：保留左右呼吸空隙 */
+  top: 10px !important; /* 距離頂部一點點，才會有液體懸浮感 */
+  left: 10px !important; 
   right: 10px !important;
-  width: calc(100% - 20px) !important;
-  border-radius: 18px !important; 
+  width: calc(100% - 20px) !important; /* 撐滿但左右各留 10px */
   
-  /* 核心玻璃濾鏡：極致模糊與強對比 */
-  backdrop-filter: blur(25px) saturate(210%) brightness(1.15) contrast(110%) !important;
-  -webkit-backdrop-filter: blur(25px) saturate(210%) brightness(1.15) contrast(110%) !important;
+  /* 圓角處理：25% 感覺的柔和圓角 (約 16px - 20px) */
+  border-radius: 18px; 
+  
+  /* 核心玻璃質感：極致透明與純淨模糊 */
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
+  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
 
-  /* 物理亮邊：頂部受光面高亮 */
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+  /* 泡泡邊緣的表面張力 (細膩的白邊) */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   
-  /* 外部陰影與內部反射 */
+  /* 讓陰影更廣、更淡，模擬空氣感 */
   box-shadow: 
-    0 12px 40px rgba(0, 0, 0, 0.15),
-    inset 0 1px 2px rgba(255, 255, 255, 0.4) !important;
+    0 10px 40px rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-/* 3. 深色模式修正 */
+/* 3. 深色模式：深海液體感 */
 [data-theme='dark'] .navbar--fixed-top {
-  background: rgba(20, 20, 20, 0.35) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(30px) saturate(200%) brightness(0.9) contrast(120%) !important;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+  background: rgba(20, 20, 20, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
 }
 
-/* 4. 淺色模式修正 - 確保白色背景下有厚度 */
+/* 4. 淺色模式：強化可視度 */
 [data-theme='light'] .navbar--fixed-top {
-  background: rgba(255, 255, 255, 0.6) !important;
-  border: 1px solid rgba(255, 255, 255, 0.8) !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), inset 0 0 10px rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5) !important;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  /* 淺色模式下，稍微降低亮度對比，讓它更滑順 */
+  backdrop-filter: blur(20px) saturate(160%) contrast(95%);
 }
 
-/* 5. ⚠️ 修正手機選單 (Mobile Sidebar) 的嚴重衝突 */
-@media (max-width: 996px) {
-  /* 移除開啟選單時的深色遮罩或硬背景 */
-  .navbar-sidebar {
-    background: rgba(255, 255, 255, 0.65) !important;
-    backdrop-filter: blur(30px) saturate(180%) !important;
-    border-radius: 20px;
-    margin: 10px;
-    height: calc(100vh - 20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  }
-
-  [data-theme='dark'] .navbar-sidebar {
-    background: rgba(15, 15, 15, 0.7) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* 修正選單內部的 Header 避免重複出現重疊感 */
-  .navbar-sidebar__brand {
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-
-  /* 移除手機版側邊欄底下的遮罩層（如果有） */
-  .navbar-sidebar__backdrop {
-    display: none !important;
-  }
-}
-
-/* 6. 版面間距修正 */
+/* 修正：防止 Navbar 蓋住內容頂部 */
 .main-wrapper {
-  padding-top: 15px !important;
+  padding-top: 10px;
 }
-
-/* 搜尋框優化 */
-.navbar__search-input {
-  border-radius: 12px !important;
-  background: rgba(0, 0, 0, 0.07) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
+請你用這個然後整合進去，因為程式碼有點長
