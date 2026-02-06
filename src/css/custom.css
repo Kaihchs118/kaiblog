@@ -165,89 +165,88 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   top: 0;
 }
 
-/* 1. 基礎透明與過渡 - 確保滑溜溜的動態 */
-.navbar {
-  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  background: transparent !important; /* 強制初始透明 */
-  border: none;
+/* 1. 基礎透明設定 - 移除所有可能干擾的預設背景 */
+.navbar, .navbar__inner, .navbar-sidebar {
+  background: transparent !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 2. 核心：滾動後的液態泡泡主體 */
+/* 2. 滾動後的液態泡泡主體 */
 .navbar--fixed-top {
-  /* 定位：全寬懸浮感 */
   top: 10px !important;
   left: 10px !important;
   right: 10px !important;
   width: calc(100% - 20px) !important;
-  
-  /* 圓角：25% 柔和圓角 (18px 是最佳平衡) */
   border-radius: 18px !important; 
   
-  /* 核心質感：極致模糊 + 物理折射 (Contrast) */
-  /* 增加 contrast(120%) 讓背景色彩被「擠」出來 */
-  backdrop-filter: blur(25px) saturate(210%) brightness(1.1) contrast(115%) !important;
-  -webkit-backdrop-filter: blur(25px) saturate(210%) brightness(1.1) contrast(115%) !important;
+  /* 核心玻璃濾鏡：極致模糊與強對比 */
+  backdrop-filter: blur(25px) saturate(210%) brightness(1.15) contrast(110%) !important;
+  -webkit-backdrop-filter: blur(25px) saturate(210%) brightness(1.15) contrast(110%) !important;
 
-  /* 物理亮邊：這是 Apple 質感的靈魂 */
-  /* 頂部高光模擬受光面，四周微弱白邊模擬玻璃邊緣 */
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.5) !important;
+  /* 物理亮邊：頂部受光面高亮 */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.6) !important;
   
-  /* 立體陰影：讓泡泡浮起來 */
+  /* 外部陰影與內部反射 */
   box-shadow: 
-    0 12px 40px rgba(0, 0, 0, 0.15),           /* 外部柔軟陰影 */
-    inset 0 1px 2px rgba(255, 255, 255, 0.4); /* 內部反射高亮線 */
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4) !important;
 }
 
-/* 3. 深色模式：強化黑曜石折射感 */
+/* 3. 深色模式修正 */
 [data-theme='dark'] .navbar--fixed-top {
   background: rgba(20, 20, 20, 0.35) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.25) !important;
-  backdrop-filter: blur(30px) saturate(220%) brightness(0.9) contrast(125%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(30px) saturate(200%) brightness(0.9) contrast(120%) !important;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
 }
 
-/* 4. 淺色模式：解決手機版死白、看不出效果的問題 */
+/* 4. 淺色模式修正 - 確保白色背景下有厚度 */
 [data-theme='light'] .navbar--fixed-top {
-  /* 提高 Alpha 值至 0.6，確保在純白背景下仍有「厚度感」 */
   background: rgba(255, 255, 255, 0.6) !important;
   border: 1px solid rgba(255, 255, 255, 0.8) !important;
-  /* 內部反射：淺色模式需要更強的 Inset Shadow 才有玻璃感 */
-  box-shadow: 
-    0 8px 30px rgba(0, 0, 0, 0.08),
-    inset 0 0 15px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), inset 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* 5. 針對手機版 (Mobile) 的特別修正：解決截圖中的白色矩形問題 */
+/* 5. ⚠️ 修正手機選單 (Mobile Sidebar) 的嚴重衝突 */
 @media (max-width: 996px) {
-  /* 移除手機版側邊欄觸發時的硬色背景 */
+  /* 移除開啟選單時的深色遮罩或硬背景 */
   .navbar-sidebar {
-    background: rgba(255, 255, 255, 0.4) !important;
-    backdrop-filter: blur(20px) saturate(180%) !important;
+    background: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(30px) saturate(180%) !important;
     border-radius: 20px;
     margin: 10px;
-    height: calc(100vh - 20px);
-  }
-  
-  [data-theme='dark'] .navbar-sidebar {
-    background: rgba(0, 0, 0, 0.4) !important;
+    height: calc(100vh - 20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   }
 
-  /* 移除點開搜尋或選單時的白色底層 */
-  .navbar__inner {
+  [data-theme='dark'] .navbar-sidebar {
+    background: rgba(15, 15, 15, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* 修正選單內部的 Header 避免重複出現重疊感 */
+  .navbar-sidebar__brand {
     background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* 移除手機版側邊欄底下的遮罩層（如果有） */
+  .navbar-sidebar__backdrop {
+    display: none !important;
   }
 }
 
-/* 6. 版面修正：防止內容被懸浮 Navbar 遮擋 */
-.main-wrapper, .docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+/* 6. 版面間距修正 */
+.main-wrapper {
   padding-top: 15px !important;
 }
 
-/* 讓搜尋框也 Liquid 一點 */
+/* 搜尋框優化 */
 .navbar__search-input {
   border-radius: 12px !important;
-  background: rgba(0, 0, 0, 0.05) !important;
+  background: rgba(0, 0, 0, 0.07) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
