@@ -9,7 +9,7 @@ slug: /use
 
 ## 🖥️ 電腦軟體
 
-我的軟體使用原則是，在可行的情況下，優先使用自由軟體或開源軟體；對於還無法主要使用自由軟體的工作項目，也盡力準備自由軟體的替代方案。(感謝 wiwi 提供 🤣🤣)
+我的軟體使用原則是，在可行的情況下，優先使用自由軟體或開源軟體；對於還無法主要使用自由軟體的工作項目，也盡力準備自由軟體的替代方案。
 
 ### 💾 作業系統
 
@@ -20,7 +20,7 @@ slug: /use
     - [Omarchy](https://omarchy.org/)－ WIWI 說很潮，我沒用過，但還是留下來 😂
 
 
-- macOS - 音樂製作、剪片用的系統（我更新到 ```macOS 26``` 就後悔了，Cubase 跑到當機...）
+- macOS - 音樂製作、剪片用的系統（我更新到 `macOS 26` 就後悔了，Cubase 跑到當機...）
 - Windows - 跑虛擬機來...試試不同軟體哈哈哈，當然未來出教學影片也要考量到，建議用 Windows 10
 
 
@@ -31,7 +31,7 @@ slug: /use
 - [Chromium](https://www.chromium.org/Home/) - 其實很少用
 
 :::warning 建議
-建議不要使用像是 ```Chrome```、 ```Edge```、 ```Safari``` 這種 大公司 瀏覽器 ！
+建議不要使用像是 `Chrome`、 `Edge`、 `Safari` 這種 大公司 瀏覽器 ！
 
 他們會偷偷在背景抓你的資料！
 :::
@@ -48,7 +48,7 @@ https://youtu.be/8di0J9-pCZQ?si=RX6O0d7ZJ90wN76f
 :::
 
 
-- [NDM Plugin](https://neatdownloadmanager.com/index.php/en/) - 下載工具，將你家網路寬帶跑到最滿，超輕量
+- [Motrix](https://motrix.apps) - 開源下載工具，將你家網路寬帶跑到最滿，超輕量
 
 
 

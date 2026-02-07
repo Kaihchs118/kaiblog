@@ -54,4 +54,4 @@ date: 2026-01-26T12:00
 46. Vital ㄧ 好用合成器
 47. VSCodium ㄧ 超好用文字編輯器，開源而且不會被微軟綁架
 48. WhisperTRANS ㄧ 我與 AI 開發的語音轉文字工具，但要自己部署
-49. YTDownloader ㄧ 我與 AI 開發的YouTube 影片下載神器，超級好用！！！！
+49. [YTDownloader](https://kaiblog.itch.io/ytdownloader) ㄧ 我與 AI 開發的YouTube 影片下載神器，超級好用！！！！
