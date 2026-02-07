@@ -96,6 +96,7 @@ const config = {
           { to: '/random', label: '🎲 隨機', position: 'left' },
           { to: '/now', label: '🕒 近況', position: 'left' },
           { to: '/use', label: '🛠️ 愛用', position: 'left' },
+          { to: '/app', label: '📱 應用程式', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
           { to: '/search', label: '🔍 全站搜尋', position: 'right' },
 
@@ -120,6 +121,7 @@ const config = {
               { label: '關於我', to: '/about' },
               { label: '近況', to: '/now' },
               { label: '愛用', to: '/use' },
+              { label: '應用程式', to: '/app' },
             ],
           },
           {
