@@ -1,3 +1,11 @@
+/* 在 CSS 最上方加入 */
+@import url('https://fonts.googleapis.com');
+
+body {
+  font-family: 'Huninn', sans-serif;
+}
+
+
 /* ================================
    1. 基礎變數與全域設定 (Theme Variables)
    ================================ */
@@ -472,4 +480,21 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   .main-wrapper {
     padding-bottom: calc(var(--mobile-action-bar-height) + var(--mobile-action-bar-offset) + env(safe-area-inset-bottom, 0px));
   }
+}
+@import url('https://fonts.googleapis.com');
+
+:root {
+
+  /* 讓預設內文就比平常稍微厚實一點 (Medium 500) */
+  --ifm-font-weight-base: 500;
+  
+  /* 讓標題直接用最粗的等級 (Black 900) */
+  --ifm-font-weight-bold: 900;
+  --ifm-heading-font-weight: 900;
+
+}
+
+/* 強制讓所有標題呈現出那種厚實的「塊狀感」 */
+h1, h2, h3 {
+  letter-spacing: -0.01em; /* 粗體字距縮小一點點會更扎實 */
 }
