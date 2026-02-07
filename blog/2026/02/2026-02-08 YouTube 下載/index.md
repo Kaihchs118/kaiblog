@@ -3,7 +3,9 @@ slug: YTdownload
 Title: YouTube 下載神奇工具！
 date: 2026-02-08T11:00
 ---
-
+:::danger 直接下載
+[ITCH.IO 超高速下載](https://kaiblog.itch.io/ytdownloader)
+:::
 
 :::danger 找了老半天... 還是被我找到了 💩 
 [搞不好比我的還好用](https://github.com/aandrew-me/ytDownloader)

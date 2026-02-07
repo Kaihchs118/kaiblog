@@ -160,5 +160,5 @@ slug: /app
 ## 🎮 遊戲與娛樂 (Gaming)
 * **Roblox** :
     我目前唯一在玩的遊戲。
-* **Roblox Studio** :
+* **Roblox Studio** : 
     做遊戲其實很簡單，推薦看「克拉克」的教學來入門。
