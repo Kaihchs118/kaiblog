@@ -1,7 +1,7 @@
 ---
 slug: live-crack
 title: Ableton Live 破解
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: Ableton Live 破解
 authors: [KAI]
 tags: [Ableton]
