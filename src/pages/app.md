@@ -32,8 +32,6 @@ slug: /app
     用習慣了，雖然現在官方停止更新，但依然是我的主力打譜工具。
     - **Aria Player** :
     專為 Finale 設計的音樂播放器。
-- **Dorico** :
-    目前想跳槽的對象，但操作邏輯不同，還在努力熟練快捷鍵中。
 - **Musescore 4** :
     開源打譜軟體，但不太喜歡它把所有工具都堆在右邊的介面設計。
 - **Audacity** :
@@ -62,8 +60,6 @@ slug: /app
     製作 YouTube 縮圖的主力，[可以看這篇文章介紹](/blog/affinity)。
 - **OBS Studio** :
     超好用的開源螢幕錄影與直播軟體，功能極其強大。
-- **Arena** :
-    舞美 (VJ) 專用軟體，目前還在初學摸索階段。
 - **GIMP 2** :
     [曾老師堅持使用的修圖軟體](/blog/731pc)，而且還堅持要用 2.6 古董版。
 - **Canva** :
@@ -129,8 +125,8 @@ slug: /app
     開源解壓縮工具，處理密碼壓縮檔或專業壓縮需求非常方便。
 - **IINA** :
     Mac 萬能影音播放器，介面優雅，比系統內建好用一百倍。
-- **[Motrix](https://motrix.app)** :
-    下載加速器，目前還沒找到怎麼自動下載，但是至少比NDM好用
+- **[FDM](https://https://www.freedownloadmanager.org/)** :
+    下載加速器，目前終於可以在 Brave 上面強制下載，而且比NDM好用
 - **RustDesk** :
     開源的遠端桌面軟體，穩定且好用。
 - **Parallels Desktop** :
@@ -143,8 +139,6 @@ slug: /app
 
 - **Brave Browser** :
     具有隱私保護的開源瀏覽器，連同步功能都很有加密貨幣的技術感。
-- **VSCodium** :
-    開源文字編輯器，本質是 VS Code 但去除了微軟的追蹤腳本。
 - **Github Desktop** :
     本網站使用 Github 架站，這是我的版本管理與發布工具。
 - **Discord** :
