@@ -82,7 +82,7 @@ date: 2026-02-08T08:00
 
 # 支持
 
-作者提供 [Discord](https://discord.gg/akswvyUk) 和 [Reddit](@devilAPIOnReddit) 上的支援。
+作者提供 [Discord](https://discord.gg/akswvyUk) 上的支援。
 
 # 鳴謝
 
