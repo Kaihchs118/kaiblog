@@ -25,8 +25,7 @@ slug: /
 ## 📋 筆記
 這裡會是記錄筆記的地方，有時候我想要公開就會不定期有新內容喔！
 
-:::info
-[前往筆記首頁！ →](/docs)
+:::info [前往筆記首頁！ →](/docs)
 :::
 
 ## 🛠️ 其他小技巧！
@@ -38,20 +37,12 @@ slug: /
 
 ---
 
-## 🎼 Finale 教學
-會在這一年當中慢慢推出 `Finale 打譜教學`。
-
-:::info 最新資訊
-[趕快看看教學內容 →](/docs/Finale/index)
-:::
-
 ## 🎬 達芬奇免費模板 😍
 我更新 **ResolveV3Pack**
 最新的下載在 itch.io 速度超級快！
 替達芬奇製作出許多模板，均為免費模板！
 
-:::info 下載專區
-[前往下載 ResolveV3Pack →](/docs/resolve/resolvepackV3-update)
+:::tip [前往下載 ResolveV3Pack →](/docs/resolve/resolvepackV3-update)
 :::
 
 ---
@@ -61,8 +52,7 @@ slug: /
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
 我每個月都會參加「BlogBlog 同樂會」。
 
-:::info 社群連結
-[前往 BlogBlog.Club 官網 →](https://blogblog.club/)
+:::tip [前往 BlogBlog.Club 官網 →](https://blogblog.club/)
 :::
 
 ---
@@ -79,6 +69,5 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 <p>Kai | MAYDAY 五月天[ 2012 特別版 ] MAYDAY FLY TO 2023 COVER </p>
 </div>
 
-:::info 影片詳細資訊
-[前往此影片相關貼文 →](/blog/new-arrange-02)
+:::tip [前往此影片相關貼文 →](/blog/new-arrange-02)
 :::

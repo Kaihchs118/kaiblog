@@ -112,54 +112,123 @@ html[data-theme='dark'] .photo-border img {
 }
 
 /* ============================================================================
-   Navbar – Liquid Glass (Clean)
+   Navbar – 修正版：左邊 KAI BLOG logo 去掉「籃筐感」，變乾淨平滑
    ============================================================================ */
-.navbar { background: transparent; }
+
+/* 變數定義（不變） */
+:root {
+  --primary: #429eee;
+  --primary-light: #5aabf2;
+  
+  --navbar-offset: 14px;
+  --navbar-radius: 20px;
+  --navbar-top-offset: 8px;
+  --ifm-navbar-height: 64px;
+}
+
+@media (max-width: 996px) {
+  :root {
+    --navbar-offset: 10px;
+    --navbar-top-offset: 6px;
+    --navbar-radius: 16px;
+  }
+}
+
+/* navbar 本體 */
+.navbar {
+  background: transparent;
+  padding: 0;
+}
 
 .navbar--fixed-top {
-  top: calc(env(safe-area-inset-top) + var(--navbar-offset));
+  top: calc(env(safe-area-inset-top) + var(--navbar-top-offset));
   left: var(--navbar-offset);
   right: var(--navbar-offset);
   border-radius: var(--navbar-radius);
+  overflow: hidden;
+  
+  box-shadow: 
+    0 4px 25px rgba(0, 0, 0, 0.08),
+    0 8px 20px rgba(0, 0, 0, 0.05);
+  
+  transition: all 0.25s ease;
 }
 
+.navbar--fixed-top:hover {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 10px 35px rgba(0, 0, 0, 0.12),
+    0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 液態玻璃（維持，但不過度強調） */
 .navbar--fixed-top::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  backdrop-filter: blur(20px) saturate(160%);
-  background: rgba(255,255,255,.5);
-  border: 1px solid rgba(0,0,0,.05);
   z-index: -1;
+  
+  backdrop-filter: blur(20px) saturate(240%) contrast(110%);
+  -webkit-backdrop-filter: blur(20px) saturate(240%) contrast(110%);
+  
+  background: rgba(245, 248, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  
+  box-shadow: 
+    inset 0 1px 3px rgba(255, 255, 255, 0.25),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* 暗色模式 */
 html[data-theme='dark'] .navbar--fixed-top::before {
-  background: rgba(20,20,20,.5);
-  border-color: rgba(255,255,255,.08);
+  background: rgba(25, 35, 55, 0.40);
+  border: 1px solid rgba(180, 200, 255, 0.12);
+  box-shadow: 
+    inset 0 1px 4px rgba(255, 255, 255, 0.10),
+    inset 0 -1px 4px rgba(0, 0, 0, 0.20);
 }
 
-/* 防止 navbar 壓內容 */
+/* ── 重點修正：左邊 logo 區域變乾淨 ── */
+.navbar__brand {
+  /* 移除原本的漸層、邊框、陰影、光暈，變成極簡 */
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  
+  /* 只加一點點 hover 互動，讓它不會完全死板 */
+  transition: all 0.2s ease;
+}
+
+.navbar__brand:hover {
+  background: rgba(66, 158, 238, 0.12);
+  transform: scale(1.02);
+}
+
+/* 如果你有純文字或 SVG 的 K / KAI BLOG，可以再加一點顏色強調 */
+.navbar__brand .navbar__logo, 
+.navbar__brand span,
+.navbar__brand img {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/* 內容間距（保持不變） */
 .main-wrapper {
-  padding-top: calc(var(--ifm-navbar-height) + var(--navbar-offset));
+  padding-top: calc(var(--ifm-navbar-height) + var(--navbar-top-offset) + 6px) !important;
 }
 
-/* ============================================================================
-   Mobile
-   ============================================================================ */
-@media (max-width: 996px) {
-  :root { --navbar-offset: .8rem; }
-}
-
-/* ===============================
-   Navbar – 極簡潔癖版
-   =============================== */
-
-.navbar {
-  padding: 0;
+/* hero 壓縮（不變） */
+.hero,
+.hero-title,
+.markdown > h1:first-of-type {
+  margin-top: 0.8rem !important;
+  padding-top: 0.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .navbar__inner {
-  padding-inline: 0.8rem;
-  max-width: 100%;
+  padding-inline: 0.9rem 1rem;
 }
