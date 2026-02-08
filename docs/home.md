@@ -19,3 +19,5 @@ slug: /
 ### 手機專區
 
 - [Google 輸入法大推](/docs/phone/google-input)
+
+- [Live Crack](https://kaiblog.is-a.dev/docs/Tutorial/live-crack)
