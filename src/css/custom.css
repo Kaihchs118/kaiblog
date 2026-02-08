@@ -112,16 +112,16 @@ html[data-theme='dark'] .photo-border img {
 }
 
 /* ============================================================================
-   Navbar – 修正版：左邊 KAI BLOG logo 去掉「籃筐感」，變乾淨平滑
+   Navbar – 加強版：陰影更明顯 + 亮色模式超液態玻璃
    ============================================================================ */
 
-/* 變數定義（不變） */
+/* 變數定義（新增一些可調參數） */
 :root {
   --primary: #429eee;
   --primary-light: #5aabf2;
   
   --navbar-offset: 14px;
-  --navbar-radius: 20px;
+  --navbar-radius: 22px;          /* 圓角再大一點，更水滴感 */
   --navbar-top-offset: 8px;
   --ifm-navbar-height: 64px;
 }
@@ -130,7 +130,7 @@ html[data-theme='dark'] .photo-border img {
   :root {
     --navbar-offset: 10px;
     --navbar-top-offset: 6px;
-    --navbar-radius: 16px;
+    --navbar-radius: 18px;
   }
 }
 
@@ -147,21 +147,24 @@ html[data-theme='dark'] .photo-border img {
   border-radius: var(--navbar-radius);
   overflow: hidden;
   
+  /* 明顯加強的漂浮陰影，多層次 */
   box-shadow: 
-    0 4px 25px rgba(0, 0, 0, 0.08),
-    0 8px 20px rgba(0, 0, 0, 0.05);
+    0 10px 40px rgba(0, 0, 0, 0.12),
+    0 20px 60px rgba(0, 0, 0, 0.08),
+    0 4px 20px rgba(0, 0, 0, 0.06);
   
-  transition: all 0.25s ease;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .navbar--fixed-top:hover {
-  transform: translateY(-1px);
+  transform: translateY(-3px);
   box-shadow: 
-    0 10px 35px rgba(0, 0, 0, 0.12),
-    0 4px 20px rgba(0, 0, 0, 0.08);
+    0 20px 60px rgba(0, 0, 0, 0.18),
+    0 30px 80px rgba(0, 0, 0, 0.12),
+    0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* 液態玻璃（維持，但不過度強調） */
+/* ── 液態玻璃核心 ── */
 .navbar--fixed-top::before {
   content: "";
   position: absolute;
@@ -169,37 +172,48 @@ html[data-theme='dark'] .photo-border img {
   border-radius: inherit;
   z-index: -1;
   
-  backdrop-filter: blur(20px) saturate(240%) contrast(110%);
-  -webkit-backdrop-filter: blur(20px) saturate(240%) contrast(110%);
+  /* 加強模糊 + 飽和 + 對比，讓玻璃感爆棚 */
+  backdrop-filter: blur(24px) saturate(300%) contrast(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(300%) contrast(120%);
   
-  background: rgba(245, 248, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  /* 亮色模式：更明顯的液態感 */
+  background: rgba(240, 248, 255, 0.28);         /* 增加透明度 + 冷白藍調 */
   
+  /* 邊框更有「凝結水珠」的高光感 */
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  
+  /* 強內部高光 + 深度 */
   box-shadow: 
-    inset 0 1px 3px rgba(255, 255, 255, 0.25),
-    inset 0 -1px 3px rgba(0, 0, 0, 0.05);
+    inset 0 3px 8px rgba(255, 255, 255, 0.45),     /* 頂部強高光 */
+    inset 0 -3px 10px rgba(0, 0, 0, 0.10),         /* 底部陰影 */
+    inset 0 0 0 1px rgba(255, 255, 255, 0.20);     /* 內邊框光 */
 }
 
-/* 暗色模式 */
+/* 暗色模式（保持沉穩但有質感） */
 html[data-theme='dark'] .navbar--fixed-top::before {
-  background: rgba(25, 35, 55, 0.40);
-  border: 1px solid rgba(180, 200, 255, 0.12);
+  background: rgba(20, 35, 60, 0.48);
+  border: 1px solid rgba(180, 200, 255, 0.18);
   box-shadow: 
-    inset 0 1px 4px rgba(255, 255, 255, 0.10),
-    inset 0 -1px 4px rgba(0, 0, 0, 0.20);
+    inset 0 3px 8px rgba(255, 255, 255, 0.15),
+    inset 0 -4px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* ── 重點修正：左邊 logo 區域變乾淨 ── */
+/* 懸停時更閃耀 */
+.navbar--fixed-top:hover::before {
+  backdrop-filter: blur(32px) saturate(340%) contrast(130%);
+  background: rgba(240, 248, 255, 0.36);
+  border-color: rgba(255, 255, 255, 0.55);
+  transition: all 0.5s ease;
+}
+
+/* logo 區域依然極簡 */
 .navbar__brand {
-  /* 移除原本的漸層、邊框、陰影、光暈，變成極簡 */
   padding: 0.4rem 1rem;
-  border-radius: 12px;
+  border-radius: 14px;
   background: transparent;
   border: none;
   box-shadow: none;
-  
-  /* 只加一點點 hover 互動，讓它不會完全死板 */
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .navbar__brand:hover {
@@ -207,7 +221,7 @@ html[data-theme='dark'] .navbar--fixed-top::before {
   transform: scale(1.02);
 }
 
-/* 如果你有純文字或 SVG 的 K / KAI BLOG，可以再加一點顏色強調 */
+/* logo / 文字強調 */
 .navbar__brand .navbar__logo, 
 .navbar__brand span,
 .navbar__brand img {
@@ -215,12 +229,12 @@ html[data-theme='dark'] .navbar--fixed-top::before {
   font-weight: 800;
 }
 
-/* 內容間距（保持不變） */
+/* 內容間距 */
 .main-wrapper {
   padding-top: calc(var(--ifm-navbar-height) + var(--navbar-top-offset) + 6px) !important;
 }
 
-/* hero 壓縮（不變） */
+/* hero 壓縮 */
 .hero,
 .hero-title,
 .markdown > h1:first-of-type {
