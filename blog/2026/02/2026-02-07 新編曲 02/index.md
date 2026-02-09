@@ -1,6 +1,6 @@
 ---
 slug: new-arrange-02
-Title: 新編曲：2012
+title: 新編曲：2012
 date: 2026-02-07T08:00
 ---
 
