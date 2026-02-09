@@ -234,7 +234,7 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
   -webkit-backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
   box-shadow:
-  0.3em 0.3em 1em rgba(34, 33, 33, 0.6);
+  0.3em 0.3em 0.5em rgba(34, 33, 33, 0.6);
   padding-left: -10px;
   padding-right: -10px;
 }
@@ -246,7 +246,7 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   backdrop-filter: blur(10px) saturate(160%) contrast(75%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(75%);
   box-shadow:
-  0.3em 0.3em 1em rgba(62, 61, 61, 0.6);
+  0.3em 0.3em 0.5em rgba(62, 61, 61, 0.6);
   padding-left: -10px;
   padding-right: -10px;
 }
