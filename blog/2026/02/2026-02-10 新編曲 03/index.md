@@ -37,3 +37,10 @@ date: 2026-02-10T08:00
 
 
 
+## 縮圖
+
+縮圖是我親自製作的，是不是很帥呀？
+
+<div class="photo-border">
+![](MAYDAY.png)
+</div>
