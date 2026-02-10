@@ -104,19 +104,90 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
 /* ============================================================
    5. 導覽列與行動列 (Navigation & Mobile)
    ============================================================ */
-/* 液態導覽列 (Liquid Glass) */
-.navbar { transition: all 0.5s ease; background: transparent; border: none; }
+/* 1. 定義主題變數：讓淺深兩色邏輯統一 */
+:root[data-theme='light'] {
+  /* 1. 稍微降低一點透明度，並帶入極細微的灰色，增加與背景的差異 */
+  --nav-bg: rgba(255, 255, 255, 0.85); 
+  
+  /* 2. 邊框不再用白色，改用極細的淺灰色來勾勒輪廓 */
+  --nav-border: rgba(0, 0, 0, 0.08); 
+  
+  /* 3. 強化陰影：增加一個稍微重一點的層次，讓它「跳」出來 */
+  --nav-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.02),
+    0 10px 20px rgba(0, 0, 0, 0.06),
+    0 1px 0px rgba(0, 0, 0, 0.02); /* 底部細線增強重力感 */
+
+  --nav-text: #2d3436;
+  --nav-item-hover: rgba(0, 0, 0, 0.04);
+}
+
+/* 額外小技巧：給 nav 增加一個非常細的「外發光」 */
+[data-theme='light'] .navbar--fixed-top {
+  outline: 1px solid rgba(255, 255, 255, 0.5); /* 在陰影與邊框間加一層亮邊，營造玻璃質感 */
+  outline-offset: -1px;
+}
+
+:root[data-theme='dark'] {
+  --nav-bg: rgba(20, 20, 22, 0.5);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --nav-edge-highlight: rgba(255, 255, 255, 0.12);
+  --nav-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --nav-text: rgba(255, 255, 255, 0.9);
+  --nav-item-hover: rgba(255, 255, 255, 0.1);
+}
+
+/* 2. 導覽列主體 */
 .navbar--fixed-top {
-  top: var(--navbar-float-offset) !important; left: var(--navbar-float-offset) !important;
-  right: var(--navbar-float-offset) !important; width: auto !important;
+  top: var(--navbar-float-offset) !important;
+  left: var(--navbar-float-offset) !important;
+  right: var(--navbar-float-offset) !important;
+  width: auto !important;
   border-radius: var(--navbar-glass-radius);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0.6rem 1.2rem;
+  
+  /* 玻璃感核心 */
+  background: var(--nav-bg) !important;
+  backdrop-filter: blur(20px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  
+  /* 邊框與光影效果 */
+  border: 1px solid var(--nav-border) !important;
+  box-shadow: var(--nav-shadow) !important;
 }
-.navbar--fixed-top::before {
-  content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: -1;
-  backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px);
+
+/* 3. 模擬玻璃厚度的高光 (頂部細線) */
+.navbar--fixed-top::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 20px; right: 20px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--nav-edge-highlight), transparent);
+  z-index: 1;
 }
-[data-theme='light'] .navbar--fixed-top::before { background: rgba(255, 255, 255, 0.5); border: 1px solid rgba(0,0,0,0.03); }
-[data-theme='dark'] .navbar--fixed-top::before { background: rgba(20, 20, 20, 0.4); border: 1px solid rgba(255,255,255,0.08); }
+
+/* 4. 內容元素優化 */
+.navbar--fixed-top .nav-link {
+  color: var(--nav-text) !important;
+  font-weight: 500;
+  transition: 0.25s;
+  border-radius: 10px;
+  margin: 0 2px;
+}
+
+.navbar--fixed-top .nav-link:hover {
+  background: var(--nav-item-hover);
+  transform: translateY(-1px);
+}
+
+/* 5. 搜尋框：讓它在兩色下都像嵌入玻璃裡 */
+.search-box-custom {
+  background: rgba(128, 128, 128, 0.08) !important;
+  border: 1px solid var(--nav-border) !important;
+  backdrop-filter: inset(2px);
+}
 
 /* 行動版懸浮按鈕條 (Safari-like) */
 @media (max-width: 996px) {
