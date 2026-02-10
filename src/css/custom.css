@@ -87,7 +87,7 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 [data-theme='dark'] :is(.youtube, .youtube-s, .photo-border img) { background: #2a3b43; }
 
 .photo-border img { 
-  background: #def5ff; border-radius: 14px; 
+  margin: 2rem 0; padding: 1.2rem;     background: #def5ff; border-radius: 14px; 
 }
 [data-theme='dark'] :is(.photo-border img) { background: #2a3b43; }
 
