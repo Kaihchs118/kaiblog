@@ -59,15 +59,15 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 ## 📺 YouTube 最新影片 🎉
 
-> **KAI STUDIO** (最後更新：2026-02-07)
-> 目前：23 位訂閱者
+> **KAI STUDIO** (最後更新：2026-02-10)
+- 目前：23 位訂閱者
 
 <div class="youtube-s">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QVy1UhwQvvA?si=cPbgTr6p7C2nLCMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S-IzjjQ-Hnc?si=KcTCvk4OPgVOTape" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<p>Kai | MAYDAY 五月天[ 2012 特別版 ] MAYDAY FLY TO 2023 COVER </p>
+<p>Kai | MAYDAY 五月天 [ 勇敢Braveness ] COVER</p>
 </div>
 
-:::tip [前往此影片相關貼文 →](/blog/new-arrange-02)
+:::tip [前往此影片相關貼文 →](/blog/new-arrange-03)
 :::
