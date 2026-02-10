@@ -220,9 +220,6 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
   -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow:
-    0 10px 40px rgba(0, 0, 0, 0.1),
-    inset 0 0 10px rgba(255, 255, 255, 0.05);
   pointer-events: none;
   z-index: -1;
 }
@@ -233,10 +230,6 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
   -webkit-backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
-  box-shadow:
-  0.3em 0.3em 0.3em rgba(34, 33, 33, 0.6);
-  padding-left: -15px;
-  padding-right: -15px;
 }
 
 /* 4. 淺色模式：強化可視度 */
@@ -245,10 +238,6 @@ html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
   border: 1px solid rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(10px) saturate(160%) contrast(75%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(75%);
-  box-shadow:
-  0.3em 0.3em 0.3em rgba(62, 61, 61, 0.6);
-  padding-left: -15px;
-  padding-right: -15px;
 }
 
 /* 5. 手機版：恢復正常比例，避免縮放感 */
