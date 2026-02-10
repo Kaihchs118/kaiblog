@@ -46,23 +46,19 @@ And so much more !
 - 方式一：直接雙擊 ResolvePackV3.drfx，這將會開啟 Resolve 。  
 接著，選擇安裝，重啟達芬奇
 
----
-
-
-
 - 方式二：將 EditPack.drfx 拖曳到以下資料夾：  
 
-  Mac 路徑：
+**Mac 路徑：**
 
-  ``` MarkDown
-  /Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates  
-  ```
+``` MarkDown
+/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates  
+```
 
-  Windows 路徑：
+**Windows 路徑：**
 
-  ``` MarkDown
-  C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates  
-  ```
+``` MarkDown
+C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates  
+```
 
 
 :::warning 提醒！
@@ -102,7 +98,7 @@ And so much more !
 步驟一：解壓縮 Font 壓縮檔。  
 步驟二：選取所有字體檔案（.ttf 或 .otf），雙擊後點擊「安裝字體」。  
 
-## 3. 安裝 ExpansionPack (如果需要)
+## 4. 安裝 ExpansionPack (如果需要)
 步驟一：將 ExpansionPack 資料夾複製到下列資料夾：  
   Mac 路徑：
 ``` Markdown
@@ -113,7 +109,7 @@ And so much more !
 C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates\Edits\Generations  
 ```
 
-## 4. 覆蓋 Fusion 資料夾（如果需要裡面的工具）
+## 5. 覆蓋 Fusion 資料夾（如果需要裡面的工具）
 步驟一：將下載好的 Fusion 資料夾整個覆蓋到：  
 
   Mac 路徑：
@@ -127,7 +123,7 @@ C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusio
 
 若系統詢問是否取代，請選擇「取代」。
 
-## 5. 安裝工具（Tool/自選）
+## 6. 安裝工具（Tool/自選）
 步驟一：將 install.lua 檔案拖曳到 DaVinci Resolve 的 Console 視窗。  
 步驟二：依照畫面指示完成安裝。  
 EditorLab 需自行註冊帳號。（可開啟資料夾內的HTML檔進入網站註冊）
@@ -136,3 +132,4 @@ EditorLab 需自行註冊帳號。（可開啟資料夾內的HTML檔進入網站
 - 若不清楚如何開啟 Console，請於 DaVinci Resolve 上方選單
 ```「Workspace」>「Console」```開啟。  
 - 皆可自行選擇是否安裝
+- 有任何問題歡迎寫信到: `kaigithub0621@gmail.com` 詢問
