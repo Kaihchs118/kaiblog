@@ -26,7 +26,7 @@ function createDisplayData(posts) {
 export default function BlogArchivePage(props) {
   const archive = props.archive;
   let displayData = [];
-  
+
   if (archive && archive.years) {
     displayData = archive.years.map(y => {
       const monthGroups = y.posts.reduce((acc, p) => {
@@ -37,7 +37,10 @@ export default function BlogArchivePage(props) {
       }, {});
       return {
         year: y.year,
-        months: Object.keys(monthGroups).sort((a, b) => b - a).map(m => ({ month: m, posts: monthGroups[m] }))
+        months: Object.keys(monthGroups).sort((a, b) => b - a).map(m => ({
+          month: m,
+          posts: monthGroups[m]
+        }))
       };
     });
   } else if (archive && archive.blogPosts) {
@@ -47,10 +50,16 @@ export default function BlogArchivePage(props) {
   const BLUE = '#429eee';
 
   return (
-    <Layout title="貼文列表">
+    <Layout title="文章歸檔">
       <main className="container margin-vert--xl" style={{ maxWidth: '1100px', minHeight: '85vh' }}>
         
-        <h1 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '3rem', color: '#333' }}>
+        {/* 使用 Docusaurus 變數以支援暗色模式 */}
+        <h1 style={{ 
+          fontSize: '2.2rem', 
+          fontWeight: '800', 
+          marginBottom: '3rem', 
+          color: 'var(--ifm-heading-color)' 
+        }}>
           貼文列表
         </h1>
 
@@ -61,7 +70,6 @@ export default function BlogArchivePage(props) {
               <span className="count-label">{yearGroup.months.reduce((sum, m) => sum + m.posts.length, 0)} Posts</span>
             </summary>
 
-            {/* 月份並排區域 */}
             <div className="month-grid">
               {yearGroup.months.map((monthGroup) => (
                 <details key={monthGroup.month} open className="month-card">
@@ -95,6 +103,19 @@ export default function BlogArchivePage(props) {
         summary { list-style: none; cursor: pointer; }
         summary::-webkit-details-marker { display: none; }
         
+        /* 定義暗色模式變數 */
+        :root {
+          --archive-year-border: #f0f0f0;
+          --archive-month-bg: #fafafa;
+          --archive-month-border: #eee;
+        }
+
+        [data-theme='dark'] {
+          --archive-year-border: #333;
+          --archive-month-bg: #1b1b1d;
+          --archive-month-border: #2e2e30;
+        }
+
         /* 年份折疊樣式 */
         .year-collapsible {
           margin-bottom: 4rem;
@@ -102,17 +123,18 @@ export default function BlogArchivePage(props) {
         .year-summary {
           font-size: 2.2rem;
           font-weight: 900;
-          border-bottom: 2px solid #f0f0f0;
+          border-bottom: 2px solid var(--archive-year-border);
           padding-bottom: 10px;
           display: flex;
           justify-content: space-between;
           align-items: baseline;
           margin-bottom: 25px;
+          color: var(--ifm-font-color-base);
         }
         .count-label {
           font-size: 0.9rem;
           font-weight: 400;
-          color: #bbb;
+          color: #888;
         }
 
         /* 月份網格佈局 */
@@ -127,19 +149,19 @@ export default function BlogArchivePage(props) {
         .month-card {
           flex: 1 1 300px;
           min-width: 280px;
-          background-color: #fafafa;
+          background-color: var(--archive-month-bg);
           padding: 20px;
           border-radius: 12px;
-          transition: background-color 0.2s;
+          transition: background-color 0.2s, border-color 0.2s;
         }
         .month-card[open] {
           background-color: transparent;
-          border: 1px solid #eee;
+          border: 1px solid var(--archive-month-border);
         }
         .month-summary {
           font-size: 1.25rem;
           font-weight: 700;
-          color: #333;
+          color: var(--ifm-heading-color);
           display: flex;
           align-items: center;
         }
@@ -161,7 +183,7 @@ export default function BlogArchivePage(props) {
         }
         .post-link {
           text-decoration: none !important;
-          color: inherit !important;
+          color: var(--ifm-font-color-base) !important;
           display: block;
         }
         .post-date {
