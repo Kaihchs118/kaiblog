@@ -43,4 +43,6 @@ date: 2026-02-10T08:00
 
 <div class="photo-border">
 ![](MAYDAY.png)
+
+<p>超帥縮圖！用 `Affinity` 做的</p>
 </div>
