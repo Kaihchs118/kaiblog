@@ -80,11 +80,16 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
    4. 元件與多媒體 (Components & Media)
    ============================================================ */
 /* 影片與圖片區塊：統一靠左、圓角化 */
-.youtube, .youtube-s, .photo-border img { 
+.youtube, .youtube-s{ 
   max-width: 960px; margin: 2rem 0; padding: 1.2rem; 
   background: #def5ff; border-radius: 14px; 
 }
 [data-theme='dark'] :is(.youtube, .youtube-s, .photo-border img) { background: #2a3b43; }
+
+.photo-border img { 
+  background: #def5ff; border-radius: 14px; 
+}
+[data-theme='dark'] :is(.photo-border img) { background: #2a3b43; }
 
 .youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16/9; border-radius: 10px; border: 0; }
 .youtube p, .youtube-s p, .photo-border p { margin-top: .4rem; font-size: 0.95rem; color: #949597; }
