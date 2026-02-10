@@ -1,63 +1,59 @@
 /* ============================================================
-   1. 字體與基礎變數 (Typography & Variables)
-   ============================================================ */
+1. 字體與基礎變數 (Typography & Variables)
+============================================================ */
 @import url('https://fonts.googleapis.com');
 
 :root {
-  /* 全域字體：粉圓體 + 塊狀加粗感 */
   --ifm-font-weight-base: 500;
   --ifm-font-weight-bold: 900;
   --ifm-heading-font-weight: 900;
   --ifm-code-font-size: 95%;
 
-  /* 品牌色系設定 */
   --ifm-color-primary: #429eee;
   --ifm-color-primary-dark: #2f84d6;
   --ifm-color-primary-light: #5aabf2;
   --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 
-  /* 導覽列與行動列參數 */
   --navbar-float-offset: 10px;
   --navbar-glass-radius: 18px;
   --mobile-bar-height: 64px;
 }
 
-/* 深色模式變數調整 */
 html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
   --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
 body { font-family: 'Huninn', sans-serif; }
-* { box-shadow: none !important; }
+
+/* 修正這裡原本漏掉的選擇器，假設你是要針對所有按鈕去除陰影 */
+button, a { box-shadow: none !important; }
 
 /* ============================================================
-   2. ✨ Netflix 風格：互動懸停效果 (Hover Effect)
-   ============================================================ */
-/* 應用在導覽列項目、清單項目或自訂連結上 */
-.navbar__item, 
-.menu__link, 
+2. ✨ Netflix 風格：互動懸停效果 (Hover Effect)
+============================================================ */
+.navbar__item,
+.menu__link,
 .dropdown__link,
 .pagination-nav__link,
 a.link {
   transition: all 0.2s ease-in-out;
-  border-radius: 8px; /* 圓角設定 */
+  border-radius: 8px;
   padding: 6px 12px;
 }
 
-/* 滑鼠移上去的效果：淡藍色背景 */
-.navbar__item:hover, 
-.menu__link:hover, 
+.navbar__item:hover,
+.menu__link:hover,
 .dropdown__link:hover,
 a.link:hover {
-  background-color: rgba(66, 158, 238, 0.15) !important; /* 淺藍色背景 */
+  background-color: rgba(66, 158, 238, 0.15) !important;
   color: var(--ifm-color-primary) !important;
   text-decoration: none;
 }
 
 /* ============================================================
-   3. 文字樣式與標題 (Typography & Headings)
-   ============================================================ */
+3. 文字樣式與標題 (Typography & Headings)
+============================================================ */
 .hero-title, .blue-title, .blue-stroke-text { color: var(--ifm-color-primary); letter-spacing: 0.5px; }
 .hero-title { font-weight: 800; }
 .blue-title, .gray { font-weight: 1000; }
@@ -66,35 +62,30 @@ a.link:hover {
 .gray { color: #726f6f; }
 html[data-theme='dark'] .gray { color: #949597; }
 
-/* 內容區大標題：左側藍色粗邊框 */
 main > :is(h3, strong) {
   display: block; font-size: 2.1rem; margin: 3rem 0 1rem;
   padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
 }
 
-/* 內容區清單縮進 */
 main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
 main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 
 /* ============================================================
-   4. 元件與多媒體 (Components & Media)
-   ============================================================ */
-/* 影片與圖片區塊：統一靠左、圓角化 */
-.youtube, .youtube-s{ 
-  max-width: 960px; margin: 2rem 0; padding: 1.2rem; 
-  background: #def5ff; border-radius: 14px; 
+4. 元件與多媒體 (Components & Media)
+============================================================ */
+.youtube, .youtube-s {
+  max-width: 960px; margin: 2rem 0; padding: 1.2rem;
+  background: #def5ff; border-radius: 14px;
 }
 [data-theme='dark'] :is(.youtube, .youtube-s, .photo-border img) { background: #2a3b43; }
 
-.photo-border img { 
-  margin: 2rem 0; padding: 1.2rem;     background: #def5ff; border-radius: 14px; 
+.photo-border img {
+  margin: 2rem 0; padding: 1.2rem; background: #def5ff; border-radius: 14px;
 }
-[data-theme='dark'] :is(.photo-border img) { background: #2a3b43; }
 
 .youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16/9; border-radius: 10px; border: 0; }
 .youtube p, .youtube-s p, .photo-border p { margin-top: .4rem; font-size: 0.95rem; color: #949597; }
 
-/* 路徑展示區塊 */
 .path-box, .path-box-tab {
   background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 8px;
   padding: 0.75rem 1rem; font-family: monospace; color: #334155; margin: 0.5rem 0 1rem;
@@ -102,44 +93,30 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
 /* ============================================================
-   5. 導覽列與行動列 (Navigation & Mobile)
-   ============================================================ */
-/* 1. 定義主題變數：讓淺深兩色邏輯統一 */
-:root[data-theme='light'] {
-  /* 1. 稍微降低一點透明度，並帶入極細微的灰色，增加與背景的差異 */
-  --nav-bg: rgba(255, 255, 255, 0.85); 
-  
-  /* 2. 邊框不再用白色，改用極細的淺灰色來勾勒輪廓 */
-  --nav-border: rgba(0, 0, 0, 0.08); 
-  
-  /* 3. 強化陰影：增加一個稍微重一點的層次，讓它「跳」出來 */
-  --nav-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.02),
-    0 10px 20px rgba(0, 0, 0, 0.06),
-    0 1px 0px rgba(0, 0, 0, 0.02); /* 底部細線增強重力感 */
+5. 導覽列與行動列 (Navigation & Mobile)
+============================================================ */
 
+/* 亮色模式變數 */
+[data-theme='light'] {
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-border: rgba(0, 0, 0, 0.08);
+  --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 10px 20px rgba(0, 0, 0, 0.06);
   --nav-text: #2d3436;
   --nav-item-hover: rgba(0, 0, 0, 0.04);
+  --nav-edge-highlight: rgba(255, 255, 255, 0.8);
 }
 
-/* 額外小技巧：給 nav 增加一個非常細的「外發光」 */
-[data-theme='light'] .navbar--fixed-top {
-  outline: 1px solid rgba(255, 255, 255, 0.5); /* 在陰影與邊框間加一層亮邊，營造玻璃質感 */
-  outline-offset: -1px;
-}
-
-:root[data-theme='dark'] {
+/* 深色模式變數 */
+[data-theme='dark'] {
   --nav-bg: rgba(20, 20, 22, 0.5);
   --nav-border: rgba(255, 255, 255, 0.08);
   --nav-edge-highlight: rgba(255, 255, 255, 0.12);
-  --nav-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --nav-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
   --nav-text: rgba(255, 255, 255, 0.9);
   --nav-item-hover: rgba(255, 255, 255, 0.1);
 }
 
-/* 2. 導覽列主體 */
+/* 導覽列主體 */
 .navbar--fixed-top {
   top: var(--navbar-float-offset) !important;
   left: var(--navbar-float-offset) !important;
@@ -148,18 +125,28 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   border-radius: var(--navbar-glass-radius);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   padding: 0.6rem 1.2rem;
-  
-  /* 玻璃感核心 */
   background: var(--nav-bg) !important;
-  backdrop-filter: blur(20px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  
-  /* 邊框與光影效果 */
+  backdrop-filter: blur(5px) saturate(300%) !important;
+  -webkit-backdrop-filter: blur(5px) saturate(300%);
   border: 1px solid var(--nav-border) !important;
   box-shadow: var(--nav-shadow) !important;
 }
 
-/* 3. 模擬玻璃厚度的高光 (頂部細線) */
+/* 🔥 重點修復：行動版側邊欄滿版修正 */
+@media (max-width: 996px) {
+  /* 讓側邊欄無視 Navbar 的懸浮設定，強制回到頂部與滿高 */
+  .navbar-sidebar {
+    top: 0 !important;
+    height: 100vh !important;
+    border-radius: 0 !important; /* 側邊欄通常不需要跟隨導覽列的圓角 */
+  }
+  
+  /* 確保側邊欄在最上層 */
+  .navbar-sidebar--show {
+    z-index: 2000 !important;
+  }
+}
+
 .navbar--fixed-top::after {
   content: "";
   position: absolute;
@@ -168,34 +155,13 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   z-index: 1;
 }
 
-/* 4. 內容元素優化 */
-.navbar--fixed-top .nav-link {
-  color: var(--nav-text) !important;
-  font-weight: 500;
-  transition: 0.25s;
-  border-radius: 10px;
-  margin: 0 2px;
+.mobile-action-bar {
+  display: grid; position: fixed; left: 50%; bottom: 12px;
+  transform: translateX(-50%); width: 92vw; height: var(--mobile-bar-height);
+  grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; z-index: 1000;
 }
 
-.navbar--fixed-top .nav-link:hover {
-  background: var(--nav-item-hover);
-  transform: translateY(-1px);
-}
-
-/* 5. 搜尋框：讓它在兩色下都像嵌入玻璃裡 */
-.search-box-custom {
-  background: rgba(128, 128, 128, 0.08) !important;
-  border: 1px solid var(--nav-border) !important;
-  backdrop-filter: inset(2px);
-}
-
-/* 行動版懸浮按鈕條 (Safari-like) */
 @media (max-width: 996px) {
-  .mobile-action-bar {
-    display: grid; position: fixed; left: 50%; bottom: 12px;
-    transform: translateX(-50%); width: 92vw; height: var(--mobile-bar-height);
-    grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; z-index: 1000;
-  }
   .mobile-action-bar::before {
     content: ""; position: absolute; inset: 0; border-radius: 22px;
     background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(18px); z-index: -1;
@@ -204,8 +170,8 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
 }
 
 /* ============================================================
-   6. 部落格標題修正 (Blog Archive)
-   ============================================================ */
+6. 部落格標題修正 (Blog Archive)
+============================================================ */
 .hero--primary .hero__subtitle { display: none; }
 .hero--primary h1 { visibility: hidden; position: relative; }
 .hero--primary h1::after {

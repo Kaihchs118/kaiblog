@@ -21,7 +21,7 @@ draft: true
 
 <a
   className="download-btn primary"
-  href="/kaiblog/docs/resolve/template/resolvepackV1-update"
+  href="/random"
 >
   <span className="icon">🚀</span>
   <span>立刻取得！</span>

@@ -18,7 +18,11 @@ export default function RandomPage() {
         path !== '/' &&                // 排除首頁
         path !== '/404.html' &&        // 排除 404
         !path.includes('tags') &&      // 排除標籤彙整頁
-        !path.includes('search') &&    // 排除搜尋頁
+        !path.includes('search') && 
+        !path.includes('*') &&   // 排除*頁
+        !path.includes('author') && 
+        !path.includes('/about') && 
+        !path.includes('/__docusaurus/') &&   // 排除/__docusaurus/頁
         !path.endsWith('/')            // 排除目錄結尾（可選，視需求而定）
       );
 
@@ -26,10 +30,10 @@ export default function RandomPage() {
     if (allPaths.length > 0) {
       const randomPath = allPaths[Math.floor(Math.random() * allPaths.length)];
       
-      // 稍微延遲一點點時間（例如 800ms），讓使用者看得到跳轉動畫，體驗更好
+      // 稍微延遲一點點時間（例如 100ms），讓使用者看得到跳轉動畫，體驗更好
       const timer = setTimeout(() => {
         history.replace(withBaseUrl(randomPath));
-      }, 800);
+      }, 1000);
 
       return () => clearTimeout(timer);
     } else {
@@ -56,6 +60,9 @@ export default function RandomPage() {
         <p style={{ color: 'var(--ifm-color-emphasis-600)' }}>
           請稍候，正在為您從所有文章中隨機挑選精選內容。
         </p>
+        <h4 style={{ color: '#ff0000' }}>
+          如果網頁當機的話，請重新載入
+        </h4>
         
         {/* 加載動畫（選配，CSS 效果） */}
         <div className="loading-dots">
@@ -69,8 +76,9 @@ export default function RandomPage() {
 
       <style jsx>{`
         .loading-dots {
-          font-size: 2rem;
+          font-size: 2.5rem;
           font-weight: bold;
+          color: #429eee;
         }
         .dot {
           animation: blink 1s infinite;

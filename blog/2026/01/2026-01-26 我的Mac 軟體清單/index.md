@@ -4,6 +4,9 @@ title: 我的 Mac 軟體清單
 date: 2026-01-26T12:00
 ---
 
+
+:::danger [詳細資訊你可以去這邊看，我全部移到這邊了→](/app)
+:::
 以下列出我所有 Mac 上面的軟體
 
 1. Affinity Studio ㄧ 製作縮圖常用，免費，[可以看這篇文章](/blog/affinity)
