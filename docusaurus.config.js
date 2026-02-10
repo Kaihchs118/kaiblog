@@ -37,6 +37,7 @@ const config = {
           feedOptions: { type: ['rss', 'atom'], xslt: true },
           onInlineTags: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          
         },
         theme: {
           customCss: './src/css/custom.css',
