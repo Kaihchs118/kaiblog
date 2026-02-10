@@ -1,496 +1,138 @@
-/* 在 CSS 最上方加入 */
+/* ============================================================
+   1. 字體與基礎變數 (Typography & Variables)
+   ============================================================ */
 @import url('https://fonts.googleapis.com');
 
-body {
-  font-family: 'Huninn', sans-serif;
-}
-
-
-/* ================================
-   1. 基礎變數與全域設定 (Theme Variables)
-   ================================ */
 :root {
+  /* 全域字體：粉圓體 + 塊狀加粗感 */
+  --ifm-font-weight-base: 500;
+  --ifm-font-weight-bold: 900;
+  --ifm-heading-font-weight: 900;
+  --ifm-code-font-size: 95%;
+
+  /* 品牌色系設定 */
   --ifm-color-primary: #429eee;
   --ifm-color-primary-dark: #2f84d6;
-  --ifm-color-primary-darker: #297ac6;
-  --ifm-color-primary-darkest: #1f5e9a;
   --ifm-color-primary-light: #5aabf2;
-  --ifm-color-primary-lighter: #6bb4f4;
-  --ifm-color-primary-lightest: #8cc7f8;
-  --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
+
+  /* 導覽列與行動列參數 */
+  --navbar-float-offset: 10px;
+  --navbar-glass-radius: 18px;
+  --mobile-bar-height: 64px;
 }
 
+/* 深色模式變數調整 */
 html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
-  --ifm-color-primary-dark: #5aabf2;
-  --ifm-color-primary-darker: #429eee;
-  --ifm-color-primary-darkest: #2f84d6;
-  --ifm-color-primary-light: #8cc7f8;
-  --ifm-color-primary-lighter: #a6d4fb;
-  --ifm-color-primary-lightest: #cbe6fd;
   --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
+body { font-family: 'Huninn', sans-serif; }
 * { box-shadow: none !important; }
 
-/* 導覽列 Logo */
-.navbar__logo img {
-  border-radius: 25%;
-  object-fit: cover;
+/* ============================================================
+   2. ✨ Netflix 風格：互動懸停效果 (Hover Effect)
+   ============================================================ */
+/* 應用在導覽列項目、清單項目或自訂連結上 */
+.navbar__item, 
+.menu__link, 
+.dropdown__link,
+.pagination-nav__link,
+a.link {
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px; /* 圓角設定 */
+  padding: 6px 12px;
 }
 
-/* ================================
-   2. 文字樣式 (Typography)
-   ================================ */
-.hero-title, .blue-title, .blue-stroke-text {
-  color: var(--ifm-color-primary);
-  letter-spacing: 0.5px;
+/* 滑鼠移上去的效果：淡藍色背景 */
+.navbar__item:hover, 
+.menu__link:hover, 
+.dropdown__link:hover,
+a.link:hover {
+  background-color: rgba(66, 158, 238, 0.15) !important; /* 淺藍色背景 */
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
 }
+
+/* ============================================================
+   3. 文字樣式與標題 (Typography & Headings)
+   ============================================================ */
+.hero-title, .blue-title, .blue-stroke-text { color: var(--ifm-color-primary); letter-spacing: 0.5px; }
 .hero-title { font-weight: 800; }
-.blue-title { font-weight: 1000; }
-.blue-stroke-text { font-weight: 700; margin-left: 0.2rem; }
-.red-stroke-text { font-weight: 700; margin-left: 0.2rem; color: red; }
-
-.gray { font-weight: 1000; color: #726f6f; }
+.blue-title, .gray { font-weight: 1000; }
+.blue-stroke-text, .red-stroke-text { font-weight: 700; margin-left: 0.2rem; }
+.red-stroke-text { color: red; }
+.gray { color: #726f6f; }
 html[data-theme='dark'] .gray { color: #949597; }
 
-a.link { 
-  text-decoration: none; 
-  font-weight: 800; 
-  border-bottom: 3px solid #69B1D1; 
+/* 內容區大標題：左側藍色粗邊框 */
+main > :is(h3, strong) {
+  display: block; font-size: 2.1rem; margin: 3rem 0 1rem;
+  padding-left: 1rem; border-left: 6px solid var(--ifm-color-primary);
 }
 
-/* 內容區列表縮進 (排除麵包屑) */
+/* 內容區清單縮進 */
 main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
 main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 
-/* 自定義大標題樣式 */
-main > :is(h3, strong) {
-  display: block; 
-  font-size: 2.1rem; 
-  margin: 3rem 0 1rem;
-  padding-left: 1rem; 
-  border-left: 6px solid var(--ifm-color-primary);
-  text-align: left; /* 確保左對齊 */
+/* ============================================================
+   4. 元件與多媒體 (Components & Media)
+   ============================================================ */
+/* 影片與圖片區塊：統一靠左、圓角化 */
+.youtube, .youtube-s, .photo-border img { 
+  max-width: 960px; margin: 2rem 0; padding: 1.2rem; 
+  background: #def5ff; border-radius: 14px; 
 }
+[data-theme='dark'] :is(.youtube, .youtube-s, .photo-border img) { background: #2a3b43; }
 
-
-/* ================================
-   4. 元件區塊 (Callouts & Boxes)
-   ================================ */
-/* 提示框顏色修正 */
-.fusion-callout .theme-admonition-info { 
-  --ifm-alert-background-color: #ecfdf3; 
-  --ifm-alert-border-color: #22c55e; 
-  --ifm-alert-foreground-color: #166534; 
-}
-
-.tip-callout .theme-admonition-warning { 
-  --ifm-alert-background-color: #fdecec; 
-  --ifm-alert-border-color: #e5484d; 
-  --ifm-alert-foreground-color: #7a1c1c; 
-}
+.youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16/9; border-radius: 10px; border: 0; }
+.youtube p, .youtube-s p, .photo-border p { margin-top: .4rem; font-size: 0.95rem; color: #949597; }
 
 /* 路徑展示區塊 */
 .path-box, .path-box-tab {
-  background: #f8fafc; 
-  border: 1px solid #e5e7eb; 
-  border-radius: 8px; 
-  padding: 0.75rem 1rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; 
-  color: #334155; 
-  margin: 0.5rem 0 1rem; 
-  word-break: break-all;
+  background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 8px;
+  padding: 0.75rem 1rem; font-family: monospace; color: #334155; margin: 0.5rem 0 1rem;
 }
+html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
-html[data-theme='dark'] :is(.path-box, .path-box-tab) { 
-  background: #020617; 
-  border-color: #1e293b; 
-  color: #e5e7eb; 
-}
-
-/* ================================
-   5. 多媒體與表格 (Media & Tables)
-   ================================ */
-/* 影片區塊 - 移除置中與左側內縮 */
-.youtube, .youtube-s { 
-  max-width: 960px; 
-  margin: 2rem 0; /* 移除 auto 使其靠左 */
-  padding: 1.2rem; 
-  background: #def5ff; 
-  border-radius: 14px; 
-}
-
-.youtube iframe, .youtube-s iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; }
-
-.youtube p, .youtube-s p { 
-  margin: .4rem 0 0; 
-  font-size: 0.95rem; 
-  line-height: 1.6; 
-  color: #949597; 
-  padding-left: 0; /* 移除原本的 25% 和 40% 置中偏移 */
-}
-
-html[data-theme='dark'] :is(.youtube, .youtube-s ) { background: #2a3b43; }
-
-/* 圖片樣式 - 移除 margin: auto */
-.photo img { width: 256px; max-width: 100%; height: auto; border-radius: 10px; }
-.photo-small img { width: 2.5cm; height: auto; border-radius: 10px; }
-.photo-window { width: 20cm; max-width: 100%; height: auto; border-radius: 10px; }
-
-.photo-border img {
-  margin: 0.2rem 0; /* 移除 auto 置中 */
-  padding: 0.5rem;
-  display: block; 
-  border-radius: 14px;
-  background: #def5ff;
-}
-
-[data-theme='dark'] .photo-border img { background: #6ca5da; border: 1px solid #dbe3ed; }
-.photo-border p { margin: .4rem 0 0; font-size: 0.95rem; color: #949597; }
-
-/* 表格優化 */
-.table-wrapper { width: 100%; overflow-x: auto; }
-.table-wrapper table { min-width: 600px; border-collapse: collapse; }
-
-/* ================================
-   6. Blog Archive 修正
-   ================================ */
-.hero--primary { padding: 1.2rem 0 2rem; }
-.hero--primary .hero__subtitle { display: none; }
-
-.hero--primary h1 {
-  visibility: hidden;
-  position: relative;
-}
-
-.hero--primary h1::after {
-  content: "部落格列表";
-  visibility: visible;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* ================================
-   7. Navbar - Liquid Glass (Responsive)
-   ================================ */
-:root {
-  --navbar-float-offset: 10px;
-  --navbar-glass-radius: 18px;
-}
-
-/* 1. 初始透明狀態 */
-.navbar {
-  transition: background 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-              border-color 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-              backdrop-filter 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  background: transparent;
-  border: none;
-  z-index: 999;
-  
-}
-
-/* 2. 滾動後的液體質感 */
+/* ============================================================
+   5. 導覽列與行動列 (Navigation & Mobile)
+   ============================================================ */
+/* 液態導覽列 (Liquid Glass) */
+.navbar { transition: all 0.5s ease; background: transparent; border: none; }
 .navbar--fixed-top {
-  /* 保留左右呼吸空隙，避免在小螢幕被過度約束 */
-  top: calc(env(safe-area-inset-top, 0px) + var(--navbar-float-offset)) !important;
-  left: var(--navbar-float-offset) !important;
-  right: var(--navbar-float-offset) !important;
-  width: auto !important;
-  box-sizing: border-box;
-
-  position: sticky;
+  top: var(--navbar-float-offset) !important; left: var(--navbar-float-offset) !important;
+  right: var(--navbar-float-offset) !important; width: auto !important;
   border-radius: var(--navbar-glass-radius);
-  background: transparent !important;
-  border: none;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-  z-index: 999;
 }
-
 .navbar--fixed-top::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
-  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  pointer-events: none;
-  z-index: -1;
+  content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: -1;
+  backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px);
 }
+[data-theme='light'] .navbar--fixed-top::before { background: rgba(255, 255, 255, 0.5); border: 1px solid rgba(0,0,0,0.03); }
+[data-theme='dark'] .navbar--fixed-top::before { background: rgba(20, 20, 20, 0.4); border: 1px solid rgba(255,255,255,0.08); }
 
-/* 3. 深色模式：深海液體感 */
-[data-theme='dark'] .navbar--fixed-top::before {
-  background: rgba(20, 20, 20, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
-  -webkit-backdrop-filter: blur(25px) saturate(200%) brightness(0.9);
-}
-
-/* 4. 淺色模式：強化可視度 */
-[data-theme='light'] .navbar--fixed-top::before {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(10px) saturate(160%) contrast(75%);
-  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(75%);
-}
-
-/* 5. 手機版：恢復正常比例，避免縮放感 */
+/* 行動版懸浮按鈕條 (Safari-like) */
 @media (max-width: 996px) {
-  :root {
-    --navbar-float-offset: 0.8rem;
-    --navbar-glass-radius: 20px;
-  }
-
-  .navbar--fixed-top {
-    top: calc(env(safe-area-inset-top, 0px) + var(--navbar-float-offset)) !important;
-    left: var(--navbar-float-offset) !important;
-    right: var(--navbar-float-offset) !important;
-    width: auto !important;
-  }
-
-  .main-wrapper {
-    padding-top: var(--ifm-navbar-height);
-  }
-}
-
-/* 修正：防止 Navbar 蓋住內容頂部 */
-.main-wrapper {
-  padding-top: calc(var(--ifm-navbar-height) + var(--navbar-float-offset));
-}
-
-/* ================================
-   9. Mobile Action Bar (Safari-like)
-   ================================ */
-.mobile-action-bar {
-  display: none;
-}
-
-@media (max-width: 996px) {
-  :root {
-    --mobile-action-bar-height: 64px;
-    --mobile-action-bar-offset: 12px;
-    margin: 0.8rem 0.8rem;
-  }
-
-  .mobile-action-bar__handle {
-    position: fixed;
-    left: 50%;
-    bottom: calc(env(safe-area-inset-bottom, 0px) + var(--mobile-action-bar-offset));
-    transform: translate3d(-50%, 0, 0);
-    height: 30px;
-    padding: 0 14px;
-    border-radius: 999px;
-    border: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(14px) saturate(150%);
-    -webkit-backdrop-filter: blur(14px) saturate(150%);
-    box-shadow:
-      0 10px 28px rgba(0, 0, 0, 0.2),
-      inset 0 0 6px rgba(255, 255, 255, 0.2);
-    z-index: 1020;
-    transition: opacity 180ms ease, transform 200ms ease;
-    cursor: pointer;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    color: #1f2937;
-    min-width: 140px;
-  }
-
-  [data-theme='dark'] .mobile-action-bar__handle {
-    background: rgba(20, 20, 20, 0.75);
-    box-shadow:
-      0 12px 32px rgba(0, 0, 0, 0.45),
-      inset 0 0 6px rgba(255, 255, 255, 0.08);
-  }
-
-  .mobile-action-bar__handle.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: translate3d(-50%, 8px, 0);
-  }
-
-  .mobile-action-bar__handle-text {
-    white-space: nowrap;
-  }
-
-  .mobile-action-bar__handle-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mobile-action-bar__handle::after {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    border-radius: inherit;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 55%);
-    opacity: 0.65;
-    pointer-events: none;
-  }
-
-  .mobile-action-bar__handle:active {
-    transform: translate3d(-50%, 1px, 0) scale(0.98);
-    box-shadow:
-      0 6px 18px rgba(0, 0, 0, 0.2),
-      inset 0 0 4px rgba(255, 255, 255, 0.15);
-  }
-
-  [data-theme='dark'] .mobile-action-bar__handle {
-    color: #e5e7eb;
-  }
-
   .mobile-action-bar {
-    display: grid;
-    position: fixed;
-    left: 50%;
-    bottom: calc(env(safe-area-inset-bottom, 0px) + var(--mobile-action-bar-offset));
-    transform: translate3d(-50%, 0, 0);
-    width: min(92vw, 430px);
-    height: var(--mobile-action-bar-height);
-    padding: 10px 12px;
-    border-radius: 22px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    z-index: 950;
-    transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1),
-                opacity 180ms ease;
+    display: grid; position: fixed; left: 50%; bottom: 12px;
+    transform: translateX(-50%); width: 92vw; height: var(--mobile-bar-height);
+    grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; z-index: 1000;
   }
-
   .mobile-action-bar::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(18px) saturate(160%) brightness(1.05);
-    -webkit-backdrop-filter: blur(18px) saturate(160%) brightness(1.05);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    box-shadow:
-      0 20px 50px rgba(0, 0, 0, 0.22),
-      inset 0 0 12px rgba(255, 255, 255, 0.12);
-    z-index: -1;
+    content: ""; position: absolute; inset: 0; border-radius: 22px;
+    background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(18px); z-index: -1;
   }
-
-  .mobile-action-bar::after {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    border-radius: inherit;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 60%);
-    opacity: 0.6;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  [data-theme='dark'] .mobile-action-bar::before {
-    background: rgba(20, 20, 20, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(20px) saturate(180%) brightness(0.9);
-    -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(0.9);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
-  }
-
-  .mobile-action-bar.is-hidden {
-    opacity: 0;
-    transform: translate3d(-50%, 12px, 0) scale(0.98);
-    pointer-events: none;
-  }
-
-  .mobile-action-bar__btn {
-    height: 100%;
-    border: 0;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.55);
-    color: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    box-shadow:
-      0 8px 18px rgba(0, 0, 0, 0.12),
-      inset 0 0 6px rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-    transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .mobile-action-bar__btn::after {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    border-radius: inherit;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 60%);
-    opacity: 0.15;
-    pointer-events: none;
-  }
-
-  .mobile-action-bar__btn:active {
-    transform: translateY(1px) scale(0.98);
-    box-shadow:
-      0 4px 12px rgba(0, 0, 0, 0.15),
-      inset 0 0 6px rgba(255, 255, 255, 0.3);
-  }
-
-  .mobile-action-bar__btn--primary {
-    background: rgba(255, 255, 255, 0.78);
-  }
-
-  [data-theme='dark'] .mobile-action-bar__btn {
-    background: rgba(32, 32, 32, 0.7);
-    color: #e8eaed;
-    box-shadow:
-      0 10px 22px rgba(0, 0, 0, 0.35),
-      inset 0 0 6px rgba(255, 255, 255, 0.08);
-  }
-
-  [data-theme='dark'] .mobile-action-bar__btn--primary {
-    background: rgba(42, 42, 42, 0.85);
-  }
-
-  .mobile-action-bar__icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mobile-action-bar__label {
-    letter-spacing: 0.2px;
-  }
-
-  .main-wrapper {
-    padding-bottom: calc(var(--mobile-action-bar-height) + var(--mobile-action-bar-offset) + env(safe-area-inset-bottom, 0px));
-  }
-}
-@import url('https://fonts.googleapis.com');
-
-:root {
-
-  /* 讓預設內文就比平常稍微厚實一點 (Medium 500) */
-  --ifm-font-weight-base: 500;
-  
-  /* 讓標題直接用最粗的等級 (Black 900) */
-  --ifm-font-weight-bold: 900;
-  --ifm-heading-font-weight: 900;
-
+  [data-theme='dark'] .mobile-action-bar::before { background: rgba(20, 20, 20, 0.72); }
 }
 
-/* 強制讓所有標題呈現出那種厚實的「塊狀感」 */
-h1, h2, h3 {
-  letter-spacing: -0.01em; /* 粗體字距縮小一點點會更扎實 */
+/* ============================================================
+   6. 部落格標題修正 (Blog Archive)
+   ============================================================ */
+.hero--primary .hero__subtitle { display: none; }
+.hero--primary h1 { visibility: hidden; position: relative; }
+.hero--primary h1::after {
+  content: "部落格列表"; visibility: visible;
+  position: absolute; left: 0; top: 0;
 }
