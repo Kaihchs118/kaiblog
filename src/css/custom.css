@@ -102,7 +102,7 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
 /* ============================================================
-   5. 導覽列與行動列 (Navigation & Mobile) - 已修正 Bug
+   5. 導覽列與行動列 (Navigation & Mobile) - BUG 修復版
    ============================================================ */
 /* 1. 定義主題變數 */
 :root[data-theme='light'] {
@@ -116,12 +116,6 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   --nav-item-hover: rgba(0, 0, 0, 0.04);
 }
 
-/* 額外小技巧：給 nav 增加一個非常細的「外發光」 (僅電腦版) */
-[data-theme='light'] .navbar--fixed-top {
-  outline: 1px solid rgba(255, 255, 255, 0.5); 
-  outline-offset: -1px;
-}
-
 :root[data-theme='dark'] {
   --nav-bg: rgba(20, 20, 22, 0.5);
   --nav-border: rgba(255, 255, 255, 0.08);
@@ -133,54 +127,59 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   --nav-item-hover: rgba(255, 255, 255, 0.1);
 }
 
-/* 2. 導覽列主體 - 電腦版 (懸浮島效果) */
-@media (min-width: 997px) {
-  .navbar--fixed-top {
-    top: var(--navbar-float-offset) !important;
-    left: var(--navbar-float-offset) !important;
-    right: var(--navbar-float-offset) !important;
-    width: auto !important;
-    border-radius: var(--navbar-glass-radius);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    padding: 0.6rem 1.2rem;
-    
-    /* 玻璃感核心 */
-    background: var(--nav-bg) !important;
-    backdrop-filter: blur(20px) saturate(190%) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(190%);
-    
-    /* 邊框與光影效果 */
-    border: 1px solid var(--nav-border) !important;
-    box-shadow: var(--nav-shadow) !important;
-  }
-
-  /* 3. 模擬玻璃厚度的高光 (僅電腦版) */
-  .navbar--fixed-top::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 20px; right: 20px; height: 1px;
-    background: linear-gradient(90deg, transparent, var(--nav-edge-highlight), transparent);
-    z-index: 1;
-  }
+/* 2. 導覽列主容器：負責「位置」，但移除所有背景與濾鏡 */
+/* 這樣做是為了不讓父層變成 Containing Block，解救手機版側邊欄 */
+.navbar--fixed-top {
+  top: var(--navbar-float-offset) !important;
+  left: var(--navbar-float-offset) !important;
+  right: var(--navbar-float-offset) !important;
+  width: auto !important;
+  padding: 0 !important; /* Padding 移給內部 */
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* 關鍵修復：這裡必須透明且無濾鏡 */
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
-/* 2. 導覽列主體 - 手機版 (強制滿版修復 Bug) */
-@media (max-width: 996px) {
-  .navbar--fixed-top {
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    border-radius: 0 !important;
-    padding: 0.8rem;
-    
-    /* 保持背景色與玻璃感，但去掉懸浮陰影以免干擾 */
-    background: var(--nav-bg) !important;
-    backdrop-filter: blur(20px) saturate(190%);
-    border-bottom: 1px solid var(--nav-border);
-  }
+/* 3. 導覽列內部 (Inner)：負責「外觀」 (玻璃、陰影、邊框) */
+/* 將視覺效果移到這裡，因為它是側邊欄的兄弟元素，不會限制側邊欄 */
+.navbar__inner {
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--navbar-glass-radius);
+  
+  /* 視覺核心搬來這裡 */
+  background: var(--nav-bg) !important;
+  backdrop-filter: blur(20px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1px solid var(--nav-border) !important;
+  box-shadow: var(--nav-shadow) !important;
+  
+  /* 確保內部元素排列正常 */
+  width: 100%;
+  position: relative; /* 為了讓 ::after 定位 */
 }
 
-/* 4. 內容元素優化 */
+/* 額外小技巧：給 nav inner 增加外發光 (Light Mode Only) */
+[data-theme='light'] .navbar__inner {
+  outline: 1px solid rgba(255, 255, 255, 0.5); 
+  outline-offset: -1px;
+}
+
+/* 4. 模擬玻璃厚度的高光 (改為附著在 inner 上) */
+.navbar__inner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 20px; right: 20px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--nav-edge-highlight), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 5. 內容元素優化 */
 .navbar--fixed-top .nav-link {
   color: var(--nav-text) !important;
   font-weight: 500;
@@ -194,7 +193,7 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   transform: translateY(-1px);
 }
 
-/* 5. 搜尋框 */
+/* 6. 搜尋框 */
 .search-box-custom {
   background: rgba(128, 128, 128, 0.08) !important;
   border: 1px solid var(--nav-border) !important;
