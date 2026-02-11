@@ -169,12 +169,3 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   [data-theme='dark'] .mobile-action-bar::before { background: rgba(20, 20, 20, 0.72); }
 }
 
-/* ============================================================
-6. 部落格標題修正 (Blog Archive)
-============================================================ */
-.hero--primary .hero__subtitle { display: none; }
-.hero--primary h1 { visibility: hidden; position: relative; }
-.hero--primary h1::after {
-  content: "部落格列表"; visibility: visible;
-  position: absolute; left: 0; top: 0;
-}
