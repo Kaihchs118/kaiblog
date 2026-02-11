@@ -14,7 +14,8 @@
   --ifm-color-primary-light: #5aabf2;
   --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 
-  --navbar-float-offset: 10px;
+  /* 懸浮導覽列變數 */
+  --navbar-float-offset: 12px;
   --navbar-glass-radius: 18px;
   --mobile-bar-height: 64px;
 }
@@ -25,21 +26,20 @@ html[data-theme='dark'] {
 }
 
 body { font-family: 'Huninn', sans-serif; }
-
-/* 修正這裡原本漏掉的選擇器，假設你是要針對所有按鈕去除陰影 */
 button, a { box-shadow: none !important; }
 
 /* ============================================================
-2. ✨ Netflix 風格：互動懸停效果 (Hover Effect)
+2. ✨ Netflix 風格：互動懸停效果
 ============================================================ */
 .navbar__item,
 .menu__link,
 .dropdown__link,
 .pagination-nav__link,
 a.link {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 8px;
   padding: 6px 12px;
+  
 }
 
 .navbar__item:hover,
@@ -49,10 +49,130 @@ a.link:hover {
   background-color: rgba(66, 158, 238, 0.15) !important;
   color: var(--ifm-color-primary) !important;
   text-decoration: none;
+  cursor:pointer;
 }
 
 /* ============================================================
-3. 文字樣式與標題 (Typography & Headings)
+3. 頂部導覽列 (Desktop Navigation - Floating Glass)
+============================================================ */
+.navbar--fixed-top {
+  top: var(--navbar-float-offset) !important;
+  left: var(--navbar-float-offset) !important;
+  right: var(--navbar-float-offset) !important;
+  width: auto !important;
+  border-radius: var(--navbar-glass-radius);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0.6rem 1.2rem;
+  
+  /* 液態玻璃核心 */
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+  z-index: var(--ifm-z-index-fixed);
+}
+
+html[data-theme='dark'] .navbar--fixed-top {
+  background: rgba(20, 20, 22, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ============================================================
+4. 🔥 手機版：液態玻璃側邊欄 (終極修復版)
+============================================================ */
+@media (max-width: 996px) {
+  /* 1. 徹底清空 Docusaurus 預設的背景色疊加 */
+  .navbar-sidebar,
+  .navbar-sidebar__brand,
+  .navbar-sidebar__items,
+  .navbar-sidebar__content,
+  .menu,
+  .menu__list {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  /* 2. 側邊欄主體：液態玻璃容器 */
+  .navbar-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 85vw !important;
+    height: 100vh !important;
+    border-radius: 0 28px 28px 0 !important;
+    margin: 0 !important;
+    
+    /* 強力毛玻璃效果 */
+    backdrop-filter: blur(30px) saturate(180%) brightness(1.05) !important;
+    -webkit-backdrop-filter: blur(30px) saturate(200%) brightness(1.05) !important;
+    
+    /* 亮色模式玻璃底色 */
+    background: rgba(255, 255, 255, 1) !important;
+    border-right: 1.5px solid rgba(255, 255, 255, 1) !important;
+    box-shadow: 15px 0 50px rgba(0, 0, 0, 0.1) !important;
+    
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 2100 !important;
+    overflow: hidden;
+  }
+
+  /* 深色模式下的玻璃底色 */
+  [data-theme='dark'] .navbar-sidebar {
+    background: rgba(15, 15, 18, 1) !important;
+    border-right: 1.5px solid rgba(255, 255, 255, 0) !important;
+    box-shadow: 15px 0 50px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  /* 當側邊欄顯示時 */
+  .navbar-sidebar--show .navbar-sidebar {
+    transform: translateX(0);
+  }
+
+  /* 背景遮罩 (Backdrop) */
+  .navbar-sidebar__backdrop {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    z-index: 20 !important;
+  }
+
+  /* 側邊欄頂部 Logo 區加一條細分線 */
+  .navbar-sidebar__brand {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    padding: 1rem 1.5rem;
+  }
+
+  /* 側邊欄選單優化 */
+  .navbar-sidebar .menu__link {
+    margin: 6px 12px;
+    font-weight: 600;
+  }
+
+  .navbar-sidebar .menu__link--active {
+    background: var(--ifm-color-primary) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(66, 158, 238, 0.3);
+  }
+
+  /* 側邊欄開啟時，隱藏浮動的頂部導覽列以維持美觀 */
+  html[class*='navbar-sidebar--show'] .navbar--fixed-top {
+    opacity: 0 !important;
+    pointer-events: none;
+    transform: translateY(-10px);
+  }
+}
+
+/* ============================================================
+5. 文字樣式與標題 (Typography & Headings)
 ============================================================ */
 .hero-title, .blue-title, .blue-stroke-text { color: var(--ifm-color-primary); letter-spacing: 0.5px; }
 .hero-title { font-weight: 800; }
@@ -71,7 +191,7 @@ main ul:not(.breadcrumbs) { margin: 0 0 2rem; padding-left: 2rem; }
 main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 
 /* ============================================================
-4. 元件與多媒體 (Components & Media)
+6. 元件與多媒體 (Components & Media)
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px; margin: 2rem 0; padding: 1.2rem;
@@ -93,68 +213,8 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
 /* ============================================================
-5. 導覽列與行動列 (Navigation & Mobile)
+7. 手機版底部快捷列 (Mobile Action Bar)
 ============================================================ */
-
-/* 亮色模式變數 */
-[data-theme='light'] {
-  --nav-bg: rgba(255, 255, 255, 0.85);
-  --nav-border: rgba(0, 0, 0, 0.08);
-  --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 10px 20px rgba(0, 0, 0, 0.06);
-  --nav-text: #2d3436;
-  --nav-item-hover: rgba(0, 0, 0, 0.04);
-  --nav-edge-highlight: rgba(255, 255, 255, 0.8);
-}
-
-/* 深色模式變數 */
-[data-theme='dark'] {
-  --nav-bg: rgba(20, 20, 22, 0.5);
-  --nav-border: rgba(255, 255, 255, 0.08);
-  --nav-edge-highlight: rgba(255, 255, 255, 0.12);
-  --nav-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --nav-text: rgba(255, 255, 255, 0.9);
-  --nav-item-hover: rgba(255, 255, 255, 0.1);
-}
-
-/* 導覽列主體 */
-.navbar--fixed-top {
-  top: var(--navbar-float-offset) !important;
-  left: var(--navbar-float-offset) !important;
-  right: var(--navbar-float-offset) !important;
-  width: auto !important;
-  border-radius: var(--navbar-glass-radius);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  padding: 0.6rem 1.2rem;
-  background: var(--nav-bg) !important;
-  backdrop-filter: blur(5px) saturate(300%) !important;
-  -webkit-backdrop-filter: blur(5px) saturate(300%);
-  border: 1px solid var(--nav-border) !important;
-  box-shadow: var(--nav-shadow) !important;
-}
-
-/* 🔥 重點修復：行動版側邊欄滿版修正 */
-@media (max-width: 996px) {
-  /* 讓側邊欄無視 Navbar 的懸浮設定，強制回到頂部與滿高 */
-  .navbar-sidebar {
-    top: 0 !important;
-    height: 100vh !important;
-    border-radius: 0 !important; /* 側邊欄通常不需要跟隨導覽列的圓角 */
-  }
-  
-  /* 確保側邊欄在最上層 */
-  .navbar-sidebar--show {
-    z-index: 2000 !important;
-  }
-}
-
-.navbar--fixed-top::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 20px; right: 20px; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--nav-edge-highlight), transparent);
-  z-index: 1;
-}
-
 .mobile-action-bar {
   display: grid; position: fixed; left: 50%; bottom: 12px;
   transform: translateX(-50%); width: 92vw; height: var(--mobile-bar-height);
@@ -168,4 +228,3 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   }
   [data-theme='dark'] .mobile-action-bar::before { background: rgba(20, 20, 20, 0.72); }
 }
-
