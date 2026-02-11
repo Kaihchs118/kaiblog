@@ -4,7 +4,6 @@ title: 我的 Mac 軟體清單
 date: 2026-01-26T12:00
 ---
 
-
 :::danger [詳細資訊你可以去這邊看，我全部移到這邊了→](/app)
 :::
 以下列出我所有 Mac 上面的軟體
@@ -34,7 +33,7 @@ date: 2026-01-26T12:00
 23. Keynote ㄧ 蘋果內建的簡報軟體，蠻好用的，但是
 24. Kontakt 8 ㄧ 軟體音源，最近像跳槽到硬體，歡迎大家推薦給我
 25. Kontakt Library Tools ㄧ 幫助我 Kontakt 入庫
-26. LIne ㄧ 設計很差的通訊軟體，但大家都用他
+26. Line ㄧ 設計很差的通訊軟體，但大家都用他
 27. Logic Pro ㄧ 不常用，放著生灰🤣
 28. Microsoft Excel
 29. Microsoft PowerPoint
@@ -51,7 +50,7 @@ date: 2026-01-26T12:00
 40. Roblox ㄧ 我唯一玩的遊戲
 41. Roblox Studio ㄧ 做遊戲，非常簡單，教學推薦：克拉克！
 42. RustDesk ㄧ 開源遠端桌面，好用！
-43. Steinberg Download Manger ㄧ Cubase 下載最遠的地方
+43. Steinberg Download Manger ㄧ Cubase 下載最好的地方
 44. Steinberg Library Manger ㄧ Cubase 管理資源庫的地方
 45. UVR 5 一 去人聲超好用！免費開源，用本地模型
 46. Vital ㄧ 好用合成器

@@ -18,34 +18,34 @@ slug: /app
     嘗試看看新的專業的軟體...
 
 - **Cubase 15 Pro** :
-    主要的編曲軟體，教學資源豐富，是我的核心創作工具。
+    主要的編曲軟體，教學資源豐富 !
     - **Groove Agent SE** :
-    Cubase 內建的鼓機，功能相當扎實。
+    Cubase 內建的鼓機，還蠻好用的
     - **HALion Sonic** :
-    Cubase 內建音源，雖然音色真實度普通，但勝在省電。
+    Cubase 內建音源，雖然音色真實度普通，但耗電量低就是了
     - **Steinberg Download Manger** :
-    下載 Cubase 相關資源最「遙遠」的地方。
+    Cubase 下載相關資源最好的地方
     - **Steinberg Library Manger** :
-    管理 Steinberg 系列音色庫的必備管家。
+    管理 Steinberg 系列音色庫的地方
 
 - **Finale 27** :
-    用習慣了，雖然現在官方停止更新，但依然是我的主力打譜工具。
+    用習慣了，雖然現在官方停止更新，但是我習慣了 ...
     - **Aria Player** :
     專為 Finale 設計的音樂播放器。
 - **Musescore 4** :
     開源打譜軟體，但不太喜歡它把所有工具都堆在右邊的介面設計。
 - **Audacity** :
-    免費開源的音訊編輯器，非常適合處理 Podcast 或簡單的音訊修帶。
+    免費開源超好用的音訊編輯器，很適合製作 Podcast 
 - **Logic Pro** :
-    不常用，目前處於放著生灰塵的狀態 🤣。
-- **Logic Pro Creator Studio** :
-    不常用，其實沒有什麼新功能就是了...
+    不常用，放著生灰🤣
 - **UVR 5 (Ultimate Vocal Remover)** :
-    去人聲神器！免費開源且使用本地模型，效果極佳。
+    去人聲超好用！免費開源，用本地模型
 - **Vital** :
     介面現代且強大的合成器，非常好用。
+    - **Helm** : 
+        開源的合成器 ~
 - **Kontakt 8** :
-    必備的採樣音源引擎。最近想轉向硬體，歡迎推薦！
+    軟體音源，最近像跳槽到硬體，歡迎大家推薦給我
     - **Kontakt Library Tools** :
         幫助我管理與入庫大量的 Kontakt 音源。
 
