@@ -1,6 +1,7 @@
 ---
 slug: new-arrange-03
 title: 新編曲：勇敢
+tags: [編曲]
 date: 2026-02-10T08:00
 ---
 
