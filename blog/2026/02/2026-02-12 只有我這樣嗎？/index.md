@@ -56,7 +56,11 @@ date: 2026-02-12T08:00
 
 小時候很喜歡改有些 `YouTube 實況主` 的影片，幫忙上個 **奇怪字幕** ， 又或者 加一些 **廉價特效**，就莫名的開心了
 
-- 影片之後放
+- 影片 `不公開哈哈哈`
+
+<div class="youtube-s">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lN2K37TdQx8?si=qnBA4Q6p4bQxGW4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## 後來
 
