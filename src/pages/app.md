@@ -5,8 +5,8 @@ slug: /app
 
 # 🛠️ KAI 電腦裡有什麼 `/app`
 
-- 最後更新：2025-02-10
-- **總共 `53` 個 軟體**
+- 最後更新：2025-02-13
+- **總共 `49` 個 軟體**
 > 這是我在 Mac 上賴的軟體清單。我傾向於使用**開源**、**高效**且能解決實際問題的軟體。
 
 ---
@@ -60,7 +60,7 @@ slug: /app
     製作 YouTube 縮圖的主力，[可以看這篇文章介紹](/blog/affinity)。
 - **OBS Studio** :
     超好用的開源螢幕錄影與直播軟體，功能極其強大。
-- **GIMP 2** :
+- **GIMP 3** :
     [曾老師堅持使用的修圖軟體](/blog/731pc)，而且還堅持要用 2.6 古董版。
 - **Canva** :
     製作簡報的工具。但我現在很不喜歡它，因為檔案存雲端常無故消失，且套版感太重。
@@ -113,10 +113,6 @@ slug: /app
 - **[YTDownloader](https://github.com/aandrew-me/ytDownloader)** :
      別人開發的跨平台 YouTube 下載工具，真心推薦**超**好用。(這別人推薦，但還是靠自己找到的)
 
-- **[GrayJay](https://github.com/aandrew-me/ytDownloader)** :
-     Grayjay 是一款主打「關注創作者而非平台」的核心理念，讓使用者能透過單一介面整合 YouTube、Twitch、Rumble 及 Odysee 等多家平台的內容，並提供無廣告觀看、背景播放與離線下載等進階功能。
-
-
 - **[Pearcleaner](https://github.com/alienator88/Pearcleaner)** :
     **強烈推薦！** 每台 Mac 都該裝的清理軟體，解除安裝 App 非常好用。最近還更新可以搜尋檔案
 - **[Blip](https://blip.net/)** :
@@ -150,7 +146,7 @@ slug: /app
 ---
 
 ## 🎮 遊戲與娛樂 (Gaming)
-* **Roblox** :
+- **Roblox** :
     我目前唯一在玩的遊戲。
-* **Roblox Studio** : 
+- **Roblox Studio** : 
     做遊戲其實很簡單，推薦看「克拉克」的教學來入門。
