@@ -217,7 +217,7 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
 
 :root {
   /* 調整 Algolia 的主題色 */
-  --docsearch-primary-color: #3eaf7c; /* 換成你個人網站的主題色 */
+  --docsearch-primary-color: #429eee; /* 換成你個人網站的主題色 */
   --docsearch-highlight-color: var(--docsearch-primary-color);
 }
 
