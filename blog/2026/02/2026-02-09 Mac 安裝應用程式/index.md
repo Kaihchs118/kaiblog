@@ -14,6 +14,8 @@ date: 2026-02-09T11:00
 安裝的時候居然跳出 `「YTDownloader」已損毀，無法打開。 你應該將其丟到「垃圾桶」。`
 - Brave在今天12:37下載此檔案。
 
+`{/* truncate */}`
+
 ### 到這裡選擇有兩個
 
 export const Highlight = ({children, color}) => (

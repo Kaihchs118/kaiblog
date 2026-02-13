@@ -8,6 +8,8 @@ date: 2026-01-30T08:00
 
 早餐吃 銅鑼燒 x2 +蔬果汁
 
+`{/* truncate */}`
+
  <div className="photo-border">
  
  ![超簡單早餐](IMG20260130073404.jpg) 
