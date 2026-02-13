@@ -56,9 +56,8 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         indexDocs: true,
-      indexBlog: true,
-      indexPages: true,
-      searchBarPlaceholder: "想找些什麼...", // 換成中文更貼心
+        indexBlog: true,
+        indexPages: true,
       },
     ],
 
