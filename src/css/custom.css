@@ -212,60 +212,102 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
-/* 搜索框容器優化 */
+/* ============================================================
+7. SearchBar
+============================================================ */
+
+
+/* --- 搜尋框居中佈局 --- */
+/* 強制將搜尋容器推向中間 */
 .navbar__search {
-  margin-left: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 0;
 }
 
-/* 搜索輸入框基礎樣式 */
+/* 為了防止導航欄標籤跟搜尋框打架，建議給導航欄增加一點間距 */
+.navbar__items--right {
+  flex: 1;
+}
+
+/* --- 液態玻璃搜尋框設計 --- */
 .searchBarInput {
-  border-radius: 20px !important; /* 讓搜索框更圓潤 */
-  transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.05) !important;
-  border: 1px solid transparent !important;
-  padding: 0 15px !important;
+  width: 200px;
+  height: 38px;
+  border-radius: 25px !important; /* 極致圓角 */
+  padding: 0 18px !important;
+  font-size: 0.9rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; /* 增加彈性動畫 */
+  
+  /* 液態玻璃核心效果 */
+  background: rgba(66, 158, 238, 0.08) !important; 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(66, 158, 238, 0.2) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme='dark'] .searchBarInput {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+/* 鼠標懸停與聚焦狀態 */
+.searchBarInput:hover {
+  background: rgba(66, 158, 238, 0.12) !important;
+  border-color: rgba(66, 158, 238, 0.4) !important;
 }
 
-/* 聚焦時的動畫效果 */
 .searchBarInput:focus {
-  width: 250px !important; /* 點擊後稍微加寬，更有動效感 */
-  background-color: var(--ifm-background-color) !important;
-  border-color: var(--ifm-color-primary) !important;
-  box-shadow: 0 0 0 4px rgba(53, 120, 229, 0.2) !important;
+  width: 320px !important; /* 點擊後向兩邊展開 */
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: #429eee !important;
+  box-shadow: 0 8px 25px rgba(66, 158, 238, 0.3) !important;
+  outline: none;
 }
 
-/* 下拉搜索結果面板 */
+/* --- 搜尋結果面板 (液態玻璃) --- */
 .search-bar-results-wrapper {
-  border-radius: 12px !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-  border: 1px solid var(--ifm-contents-border-color) !important;
-  margin-top: 10px;
-  overflow: hidden;
-  backdrop-filter: blur(10px); /* 毛玻璃效果 */
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: 20px !important;
+  border: 1px solid rgba(66, 158, 238, 0.2) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+  margin-top: 15px;
+  padding: 10px;
 }
 
-/* 選中的搜索結果 */
-.search-bar-item--active {
-  background-color: var(--ifm-color-primary-lightest) !important;
-  color: var(--ifm-color-primary-darker) !important;
+[data-theme='dark'] .search-bar-results-wrapper {
+  background: rgba(28, 28, 30, 0.7) !important;
 }
 
-/* 關鍵詞高亮顏色 */
+/* 關鍵字高亮：使用你的 #429eee */
 .search-bar-item mark {
-  background: transparent;
-  color: var(--ifm-color-primary);
-  font-weight: bold;
-  text-decoration: underline;
+  background: rgba(66, 158, 238, 0.15) !important;
+  color: #429eee !important;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
-/* 搜索路徑導航 (Explicit Path) 樣式微調 */
-.search-bar-item-path {
-  font-size: 0.8em !important;
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+/* 選中項目的樣式 */
+.search-bar-item--active {
+  background: #429eee !important;
+  color: white !important;
+  border-radius: 12px !important;
+}
+
+.search-bar-item--active mark {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* --- 手機端適配 --- */
+@media (max-width: 996px) {
+  .navbar__search {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin: 0 10px;
+  }
+  .searchBarInput:focus {
+    width: 180px !important; /* 手機上不要伸太長以免破版 */
+  }
 }
