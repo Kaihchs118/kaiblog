@@ -212,38 +212,3 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
-/* ============================================================
-7. 手機版底部快捷列 (Mobile Action Bar)
-============================================================ */
-.mobile-action-bar {
-  display: grid; position: fixed; left: 50%; bottom: 12px;
-  transform: translateX(-50%); width: 92vw; height: var(--mobile-bar-height);
-  grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; z-index: 1000;
-}
-
-@media (max-width: 996px) {
-  .mobile-action-bar::before {
-    content: ""; position: absolute; inset: 0; border-radius: 22px;
-    background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(18px); z-index: -1;
-  }
-  [data-theme='dark'] .mobile-action-bar::before { background: rgba(20, 20, 20, 0.72); }
-}
-
-/* 當 Body 有這個 Class 時觸發 */
-.reading-mode-active aside, 
-.reading-mode-active .blog-sidebar-col,
-.reading-mode-active .col--3 {
-  display: none !important;
-}
-
-/* 讓中間內容區塊自動填滿 */
-.reading-mode-active .col--7 {
-  max-width: 800px !important; /* 限制寬度方便閱讀 */
-  margin: 0 auto !important;
-  flex: 0 0 100% !important;
-}
-
-/* 按鈕樣式 (可自行調整) */
-.reading-mode-active .navbar {
-  opacity: 0.9; /* 讓導覽列半透明，減少干擾 */
-}

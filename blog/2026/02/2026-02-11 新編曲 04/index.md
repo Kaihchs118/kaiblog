@@ -20,7 +20,7 @@ date: 2026-02-11T16:00
 <p>Kai | MAYDAY 五月天 [ 盛夏光年 Eternal Summer ] COVER INTRO</p>
 </div>
 
-`{/* truncate */}`
+{/* truncate */}
 
 **📌 新影片內容說明：**  
 :::tip 使用工具

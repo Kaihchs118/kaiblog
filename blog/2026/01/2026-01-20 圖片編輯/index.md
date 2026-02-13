@@ -12,6 +12,9 @@ date: 2026-01-20T04:30
 ![PhotoShop 十年前價格](PhotoShop1.png)
 </div>
 
+{/* truncate */}
+
+
 ## 現在呢？
 
 現在我隨便問問 AI 就列出超級多的～

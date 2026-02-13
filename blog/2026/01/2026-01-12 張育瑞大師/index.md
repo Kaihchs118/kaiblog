@@ -10,6 +10,9 @@ date: 2026-01-12T04:30
 ## 即興部分
 跨界鋼琴簡單來說就是古典風格裡加上流行元素，可以去聽聽看他最厲害的歌曲：[Fire!](https://youtu.be/e_c2gLnCpZY?si=TL_EeVrgSa7oJ9_g)
 
+{/* truncate */}
+
+
 即興裡分為三部分，節奏、和弦、旋律
 
 :::tip 超猛

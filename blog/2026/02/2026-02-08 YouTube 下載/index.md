@@ -19,7 +19,8 @@ yt-dlp --no-playlist -o '/Users/kai/Movies/YTDownload/music/%(title)s.%(ext)s' -
 
 打久了真的很煩...
 
-`{/* truncate */}`
+{/* truncate */}
+
 
 ## 開發
 

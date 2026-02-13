@@ -18,7 +18,7 @@ date: 2026-02-10T08:00
 <p>Kai | MAYDAY 五月天 [ 勇敢Braveness ] COVER</p>
 </div>
 
-`{/* truncate */}`
+{/* truncate */}
 
 **📌 新影片內容說明：**  
 :::tip 使用工具
