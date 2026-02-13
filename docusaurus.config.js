@@ -47,15 +47,7 @@ const config = {
   ],
 
   plugins: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        language: ["en", "zh"], 
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
-      },
-    ],
+
     // --- 新增：Microsoft Clarity 插件設定 ---
     () => ({
       name: 'microsoft-clarity',
@@ -85,6 +77,13 @@ const config = {
 
       colorMode: { respectPrefersColorScheme: false },
       // docusaurus.config.js
+
+      algolia: {
+        apiKey: "dab0ba2bc3867def5520cfdbbbb24b64",
+        indexName: "kaiblog",
+        appId: "JIPOKZLD1Z",
+        placeholder: '想找什麼呢？',
+      },
 
 
       navbar: {
@@ -151,3 +150,5 @@ const config = {
 };
 
 export default config;
+
+

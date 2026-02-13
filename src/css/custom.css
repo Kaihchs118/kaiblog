@@ -212,3 +212,52 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
+
+/* docusaurus/src/css/custom.css */
+
+:root {
+  /* 調整 Algolia 的主題色 */
+  --docsearch-primary-color: #3eaf7c; /* 換成你個人網站的主題色 */
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+}
+
+/* 搜尋框主體 */
+.DocSearch-Modal {
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px); /* 毛玻璃效果 */
+}
+
+/* 輸入框樣式 */
+.DocSearch-Input {
+  font-size: 1.2rem;
+}
+
+/* 選中的搜尋結果 */
+.DocSearch-Hit[aria-selected='true'] a {
+  background-color: var(--docsearch-primary-color);
+  border-radius: 8px;
+}
+
+/* 關鍵字高亮 */
+.DocSearch-Hit-source {
+  color: var(--docsearch-primary-color);
+  font-weight: bold;
+}
+
+/* 底部導覽列（就是你截圖下方那一排快捷鍵提示） */
+.DocSearch-Footer {
+  border-radius: 0 0 12px 12px;
+  background-color: #f5f6f7;
+}
+
+[data-theme='dark'] {
+  --docsearch-modal-background: #1b1b1d;
+  --docsearch-footer-background: #242526;
+  --docsearch-searchbox-background: #2f2f2f;
+  --docsearch-hit-background: #2f2f2f;
+  --docsearch-text-color: #f5f6f7;
+  --docsearch-muted-color: #969faf;
+}
+
