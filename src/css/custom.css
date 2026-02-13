@@ -212,52 +212,60 @@ main ul:not(.breadcrumbs) li { margin-bottom: 0.8rem; }
 }
 html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; border-color: #1e293b; color: #e5e7eb; }
 
-
-/* docusaurus/src/css/custom.css */
-
-:root {
-  /* 調整 Algolia 的主題色 */
-  --docsearch-primary-color: #429eee; /* 換成你個人網站的主題色 */
-  --docsearch-highlight-color: var(--docsearch-primary-color);
+/* 搜索框容器優化 */
+.navbar__search {
+  margin-left: 1rem;
 }
 
-/* 搜尋框主體 */
-.DocSearch-Modal {
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.9);
+/* 搜索輸入框基礎樣式 */
+.searchBarInput {
+  border-radius: 20px !important; /* 讓搜索框更圓潤 */
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid transparent !important;
+  padding: 0 15px !important;
+}
+
+[data-theme='dark'] .searchBarInput {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 聚焦時的動畫效果 */
+.searchBarInput:focus {
+  width: 250px !important; /* 點擊後稍微加寬，更有動效感 */
+  background-color: var(--ifm-background-color) !important;
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 0 0 4px rgba(53, 120, 229, 0.2) !important;
+}
+
+/* 下拉搜索結果面板 */
+.search-bar-results-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid var(--ifm-contents-border-color) !important;
+  margin-top: 10px;
+  overflow: hidden;
   backdrop-filter: blur(10px); /* 毛玻璃效果 */
 }
 
-/* 輸入框樣式 */
-.DocSearch-Input {
-  font-size: 1.2rem;
+/* 選中的搜索結果 */
+.search-bar-item--active {
+  background-color: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darker) !important;
 }
 
-/* 選中的搜尋結果 */
-.DocSearch-Hit[aria-selected='true'] a {
-  background-color: var(--docsearch-primary-color);
-  border-radius: 8px;
-}
-
-/* 關鍵字高亮 */
-.DocSearch-Hit-source {
-  color: var(--docsearch-primary-color);
+/* 關鍵詞高亮顏色 */
+.search-bar-item mark {
+  background: transparent;
+  color: var(--ifm-color-primary);
   font-weight: bold;
+  text-decoration: underline;
 }
 
-/* 底部導覽列（就是你截圖下方那一排快捷鍵提示） */
-.DocSearch-Footer {
-  border-radius: 0 0 12px 12px;
-  background-color: #f5f6f7;
+/* 搜索路徑導航 (Explicit Path) 樣式微調 */
+.search-bar-item-path {
+  font-size: 0.8em !important;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
-
-[data-theme='dark'] {
-  --docsearch-modal-background: #1b1b1d;
-  --docsearch-footer-background: #242526;
-  --docsearch-searchbox-background: #2f2f2f;
-  --docsearch-hit-background: #2f2f2f;
-  --docsearch-text-color: #f5f6f7;
-  --docsearch-muted-color: #969faf;
-}
-
