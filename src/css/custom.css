@@ -228,3 +228,22 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) { background: #020617; bor
   }
   [data-theme='dark'] .mobile-action-bar::before { background: rgba(20, 20, 20, 0.72); }
 }
+
+/* 當 Body 有這個 Class 時觸發 */
+.reading-mode-active aside, 
+.reading-mode-active .blog-sidebar-col,
+.reading-mode-active .col--3 {
+  display: none !important;
+}
+
+/* 讓中間內容區塊自動填滿 */
+.reading-mode-active .col--7 {
+  max-width: 800px !important; /* 限制寬度方便閱讀 */
+  margin: 0 auto !important;
+  flex: 0 0 100% !important;
+}
+
+/* 按鈕樣式 (可自行調整) */
+.reading-mode-active .navbar {
+  opacity: 0.9; /* 讓導覽列半透明，減少干擾 */
+}
