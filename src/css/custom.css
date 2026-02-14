@@ -1,15 +1,10 @@
 /* ============================================================
-1. 主題變數 (Apple Minimal)
+1. 主題變數
 ============================================================ */
 :root {
   --ifm-color-primary: #007aff;
   --ifm-color-primary-light: #4da3ff;
   --ifm-color-primary-dark: #005ecb;
-
-  --ifm-font-weight-base: 500;
-  --ifm-heading-font-weight: 700;
-
-  --apple-radius: 14px;
 }
 
 html[data-theme='dark'] {
@@ -19,11 +14,11 @@ html[data-theme='dark'] {
 
 
 /* ============================================================
-2. 全域字體與基礎設定
+2. 全域字體
 ============================================================ */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 
-               "SF Pro Text", "Helvetica Neue", 
+  font-family: -apple-system, BlinkMacSystemFont,
+               "SF Pro Text", "Helvetica Neue",
                Arial, sans-serif;
 }
 
@@ -34,17 +29,15 @@ button, a {
 
 
 /* ============================================================
-3. Navbar（敲出：淡藍霧面 Apple 感）
+3. Navbar（敲出：淡藍霧面）
 ============================================================ */
 .navbar--fixed-top {
   background: rgba(0, 122, 255, 0.06);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  backdrop-filter: saturate(180%) blur(6px);
-  -webkit-backdrop-filter: saturate(180%) blur(6px);
 }
 
 html[data-theme='dark'] .navbar--fixed-top {
-  background: rgba(20, 20, 22, 0.75);
+  background: rgba(20, 20, 22, 0.85);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -71,7 +64,7 @@ html[data-theme='dark'] .navbar--fixed-top {
 
 
 /* ============================================================
-5. 標題樣式（敲出：極簡左線條）
+5. 標題左線（敲出：極簡識別）
 ============================================================ */
 main > :is(h3, strong) {
   display: block;
@@ -84,54 +77,40 @@ main > :is(h3, strong) {
 
 
 /* ============================================================
-6. Hero 標題
-============================================================ */
-.hero-title {
-  color: var(--ifm-color-primary);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-
-
-/* ============================================================
-7. 影音與圖片卡片（敲出：Apple 卡片感）
+6. 影片與圖片（100% 不破版）
 ============================================================ */
 .youtube,
 .youtube-s,
-.photo-border img {
+.photo-border {
+  width: 100%;
   max-width: 960px;
-  margin: 2rem 0;
+  margin: 2rem auto;
   padding: 1.2rem;
+
   background: #f5f7fa;
-  border-radius: var(--apple-radius);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  box-sizing: border-box;
 }
 
 html[data-theme='dark']
-:is(.youtube, .youtube-s, .photo-border img) {
+:is(.youtube, .youtube-s, .photo-border) {
   background: #1c1c1e;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* iframe 不會超出 */
 .youtube iframe,
 .youtube-s iframe {
   width: 100%;
+  height: auto;
   aspect-ratio: 16/9;
-  border-radius: 10px;
   border: 0;
+  border-radius: 10px;
 }
 
-
-
-/* ============================================================
-8. 內文排版優化
-============================================================ */
-main ul:not(.breadcrumbs) {
-  margin: 0 0 2rem;
-  padding-left: 1.8rem;
-}
-
-main ul:not(.breadcrumbs) li {
-  margin-bottom: 0.7rem;
+/* 圖片不會超出 */
+.photo-border img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
