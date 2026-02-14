@@ -97,7 +97,7 @@ const config = {
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
-           { to: '/announcement', label: '📢 公告', position: 'right' },
+           
           { to: '/blog', label: '📝 最新貼文', position: 'left' },
           { to: '/docs', label: '📚 筆記', position: 'left' },
           { to: '/blog/archive', label: '🗄️ 列表', position: 'left' },
@@ -106,6 +106,7 @@ const config = {
           { to: '/use', label: '🛠️ 愛用', position: 'left' },
           { to: '/app', label: '📱 應用程式', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
+          { to: '/announcement', label: '📢 公告', position: 'right' },
           { to: '/search', label: '🔍 全站搜尋', position: 'right' },
 
         ],

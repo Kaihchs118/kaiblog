@@ -1,10 +1,7 @@
 ---
 slug: announcement
 title: 📢 公告
-hide_title: false
-description: 關於 5535 特別版、曾老師視訊場及寒假相關安排
-sidebar_position: 1
-sidebar_label: 📢 公告
+description: 關於 5525 特別版、曾老師視訊場及寒假相關安排
 pagination_previous: null
 pagination_next: null
 authors: [KAI]
