@@ -1,5 +1,5 @@
 ---
-slug: happy-new-year
+slug: happy-new-year-2026
 title: 過年特別企劃！
 tags: []
 date: 2026-02-15T00:00
