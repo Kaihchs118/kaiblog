@@ -1,6 +1,6 @@
 ---
 slug: only-me
-title: 只有我這樣嗎？一直在嘗試不同軟體
+title: 只有我這樣嗎？
 tags: [blogblog.club]
 date: 2026-02-12T08:00
 ---
@@ -23,6 +23,23 @@ date: 2026-02-12T08:00
 大概在疫情，小學線上課的時候，我爸買了一台 Dell 的筆記型電腦給我，讓我可以線上上課
 
 但是到後來**根本不夠我剪輯**，他比較偏向文書機。於是就開始了選擇剪輯軟體之旅
+
+## 一直在嘗試不同軟體
+市面上有超級多的選擇，基本上你查過的我一定都用過，舉幾個例子好了：
+
+ * Adobe Premiere Pro 
+ * DaVinci Resolve
+ * Hitfilm
+ * CapCut (剪映)
+ * 威力導演 (PowerDirector)
+ * Wondershare Filmora
+ * OpenShot 
+ * Shotcut
+ * Kdenlive
+ * Vegas Pro
+ * Avid Media Composer
+
+
 
 ### 輕量化
 
