@@ -1,5 +1,5 @@
 ---
-slug: /announcements
+slug: announcement
 title: 📢 公告
 hide_title: false
 description: 關於 5535 特別版、曾老師視訊場及寒假相關安排
