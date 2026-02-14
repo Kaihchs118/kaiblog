@@ -99,14 +99,12 @@ const config = {
         items: [
            
           { to: '/blog', label: '📝 最新貼文', position: 'left' },
+            { to: '/blog/archive', label: '🗄️ 貼文列表', position: 'left' },
+          { to: '/random', label: '🎲 隨機', position: 'left' }, 
           { to: '/docs', label: '📚 筆記', position: 'left' },
-          { to: '/blog/archive', label: '🗄️ 列表', position: 'left' },
-          { to: '/random', label: '🎲 隨機', position: 'left' },
-          { to: '/now', label: '🕒 近況', position: 'left' },
           { to: '/use', label: '🛠️ 愛用', position: 'left' },
           { to: '/app', label: '📱 應用程式', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
-          { to: '/announcement', label: '📢 公告', position: 'right' },
           { to: '/search', label: '🔍 全站搜尋', position: 'right' },
 
         ],
@@ -120,7 +118,7 @@ const config = {
             items: [
               { label: '最新貼文', to: '/blog' },
               { label: '筆記', to: '/docs' },
-              { label: '列表', to: '/blog/archive' },
+              { label: '貼文列表', to: '/blog/archive' },
               { label: '隨機連結', to: '/random' },
             ],
           },
@@ -128,7 +126,6 @@ const config = {
             title: '個人資訊',
             items: [
               { label: '關於我', to: '/about' },
-              { label: '近況', to: '/now' },
               { label: '愛用', to: '/use' },
               { label: '應用程式', to: '/app' },
             ],
@@ -140,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG.`,
+        copyright: `Copyright © ${new Date().getFullYear()} KAI BLOG`,
       },
 
       prism: {

@@ -10,28 +10,25 @@ slug: /
 
 歡迎你來到 <span className="blue-stroke-text">KAI BLOG !</span> 
 
-這裡是我發廢文和分享經驗的地方。這個網站分為以下幾個區域：
+這裡是我發貼文和分享經驗的地方。這個網站分為以下幾個區域：
 
-## 🌟 貼文
+## [🌟 貼文](/blog)
 你可以把這裡想像成我的社群媒體頁面，從 2026 年起，主要會把一些文章發在這裡。  
 
 
-:::danger [查看最新貼文 →](/blog)
-:::
-:::info [前往所有貼文列表 →](/blog/archive)
-:::
 
+### [🖨️ 所有貼文列表](/blog/archive)
+這裡放了我所有寫過的 `Blog` ，請不要介意寫得很爛，因為有時候真的沒空啦！
 
-## 📋 筆記
+## [📋 筆記](/docs)
 這裡會是記錄筆記的地方，有時候我想要公開就會不定期有新內容喔！
 
 :::info [前往筆記首頁！ →](/docs)
 :::
 
-## 🎲 隨機
+## 🎲 隨機(/random)
 **按一下會有隨機貼文，看看運氣好不好有沒有機會抽到曾老師**
-:::danger [隨機！](/random)
-:::
+
 
 ## 🛠️ 其他小技巧！
 
@@ -53,15 +50,12 @@ slug: /
 
 ---
 
-## 🎊 BlogBlog.Club 部落部落俱樂部
+## [📜 BlogBlog.Club](https://blogblog.club/)
  
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
 我每個月都會參加「BlogBlog 同樂會」。
 
-:::tip [前往 BlogBlog.Club 官網 →](https://blogblog.club/)
-:::
 
----
 
 ## 📺 YouTube 最新影片 🎉
 
