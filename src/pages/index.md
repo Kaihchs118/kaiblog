@@ -23,10 +23,7 @@ slug: /
 ## [📋 筆記](/docs)
 這裡會是記錄筆記的地方，有時候我想要公開就會不定期有新內容喔！
 
-:::info [前往筆記首頁！ →](/docs)
-:::
-
-## 🎲 隨機(/random)
+## [🎲 隨機](/random)
 **按一下會有隨機貼文，看看運氣好不好有沒有機會抽到曾老師**
 
 
@@ -40,15 +37,11 @@ slug: /
 
 ---
 
-## 🎬 達芬奇免費模板 😍
+## [🎬 達芬奇免費模板 😍](/docs/resolve/resolvepackV3-update)
 我更新 **ResolveV3Pack**
 最新的下載在 itch.io 速度超級快！
 替達芬奇製作出許多模板，均為免費模板！
 
-:::tip [前往下載 ResolveV3Pack →](/docs/resolve/resolvepackV3-update)
-:::
-
----
 
 ## [📜 BlogBlog.Club](https://blogblog.club/)
  
