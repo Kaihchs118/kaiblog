@@ -97,6 +97,7 @@ const config = {
         title: 'KAI BLOG',
         logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
         items: [
+           { to: '/announcement', label: '📢 公告', position: 'right' },
           { to: '/blog', label: '📝 最新貼文', position: 'left' },
           { to: '/docs', label: '📚 筆記', position: 'left' },
           { to: '/blog/archive', label: '🗄️ 列表', position: 'left' },
