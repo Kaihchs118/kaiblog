@@ -31,17 +31,34 @@ button, a {
 /* ============================================================
 3. Navbar（敲出：淡藍霧面）
 ============================================================ */
+/* 淺色模式：保持你喜歡的藍色，但加入質感 */
 .navbar--fixed-top {
-  background: rgba(0, 122, 255, 0.06);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  /* 使用你指定的藍色，降低 alpha 到 0.08 左右，既有色調又不會太重 */
+  background: rgba(66, 158, 238, 0.08) !important; 
+  
+  /* 增加模糊感，這是提升質感的關鍵 */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* 邊框使用同色系的深一點藍，但極度透明 */
+  border-bottom: 1px solid rgba(66, 158, 238, 0.15);
+  
+  /* 加上微弱的陰影，讓導覽列浮起來 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
 }
 
+/* 深色模式：讓藍色更深邃、更沉穩 */
 html[data-theme='dark'] .navbar--fixed-top {
-  background: rgba(20, 20, 22, 0.85);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  /* 深色模式下，將藍色調暗並增加背景深度 */
+  background: rgba(30, 30, 35, 0.8) !important; 
+  
+  /* 邊框加上一抹淡淡的藍色邊線，做出霓虹層次感 */
+  border-bottom: 1px solid rgba(66, 158, 238, 0.2);
+  
+  /* 在深色背景中，陰影要重一點點才有分層感 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* ============================================================
 4. Navbar Hover（敲出：柔和亮起）
