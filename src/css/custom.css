@@ -1,133 +1,204 @@
 /* ============================================================
-1. 主題變數
+1. 字體與基礎變數
 ============================================================ */
+
+@import url('https://fonts.googleapis.com');
+
 :root {
-  --ifm-color-primary: #007aff;
-  --ifm-color-primary-light: #4da3ff;
-  --ifm-color-primary-dark: #005ecb;
+  --ifm-font-weight-base: 500;
+  --ifm-font-weight-bold: 900;
+  --ifm-heading-font-weight: 900;
+  --ifm-code-font-size: 95%;
+
+  --ifm-color-primary: #429eee;
+  --ifm-color-primary-dark: #2f84d6;
+  --ifm-color-primary-light: #5aabf2;
+
+  --docusaurus-highlighted-code-line-bg: rgba(66, 158, 238, 0.12);
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: #4da3ff;
+  --ifm-color-primary: #6bb4f4;
+  --docusaurus-highlighted-code-line-bg: rgba(107, 180, 244, 0.28);
 }
 
-
-
-/* ============================================================
-2. 全域字體
-============================================================ */
 body {
-  font-family: -apple-system, BlinkMacSystemFont,
-               "SF Pro Text", "Helvetica Neue",
-               Arial, sans-serif;
+  font-family: 'Huninn', sans-serif;
 }
 
-button, a {
+button,
+a {
   box-shadow: none !important;
 }
 
 
-
 /* ============================================================
-3. Navbar（敲出：淡藍霧面）
+2. 導覽與互動效果（簡潔版）
 ============================================================ */
-/* 淺色模式：保持你喜歡的藍色，但加入質感 */
-.navbar--fixed-top {
-  /* 使用你指定的藍色，降低 alpha 到 0.08 左右，既有色調又不會太重 */
-  background: rgba(66, 158, 238, 0.08) !important; 
-  
-  /* 增加模糊感，這是提升質感的關鍵 */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  
-  /* 邊框使用同色系的深一點藍，但極度透明 */
-  border-bottom: 1px solid rgba(66, 158, 238, 0.15);
-  
-  /* 加上微弱的陰影，讓導覽列浮起來 */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-  transition: all 0.3s ease;
-}
 
-/* 深色模式：讓藍色更深邃、更沉穩 */
-html[data-theme='dark'] .navbar--fixed-top {
-  /* 深色模式下，將藍色調暗並增加背景深度 */
-  background: rgba(30, 30, 35, 0.8) !important; 
-  
-  /* 邊框加上一抹淡淡的藍色邊線，做出霓虹層次感 */
-  border-bottom: 1px solid rgba(66, 158, 238, 0.2);
-  
-  /* 在深色背景中，陰影要重一點點才有分層感 */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* ============================================================
-4. Navbar Hover（敲出：柔和亮起）
-============================================================ */
 .navbar__item,
 .menu__link,
-.dropdown__link {
+.dropdown__link,
+.pagination-nav__link,
+a.link {
   transition: 0.2s ease;
-  border-radius: 8px;
-  padding: 6px 10px;
+  border-radius: 6px;
+  padding: 6px 12px;
 }
 
 .navbar__item:hover,
 .menu__link:hover,
-.dropdown__link:hover {
-  background: rgba(0, 122, 255, 0.12);
-  color: var(--ifm-color-primary);
+.dropdown__link:hover,
+a.link:hover {
+  background-color: rgba(66, 158, 238, 0.12) !important;
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
 }
 
 
+/* ============================================================
+3. 頂部導覽列（固定乾淨版）
+============================================================ */
+
+.navbar--fixed-top {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--ifm-background-color);
+}
+
 
 /* ============================================================
-5. 標題左線（敲出：極簡識別）
+4. 手機側邊欄（還原穩定版）
 ============================================================ */
+
+@media (max-width: 996px) {
+
+  .navbar-sidebar {
+    width: 80vw;
+  }
+
+  .navbar-sidebar .menu__link {
+    margin: 4px 10px;
+    font-weight: 600;
+  }
+
+  .navbar-sidebar .menu__link--active {
+    background: var(--ifm-color-primary) !important;
+    color: #fff !important;
+  }
+}
+
+
+/* ============================================================
+5. 標題與文字樣式
+============================================================ */
+
+.hero-title,
+.blue-title,
+.blue-stroke-text {
+  color: var(--ifm-color-primary);
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-weight: 800;
+}
+
+.blue-title,
+.gray {
+  font-weight: 1000;
+}
+
+.blue-stroke-text,
+.red-stroke-text {
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+
+.red-stroke-text {
+  color: red;
+}
+
+.gray {
+  color: #726f6f;
+}
+
+html[data-theme='dark'] .gray {
+  color: #949597;
+}
+
 main > :is(h3, strong) {
   display: block;
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin: 3rem 0 1rem;
   padding-left: 1rem;
-  border-left: 4px solid var(--ifm-color-primary);
+  border-left: 6px solid var(--ifm-color-primary);
 }
 
+main ul:not(.breadcrumbs) {
+  margin: 0 0 2rem;
+  padding-left: 2rem;
+}
+
+main ul:not(.breadcrumbs) li {
+  margin-bottom: 0.8rem;
+}
 
 
 /* ============================================================
-6. 影片與圖片（100% 不破版）
+6. 多媒體與元件
 ============================================================ */
+
 .youtube,
-.youtube-s,
-.photo-border {
-  width: 100%;
+.youtube-s {
   max-width: 960px;
-  margin: 2rem auto;
+  margin: 2rem 0;
   padding: 1.2rem;
-
-  background: #f5f7fa;
+  background: #def5ff;
   border-radius: 14px;
-  box-sizing: border-box;
 }
 
-html[data-theme='dark']
-:is(.youtube, .youtube-s, .photo-border) {
-  background: #1c1c1e;
+[data-theme='dark'] :is(.youtube, .youtube-s, .photo-border img) {
+  background: #2a3b43;
 }
 
-/* iframe 不會超出 */
+.photo-border img {
+  margin: 2rem 0;
+  padding: 1.2rem;
+  background: #def5ff;
+  border-radius: 14px;
+}
+
 .youtube iframe,
 .youtube-s iframe {
   width: 100%;
-  height: auto;
   aspect-ratio: 16/9;
-  border: 0;
   border-radius: 10px;
+  border: 0;
 }
 
-/* 圖片不會超出 */
-.photo-border img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
+.youtube p,
+.youtube-s p,
+.photo-border p {
+  margin-top: .4rem;
+  font-size: 0.95rem;
+  color: #949597;
+}
+
+.path-box,
+.path-box-tab {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-family: monospace;
+  color: #334155;
+  margin: 0.5rem 0 1rem;
+}
+
+html[data-theme='dark'] :is(.path-box, .path-box-tab) {
+  background: #020617;
+  border-color: #1e293b;
+  color: #e5e7eb;
 }
