@@ -94,3 +94,9 @@ html[data-theme='dark'] .gray {
   border-radius: 10px;
   border: 0;
 }
+
+[data-theme='dark'] :is( .photo-border img) { background: #2a3b43; }
+
+.photo-border img {
+  margin: 2rem 0; padding: 1.2rem; background: #def5ff; border-radius: 14px;
+}
