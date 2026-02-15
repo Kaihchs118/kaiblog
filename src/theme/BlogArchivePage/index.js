@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 
-// 分組處理：年份 -> 月份
 function createDisplayData(posts) {
   const groups = posts.reduce((acc, post) => {
     const d = new Date(post.metadata.date);
@@ -48,172 +47,153 @@ export default function BlogArchivePage(props) {
   }
 
   const BLUE = '#429eee';
+  const LIGHT_BLUE_BG = 'rgba(66, 158, 238, 0.05)';
 
   return (
-    <Layout title="文章歸檔">
-      <main className="container margin-vert--xl" style={{ maxWidth: '1100px', minHeight: '85vh' }}>
+    <Layout title="貼文列表">
+      <main className="container margin-vert--xl" style={{ maxWidth: '1200px', minHeight: '85vh' }}>
         
-        {/* 使用 Docusaurus 變數以支援暗色模式 */}
-        <h1 style={{ 
-          fontSize: '2.2rem', 
-          fontWeight: '800', 
-          marginBottom: '3rem', 
-          color: 'var(--ifm-heading-color)' 
-        }}>
-          貼文列表
-        </h1>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: '900', marginBottom: '2.5rem' }}>貼文列表</h1>
 
         {displayData.map((yearGroup) => (
-          <details key={yearGroup.year} open className="year-collapsible">
-            <summary className="year-summary">
-              <span style={{ color: BLUE }}>{yearGroup.year} 年</span>
-              <span className="count-label">{yearGroup.months.reduce((sum, m) => sum + m.posts.length, 0)} Posts</span>
+          <details key={yearGroup.year} className="year-wrapper" open>
+            <summary className="year-header">
+              <span className="year-title" style={{ color: BLUE }}>{yearGroup.year} 年</span>
+              <div className="year-info">
+                <span className="count-label">{yearGroup.months.reduce((sum, m) => sum + m.posts.length, 0)} Posts</span>
+                <span className="year-arrow">▼</span>
+              </div>
             </summary>
 
-            <div className="month-grid">
+            <div className="month-grid-container">
               {yearGroup.months.map((monthGroup) => (
                 <details key={monthGroup.month} open className="month-card">
                   <summary className="month-summary">
                     <span className="dot" style={{ backgroundColor: BLUE }}></span>
                     {monthGroup.month} 月
+                    <span className="month-arrow">▼</span>
                   </summary>
                   
-                  <ul className="post-list">
-                    {monthGroup.posts.map((post) => {
-                      const dateObj = new Date(post.metadata.date);
-                      return (
-                        <li key={post.metadata.permalink}>
-                          <Link to={post.metadata.permalink} className="post-link">
-                            <span className="post-date">{dateObj.getMonth() + 1}月{dateObj.getDate()}日</span>
-                            <span className="post-title">{post.metadata.title}</span>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <div className="post-list-content">
+                    <ul className="post-list">
+                      {monthGroup.posts.map((post) => {
+                        const dateObj = new Date(post.metadata.date);
+                        return (
+                          <li key={post.metadata.permalink}>
+                            <Link to={post.metadata.permalink} className="post-link">
+                              <span className="post-date">{dateObj.getMonth() + 1}月{dateObj.getDate()}日</span>
+                              <span className="post-title">{post.metadata.title}</span>
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </details>
               ))}
+              {/* 桌面版右側留白補丁 */}
+              <div className="scroll-spacer"></div>
             </div>
           </details>
         ))}
       </main>
 
       <style>{`
-        /* 基礎設置 */
-        summary { list-style: none; cursor: pointer; }
-        summary::-webkit-details-marker { display: none; }
+        /* 年份外殼 */
+        .year-wrapper {
+          margin-bottom: 3.5rem;
+          border: 1px solid var(--ifm-border-color);
+          border-radius: 16px;
+          overflow: hidden;
+          background: var(--ifm-background-surface-color);
+        }
         
-        /* 定義暗色模式變數 */
-        :root {
-          --archive-year-border: #f0f0f0;
-          --archive-month-bg: #fafafa;
-          --archive-month-border: #eee;
-        }
-
-        [data-theme='dark'] {
-          --archive-year-border: #333;
-          --archive-month-bg: #1b1b1d;
-          --archive-month-border: #2e2e30;
-        }
-
-        /* 年份折疊樣式 */
-        .year-collapsible {
-          margin-bottom: 4rem;
-        }
-        .year-summary {
-          font-size: 2.2rem;
-          font-weight: 900;
-          border-bottom: 2px solid var(--archive-year-border);
-          padding-bottom: 10px;
+        .year-header {
+          list-style: none;
+          cursor: pointer;
+          padding: 22px 30px;
           display: flex;
           justify-content: space-between;
-          align-items: baseline;
-          margin-bottom: 25px;
-          color: var(--ifm-font-color-base);
+          align-items: center;
+          background: var(--ifm-color-emphasis-100);
+          border-bottom: 1px solid var(--ifm-border-color);
         }
-        .count-label {
-          font-size: 0.9rem;
-          font-weight: 400;
-          color: #888;
-        }
+        .year-header::-webkit-details-marker { display: none; }
+        .year-title { font-size: 2rem; font-weight: 900; }
+        .year-info { display: flex; align-items: center; gap: 15px; }
+        .year-arrow { font-size: 1rem; opacity: 0.3; transition: 0.3s; }
+        .year-wrapper[open] .year-arrow { transform: rotate(180deg); }
 
-        /* 月份網格佈局 */
-        .month-grid {
+        /* --- 核心：預設為電腦版橫向滾動 --- */
+        .month-grid-container {
           display: flex;
-          flex-wrap: wrap;
-          gap: 30px;
-          align-items: flex-start;
+          flex-direction: row; /* 橫向 */
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          padding: 35px 30px;
+          gap: 25px;
+          background-color: ${LIGHT_BLUE_BG};
+          scroll-behavior: smooth;
+        }
+        
+        .scroll-spacer { min-width: 10px; display: block; }
+
+        .month-card {
+          flex: 0 0 340px; /* 固定寬度 */
+          background: var(--ifm-background-surface-color);
+          border: 1px solid var(--ifm-border-color);
+          border-radius: 14px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+          height: fit-content;
         }
 
-        /* 月份卡片式折疊 */
-        .month-card {
-          flex: 1 1 300px;
-          min-width: 280px;
-          background-color: var(--archive-month-bg);
-          padding: 20px;
-          border-radius: 12px;
-          transition: background-color 0.2s, border-color 0.2s;
+        /* --- 手機版適應 (螢幕小於 768px) --- */
+        @media (max-width: 768px) {
+          .month-grid-container {
+            flex-direction: column; /* 改為上下堆疊 */
+            overflow-x: hidden;     /* 關閉橫向滾動 */
+            padding: 20px 15px;     /* 縮減內距 */
+          }
+          
+          .month-card {
+            flex: 1 1 auto;         /* 寬度填滿 */
+            width: 100%;
+          }
+
+          .scroll-spacer { display: none; }
+          .year-header { padding: 15px 20px; }
+          .year-title { font-size: 1.6rem; }
         }
-        .month-card[open] {
-          background-color: transparent;
-          border: 1px solid var(--archive-month-border);
+
+        /* 滾動條樣式 */
+        .month-grid-container::-webkit-scrollbar { height: 8px; }
+        .month-grid-container::-webkit-scrollbar-thumb { 
+          background: ${BLUE}; 
+          border-radius: 10px;
         }
+
+        /* 其他元件樣式 */
         .month-summary {
+          list-style: none;
+          cursor: pointer;
+          padding: 18px 20px;
+          font-weight: 800;
           font-size: 1.25rem;
-          font-weight: 700;
-          color: var(--ifm-heading-color);
           display: flex;
           align-items: center;
         }
-        .dot {
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          margin-right: 12px;
-        }
+        .month-card[open] .month-summary { border-bottom: 1px solid var(--ifm-border-color); }
+        .month-summary::-webkit-details-marker { display: none; }
+        .dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 12px; }
+        .month-arrow { margin-left: auto; font-size: 0.8rem; opacity: 0.2; transition: 0.3s; }
+        .month-card[open] .month-arrow { transform: rotate(180deg); }
 
-        /* 文章清單樣式 */
-        .post-list {
-          list-style: none;
-          padding: 0;
-          margin: 15px 0 0 20px;
-        }
-        .post-list li {
-          margin-bottom: 15px;
-        }
-        .post-link {
-          text-decoration: none !important;
-          color: var(--ifm-font-color-base) !important;
-          display: block;
-        }
-        .post-date {
-          display: block;
-          font-size: 0.75rem;
-          color: ${BLUE};
-          font-weight: 800;
-          margin-bottom: 2px;
-          letter-spacing: 0.5px;
-        }
-        .post-title {
-          font-size: 1rem;
-          font-weight: 500;
-          line-height: 1.4;
-          transition: color 0.2s;
-        }
-        .post-link:hover .post-title {
-          color: ${BLUE};
-          text-decoration: underline;
-        }
-
-        /* 手機優化 */
-        @media (max-width: 768px) {
-          .month-grid { gap: 15px; }
-          .month-card { 
-            flex: 1 1 100%; 
-            padding: 15px;
-          }
-          .year-summary { font-size: 1.8rem; }
-        }
+        .post-list-content { padding: 20px; }
+        .post-list { list-style: none; padding: 0; margin: 0; }
+        .post-list li { margin-bottom: 15px; }
+        .post-link { text-decoration: none !important; color: var(--ifm-font-color-base) !important; }
+        .post-date { display: block; font-size: 0.8rem; color: ${BLUE}; font-weight: 800; margin-bottom: 4px; }
+        .post-title { font-size: 1rem; line-height: 1.5; }
       `}</style>
     </Layout>
   );
