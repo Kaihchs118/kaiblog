@@ -19,6 +19,7 @@ slug: /app
 
 - **Cubase 15 Pro** :
     主要的編曲軟體，教學資源豐富 !
+    :::tip 
     - **Groove Agent SE** :
     Cubase 內建的鼓機，還蠻好用的
     - **HALion Sonic** :
@@ -27,11 +28,14 @@ slug: /app
     Cubase 下載相關資源最好的地方
     - **Steinberg Library Manger** :
     管理 Steinberg 系列音色庫的地方
+    :::
 
 - **Finale 27** :
     用習慣了，雖然現在官方停止更新，但是我習慣了 ...
+  :::tip 
     - **Aria Player** :
     專為 Finale 設計的音樂播放器。
+  :::
 - **Musescore 4** :
     開源打譜軟體，但不太喜歡它把所有工具都堆在右邊的介面設計。
 - **Audacity** :
@@ -42,13 +46,16 @@ slug: /app
     去人聲超好用！免費開源，用本地模型
 - **Vital** :
     介面現代且強大的合成器，非常好用。
+    :::tip 
     - **Helm** : 
         開源的合成器 ~
+  1:::
 - **Kontakt 8** :
     軟體音源，最近像跳槽到硬體，歡迎大家推薦給我
+::: tip
     - **Kontakt Library Tools** :
         幫助我管理與入庫大量的 Kontakt 音源。
-
+:::
 ---
 
 ## 🎬 影像剪輯與視覺設計 (Visual & Video)

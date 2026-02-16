@@ -22,8 +22,7 @@ export default function RandomPage() {
         !path.includes('*') &&   // 排除*頁
         !path.includes('author') && 
         !path.includes('/about') && 
-        !path.includes('/__docusaurus/') &&   // 排除/__docusaurus/頁
-        !path.endsWith('/')            // 排除目錄結尾（可選，視需求而定）
+        !path.includes('/__docusaurus/')    // 排除/__docusaurus/頁
       );
 
     // 2. 隨機選取一個路徑
