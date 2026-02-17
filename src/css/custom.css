@@ -100,3 +100,46 @@ html[data-theme='dark'] .gray {
 .photo-border img {
   margin: 2rem 0; padding: 1.2rem; background: #def5ff; border-radius: 14px;
 }
+
+/* 1. 設定外層容器：這就是你的扁長型 Banner */
+.wei_Photo {
+  display: flex;           /* 讓裡面的圖片可以輕易置中 */
+  justify-content: center; /* 水平置中 */
+  align-items: center;     /* 垂直置中 */
+  
+  width: 100%;
+  max-width: 800px;        /* 跟文字寬度對齊 */
+  height: 250px;           /* 【關鍵】這裡控制 Banner 有多扁 */
+  
+  /* 【重點】設定一個跟圖片邊緣相近的深藍色底色 */
+  /* 這樣圖片縮小時，旁邊才不會變白色的 */
+  background-color: #002a5c; 
+  
+  margin: 0 0 2rem 0;      /* 下方留白 */
+  border-radius: 16px;     /* 圓角 */
+  overflow: hidden;        /* 確保圖片不會跑出圓角外 */
+}
+
+/* 2. 設定裡面的圖片：這是你的 Logo */
+.wei_Photo img {
+  /* 【關鍵】這裡控制 K 要顯示多大！ */
+  /* 試著調整這個百分比：80% 比較收斂，95% 比較滿 */
+  height: 85%; 
+  width: auto; /* 寬度自動，保持比例 */
+  
+  /* 以下是重置之前的設定，確保乾淨 */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 手機版適應 */
+@media (max-width: 600px) {
+  .wei_Photo {
+    height: 180px; /* 手機上高度稍微縮減一點 */
+    border-radius: 12px;
+  }
+}
