@@ -1,6 +1,6 @@
 ---
 slug: totinglin0809love
-title: LOVE 
+title: LOVE
 ---
 
 文章很長，請一字不漏的看完   
