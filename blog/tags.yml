@@ -1,5 +1,33 @@
-finale:
-  label: Finale
-  permalink: /finale
-  description: Finale tag description
+# 音樂相關
+編曲:
+  label: '🎵 編曲技巧'
+  permalink: /tags/編曲
+  description: '音樂編曲與製作教學'
 
+113tech-music:
+  label: '113tech 音樂教學'
+  permalink: /tags/113tech-music
+  description: '113tech 音樂系列教學'
+
+五月天:
+  label: '🎤 五月天'
+  permalink: /tags/五月天
+  description: '五月天演唱會與專輯心得'
+
+# 節慶相關
+新年快樂:
+  label: '🎉 新年快樂'
+  permalink: /tags/新年快樂
+  description: '新年祝福與活動'
+
+# 生活分享
+blogblog-club:
+  label: '💭 BlogBlog 分享'
+  permalink: /tags/blogblog-club
+  description: '生活隨筆與心得'
+
+# 新增你要求的
+finale:
+  label: 'Finale 樂譜軟體'
+  permalink: /tags/finale
+  description: 'Finale 使用教學與資源'
