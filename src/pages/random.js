@@ -1,96 +1,126 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from '@docusaurus/router';
-import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-// 導入 Docusaurus 自動生成的路由配置，達成完全自動化
+// 導入 Docusaurus 自動生成的路由配置
 import generatedRoutes from '@generated/routes';
 
 export default function RandomPage() {
   const history = useHistory();
-  const { withBaseUrl } = useBaseUrlUtils();
+  const { siteConfig } = useDocusaurusContext();
   const [isRedirecting, setIsRedirecting] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    // 1. 自動提取所有有效路徑
+    // 1. 提取並過濾路徑
     const allPaths = generatedRoutes
       .map(route => route.path)
-      .filter(path => 
-        path !== '/' &&                // 排除首頁
-        path !== '/404.html' &&        // 排除 404
-        !path.includes('tags') &&      // 排除標籤彙整頁
-        !path.includes('search') && 
-        !path.includes('*') &&   // 排除*頁
-        !path.includes('/about') && 
-        !path.includes('/__docusaurus/')    // 排除/__docusaurus/頁
-      );
+      .filter(path => {
+        return (
+          path.includes('/blog/') &&       // 核心：路徑必須包含 /blog/
+          !path.includes('/tags') &&      // 排除標籤彙整頁
+          !path.includes('/archive') &&   // 排除封存頁
+          !path.includes('/page/') &&      // 排除部落格的分頁 (如 /blog/page/2)
+          path !== '/blog' &&             // 排除部落格主頁
+          path !== '/blog/' &&            // 排除部落格主頁(帶斜線)
+          path !== '/' &&                 // 排除網站首頁
+          path !== '/404.html' &&         // 排除 404
+          !path.includes('search') &&     // 排除搜尋頁
+          !path.includes('*') &&          // 排除萬用字元路由
+          !path.includes('/__docusaurus/') // 排除開發環境內部路徑
+        );
+      });
 
-    // 2. 隨機選取一個路徑
+    // 2. 隨機選取邏輯
     if (allPaths.length > 0) {
       const randomPath = allPaths[Math.floor(Math.random() * allPaths.length)];
       
-      // 稍微延遲一點點時間（例如 100ms），讓使用者看得到跳轉動畫，體驗更好
+      // 設定 1 秒延遲，增加儀式感並確保路由已就緒
       const timer = setTimeout(() => {
-        history.replace(withBaseUrl(randomPath));
+        history.replace(randomPath);
       }, 1000);
 
       return () => clearTimeout(timer);
     } else {
+      // 如果過濾後沒有任何路徑，停止跳轉並顯示錯誤
       setIsRedirecting(false);
+      setError(true);
     }
-  }, [history, withBaseUrl]);
+  }, [history]);
 
   return (
-    <Layout title="隨機跳轉中...">
+    <Layout title="隨機推薦文章">
       <div
         style={{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '50vh', // 讓內容居中，佔據畫面一半高度
+          height: '60vh',
           textAlign: 'center',
           padding: '2rem',
         }}
       >
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
-          🎲 正在跳轉到隨機頁面...
-        </h1>
-        <p style={{ color: 'var(--ifm-color-emphasis-600)' }}>
-          請稍候，正在為您從所有文章中隨機挑選精選內容。
-        </p>
-        <h4 style={{ color: '#ff0000' }}>
-          如果網頁當機的話，請重新載入
-        </h4>
-        
-        {/* 加載動畫（選配，CSS 效果） */}
-        <div className="loading-dots">
-          <span className="dot">.</span><span className="dot">.</span><span className="dot">.</span>
-        </div>
-
-        {!isRedirecting && (
-          <p style={{ color: 'red' }}>找不到可以跳轉的頁面，請確認內容是否存在。</p>
+        {!error ? (
+          <>
+            <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
+              🎲 正在為您挑選精選文章...
+            </h1>
+            <p style={{ color: 'var(--ifm-color-emphasis-600)', fontSize: '1.2rem' }}>
+              請稍候，正在從部落格中隨機挑選內容。
+            </p>
+            
+            {/* 加載動畫 */}
+            <div className="loading-container">
+              <span className="dot">.</span>
+              <span className="dot">.</span>
+              <span className="dot">.</span>
+            </div>
+          </>
+        ) : (
+          <div>
+            <h1 style={{ color: '#ff4d4f' }}>抱歉，找不到部落格文章</h1>
+            <p>請確認您的 blog 資料夾下是否有文章，或路徑設定是否正確。</p>
+            <button 
+              onClick={() => history.push('/')}
+              style={{
+                padding: '10px 20px',
+                backgroundColor: 'var(--ifm-color-primary)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '5px',
+                cursor: 'pointer'
+              }}
+            >
+              回首頁
+            </button>
+          </div>
         )}
+
+        <p style={{ marginTop: '2rem', color: '#ff0000', fontSize: '0.9rem', opacity: 0.7 }}>
+          提示：如果網頁沒有自動跳轉，請點擊重新整理。
+        </p>
       </div>
 
       <style jsx>{`
-        .loading-dots {
-          font-size: 2.5rem;
-          font-weight: bold;
-          color: #429eee;
+        .loading-container {
+          font-size: 4rem;
+          color: var(--ifm-color-primary);
+          height: 60px;
         }
         .dot {
-          animation: blink 1s infinite;
-          margin: 0 2px;
+          animation: blink 1.4s infinite both;
+          margin: 0 1px;
         }
         .dot:nth-child(2) { animation-delay: 0.2s; }
         .dot:nth-child(3) { animation-delay: 0.4s; }
+        
         @keyframes blink {
-          0% { opacity: 0; }
-          50% { opacity: 1; }
-          100% { opacity: 0; }
+          0% { opacity: 0.2; transform: translateY(0); }
+          20% { opacity: 1; transform: translateY(-10px); }
+          100% { opacity: 0.2; transform: translateY(0); }
         }
       `}</style>
     </Layout>
   );
 }
-
