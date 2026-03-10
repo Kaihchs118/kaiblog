@@ -15,11 +15,11 @@ export default function VerifyButton() {
           color: 'white',
           background: isClaimed 
             ? '#6c757d' 
-            : 'linear-gradient(45deg, #007bff, #00d2ff)',
+            : 'linear-gradient(45deg, #429eee, #00d2ff)',
           border: 'none',
-          borderRadius: '50px',
+          borderRadius: '12px',
           cursor: isClaimed ? 'not-allowed' : 'pointer',
-          transition: 'all 0.4s ease',
+          transition: 'all 0.48s ease',
           boxShadow: isClaimed ? 'none' : '0 4px 15px rgba(0, 123, 255, 0.4)',
           transform: isClaimed ? 'scale(0.95)' : 'scale(1)',
           opacity: isClaimed ? 0.7 : 1
