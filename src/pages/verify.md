@@ -1,7 +1,6 @@
 ---
 slug: /verify
 title: 伺服器入群認證系統
-hide_table_of_contents: true
 ---
 
 import VerifyButton from '@site/src/components/VerifyButton';
