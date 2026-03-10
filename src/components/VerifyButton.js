@@ -37,7 +37,7 @@ export default function VerifyButton() {
           }}
         >
           <div className="admonition-heading">
-            <h5 style={{ margin: 0 }}>第一步：填寫表單</h5>
+            <h5 style={{ margin: 0 }}>填寫表單</h5>
           </div>
           <div className="admonition-content" style={{ marginTop: '0.5rem' }}>
             <p>
