@@ -53,7 +53,7 @@ import VerifyButton from '@site/src/components/VerifyButton';
 請先點擊下方連結完成資料填寫：
 
 :::tip OpenForms 認證連結
-👉 **[點我前往 OpenForms 填寫認證資料](你的OpenForms連結)**
+👉 **[點我前往 OpenForms 填寫認證資料](https://openforms.com/)**
 :::
 
 ---
