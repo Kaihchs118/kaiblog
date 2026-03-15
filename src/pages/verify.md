@@ -5,7 +5,7 @@ title: 伺服器入群認證系統
 
 import VerifyButton from '@site/src/components/VerifyButton';
 
-# 🛡️ 伺服器認證程序
+# 🛡️ 伺服器認證程序 `/verify`
 
 歡迎來到 **KAI STUDIO** 社群。為了維護討論品質並防範惡意帳號，請你在加入前完成以下認證手續。
 
