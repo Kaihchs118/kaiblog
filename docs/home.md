@@ -26,3 +26,5 @@ slug: /
 ### Docusaurus 筆記區
 - [選項卡](/docs/tabs)
 
+### 網站更新紀錄
+- [更新紀錄](/docs/update)

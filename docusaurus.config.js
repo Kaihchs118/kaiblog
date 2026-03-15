@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'KAI BLOG',
-  favicon: 'img/channels4_profile.jpg',
+  favicon: 'img/favicon/favicon.ico', 
   url: 'https://kaiblog.is-a.dev',
   baseUrl: '/',
   organizationName: 'kaihchs118',
@@ -23,12 +23,10 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // --- Google Analytics (GTAG) 保持不變 ---
         gtag: {
           trackingID: 'G-7916V6HGTV',
           anonymizeIP: true,
         },
-        
         docs: {
           sidebarPath: './sidebars.js',
         },
@@ -37,7 +35,6 @@ const config = {
           feedOptions: { type: ['rss', 'atom'], xslt: true },
           onInlineTags: 'warn',
           onUntruncatedBlogPosts: 'warn',
-          
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -47,8 +44,7 @@ const config = {
   ],
 
   plugins: [
-
-        [
+    [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
@@ -61,12 +57,13 @@ const config = {
       },
     ],
 
-    // --- 新增：Microsoft Clarity 插件設定 ---
+    // --- Microsoft Clarity & Favicon Meta Tags ---
     () => ({
-      name: 'microsoft-clarity',
+      name: 'custom-metadata',
       injectHtmlTags() {
         return {
           headTags: [
+            // Clarity Script
             {
               tagName: 'script',
               innerHTML: `
@@ -76,6 +73,31 @@ const config = {
                     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
                 })(window, document, "clarity", "script", "vbv2g82ods");
               `,
+            },
+            // Favicon 尺寸與 Apple 圖示路徑修正
+            {
+              tagName: 'link',
+              attributes: {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '96x96',
+                href: '/img/favicon/favicon-96x96.png',
+              },
+            },
+            {
+              tagName: 'link',
+              attributes: {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: '/img/favicon/apple-touch-icon.png',
+              },
+            },
+            {
+              tagName: 'link',
+              attributes: {
+                rel: 'manifest',
+                href: '/img/favicon/site.webmanifest',
+              },
             },
           ],
         };
@@ -87,25 +109,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurusd.jpg',
-
       colorMode: { respectPrefersColorScheme: false },
-      // docusaurus.config.js
-
-
 
       navbar: {
         title: 'KAI BLOG',
-        logo: { alt: 'Logo', src: 'img/channels4_profile.jpg' },
+        logo: { 
+          alt: 'Logo', 
+          src: 'img/favicon/favicon.svg' 
+        },
         items: [
-           
           { to: '/blog', label: '📝 最新貼文', position: 'left' },
-            { to: '/blog/archive', label: '🗄️ 貼文列表', position: 'left' },
+          { to: '/blog/archive', label: '🗄️ 貼文列表', position: 'left' },
           { to: '/random', label: '🎲 隨機', position: 'left' }, 
           { to: '/docs', label: '📚 筆記', position: 'left' },
           { to: '/app', label: '📱 應用程式', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
           { to: '/search', label: '🔍 全站搜尋', position: 'right' },
-
         ],
       },
 
@@ -151,10 +170,7 @@ const config = {
           autoCollapseCategories: true,
         },
       },
-      
     }),
 };
 
 export default config;
-
-
