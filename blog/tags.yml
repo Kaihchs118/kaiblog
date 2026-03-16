@@ -1,7 +1,7 @@
 # 音樂相關
 編曲:
-  label: '🎵 編曲技巧'
-  permalink: /tags/編曲
+  label: '編曲'
+  permalink: /tags/arrange
   description: '音樂編曲與製作教學'
 
 113tech-music:
@@ -10,13 +10,13 @@
   description: '113tech 音樂系列教學'
 
 五月天:
-  label: '🎤 五月天'
-  permalink: /tags/五月天
+  label: '五月天'
+  permalink: /tags/MAYDAY
   description: '五月天演唱會與專輯心得'
 
 # 節慶相關
 新年快樂:
-  label: '🎉 新年快樂'
+  label: '新年快樂'
   permalink: /tags/新年快樂
   description: '新年祝福與活動'
 
