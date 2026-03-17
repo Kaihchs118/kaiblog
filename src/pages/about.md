@@ -48,7 +48,7 @@ authors: [KAI]
 在 2025 / 11 月架設 KAI WIKI
 
 :::tip 網站連結
-[點我前往：KAI WIKI](https://kaihchs118.github.io/kai_wiki/ )
+[點我前往：KAI WIKI](https://kaihchs118.github.io/kaiwiki/ )
 :::
 
 目前持續更新直到 2025 / 12 / 30 
