@@ -2,46 +2,38 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 教學引言
 
-Let's discover **Docusaurus in less than 5 minutes**.
+讓我們在 **5 分鐘內探索 Docusaurus**。
 
-## Getting Started
+## 入門指南
 
-Get started by **creating a new site**.
+從 **建立一個新網站** 開始。
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+或是透過 **[docusaurus.new](https://docusaurus.new)** **立即體驗 Docusaurus**。
 
-### What you'll need
+### 事前準備
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Node.js](https://nodejs.org/en/download/) 版本 20.0 或以上：
+  - 安裝 Node.js 時，建議勾選所有與依賴項目（dependencies）相關的核取方塊。
 
-## Generate a new site
+## 產生新網站
 
-Generate a new Docusaurus site using the **classic template**.
+使用 **經典模板（classic template）** 產生一個新的 Docusaurus 網站。
 
-The classic template will automatically be added to your project after you run the command:
+在執行以下指令後，經典模板將會自動新增到你的專案中：
 
 ```bash
 npm init docusaurus@latest my-website classic
-```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
+你可以在命令提示字元（Command Prompt）、Powershell、終端機（Terminal）或程式碼編輯器中的任何整合終端機輸入此指令。
+該指令也會安裝執行 Docusaurus 所需的所有必要依賴項目。
+啟動你的網站
+執行開發伺服器：
 cd my-website
 npm run start
-```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+cd 指令會切換你目前工作的工作目錄。為了操作新建立的 Docusaurus 網站，你需要將終端機導航至該目錄。
+npm run start 指令會在本地建置你的網站，並透過開發伺服器提供服務，讓你可以在 http://localhost:3000/ 進行瀏覽。
+打開 docs/intro.md（即本頁面）並編輯內容：網站將會 自動重新載入 並顯示你的變更。
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
