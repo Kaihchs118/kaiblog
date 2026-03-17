@@ -2,46 +2,38 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# 建立文件
 
-Documents are **groups of pages** connected through:
+文件是透過以下功能連結的 **頁面群組**：
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+- **側邊欄 (Sidebar)**
+- **上一頁/下一頁導覽**
+- **版本控制**
 
-## Create your first Doc
+## 建立你的第一份文件
 
-Create a Markdown file at `docs/hello.md`:
+在 `docs/hello.md` 建立一個 Markdown 檔案：
 
 ```md title="docs/hello.md"
-# Hello
+# 哈囉
 
-This is my **first Docusaurus document**!
-```
+這是我的 **第一份 Docusaurus 文件**！
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
+現在可以透過 http://localhost:3000/docs/hello 瀏覽新文件。
+設定側邊欄
+Docusaurus 會自動根據 docs 資料夾 產生側邊欄。
+你可以加入元數據（metadata）來自訂側邊欄的標籤與排序位置：
 ---
-sidebar_label: 'Hi!'
+sidebar_label: '嗨！'
 sidebar_position: 3
 ---
 
-# Hello
+# 哈囉
 
-This is my **first Docusaurus document**!
-```
+這是我的 **第一份 Docusaurus 文件**！
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
+你也可以在 sidebars.js 中明確地定義你的側邊欄：
+``` md
 export default {
   tutorialSidebar: [
     'intro',
@@ -49,7 +41,7 @@ export default {
     'hello',
     {
       type: 'category',
-      label: 'Tutorial',
+      label: '教學',
       items: ['tutorial-basics/create-a-document'],
     },
   ],
