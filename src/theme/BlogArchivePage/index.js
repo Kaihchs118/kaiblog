@@ -2,200 +2,177 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 
-function groupPostsByYearMonth(posts) {
-  const groups = posts.reduce((acc, post) => {
+function groupByYearMonth(posts) {
+  const map = posts.reduce((acc, post) => {
     const d = new Date(post.metadata.date);
-    const year = d.getFullYear();
-    const month = d.getMonth() + 1;
-    acc[year] = acc[year] || {};
-    acc[year][month] = acc[year][month] || [];
-    acc[year][month].push(post);
+    const y = d.getFullYear();
+    const m = d.getMonth() + 1;
+    if (!acc[y]) acc[y] = {};
+    if (!acc[y][m]) acc[y][m] = [];
+    acc[y][m].push(post);
     return acc;
   }, {});
 
-  return Object.keys(groups)
+  return Object.keys(map)
     .sort((a, b) => b - a)
-    .map(year => ({
-      year,
-      months: Object.keys(groups[year])
+    .map(y => ({
+      year: y,
+      months: Object.keys(map[y])
         .sort((a, b) => b - a)
-        .map(month => ({
-          month,
-          posts: groups[year][month],
-        })),
+        .map(m => ({ month: m, posts: map[y][m] })),
     }));
 }
 
 export default function BlogArchivePage({ archive }) {
-  const displayData =
-    archive?.years
-      ? archive.years.map(y => ({
-          year: y.year,
-          months: y.posts
-            .reduce((acc, p) => {
-              const m = new Date(p.metadata.date).getMonth() + 1;
-              acc[m] = acc[m] || [];
-              acc[m].push(p);
-              return acc;
-            }, {})
-            .sort((a, b) => b - a)
-            .map((posts, idx) => ({ month: idx + 1, posts })),
-        }))
-      : groupPostsByYearMonth(archive?.blogPosts || []);
+  const years = archive?.years
+    ? archive.years.map(y => ({
+        year: y.year,
+        months: Object.values(
+          y.posts.reduce((acc, p) => {
+            const m = new Date(p.metadata.date).getMonth() + 1;
+            acc[m] = acc[m] || [];
+            acc[m].push(p);
+            return acc;
+          }, {})
+        ).map((posts, i) => ({ month: i + 1, posts })),
+      }))
+    : groupByYearMonth(archive?.blogPosts || []);
 
   return (
-    <Layout title="貼文列表">
-      <main className="container margin-vert--lg" style={{ maxWidth: '1280px' }}>
-        <h1 style={{ fontSize: '2.4rem', fontWeight: 700, marginBottom: '2.5rem' }}>
-          貼文列表
-        </h1>
+    <Layout title="所有貼文">
+      <main className="margin-vert--lg container" style={{ maxWidth: '1280px' }}>
+        <h1 style={{ fontSize: '2.4rem', fontWeight: 700 }}>所有貼文</h1>
 
-        {displayData.map(yearGroup => (
-          <details key={yearGroup.year} className="year-section" open>
-            <summary className="year-summary">
-              <span className="year-label">{yearGroup.year} 年</span>
-              <span className="post-count">
-                {yearGroup.months.reduce((sum, m) => sum + m.posts.length, 0)} 篇
-              </span>
-            </summary>
+        {years.map(({ year, months }) => (
+          <section key={year} className="year-block">
+            <h2 className="year-title">
+              {year} 年 <small>({months.reduce((s, m) => s + m.posts.length, 0)} 篇)</small>
+            </h2>
 
-            <div className="months-container">
-              {yearGroup.months.map(monthGroup => (
-                <details key={monthGroup.month} className="month-item" open>
-                  <summary className="month-header">
-                    {monthGroup.month} 月
-                  </summary>
-
-                  <ul className="post-list">
-                    {monthGroup.posts.map(post => {
+            <div className="months-row">
+              {months.map(({ month, posts }) => (
+                <div key={month} className="month-card">
+                  <h3 className="month-title">{month} 月</h3>
+                  <ul className="post-items">
+                    {posts.map(post => {
                       const d = new Date(post.metadata.date);
-                      const dateStr = `${d.getMonth() + 1}月${d.getDate()}日`;
                       return (
                         <li key={post.metadata.permalink}>
-                          <Link to={post.metadata.permalink} className="post-item">
-                            <span className="post-date">{dateStr}</span>
-                            <span className="post-title">{post.metadata.title}</span>
+                          <Link to={post.metadata.permalink}>
+                            <span className="post-date">
+                              {d.getMonth() + 1}月{d.getDate()}日
+                            </span>
+                            {post.metadata.title}
                           </Link>
                         </li>
                       );
                     })}
                   </ul>
-                </details>
+                </div>
               ))}
+
+              {/* 防止最後一排太擠的補白 */}
+              <div className="spacer" />
             </div>
-          </details>
+          </section>
         ))}
       </main>
 
       <style jsx>{`
-        .year-section {
-          margin-bottom: 2.5rem;
-          border: 1px solid var(--ifm-color-emphasis-200);
+        .year-block {
+          margin-bottom: 3rem;
+          padding: 1.5rem;
           border-radius: 12px;
-          overflow: hidden;
           background: var(--ifm-background-color);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          border: 1px solid var(--ifm-color-emphasis-200);
         }
 
-        .year-summary {
-          padding: 1.25rem 1.75rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 1.5rem;
+        .year-title {
+          font-size: 1.8rem;
           font-weight: 700;
+          margin: 0 0 1.25rem;
           color: var(--ifm-color-primary);
-          cursor: pointer;
-          background: var(--ifm-background-surface-color);
-          list-style: none;
         }
-        .year-summary::-webkit-details-marker { display: none; }
-
-        .post-count {
-          font-size: 0.95rem;
+        .year-title small {
+          font-weight: 400;
           color: var(--ifm-color-emphasis-600);
-          font-weight: 500;
+          font-size: 1rem;
         }
 
-        .months-container {
+        .months-row {
           display: flex;
-          flex-direction: row;
-          gap: 1.5rem;
-          padding: 1.5rem 1.75rem 1.75rem;
+          flex-wrap: nowrap;
           overflow-x: auto;
+          gap: 1.5rem;
+          padding-bottom: 0.5rem;
           scroll-behavior: smooth;
-          background: var(--ifm-color-emphasis-100);
         }
-        .months-container::-webkit-scrollbar {
+        .months-row::-webkit-scrollbar {
           height: 6px;
         }
-        .months-container::-webkit-scrollbar-thumb {
+        .months-row::-webkit-scrollbar-thumb {
           background: var(--ifm-color-primary-light);
           border-radius: 3px;
         }
 
-        .month-item {
-          flex: 0 0 320px;
+        .month-card {
+          flex: 0 0 340px;
+          min-width: 300px;
           background: var(--ifm-background-surface-color);
           border: 1px solid var(--ifm-color-emphasis-200);
           border-radius: 10px;
           overflow: hidden;
-          box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+          box-shadow: 0 2px 6px rgba(0,0,0,0.04);
         }
 
-        .month-header {
+        .month-title {
+          margin: 0;
           padding: 1rem 1.25rem;
-          font-size: 1.15rem;
+          font-size: 1.25rem;
           font-weight: 600;
-          background: var(--ifm-background-color);
+          background: var(--ifm-color-emphasis-100);
           color: var(--ifm-color-primary-dark);
-          cursor: pointer;
-          list-style: none;
           border-bottom: 1px solid var(--ifm-color-emphasis-200);
         }
-        .month-header::-webkit-details-marker { display: none; }
 
-        .post-list {
+        .post-items {
           list-style: none;
           margin: 0;
-          padding: 0.75rem 1.25rem 1.25rem;
+          padding: 1rem 1.25rem;
         }
-
-        .post-item {
-          display: flex;
-          flex-direction: column;
-          padding: 0.75rem 0;
+        .post-items li {
+          margin: 0.75rem 0;
+        }
+        .post-items a {
           color: var(--ifm-font-color-base);
           text-decoration: none;
-          transition: color 0.15s;
+          display: block;
+          transition: color 0.2s;
         }
-        .post-item:hover {
+        .post-items a:hover {
           color: var(--ifm-color-primary);
         }
-
         .post-date {
-          font-size: 0.82rem;
+          display: block;
+          font-size: 0.85rem;
           color: var(--ifm-color-emphasis-600);
-          margin-bottom: 0.25rem;
+          margin-bottom: 0.2rem;
         }
 
-        .post-title {
-          font-size: 1.02rem;
-          line-height: 1.4;
+        .spacer {
+          flex: 0 0 1px;
+          width: 1px;
         }
 
         @media (max-width: 996px) {
-          .months-container {
+          .months-row {
             flex-direction: column;
-            gap: 1rem;
-            padding: 1rem 1.25rem;
+            overflow-x: hidden;
+            gap: 1.25rem;
           }
-          .month-item {
+          .month-card {
             flex: none;
             width: 100%;
-          }
-        }
-      `}</style>
-    </Layout>
-  );
-}
+            min-width: auto;
+            box-shadow: none;
+            border-radius: 8px
