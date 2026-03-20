@@ -9,7 +9,7 @@ date: 2026-03-19T08:00
 我是一個打字打了 **7年** 的人了 !    
 因為高中電腦課要求打字要**每秒15以上**，所以...   
 我找到這個網站可以幫助我練習!   
-https://www.edclub.com   
+[https://www.edclub.com](https://www.edclub.com/sportal/)
 {/* truncate */}
 
 ## 為什麼進步 ?
