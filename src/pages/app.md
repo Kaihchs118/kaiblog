@@ -13,16 +13,16 @@ slug: /app
 ---
 
 ## 🎵 DAW 與音訊編曲
-1. **`Ableton Live`** ㄧ 業界標準的 Live 演出與編曲軟體
-2. **`Cubase 15`** ㄧ 主要的編曲軟體，教學資源不錯
+1. **Ableton Live** ㄧ 業界標準的 Live 演出與編曲軟體
+2. **Cubase 15** ㄧ 主要的編曲軟體，教學資源不錯
 3. **Logic Pro** ㄧ 蘋果自家 DAW，內建音色非常紮實
 4. **`FL Studio 20`** ㄧ 著名的「水果」，適合快速製作節奏與電子音樂
 5. **Audacity** ㄧ 免費開源超好用的音訊編輯器
 6. **UVR 5** ㄧ 去人聲神器，使用本地模型
 
 ## 🎹 虛擬音源與採樣器
-7. **`Kontakt 8`** ㄧ 強大的採樣音源主機
-8. **`Kontakt Library Tools`** ㄧ 幫助第三方音色庫入庫
+7. **Kontakt 8** ㄧ 強大的採樣音源主機
+8. **Kontakt Library Tools** ㄧ 幫助第三方音色庫入庫
 9. **Aria Player** ㄧ Finale 的專屬音樂播放器
 10. **Groove Agent SE** ㄧ Cubase 內建的鼓機
 11. **HALion Sonic** ㄧ Cubase 內建音源，耗電量低
@@ -47,7 +47,7 @@ slug: /app
 ## 📝 開發與程式設計
 21. **VSCodium** ㄧ 開源且不會被微軟綁架的編輯器
 22. **Github Desktop** ㄧ 管理本站 GitHub 倉庫的好幫手
-23. **`LTX Desktop`** ㄧ 輕量化的開發輔助工具，介面乾淨
+23. **`LTX Desktop`** ㄧ 超強 ai 剪輯工具，完全免費開源！
 
 ## 📝 文書與筆記
 24. **Anytype** ㄧ 超好用開源筆記軟體，載入速度極快
@@ -81,4 +81,4 @@ slug: /app
 
 ## 💩 官方資源管理
 44. **Steinberg Download Manager** ㄧ Steinberg 產品資源下載中心
-45. **`Steinberg Library Manager`** ㄧ 管理 VST 音色庫路徑與授權的工具
+45. **Steinberg Library Manager** ㄧ 管理 VST 音色庫路徑與授權的工具
