@@ -24,41 +24,7 @@ function Feature({ icon, title, description, to }) {
   );
 }
 
-function InfoSection() {
-  return (
-    <section className="info_section">
-      <div className="info_grid">
-        <div className="info_card">
-          <h3>🛠️ 其他小技巧！</h3>
-          <ul className="info_list">
-            <li>
-              <b>RSS 訂閱</b>：你可以用 RSS 追蹤我
-              <br />
-              <code>https://kaiblog.is-a.dev/blog/rss.xml</code>
-            </li>
-            <li>
-              <b>全站搜尋</b>：按下 <code>Ctrl + K</code> 即可搜尋關鍵字！
-            </li>
-            <li>
-              <b>聯繫我</b>：有任何建議，歡迎寫信至 <code>kaigithub0621@gmail.com</code>
-            </li>
-          </ul>
-        </div>
-        <div className="info_card">
-          <h3>🌐 其他資訊</h3>
-          <ul className="info_list">
-            <li>
-              <Link to="/verify">🪩 Discord 社群驗證區</Link>
-            </li>
-            <li>
-              <Link to="/docs/update">📜 網站更新紀錄</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  );
-}
+
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -77,15 +43,9 @@ export default function Home() {
             to="/blog"
           />
           <Feature
-            icon="📚"
-            title="筆記"
-            description="這裡會是記錄筆記的地方，有時候我想要公開就會不定期有新內容喔！"
-            to="/docs"
-          />
-          <Feature
-            icon="🖨️"
+            icon="🗄️"
             title="所有貼文列表"
-            description="這裡放了我所有寫過的 Blog，請不要介意寫得很爛，因為有時候真的沒空啦！"
+            description="這裡放了我所有寫過的 Blog！"
             to="/blog/archive"
           />
           <Feature
@@ -95,45 +55,91 @@ export default function Home() {
             to="/random"
           />
           <Feature
+            icon="📚"
+            title="筆記"
+            description="這裡會是記錄筆記的地方"
+            to="/docs"
+          />
+          <Feature
             icon="📱"
             title="應用程式"
             description="這裡會顯示我在 Mac 上的軟體清單，看看有沒有你喜歡的"
             to="/app"
           />
           <Feature
-            icon="🫂"
+            icon="👤"
             title="關於"
             description="歡迎認識我！"
             to="/about"
           />
         </div>
 
+
         <section>
-          <h2 className="section_title">📺 YouTube 最新影片</h2>
+          <div className="section_title">
+            <span>📺</span>
+            <span>最新 YouTube 影片</span>
+          </div>
           <div className="youtube_card">
             <div className="youtube-s">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/CXlGKZLyq2A?si=RRwCeYBspU1BiFoZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p style={{ marginTop: '1rem', fontWeight: 'bold' }}>小偷在幹嘛啦? 不會逃跑喔? Kai | Roblox</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CXlGKZLyq2A?si=RRwCeYBspU1BiFoZ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <p style={{ marginTop: '1.5rem', fontWeight: '800', fontSize: '1.2rem', textAlign: 'center', color: 'var(--ifm-color-primary)' }}>KAI丨電影配樂練習</p>
             </div>
           </div>
         </section>
 
-        <section className="features_grid" style={{ marginTop: '2rem' }}>
-          <Feature
-            icon="🎬"
-            title="達芬奇模板"
-            description="ResolveV3Pack 免費模板下載，加速你的剪輯流程。"
-            to="/docs/resolve/resolvepackV3-update"
-          />
-          <Feature
-            icon="📜"
-            title="BlogBlog.Club"
-            description="逃離演算法，一起來寫部落格，拯救世界！"
-            to="https://blogblog.club/"
-          />
+        <section className="info_section">
+          <div className="info_grid">
+            <div className="info_card">
+              <h3>🛠️ 其他小技巧！</h3>
+              <ul className="info_list">
+                <li>
+                  <b>RSS 訂閱</b>：你可以用 RSS 追蹤我
+                  <div className="rss_copy_wrapper">
+                    <code>https://kaiblog.is-a.dev/blog/rss.xml</code>
+                    <button
+                      className="copy_btn"
+                      onClick={() => {
+                        navigator.clipboard.writeText('https://kaiblog.is-a.dev/blog/rss.xml');
+                        const btn = document.getElementById('rss_copy_btn');
+                        btn.innerText = '✅ 已複製！';
+                        setTimeout(() => { btn.innerText = '📋 複製網址'; }, 2000);
+                      }}
+                      id="rss_copy_btn"
+                    >
+                      📋 複製網址
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <b>全站搜尋</b>：按下 <code>Ctrl + K</code> 即可搜尋關鍵字！
+                </li>
+                <li>
+                  <b>聯繫我</b>：有任何建議，歡迎寫信至 <code>kaigithub0621@gmail.com</code>
+                </li>
+              </ul>
+            </div>
+            <div className="info_card">
+              <h3>🌐 其他資訊</h3>
+              <ul className="info_list">
+                <li>
+                  <Link to="/docs/resolve/resolvepackV3-update">🎬 ResolveV pack V3 下載</Link>
+                </li>
+                <li>
+                  <Link to="https://blogblog.club/">📜 BlogBlog.Club 官網</Link>
+                </li>
+                <li>
+                  <Link to="/verify">🪩 Discord 社群驗證區</Link>
+                </li>
+                <li>
+                  <Link to="/docs/update">📜 網站更新紀錄</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
 
-        <InfoSection />
+
 
         <div className="contact_section">
           <div className="contact_info">
@@ -145,6 +151,7 @@ export default function Home() {
           </Link>
         </div>
       </main>
+
     </Layout>
   );
 }
