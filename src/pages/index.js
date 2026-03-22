@@ -32,22 +32,7 @@ function InfoSection() {
           <h3>🛠️ 其他小技巧！</h3>
           <ul className="info_list">
             <li>
-              <b>RSS 訂閱</b>：你可以用 RSS 追蹤我
-              <div className="rss_copy_wrapper">
-                <code>https://kaiblog.is-a.dev/blog/rss.xml</code>
-                <button
-                  className="copy_btn"
-                  onClick={() => {
-                    navigator.clipboard.writeText('https://kaiblog.is-a.dev/blog/rss.xml');
-                    const btn = document.getElementById('rss_copy_btn');
-                    btn.innerText = '✅ 已複製！';
-                    setTimeout(() => { btn.innerText = '📋 複製網址'; }, 2000);
-                  }}
-                  id="rss_copy_btn"
-                >
-                  📋 複製網址
-                </button>
-              </div>
+              <b>RSS 訂閱</b>：你可以用 RSS 追蹤我（<code>https://kaiblog.is-a.dev/blog/rss.xml</code>）
             </li>
             <li>
               <b>全站搜尋</b>：按下 <code>Ctrl + K</code> 即可搜尋關鍵字！
