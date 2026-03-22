@@ -11,8 +11,6 @@ const config = {
   projectName: 'kaiblog',
   onBrokenLinks: 'throw',
 
-  future: { v4: true },
-
   i18n: {
     defaultLocale: 'zh-Hant',
     locales: ['zh-Hant'],
