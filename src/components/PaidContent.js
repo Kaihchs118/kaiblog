@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function PaidContent({ children, id = 'default' }) {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [passcode, setPasscode] = useState('');
   const [error, setError] = useState(false);
   const [isInputFocused, setIsInputFocused] = useState(false);
+  const contentRef = useRef(null);
   const localStorageKey = `kai_blog_unlocked_${id}`;
-  const CORRECT_PASSCODE = '0809';
+  const CORRECT_PASSCODE = 'MAYDAY0329';
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -16,6 +17,21 @@ export default function PaidContent({ children, id = 'default' }) {
       }
     }
   }, [localStorageKey]);
+
+  // Handle TOC visibility via CSS class on html element
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+
+    if (!isUnlocked) {
+      document.documentElement.classList.add('lock-paid-content');
+    } else {
+      document.documentElement.classList.remove('lock-paid-content');
+    }
+
+    return () => {
+      document.documentElement.classList.remove('lock-paid-content');
+    };
+  }, [isUnlocked]);
 
   const handleUnlock = () => {
     if (passcode === CORRECT_PASSCODE) {
@@ -91,13 +107,13 @@ export default function PaidContent({ children, id = 'default' }) {
               marginBottom: '1.8rem',
               fontWeight: '500'
             }}>
-              輸入專屬解鎖碼以閱覽完整篇幅
+              輸入專屬解鎖碼以閱覽完整內容
             </p>
 
             <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
               <input
                 type="password"
-                placeholder="密碼：08XX"
+                placeholder="10 位數字密碼"
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
                 onKeyPress={handleKeyPress}
@@ -153,21 +169,24 @@ export default function PaidContent({ children, id = 'default' }) {
                 e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(66, 158, 238, 0.3)';
               }}
             >
-              🚀 驗證解鎖
+              🚀 付費解鎖
             </button>
           </div>
         </div>
       )}
 
-      <div style={{
-        filter: isUnlocked ? 'none' : 'blur(15px)',
-        opacity: isUnlocked ? 1 : 0.3,
-        maxHeight: isUnlocked ? 'none' : '400px',
-        transition: 'all 1s cubic-bezier(0.4, 0, 0.2, 1)',
-        pointerEvents: isUnlocked ? 'auto' : 'none',
-        userSelect: isUnlocked ? 'auto' : 'none',
-        overflow: 'hidden'
-      }}>
+      <div
+        ref={contentRef}
+        style={{
+          filter: isUnlocked ? 'none' : 'blur(15px)',
+          opacity: isUnlocked ? 1 : 0.3,
+          maxHeight: isUnlocked ? 'none' : '400px',
+          transition: 'all 1s cubic-bezier(0.4, 0, 0.2, 1)',
+          pointerEvents: isUnlocked ? 'auto' : 'none',
+          userSelect: isUnlocked ? 'auto' : 'none',
+          overflow: 'hidden'
+        }}
+      >
         {children}
       </div>
 

@@ -435,3 +435,30 @@ img.photo-border,
   color: #949597;
   text-align: center;
 }
+
+/* ============================================================
+6. Paywall TOC Hiding
+============================================================ */
+/* Hide the label entry '🔐 付費解鎖！' from TOC completely */
+[class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
+[class*="tableOfContents"] [href*="付費解鎖"] {
+  display: none !important;
+}
+
+/* Hide parent li of the label if exists */
+[class*="tableOfContents"] li:has([href*="付費解鎖"]),
+[class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) {
+  display: none !important;
+}
+
+/* Automatically hide all items following the paywall when content is locked */
+html.lock-paid-content [class*="tableOfContents"] li:has([href*="付費解鎖"]) ~ li,
+html.lock-paid-content [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) ~ li {
+  display: none !important;
+}
+
+/* Fallback for older themes with flat lists */
+html.lock-paid-content [class*="tableOfContents"] [href*="付費解鎖"] ~ a,
+html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"] ~ a {
+  display: none !important;
+}

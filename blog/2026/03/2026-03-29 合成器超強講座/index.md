@@ -23,9 +23,9 @@ LPW 樂團練習課程 / PA 系統
 
 <!-- truncate -->
 
-### 🔐 付費解鎖！
-
 <PaidContent id="synthesizer-lecture">
+
+### 🔐 付費解鎖！
 
 ### 單詞解釋
 - 類比合成器 Analog Synthesizer    
