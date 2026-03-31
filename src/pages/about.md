@@ -17,11 +17,11 @@ authors: [KAI]
 網站持續更新中，記得回來看看最新的分享！
 
 - 有任何問題歡迎寄信到：```kaigithub0621@gmail.com```
----
+
 > 或者可以在下面的留言板輸入想要問的問題喔（**暫時不開放**）
 
 ## 啟發
-本網站是受到 ```WIWI 官大為``` 啟發...
+本網站是受到 `WIWI 官大為` 啟發...
 
 大家可以去看看他的網站！
 
@@ -29,7 +29,7 @@ authors: [KAI]
 [點我前往：WIWI BLOG](https://wiwi.blog/)
 :::
 
-本網站使用 ```Docusaurus``` 撰寫
+本網站使用 `Docusaurus` 撰寫
 
 ## 我會著重在KAI BLOG
 1. 記錄生活
@@ -43,12 +43,12 @@ authors: [KAI]
 
 結果後台掛掉了
 
-因此我轉向到```HUGO```的主題 BlowFish 
+因此我轉向到`HUGO`的主題 BlowFish 
 
 在 2025 / 11 月架設 KAI WIKI
 
 :::tip 網站連結
-[點我前往：KAI WIKI](https://kaihchs118.github.io/kaiwiki/ )
+[點我前往：KAI WIKI](https://kai980621.github.io/kaiwiki/ )
 :::
 
 目前持續更新直到 2025 / 12 / 30 
@@ -56,12 +56,19 @@ authors: [KAI]
 WIWI 發佈了新網站，讓我更想繼續製作新的網站，超好笑🤣
 
 ## 2025 / 12 本站建立完成！
-本網站使用 ```Docusaurus``` 撰寫，
+本網站使用 `Docusaurus` 撰寫，
 然後架設時非常不順利！
 **我花了 2 小時研究
 試了至少3版才成功，**
 等我整理我的心路歷程跟教學吧！
 
+## 2026/ 03 駕駛模擬
+只要拿任何影片，
+皆可模擬駕駛！！！   
+趕快去看看～
+:::tip 網站連結
+[點我前往：駕駛模擬](https://kai980621.github.io/Train_EMU/)
+:::
 ## 未來
 我打算有空來參與這個活動
 :::info 活動連結
