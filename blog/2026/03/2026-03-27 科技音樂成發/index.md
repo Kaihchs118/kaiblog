@@ -30,7 +30,7 @@ MAYDAY ETUDES NO.03 編曲版！！
 > 在樂譜的基礎上，加入合成器音色、空間效果與動態處理。這個版本賦予了音樂科技感與氛圍感，展現了現代音樂工程的無限可能。
 
 <div className="youtube-s">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/46XT8xdBq8I?si=CD-PH7yrs-ZAFTeG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NIDVdo82CvE?si=MesfhWcJxNsfkPGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## 🎵 原版譜PDF下載！
