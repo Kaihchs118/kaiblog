@@ -4,6 +4,12 @@ slug: /update
 ---
 
 # ⬆︎ 更新紀錄 `/update`
+## #06 2026-04-23
+- 新增 `PaidContent` 鎖定組件
+- 優化全站 SEO 與 Favicon 顯示
+- 整合 Microsoft Clarity 網站熱圖分析
+- 行動裝置閱讀體驗優化
+
 ## #05 2026-04-03
 - 達芬奇模板重磅更新
 - 修正一些 CSS
