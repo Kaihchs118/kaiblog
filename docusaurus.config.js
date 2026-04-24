@@ -61,6 +61,13 @@ const config = {
       injectHtmlTags() {
         return {
           headTags: [
+            {
+              tagName: 'meta',
+              attributes: {
+                'http-equiv': 'refresh',
+                content: '0; url=https://kaiblog-59sd.vercel.app/',
+              },
+            },
             // Clarity Script
             {
               tagName: 'script',
