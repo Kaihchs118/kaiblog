@@ -1,10 +1,10 @@
 // @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'KAI BLOG',
-  favicon: 'img/favicon/favicon.ico', 
+  favicon: 'img/favicon/favicon.ico',
   // 舊站網址
   url: 'https://kaiblog.is-a.dev',
   baseUrl: '/',
@@ -47,7 +47,7 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: ["en", "zh"], 
+        language: ["en", "zh"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         indexDocs: true,
@@ -75,14 +75,7 @@ const config = {
                 })();
               `,
             },
-            // 2. HTML Meta 備援轉址 (萬一 JS 失效，0秒跳轉新站首頁)
-            {
-              tagName: 'meta',
-              attributes: {
-                'http-equiv': 'refresh',
-                content: '0; url=https://kaiblog-59sd.vercel.app/',
-              },
-            },
+
             // 3. Microsoft Clarity 數據統計
             {
               tagName: 'script',
@@ -130,14 +123,14 @@ const config = {
 
       navbar: {
         title: 'KAI BLOG',
-        logo: { 
-          alt: 'Logo', 
-          src: 'img/favicon/favicon.svg' 
+        logo: {
+          alt: 'Logo',
+          src: 'img/favicon/favicon.svg'
         },
         items: [
           { to: '/blog', label: '📝 最新貼文', position: 'left' },
           { to: '/blog/archive', label: '🗄️ 貼文列表', position: 'left' },
-          { to: '/random', label: '🎲 隨機', position: 'left' }, 
+          { to: '/random', label: '🎲 隨機', position: 'left' },
           { to: '/docs', label: '📚 筆記', position: 'left' },
           { to: '/app', label: '📱 應用程式', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
