@@ -4,7 +4,13 @@ slug: /update
 ---
 
 # ⬆︎ 更新紀錄 `/update`
+
+## #07 2026-05-01
+- 登入 / 註冊頁面美化
+- 修復網頁 BUG
+
 ## #06 2026-04-23
+
 - 新增 `PaidContent` 鎖定組件
 - 優化全站 SEO 與 Favicon 顯示
 - 整合 Microsoft Clarity 網站熱圖分析
