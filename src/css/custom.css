@@ -14,20 +14,20 @@
   --ifm-color-primary-dark: #3786ca;
   --ifm-color-primary-light: #5baef2;
 
-  --hero-gradient: linear-gradient(135deg, #429EEE 0%, #6CC8FF 100%);
-  --glass-bg: rgba(255, 255, 255, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --hero-gradient: #429EEE;
+  --glass-bg: #f8fafc;
+  --glass-border: #e2e8f0;
+  --card-shadow: none;
+  --card-hover-shadow: none;
 }
 
 html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
-  --hero-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --hero-gradient: #1e293b;
+  --glass-bg: #1e293b;
+  --glass-border: #334155;
+  --card-shadow: none;
+  --card-hover-shadow: none;
 }
 
 body {
@@ -81,22 +81,22 @@ a.link:hover {
 ============================================================ */
 .blog-cover {
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(66, 158, 238, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: none;
   margin: 1.5rem 0 2rem;
   display: block;
-  transition: transform 0.35s cubic-bezier(0.2, 1, 0.3, 1), box-shadow 0.35s ease;
+  transition: transform 0.35s cubic-bezier(0.2, 1, 0.3, 1);
   border: 1px solid var(--glass-border);
 }
 
 .blog-cover:hover {
-  transform: scale(1.015);
-  box-shadow: 0 16px 48px rgba(66, 158, 238, 0.25), 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: none;
 }
 
 [data-theme='dark'] .blog-cover {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+  border-color: var(--glass-border);
 }
 
 /* ============================================================
@@ -185,4 +185,45 @@ html.lock-paid-content [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2
 html.lock-paid-content [class*="tableOfContents"] [href*="付費解鎖"]~a,
 html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]~a {
   display: none !important;
+}
+
+/* ============================================================
+7. Custom Buttons
+============================================================ */
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white !important;
+  background: var(--ifm-color-primary);
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: none;
+  color: white !important;
+  opacity: 0.9;
+}
+
+.custom-btn:active {
+  transform: translateY(0);
+}
+
+[data-theme='dark'] .custom-btn {
+  background: var(--ifm-color-primary);
+  box-shadow: none;
+}
+
+[data-theme='dark'] .custom-btn:hover {
+  box-shadow: none;
 }

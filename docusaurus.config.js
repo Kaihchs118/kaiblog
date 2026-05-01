@@ -10,7 +10,8 @@ const config = {
   baseUrl: '/',
   organizationName: 'kaihchs118',
   projectName: 'kaiblog',
-  onBrokenLinks: 'ignore', // 轉址期間建議設為 ignore 以防建置失敗
+  onBrokenLinks: 'ignore',
+  onBrokenAnchors: 'ignore',
 
   i18n: {
     defaultLocale: 'zh-Hant',
@@ -32,8 +33,8 @@ const config = {
         blog: {
           showReadingTime: true,
           feedOptions: { type: ['rss', 'atom'], xslt: true },
-          onInlineTags: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',

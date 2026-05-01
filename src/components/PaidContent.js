@@ -54,11 +54,13 @@ export default function PaidContent({ children, id = 'default' }) {
     <div style={{ 
       position: 'relative', 
       margin: '2rem 0', 
-      borderRadius: '24px', 
+      borderRadius: '12px', 
       overflow: isUnlocked ? 'visible' : 'hidden',
-      minHeight: isUnlocked ? '0' : '450px',
+      minHeight: isUnlocked ? '0' : '400px',
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      border: isUnlocked ? 'none' : '1px solid var(--glass-border)',
+      background: isUnlocked ? 'transparent' : 'var(--glass-bg)'
     }}>
       {!isUnlocked && (
         <div style={{
@@ -71,49 +73,37 @@ export default function PaidContent({ children, id = 'default' }) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'rgba(255, 255, 255, 0.02)',
-          backdropFilter: 'blur(25px)',
-          WebkitBackdropFilter: 'blur(25px)',
           padding: '1.5rem',
-          textAlign: 'center',
-          borderRadius: '24px'
+          textAlign: 'center'
         }}>
           <div style={{
             background: 'var(--glass-bg)',
-            padding: '2.5rem 2rem',
-            borderRadius: '32px',
-            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+            padding: '2rem',
+            borderRadius: '16px',
             border: '1px solid var(--glass-border)',
             maxWidth: '400px',
             width: '100%',
-            animation: 'fadeInUp 0.6s ease-out',
-            transform: error ? 'translateX(10px)' : 'none',
-            transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+            transition: 'all 0.3s ease',
             borderColor: error ? '#ff4d4f' : isInputFocused ? 'var(--ifm-color-primary)' : 'var(--glass-border)'
           }}>
             <div style={{
-              fontSize: '3.5rem',
-              marginBottom: '1rem',
-              filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))',
-              animation: 'float 3s ease-in-out infinite'
+              fontSize: '3rem',
+              marginBottom: '1rem'
             }}>
               🔏
             </div>
             <h3 style={{
-              fontSize: '1.8rem',
-              fontWeight: '900',
+              fontSize: '1.5rem',
+              fontWeight: '800',
               marginBottom: '0.8rem',
-              letterSpacing: '-0.5px',
-              background: 'linear-gradient(to right, var(--ifm-color-primary), #6CC8FF)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
+              color: 'var(--ifm-color-primary)'
             }}>
               付費內容已鎖定
             </h3>
             <p style={{
-              fontSize: '1rem',
+              fontSize: '0.95rem',
               opacity: 0.8,
-              marginBottom: '2rem',
+              marginBottom: '1.5rem',
               fontWeight: '500',
               lineHeight: '1.5'
             }}>
@@ -123,7 +113,7 @@ export default function PaidContent({ children, id = 'default' }) {
               </span>
             </p>
 
-            <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
+            <div style={{ marginBottom: '1rem', position: 'relative' }}>
               <input
                 type="password"
                 placeholder="4 位數字密碼"
@@ -134,27 +124,25 @@ export default function PaidContent({ children, id = 'default' }) {
                 onBlur={() => setIsInputFocused(false)}
                 style={{
                   width: '100%',
-                  padding: '16px',
-                  borderRadius: '16px',
-                  border: '2px solid transparent',
-                  background: 'rgba(0,0,0,0.08)',
-                  fontSize: '1.2rem',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid var(--glass-border)',
+                  background: 'rgba(0,0,0,0.05)',
+                  fontSize: '1.1rem',
                   textAlign: 'center',
                   outline: 'none',
-                  transition: 'all 0.3s',
-                  boxShadow: isInputFocused ? '0 0 0 4px rgba(66, 158, 238, 0.2)' : 'none',
+                  transition: 'all 0.2s',
                   color: 'inherit'
                 }}
               />
               {error && (
                 <p style={{
                   color: '#ff4d4f',
-                  fontSize: '0.9rem',
-                  marginTop: '10px',
-                  fontWeight: '700',
-                  animation: 'shake 0.4s ease-in-out'
+                  fontSize: '0.85rem',
+                  marginTop: '8px',
+                  fontWeight: '700'
                 }}>
-                  ❌ 密碼錯誤，請再試一次
+                  ❌ 密碼錯誤
                 </p>
               )}
             </div>
@@ -163,27 +151,20 @@ export default function PaidContent({ children, id = 'default' }) {
               onClick={handleUnlock}
               style={{
                 width: '100%',
-                padding: '16px 28px',
-                fontSize: '1.1rem',
-                fontWeight: '800',
+                padding: '14px',
+                fontSize: '1rem',
+                fontWeight: '700',
                 color: 'white',
-                background: error ? '#ff4d4f' : 'var(--hero-gradient)',
+                background: error ? '#ff4d4f' : 'var(--ifm-color-primary)',
                 border: 'none',
-                borderRadius: '16px',
+                borderRadius: '8px',
                 cursor: 'pointer',
-                transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-                boxShadow: '0 10px 20px -5px rgba(66, 158, 238, 0.4)'
+                transition: 'opacity 0.2s'
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.02) translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 15px 30px -5px rgba(66, 158, 238, 0.5)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1) translateY(0)';
-                e.currentTarget.style.boxShadow = '0 10px 20px -5px rgba(66, 158, 238, 0.4)';
-              }}
+              onMouseEnter={(e) => e.currentTarget.style.opacity = '0.9'}
+              onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
             >
-              🚀 立即解鎖
+              立即解鎖
             </button>
           </div>
         </div>
@@ -192,10 +173,9 @@ export default function PaidContent({ children, id = 'default' }) {
       <div
         ref={contentRef}
         style={{
-          filter: isUnlocked ? 'none' : 'blur(20px)',
-          opacity: isUnlocked ? 1 : 0.2,
-          maxHeight: isUnlocked ? 'none' : '400px',
-          transition: 'all 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
+          opacity: isUnlocked ? 1 : 0.1,
+          maxHeight: isUnlocked ? 'none' : '350px',
+          transition: 'opacity 0.5s ease',
           pointerEvents: isUnlocked ? 'auto' : 'none',
           userSelect: isUnlocked ? 'auto' : 'none',
           overflow: 'hidden',
