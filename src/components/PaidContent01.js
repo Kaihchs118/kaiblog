@@ -56,7 +56,7 @@ export default function PaidContent({ children, id = 'default' }) {
       margin: '2rem 0',
       borderRadius: '12px',
       overflow: isUnlocked ? 'visible' : 'hidden',
-      minHeight: isUnlocked ? '0' : '400px',
+      minHeight: isUnlocked ? '0' : '450px',
       display: 'flex',
       flexDirection: 'column',
       border: isUnlocked ? 'none' : '1px solid var(--glass-border)',
@@ -78,19 +78,20 @@ export default function PaidContent({ children, id = 'default' }) {
         }}>
           <div style={{
             background: 'var(--glass-bg)',
-            padding: '2rem',
-            borderRadius: '16px',
-            border: '1px solid var(--glass-border)',
-            maxWidth: '400px',
+            padding: '1rem',
+            borderRadius: '30px',
+            border: '2px solid var(--glass-border)',
+            maxWidth: '600px',
             width: '100%',
             transition: 'all 0.3s ease',
             borderColor: error ? '#ff4d4f' : isInputFocused ? 'var(--ifm-color-primary)' : 'var(--glass-border)'
+
           }}>
             <div style={{
               fontSize: '3rem',
               marginBottom: '1rem'
             }}>
-              🔏
+              ⚠️
             </div>
             <h3 style={{
               fontSize: '1.5rem',
@@ -98,15 +99,15 @@ export default function PaidContent({ children, id = 'default' }) {
               marginBottom: '0.2rem',
               color: 'var(--ifm-color-primary)'
             }}>
-              目前停止開放下載！
-            </h3>
-            <h3 style={{
-              fontSize: '1.5rem',
-              fontWeight: '800',
-              marginBottom: '0.8rem',
-              color: '#ee4242ff'
-            }}>
-              請至首頁查看最新版本
+              目前停止開放下載！<br />
+              <span style={{
+                fontSize: '1.5rem',
+                fontWeight: '1000',
+                marginBottom: '0.8rem',
+                color: '#ee4242ff', fontWeight: 'black'
+              }}>
+                請至首頁查看最新版本
+              </span>
             </h3>
             <p style={{
               fontSize: '0.95rem',
@@ -124,7 +125,7 @@ export default function PaidContent({ children, id = 'default' }) {
             <div style={{ marginBottom: '1rem', position: 'relative' }}>
               <input
                 type="password"
-                placeholder="10 位數字密碼"
+                placeholder="5525+2 位數字密碼"
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
                 onKeyPress={handleKeyPress}
@@ -133,13 +134,13 @@ export default function PaidContent({ children, id = 'default' }) {
                 style={{
                   width: '100%',
                   padding: '12px',
-                  borderRadius: '8px',
+                  borderRadius: '10px',
                   border: '1px solid var(--glass-border)',
                   background: 'rgba(0,0,0,0.05)',
                   fontSize: '1.1rem',
                   textAlign: 'center',
                   outline: 'none',
-                  transition: 'all 0.2s',
+                  transition: 'all 1s',
                   color: 'inherit'
                 }}
               />
@@ -162,10 +163,10 @@ export default function PaidContent({ children, id = 'default' }) {
                 padding: '14px',
                 fontSize: '1rem',
                 fontWeight: '700',
-                color: 'white',
-                background: error ? '#ff4d4f' : 'var(--ifm-color-primary)',
+                color: '#383838ff',
+                background: error ? '#ff4d4f' : '#ffdd00ff',
                 border: 'none',
-                borderRadius: '8px',
+                borderRadius: '20px',
                 cursor: 'pointer',
                 transition: 'opacity 0.2s'
               }}

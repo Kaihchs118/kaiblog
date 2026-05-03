@@ -16,20 +16,19 @@ import PaidContent from '@site/src/components/PaidContent';
 
 ## 🛠 製作進度
 
-<div class="progress-container">
-  <div class="progress-header">
-    <span class="progress-title">📈 製作總進度</span>
-    <span class="progress-percentage">25%</span>
+<div className="progress-container" style={{ '--progress-color': '#7d47fbff' }}>
+  <div className="progress-header">
+    <span className="progress-title">📈 製作總進度</span>
+    <span className="progress-percentage">25%</span>
   </div>
-  <div class="progress-bar-bg">
-    <div class="progress-bar-fill" style={{ width: '25%' }}></div>
-
+  <div className="progress-bar-bg">
+    <div className="progress-bar-fill" style={{ width: '25%' }}></div>
   </div>
-  <div class="progress-list">
-    <div class="progress-item done"><span>✅</span> 1. 疤瘌歌旋律製作</div>
-    <div class="progress-item done"><span>✅</span> 2. 鋼琴和弦簡單編寫</div>
-    <div class="progress-item"><span>⏳</span> 4. 歌曲編曲製作</div>
-    <div class="progress-item"><span>⏳</span> 5. 演示影片與 PDF 匯出 (進行中)</div>
+  <div className="progress-list">
+    <div className="progress-item done"><span>✅</span> 1. 疤瘌歌旋律製作</div>
+    <div className="progress-item done"><span>✅</span> 2. 鋼琴和弦簡單編寫</div>
+    <div className="progress-item"><span>⏳</span> 4. 歌曲編曲製作</div>
+    <div className="progress-item"><span>⏳</span> 5. 演示影片與 PDF 匯出 (進行中)</div>
   </div>
 </div>
 

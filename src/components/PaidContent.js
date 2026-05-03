@@ -51,12 +51,12 @@ export default function PaidContent({ children, id = 'default' }) {
   };
 
   return (
-    <div style={{ 
-      position: 'relative', 
-      margin: '2rem 0', 
-      borderRadius: '12px', 
+    <div style={{
+      position: 'relative',
+      margin: '2rem 0',
+      borderRadius: '12px',
       overflow: isUnlocked ? 'visible' : 'hidden',
-      minHeight: isUnlocked ? '0' : '400px',
+      minHeight: isUnlocked ? '0' : '450px',
       display: 'flex',
       flexDirection: 'column',
       border: isUnlocked ? 'none' : '1px solid var(--glass-border)',
@@ -107,7 +107,7 @@ export default function PaidContent({ children, id = 'default' }) {
               fontWeight: '500',
               lineHeight: '1.5'
             }}>
-              輸入專屬解鎖碼以閱覽完整內容<br/>
+              輸入專屬解鎖碼以閱覽完整內容<br />
               <span style={{ fontSize: '0.85rem', color: 'var(--ifm-color-primary)', fontWeight: 'bold' }}>
                 💡 提示：我的生日
               </span>
