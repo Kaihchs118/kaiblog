@@ -7,6 +7,10 @@ authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-12-31
 ---
+
+import PaidContent01 from '@site/src/components/PaidContent01';
+
+
 - 發布時間：12-13
 :::warning 警告 ！！！
 目前有更新的版本
@@ -17,7 +21,9 @@ date: 2025-12-31
 # 達芬奇模板V1
 我終於製作完成 ```ResolveV1Pack```
 替達芬奇製作出許多模板，均為免費模板
+### 🔐 付費解鎖！
 
+<PaidContent01 id="v1">
 :::warning 請勿下載
 
 - MediaFire 下載（建議）:
@@ -27,6 +33,8 @@ https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file
 https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view
 
 :::
+
+</PaidContent01>
 ---
 
 # ResolveV1Pack 安裝說明
