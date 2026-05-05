@@ -39,7 +39,7 @@ slug: /
 
 ---
 
-## [🎬 達芬奇免費模板 😍](/docs/resolve/resolvepackV4-update)
+## [🎬 達芬奇免費模板 😍](/docs/resolve/resolvepackV4)
 我更新 **ResolveV4Pack**
 最新的下載在 itch.io 速度超級快！
 替達芬奇製作出許多模板，均為免費模板！
