@@ -55,6 +55,27 @@ a.link:hover {
   color: var(--ifm-color-primary);
 }
 
+/* Navbar Item Button Style */
+.navbar__item {
+  border-radius: 8px;
+  margin: 0 4px;
+  padding: 6px 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.navbar__item:hover,
+.navbar__link--active {
+  background: rgba(66, 158, 238, 0.1);
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .navbar__item:hover,
+[data-theme='dark'] .navbar__link--active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* ============================================================
 2. Components
 ============================================================ */

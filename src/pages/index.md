@@ -7,8 +7,7 @@ slug: /
 # <span className="blue-title">歡迎來到 KAI BLOG !</span>
 嗨，我是 **KAI** 
 
-歡迎你來到 <span className="blue-stroke-text">KAI BLOG !</span> 
-
+歡迎你來到 KAI BLOG !   
 這裡是我發貼文和分享經驗的地方。這個網站分為以下幾個區域：
 
 ## [🌟 貼文](/blog)

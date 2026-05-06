@@ -13,12 +13,14 @@ slug: /app
 ### 02. Affinity : 製作縮圖常用，[可以看這篇文章](/blog/affinity)   
 ### 03. Antigravity : Google 官方的 AI 程式碼編輯器   
 ### 04. Anytype : 超好用開源筆記軟體，載入速度極快   
-### 05. Aria Player : Finale 的專屬音樂播放器  (可以刪掉嗎?)   
-### 06. AutoSubs : 快速生成字幕   
-### 07. Audacity : 免費開源超好用的音訊編輯器    
-### 08. Blip : 開源跨平台傳檔，遠距離也沒問題   
-### 09. Brave Browser : 具有隱私保護的開源瀏覽器   
-### 10. Cavalry : 2D 動畫製作   
+### 05. Aria Player : Finale 的專屬音樂播放器  (可以刪掉嗎?)
+### 06. Autograph : 製作特效的 AE 免費替代品
+~~**原本：** Cavalry : 2D 動畫製作~~  (較複雜且無法製作高強度內容) 
+### 07. AutoSubs : 快速生成字幕   
+### 08. Audacity : 免費開源超好用的音訊編輯器    
+### 09. Blip : 開源跨平台傳檔，遠距離也沒問題   
+### 10. Brave Browser : 具有隱私保護的開源瀏覽器   
+
 ### 11. Cubase 15 : 主要的編曲軟體，教學資源不錯   
 ### 12. DaVinci Resolve : 找不到比他更好的調色與剪輯軟體了   
 ### 13. Discord : 聊天與語音頻道首選   
